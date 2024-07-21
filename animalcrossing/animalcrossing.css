@@ -1,0 +1,18 @@
+#content {
+    width: 1000px;
+    margin: auto;
+}
+#header {
+    height: 250px;
+    background-image: url(images/cherry.gif);
+    background-size: cover;
+}
+#body {
+    background-color: aliceblue;
+    padding: 10px;
+}
+.logo {
+    width: 300px;
+    position: absolute;
+    right: 0;
+}

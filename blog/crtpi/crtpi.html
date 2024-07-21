@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRT PI // PENGUINJAA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <!-- // THEMES // -->
+    <link id="themeOne" rel="stylesheet" href="/themes/themeOne.css">
+    <link id="themeTwo" rel="stylesheet" href="/themes/themeTwo.css" disabled>
+    <link id="themeThree" rel="stylesheet" href="/themes/themeThree.css" disabled>
+    <link id="themeFour" rel="stylesheet" href="/themes/themeFour.css" disabled>
+    <link id="themeFive" rel="stylesheet" href="/themes/themeFive.css" disabled>
+    <link id="themeSix" rel="stylesheet" href="/themes/themeSix.css" disabled>
+    <meta name="description" content="My guide to connect a Raspberry Pi 3B+ to a CRT Television">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <meta content="#a4749a" data-react-helmet="true" name="theme-color"/>
+    <!-- // EMBEDS // -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CRT PI // PENGUINJAA"/>
+    <meta property="og:description" content="My guide to connect a Raspberry Pi 3B+ to a CRT Television"/>
+    <meta property="og:url" content="https://penguinjaa.com/blog/crtpi"/>
+    <!-- // SCRIPTS // -->
+    <script src="/assets/themes.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/vs.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@heppokofrontend/html-code-block-element/lib/html-code-block-element.common.min.js" defer></script>
+    <!-- // STYLES // -->
+    <style>
+        .boxbody span {
+            font-size: 16px;
+            color: var(--subtitle-color);
+        }
+        .boxbody {
+            height: calc(100% - 70px)
+        }
+        .codeblock {
+            background-color: rgb(32, 32, 32);
+            padding: 15px 100px 15px 15px;
+            margin: 15px 0 15px 0;
+            border-radius: 8px;
+            font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="maincontainer">
+        <div id="headercontainer">
+            <div id="header">
+            </div>
+            <div id="navbar">
+                <h3><a href="/">HOME</a></h3>
+                <h3><a href="/blog">BLOG</a></h3>
+                <h3><a href="/media">MEDIA</a></h3>
+                <h3><a href="/links">LINKS</a></h3>
+                <h3><a href="/about">ABOUT</a></h3>
+            </div>
+        </div>
+        <div id="content" style="flex-direction: column;">
+            <div class="splitcontainer">
+                <div class="box" style="width: 30%; margin-right: 15px; height: max-content;">
+                    <div class="boxhead">
+                        <h2 id="intro">WHERE 2?</h2>
+                    </div>
+                    <div class="boxbody">
+                        <a href="#intro"><h4 style="margin: 0 0 10px 0;">INTRO</h4></a>
+                        <a href="#need"><h4 style="margin: 0 0 10px 0;">WAT U NEED</h4></a>
+                        <a href="#retropie"><h4 style="margin: 0 0 10px 0;">RETROPIE SETUP</h4></a>
+                        <a href="#links"><h4 style="margin: 0 0 10px 0;">HELPFUL LINKS</h4></a>
+                        <h5 style="margin-bottom: 5px;">THEME PICKER</h5>
+                        <aside class="sidebar">
+                            <div id="themediv"></div>
+                        </aside>
+                    </div>
+                </div>
+                <div class="box" style="width: 70%;">
+                    <div class="boxhead">
+                        <h2>INTRO</h2>
+                    </div>
+                    <div class="boxbody">
+                        <p>I recently got a Raspberry Pi 3B to connect to my CRT for watching stuff and emulating games. There are tutorials, but nothing that really encapsulated exactly what I was looking for so I'm making my own tutorial as I work on it. Maybe this help one person in the world or at least be an interesting journey to follow idk</p><br>
+                        <p>i will probably continue to update this page as i do/learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="splitcontainer">
+                <div style="flex-direction: column; width: 70%;">  
+                    <div class="box" style="margin-right: 15px;">
+                        <div class="boxhead">
+                            <h2 id="intro">PHOTOS</h2>
+                        </div>
+                        <div class="boxbody">
+                            <p>hgello</p>
+                        </div>
+                    </div>
+                    <div class="box" style="margin-right: 15px;">
+                        <div class="boxhead">
+                            <h2>MY GOAL</h2>
+                        </div>
+                        <div class="boxbody">
+                            <p>I'm aiming to make this Pi into a (mostly) all-in-one system for my CRT. I mainly want to:</p><br>
+                            <p>> Watch movies/shows/anime via my plex server</p>
+                            <p>> Emulate some retro games, primarily SNES & GBA.</p>
+                            <p>> Watch youtube</p>
+                            <p>> Stream PC Games to my CRT</p>
+                            <p>> Web browsing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" style="width: 30%;  height: max-content;" id="need">
+                    <div class="boxhead">
+                        <h2>WAT U NEED</h2>
+                    </div>
+                    <div class="boxbody">
+                        <p>> Raspberry Pi</p><span>I'm using a 3B, but any pi 3 works. The Pi 4 has issues with composite output so dont get that</span><br><br>
+                        <p>> Case/Power Supply</p><span>use an official Pi power supply or else. case isnt strictly necessary but just at least get a cheap one to be safe</span><br><br>
+                        <p>> Aux to Composite Cable</p><br>
+                        <p>> Micro SD Card</p><span>Get one from a reputable brand, some people have had issues with cheaper ones.</span><br><br>
+                        <p>> Keyboard & Controller</p><span>Controller is optional, feels a whole lot better though.</span><br>
+                    </div>
+                </div>
+            </div>
+            <div class="box" style="height: max-content; margin-right: 15px;" id="retropie">
+                <div class="boxhead">
+                    <h2>RETROPIE SETUP</h2>
+                </div>
+                <div class="boxbody">
+                    <p>Ok lets get started!!! First off, I downloaded the operating system for the pi onto the Micro SD Card. you can find the OS Imager <a href="https://www.raspberrypi.com/software">here</a>. I chose Retropie. Just use the program to image your Micro SD card then there will be 2 partitions. Windows wont be able to read one of them, that is normal.<br><br> In the one that windows can read, open "config.txt". In this, youre gonna paste this at the bottom:</p>
+                    <div class="codeblock">
+                        sdtv_mode=0<br>
+                        sdtv_aspect=1
+                    </div>
+                    <p>"sdtv_mode=0" makes the output NTSC 480i. you can set emulators to be 240p later. the "sdtv_aspect=1" just gives a 4:3 output.</p><br>
+                    <p>Now you are ready to plug into your CRT!!! once it loads up and you set up your controller, you should probably set up wifi & SSH, it makes stuff easier. to do this, go to:</p>
+                    <div class="codeblock">
+                        WIFI: RASPI-CONFIG > System Options > Wireless LAN<br>
+                        SSH: RASPI-CONFIG > Interface Options > SSH
+                    </div>
+                    <p>with ssh you can remotely connect to the pi and do stuff from your pc/laptop. i used it a lot to adjust overscan so the image fits properly on my crt. you can also use it to transfer files like roms and whatnot. to connect to the pi using SSH, you need to get your pi's IP. theres a show ip option in the main menu. then open powershell on windows or terminal on mac and put this:</p>
+                    <div class="codeblock">
+                        ssh pi@[Pi's IP]<br>
+                    </div>
+                    <p>the default password is "raspberry". once you get in you should change your password by typing "passwd".</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p style="margin: 0;">PENGUINJAA.COM V4.44 [C] 2022 - 2099</p>
+            <p style="font-size: 18px; margin: 0;">
+                <a href="https://discord.com/users/264257846496067586">CONTACT</a> | 
+                <a href="/archive">ARCHIVE</a> |
+                <a href="/sitemap">SITEMAP</a> |
+                POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
+            </p>
+        </div>
+    </div>
