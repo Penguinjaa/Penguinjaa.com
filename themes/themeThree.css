@@ -1,0 +1,67 @@
+/* // KANYE UNIVERSE CITY // */
+
+:root {
+    /* BOX THEMING */
+    --header-img: url(/themes/assets/kanye/glow-banner.jpg);
+    --background-img: linear-gradient(black, black);;
+    --box-header-img: url(/themes/assets/kanye/kanyeheader.png);
+    --bgattatch: fixed;
+    --bgsize: 100%;
+    --box-border: #303030 5px ridge;
+    --box-border-radius: none;
+    --overlay: 0;
+
+    /* // COLORS // */
+    --header-color: black;
+    --box-bg-color: black;
+    --box-bg-img: url(/themes/assets/kanye/entryFanciness.gif);
+    --blog-border: none;
+
+    /* SCROLLBAR */
+
+    --scrollbarcolor: #000;
+    --scrollbarthumbcolor: #303030;
+
+    /* // TEXT //*/
+    
+    --header-font: Helvetica;
+    --subtitle-color: #9e977d;
+
+    /* p */
+    --content-font: Helvetica;
+    --main-text-size: 16px;
+    --main-text-color: #feedfd;
+
+    /* h1 */
+    --h1color: #ed145b;
+    --h1size: 2em;
+    --h1shadow: none;
+
+    /* h2 */
+    --h2color: #ed145b;
+    --h2size: 1.5em;
+    --h2shadow: none;
+
+    /* h3 */
+    --h3color: #77d4ff;
+    --h3size: 1.17em;
+    --h3shadow: none;
+
+    /* h4 */
+    --h4color: #ed145b;
+    --h4size: 1em;
+    --h4shadow: none;
+
+    /* h5 */
+    --h5color: #77d4ff;
+    --h5size: .83em;
+    --h5shadow: none;
+
+    /* h6 */
+    --h6color: #ed145b;
+    --h6size: .5em;
+    --h6shadow: none;
+}
+#retrozone p {
+    font-size: 23px;
+}

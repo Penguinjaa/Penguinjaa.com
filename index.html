@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME // PENGUINJAA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <!-- // THEMES // -->
+    <link id="themeOne" rel="stylesheet" href="/themes/themeOne.css">
+    <link id="themeTwo" rel="stylesheet" href="/themes/themeTwo.css" disabled>
+    <link id="themeThree" rel="stylesheet" href="/themes/themeThree.css" disabled>
+    <link id="themeFour" rel="stylesheet" href="/themes/themeFour.css" disabled>
+    <link id="themeFive" rel="stylesheet" href="/themes/themeFive.css" disabled>
+    <link id="themeSix" rel="stylesheet" href="/themes/themeSix.css" disabled>
+    <link href="/assets/nekowebring.css" rel="stylesheet">
+    <meta name="description" content="HOME // PENGUINJAA">
+    <link rel="icon" href="/assets/favicon.ico"/>
+    <meta content="#f46ee7" data-react-helmet="true" name="theme-color"/>
+    <!-- // SCRIPTS // -->
+    <script src="/assets/themes.js" async></script>
+    <script src="/assets/lastfm.js" defer></script>
+    <script src="/assets/status.js" defer></script>
+    <script src="/assets/stats.js" defer></script>
+    <!-- // STYLES // -->
+    <style>
+        .blogpost {
+            border: var(--blog-border);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .blogpost img {
+            width: 100px;
+            height: 100px;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+        .bloginfo {padding: 10px;}
+        .blogpost h2 {margin: 0;}
+        .bloginfo h3 {margin: 3px;}
+        #listening {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+        }
+        #listening img {
+            width: 75px;
+            height: 75px;
+            margin-right: 10px;
+        }
+        #listening h3 {margin: 0;}
+        #listening h5 {margin: 0;}
+        #featured-image {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 210px;
+        }
+        #featured-image img {object-fit: cover;}
+        .updates {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 175px;
+            width: 100%;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .updates h4 {margin-bottom: 5px;margin-top: 15px;}
+        .updates::-webkit-scrollbar {display: none;}
+        .updates b {font-size: 25px;}
+        #retrozone p {font-family: retro;line-height: 1.57;}
+        #mediashelf {
+            padding: 0;
+            display: flex;
+            overflow: hidden;
+        }
+        @media screen and (max-width:550px){
+            #mediashelf {overflow-x: scroll;}
+        }
+    </style>
+</head>
+<body>
+    <div id="maincontainer">
+        <div id="headercontainer">
+            <div id="header">
+            </div>
+            <div id="navbar">
+                <h3><a href="/">HOME</a></h3>
+                <h3><a href="/blog">BLOG</a></h3>
+                <h3><a href="/media">MEDIA</a></h3>
+                <h3><a href="/links">LINKS</a></h3>
+                <h3><a href="/about">ABOUT</a></h3>
+                <!--<img src="/images/assets/new1.gif" height="11px" style="position: absolute; margin-top: 6px; margin-left: 50px; pointer-events: none;">-->
+            </div>
+        </div>
+        <div id="content">
+            <div style="margin-right: 15px; flex: 1;">
+                <div class="box">
+                    <div class="boxhead">
+                        <h2>WELCOME</h2>
+                    </div>
+                    <div class="boxbody">
+                        <p>Hello, Welcome to my digital home! This is a place for me to do whatever I find creatively fulfilling. You are currently on v4.44, created on Mar. 18th, 2024. If you are awesome go <a href="https://penguinjaa.atabook.org/" target="_blank" style="color:var(--h3color); text-shadow: var(--h3shadow)">sign my guestbook!</a> Thanks for stopping by!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead" style="display: flex;">
+                        <h2 style="margin-right: auto;">BLOG</h2>
+                        <div style="margin-right: -15px; margin-top: -15px;"><img src="/images/assets/write.gif" style="max-width: 60px;"></div>
+                    </div>
+                    <div class="boxbody" style="max-height: 220px; overflow-y: scroll;">
+                        <div class="blogpost">
+                            <img src="/blog/v4-is-here/thumbnail.jpg" class="blogimg">
+                            <div class="bloginfo">
+                                <h3><a href="/blog/v4-is-here/">Penguinjaa.com v4.44 is here!</a></h3>
+                                <p>An overview of the makeover this website got on 3/18/23.</p>
+                            </div>
+                        </div>
+                        <div class="blogpost">
+                            <img src="/blog/2024/thumbnail.jpg" class="blogimg">
+                            <div class="bloginfo">
+                                <h3><a href="/blog/2024/">End of 2023 // Beginning of 2024</a></h3>
+                                <p>A look back at the growth of this website & my music taste throughout 2023.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="splitcontainer">
+                     <div class="box" style="width: 40%; margin-right: 15px;">
+                         <div class="boxhead">
+                             <h2 style="padding: 3px 11px;">FEATURED IMAGE</h2>
+                         </div>
+                         <div class="boxbody" style="padding: 0;">
+                             <div id="featured-image"></div>
+                         </div>
+                     </div>
+                    <div class="box" style="width: 70%;">
+                        <div class="boxhead" style="display: flex;">
+                            <h2 style="margin-right: auto;">RETRO ZONE</h2>
+                            <div style="margin-right: -15px; margin-top: -10px;"><a href="https://penguinjaa.com/VALORANT/"><img src="/images/assets/crt.gif"></a></div>
+                        </div>
+                        <div class="boxbody" style="height: 180px;">
+                            <!--<div id="retrozone">
+                                <p style="padding-left: 20px;">MENU</p>
+                                <p>> OVERVIEW</p>
+                                <p>> CONSOLES</p>
+                                <p>> MEDIA CENTER</p>
+                                <p>> PHOTOS</p>
+                                <p>(put crt cart 3d model here change screen based on hover)</p>
+                            </div>-->
+                            <p>Coming Soon!!!</p><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="splitcontainer">
+                    <div class="box" style="margin-right: 15px; width: 40%;">
+                        <div class="boxbody" style="padding: 0;">
+                            <div id="seasonbox" style="height: 142px;">
+                                <p style="position: absolute; transform: translateY(103px); background-color: black; padding: 5px; border-right: var(--box-border); border-top: var(--box-border);">COMING SOON</p>
+                                <img src="/images/assets/test.png" style="margin-top:-28px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="margin-right: 15px;">
+                        <div class="boxbody" style="padding: 0; max-height: 142px;">
+                            <img src="/images/assets/animalcrossing.gif">
+                        </div>
+                    </div>
+                    <div class="box" style="width: 40%;">
+                        <div class="boxbody" style="padding: 0; max-height: 142px;">
+                            <p style="position: absolute; transform: translateY(103px); background-color: black; padding: 5px; border-right: var(--box-border); border-top: var(--box-border);">COMING SOON</p>
+                            <img src="/images/assets/kanye-shrine1.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead" style="display: flex; align-items: center;">
+                        <h2 style="margin-right: auto;">MEDIA SHELF</h2>
+                        <div style="margin-right: -10px; margin-top: 15px;"><img src="/images/assets/vcr.gif" style="max-height: 60px;"></div>
+                    </div>
+                    <div class="boxbody" id="mediashelf">
+                        <img src="/images/media-shelf/akira-vhs.jpg" class="mediaitem" alt="Akira VHS">
+                        <img src="/images/media-shelf/gits-spine.jpg" style="max-height: 200px;" class="mediaitem" alt="Ghost In The Shell VHS">
+                        <div style="display: flex; flex-direction: column;">
+                            <img src="/images/media-shelf/discovery-vinyl.jpg" style="max-height: 100px; max-width: 100px;" class="mediaitem" alt="Discovery by Daft Punk vinyl">
+                            <img src="/images/media-shelf/808s-vinyl.jpg" style="max-height: 100px; max-width: 100px;" class="mediaitem" alt="808s & Heartbreak by Kanye West vinyl">
+                        </div>
+                        <img src="/images/media-shelf/acgc-spine.jpg" style="max-height: 200px;" class="mediaitem" alt="Animal Crossing for Gamecube">
+                        <img src="/images/media-shelf/katamari-spine.jpg" style="max-height: 200px;" class="mediaitem" alt="Katamari Damacy for PS2">
+                        <img src="/images/media-shelf/acnl-spine.jpg" style="max-height: 200px;" class="mediaitem" alt="Animal Crossing New Leaf for 3DS">
+                        <img src="/images/media-shelf/sm64-spine.jpg" style="max-height: 200px;" class="mediaitem" alt="Super Mario 64 for N64">
+                        <img src="/images/media-shelf/eva-spine.jpg" style="max-height: 200px;" class="mediaitem" alt="Neon Genesis Evangelion VHS">
+                        <img src="/images/media-shelf/pikmin2-spine.jpg" style="max-height: 200px;" class="mediaitem" Pikmin 2 on Gamecube>
+                        <img src="/images/media-shelf/mother3-spine.jpg" style="max-height: 200px;" class="mediaitem" alt="Mother 3 on Gameboy Advance">
+                        <img src="/images/media-shelf/american-psycho-vhs.jpg" class="mediaitem" alt="American Psycho VHS">
+                        <div style="display: flex; flex-direction: column;">
+                            <img src="/images/media-shelf/graduation.jpg" style="max-height: 100px; max-width: 100px;" class="mediaitem" alt="Graduation by Kanye West">
+                            <img src="/images/media-shelf/lonerism.jpg" style="max-height: 100px; max-width: 100px;" class="mediaitem" alt="Lonerism by Tame Impala">
+                        </div>
+                        <img src="/images/media-shelf/spirited-spine.jpg" style="max-height: 200px;" class="mediaitem" alt="Spirited Away VHS">
+                        <img src="/images/media-shelf/ttyd-spine.jpg" style="max-height: 200px;" class="mediaitem" alt="Paper Mario: The Thousand-Year Door for Gamecube">
+                    </div>
+                </div>
+                <div class="splitcontainer">
+                    <div class="box" style="margin-right: 15px; width: 30%;">
+                        <div class="boxhead">
+                            <h2>UPDATES</h2>
+                        </div>
+                        <div class="boxbody" style="padding: 0; height: 180px;">
+                            <div class="updates"  style="padding: 5px 5px 0 5px;">
+                                <h4><b>6.4.24</b></h4><p>> Media Page overhaul</p><p>> Links Page overhaul (kinda)</p><p>> New Guestbook</p><p>> Switched to Max's lastfm code</p><p>> Tiny bit of mobile cleaning</p><p>> Cleaned up some disgusting code</p>
+                                <h4><b>5.13.24</b></h4><p>> joined nekowebring</p><p>> added follow on nekoweb button</p><p>> touched up little things</p>
+                                <h4><b>*v4.44* - 3.18.24</b></h4><p>NEW LAYOUT!!</p>
+                                <h4><b>3.9.24</b></h4><p>> Migrated to nekoweb. woo!</p><p>> Added a shrines category</p>
+                                <h4><b>*v3.33* - 12.31.23</b></h4><p>> New Index</p><p>> 2 Column Layout</p><p>> Profile Bar</p>
+                                <h4><b>11.3.23</b></h4><p>> Replaced About Me Tab With Profile Tab</p><p>> Added Socials Tab</p>
+                                <h4><b>9.26.23</b></h4><p>> New Media Page</p><p>> Updated Vinyl Collection Page</p>
+                                <h4><b>9.19.23</b></h4><p>> New Guestbook Page</p>
+                                <h4><b>8.9.23</b></h4><p>> New Vinyl Collection Page</p>
+                                <h4><b>*v2.22* - 7.27.23</b></h4><p>> New Index</p><p>> 3 Column Layout</p><p>> OldWeb Aesthetic</p><p>> Currenly Playing Widget</p><p>> Blog Rework</p>
+                                <h4><b>*v1.11* - 10.22.22</b></h4><p>> Blank Index</p><p>> Top Navigation Bar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="margin-right: 15px; width: 60%; width: 180px;">
+                        <div class="boxhead">
+                            <h2>NAVLINK</h2>
+                        </div>
+                        <div class="boxbody" style="padding: 0; height: 180px;">
+                            <iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
+                        </div>
+                    </div>
+                    <div class="box" style="width: 35%;">
+                        <div class="boxhead" style="display: flex;">
+                            <h2 style="margin-right: auto;">TO DO</h2>
+                        </div>
+                        <div class="boxbody" style="height: 165px; overflow-y: scroll; padding-bottom: 0;">
+                            <ul style="padding-left: 15px;margin: 0;">
+                                <li><p>> Blog Rework</p></li>
+                                <li><p>> About Me Rework</p></li>
+                                <li><p>> Finish shrines</p></li>
+                                <li><p>> Make icons for media pages</p></li>
+                                <li><p>> set up retro zone</p></li>
+                                <li><p>> Remake Shrine Graphics</p></li>
+                                <li><p>> Fill out media shelf</p></li>
+                                <li><p>> Make more themes</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--SIDEBAR BEGINS-->
+
+            <div class="container" style="min-width: 30%; max-width: 30%;">
+                <div class="box">
+                    <div class="boxhead">
+                        <h2>PROFILE</h2>
+                    </div>
+                    <div class="boxbody">
+                        <div style="display: flex; align-items: center;">
+                            <img src="/images/assets/pfp2.jpg" style="width: 75px; margin-right: 15px;">
+                            <div>
+                                <h3 style="margin: 0;">Penguinjaa</h3>
+                                <h5 style="margin: 0;">zen and monklike</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead">
+                        <b><h2 id="listeningStatus"></h2></b>
+                    </div>
+                    <div class="boxbody">
+                        <div id="listening"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead" style="display: flex; align-items: center;">
+                        <p class="status" style="margin-left: 10px;">
+                            <a id="statuscafe-face"></a>
+                        </p>
+                        <h2 style="padding-left: 5px;">STATUS</h2>
+                    </div>
+                    <div class="boxbody">
+                        <div id="statuscafe">
+                            <p><div id="statuscafe-content"></div></p>
+                            <p><div id="statuscafe-username"></div></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead">
+                        <h2>THEME SWITCHER</h2>
+                    </div>
+                    <div class="boxbody"  style="text-align: center;">
+                        <aside class="sidebar">
+                            <div id="themediv">
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead" style="display: flex;">
+                        <h2>WEBRING</h2>
+                    </div>
+                    <div class="boxbody">
+                        <div id='nekowebring'>
+                            <script type="text/javascript" src="https://webring.nekoweb.org/onionring-variables.js" defer></script>
+                            <script type="text/javascript" src="https://webring.nekoweb.org/onionring-widget.js" color="pink" defer></script>
+                        </div>            
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead" style="display: flex;">
+                        <img src="/images/assets/codecatputer.gif">
+                        <h2 style="padding-left: 0;">NEKOWEB STATS</h2>
+                    </div>
+                    <div class="boxbody">
+                        <p id="visitors"><em>Visits</em>: Loading..</p>
+                        <p id="followers"><em>Followers</em>: Loading..</p> 
+                        <p id="updated"><em>Last Updated</em>: Loading..</p>
+                        <p><em>Date Created:</em> 10/22/2022</p>
+                        <p><em>Website Version:</em> v4.44</p>
+                        <div style="filter:var(--grayscale);"><iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="250" height="19"></iframe></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead" style="display: flex;">
+                        <h2>SOCIALS</h2>
+                    </div>
+                    <div class="boxbody" style="text-align: center; padding: 0;">
+                        <div id="socials">
+                            <a href="https://www.youtube.com/@Penguinjaa" target="_blank"><img src="/images/assets/Youtube.png" style="width: 35px;"></a>
+                            <a href="https://www.twitch.tv/penguinjaa" target="_blank"><img src="/images/assets/twitch.png" style="height: 35px;"></a>
+                            <a href="https://www.last.fm/user/Penguinjaa" target="_blank"><img src="/images/assets/lastfm.png" style="width: 35px; border-radius: 5px;"></a>
+                            <a href="https://letterboxd.com/Penguinjaa/" target="_blank"><img src="/images/assets/letterboxd.jpg" style="width: 35px; border-radius: 5px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead" style="display: flex;">
+                        <h2>MY BUTTONS</h2>
+                    </div>
+                    <div class="boxbody" style="padding: 15px; display: flex; justify-content: space-evenly; text-align: center; image-rendering: pixelated;">
+                        <div>
+                            <img src="/images/buttons/neopenguinjaa.gif">
+                            <textarea rows="2" readonly style="width: 82px;"><a href="https://penguinjaa.com/" target="_blank"><img src="https://penguinjaa.com/images/buttons/neopenguinjaa.gif"></a></textarea>
+                        </div>
+                        <div>
+                            <img src="/images/buttons/penguinjaa.gif">
+                            <textarea rows="2" readonly style="width: 82px;"><a href="https://penguinjaa.com/" target="_blank"><img src="https://penguinjaa.com/images/buttons/penguinjaa.gif"></a></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead" style="display: flex;">
+                        <h2>COOL WEBSITES</h2>
+                    </div>
+                    <div class="boxbody" style="padding: 0; padding-top: 10px; image-rendering: pixelated;">
+                        <marquee scrollamount="3" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" style="margin-top: -3px;">
+                            <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button6.gif"></a>
+                            <a href="https://dimden.dev/" target="_blank"><img src="/images/buttons/dimden.gif" loading="lazy"></a>
+                            <a href="https://alienheadshitkid.neocities.org/" target="_blank"><img src="/images/buttons/alienhead.gif" loading="lazy"></a>
+                            <a href="https://candlelitsmiles.neocities.org/" target="_blank"><img src="/images/buttons/candlebutton.png" loading="lazy"></a>
+                            <a href="https://rice.nekoweb.org/" target="_blank"><img src="https://rice.nekoweb.org/ricebutton.png" loading="lazy"></a>
+                            <a href="https://yuentp.neocities.org/" target="_blank"><img src="/images/buttons/chaos.gif" loading="lazy"></a>
+                            <a href="https://caitsith.neocities.org/" target="_blank"><img src="/images/buttons/caitbutton.gif" loading="lazy"></a>
+                            <a href="https://darkosparko.nekoweb.org/" target="_blank"><img src="/images/buttons/darko.png" loading="lazy"></a>
+                            <a href="https://newshirt.nekoweb.org/" target="_blank"><img src="/images/buttons/newshirt.jpg" loading="lazy"></a>
+                            <a href="https://districts.nekoweb.org/index.html" target="_blank"><img src="/images/buttons/districts.png" loading="lazy"></a>
+                            <a href="https://amemoia.nekoweb.org/" target="_blank"><img src="https://amemoia.nekoweb.org/resources/buttons/amemoia.png"></a>
+                            <a href="https://swirl.neocities.org/" target="_blank"><img src="/images/buttons/swirl.gif" loading="lazy"></a>
+                            <a href="https://loevi.art/" target="_blank"><img src="/images/buttons/loevi.png" loading="lazy"></a>
+                            <a href="https://daniele63.neocities.org/" target="_blank"><img src="/images/buttons/danieles.jpg" loading="lazy"/></a>
+                            <a href="https://sadgrl.online/" target="_blank"><img src="https://sadgrl.online/assets/images/buttons/sadgrlonline.gif" loading="lazy"></a>
+                            <a href="https://im-baby.neocities.org/" target="_blank"><img src="/images/buttons/babys.gif" loading="lazy"></a>
+                            <a href="https://lostlove.neocities.org/" target="_blank"><img src="/images/buttons/lunospace.gif" loading="lazy"></a>
+                            <a href="https://cloudcover.neocities.org/" target="_blank"><img src="/images/buttons/cloudcover.png" loading="lazy"></a>
+                            <a href="https://madville.neocities.org/" target="_blank"><img src="/images/buttons/madville.gif" loading="lazy"></a>
+                            <a href="https://scouts-basement.neocities.org/" target="_blank"><img src="https://files.catbox.moe/nw16vo.gif" loading="lazy"></a>
+                            <a href="https://kelprot.neocities.org/" target="_blank"><img src="https://files.catbox.moe/la8alb.gif" loading="lazy"/></a>
+                            <a href="https://warp.zone/" target="_blank"><img src="/images/buttons/warpzone.gif" loading="lazy"/></a>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p style="margin: 0;">PENGUINJAA.COM V4.44 [C] 2022 - 2099</p>
+            <p style="font-size: 18px; margin: 0;">
+                <a href="https://discord.com/users/264257846496067586">CONTACT</a> | 
+                <a href="/archive">ARCHIVE</a> |
+                <a href="/sitemap">SITEMAP</a> |
+                POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
+            </p>
+        </div>
+    </div>
+<script src="/assets/featured.js" defer></script>
+<script src="/assets/grass.js" defer></script>

@@ -1,0 +1,64 @@
+/* // MONOCHROME // */
+
+:root {
+    /* BOX THEMING */
+    --header-img: url(/themes/assets/monochrome/explosion-banner.jpg);
+    --background-img: url(/themes/assets/monochrome/crater.jpg);
+    --box-header-img: url(/themes/assets/monochrome/content-body-bg.jpg);
+    --bgattatch: fixed;
+    --bgsize: 100%;
+    --box-border: #C0C0C0 5px ridge;
+    --box-border-radius: none;
+    --overlay: 0;
+
+    /* // COLORS // */
+    --header-color: black;
+    --box-bg-color: black;
+    --box-bg-img: none;
+    --blog-border: 1px solid #303030;
+    --grayscale: grayscale(1);
+
+    /* SCROLLBAR */
+    --scrollbarcolor: #000;
+    --scrollbarthumbcolor: #C0C0C0;
+
+    /* // TEXT //*/
+        
+    --header-font: head;
+    --subtitle-color: #9e977d;
+
+    /* p */
+    --content-font: content;
+    --main-text-size: 23px;
+    --main-text-color: #d6d1bc;
+
+    /* h1 */
+    --h1color: #d6d1bc;
+    --h1size: 2em;
+    --h1shadow: 0 0 10px var(--h1color);
+
+    /* h2 */
+    --h2color: #d6d1bc;
+    --h2size: 2em;
+    --h2shadow: 0 0 10px var(--h2color);
+
+    /* h3 */
+    --h3color: #d6d1bc;
+    --h3size: 1.5em;
+    --h3shadow: 0 0 10px var(--h3color);
+
+    /* h4 */
+    --h4color: #d6d1bc;
+    --h4size: 1.17em;
+    --h4shadow: 0 0 10px var(--h4color);
+
+    /* h5 */
+    --h5color: #d6d1bc;
+    --h5size: 1em;
+    --h5shadow: 0 0 10px var(--h5color);
+
+    /* h6 */
+    --h6color: #d6d1bc;
+    --h6size: .83em;
+    --h6shadow: 0 0 10px var(--h6color);
+}

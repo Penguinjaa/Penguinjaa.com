@@ -1,0 +1,240 @@
+/* FONTS */
+@font-face {
+	font-family: "content";
+	src: url("/assets/fonts/PixelOperator.ttf");
+	font-display: swap;
+}
+@font-face {
+	font-family: "head";
+	src: url("/assets/fonts/PixelOperator-Bold.ttf");
+	font-display: swap;
+}
+@font-face {
+	font-family: "retro";
+	src: url("/assets/fonts/vcr.ttf");
+	font-display: swap;
+}
+@font-face {
+	font-family: "v2";
+	src: url("/assets/fonts/RetroGaming.ttf");
+	font-display: swap;
+}
+@font-face {
+	font-family: "DS";
+	src: url("/assets/fonts/DS.ttf");
+	font-display: swap;
+}
+
+/* MAIN LAYOUT */
+#maincontainer {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+#headercontainer {
+    border: var(--box-border);
+}
+#header {
+    height: 200px;
+    background-image: var(--header-img);
+}
+#navbar {
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: var(--box-header-img);
+    background-color: var(--header-color);
+    border-top: var(--box-border);
+}
+#content {
+    display: flex;
+    margin-top: 15px;
+    position: relative;
+    align-items: flex-start;
+}
+.splitcontainer {
+    display: flex;
+}
+.box {
+    border: var(--box-border);
+    border-radius: var(--box-border-radius);
+    margin-bottom: 15px;
+}
+.boxhead {
+    background-color: var(--header-color);
+    background-image: var(--box-header-img);
+    height: 40px;
+    width: 100%;
+}
+.boxbody {
+    background-color: var(--box-bg-color);
+    background-image: var(--box-bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.boxhead h2 {
+    margin: 0;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 0;
+}
+#socials {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+#footer {
+    text-align: center;
+}
+
+/* THEMING */
+body {
+    background-image: var(--background-img);
+    background-attachment: var(--bgattatch);
+    background-size: var(--bgsize);
+    text-shadow: var(--body-text-shadow);
+}
+a:link{
+    color: inherit;
+}
+a:visited{
+    color: inherit;
+}
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--scrollbarcolor);
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarthumbcolor);
+}
+textarea {
+    color: #d6d1bc;
+    background-color: #0f0f0f;
+    resize: none;
+    border: #C0C0C0 2px solid;
+}
+textarea::-webkit-scrollbar {
+    display: none;
+}
+select {
+    width: 80%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--header-color);
+    color: var(--main-text-color);
+    font-family: var(--content-font);
+    font-size: 15px;
+}
+
+/* TEXT THEMING */
+#maincontainer h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+    text-shadow: var(--purple-text-shadow);
+}
+#maincontainer p, span {
+    font-family: var(--content-font);
+    font-size: var(--main-text-size);
+    color: var(--main-text-color);
+}
+.boxbody p {
+    margin: 0;
+}
+#navbar h3 {
+    margin-top: 8px;
+}
+h1 {
+    color: var(--h1color);
+    font-size: var(--h1size);
+    text-shadow: var(--h1shadow);
+}
+h2 {
+    color: var(--h2color);
+    font-size: var(--h2size);
+    text-shadow: var(--h2shadow);
+}
+h3 {
+    color: var(--h3color);
+    font-size: var(--h3size);
+    text-shadow: var(--h3shadow);
+}
+h4 {
+    color: var(--h4color);
+    font-size: var(--h4size);
+    text-shadow: var(--h4shadow);
+}
+h5 {
+    color: var(--h5color);
+    font-size: var(--h5size);
+    text-shadow: var(--h5shadow);
+}
+h6 {
+    color: var(--h6color);
+    font-size: var(--h6size);
+    text-shadow: var(--h6shadow);
+}
+
+/* LASTFM */
+#recentSong{
+    display:flex;
+    align-items:center;
+}
+#albumCover{
+    margin-right:5px;
+}
+#recentSong div{
+    margin-left:10px;
+    text-decoration:none;
+}
+#lastPlayedInfo{
+    margin-top:10px;
+}
+.listening {
+    text-transform: uppercase;
+}
+
+/* STATUSCAFE */
+#statuscafe {
+    margin-left: 5px;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+    margin-bottom: 15px;
+    color: var(--main-text-color);
+    font-family: var(--content-font);
+    font-size: var(--main-text-size);
+}
+#statuscafe-username {
+    font-family: var(--content-font);
+    color: var(--h4color);
+}
+
+@media screen and (max-width:550px){
+    #maincontainer {
+        width: 95vw;
+    }
+    #content {
+        flex-direction: column;
+        width: 95vw;
+    }
+    #content .box {
+        width: 92.5vw;
+    }
+    .splitcontainer {
+        flex-direction: column;
+        display: none;
+    }
+    #navbar {
+        flex-direction: column;
+        height: fit-content;
+        text-align: center;
+        padding: 8px;
+    }
+    #navbar h3 {
+        margin-bottom: 8px;
+    }
+}

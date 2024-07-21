@@ -1,0 +1,8 @@
+.site-box {text-align: center;background-image: url(https://penguinjaa.nekoweb.org/themes/assets/neo-tokyo/content-body-bg-neo.jpg);background-repeat: repeat;color: #b08271;font-size: 12px;border: #c0c0c0 5px ridge;box-sizing: border-box;}
+.site-box > a > p {color: #f46ee7;font-weight: bolder;text-transform: uppercase;padding-top: 5px;text-shadow: 0 0 10px #f46ee7;}
+.site-box > a > span {display: none;}
+.site-box .sitefeature {margin: 0;width: auto;height: auto;border: 0;background-image: url(https://penguinjaa.nekoweb.org/themes/assets/neo-tokyo/content-body-bg-neo.jpg);}
+.site-box img {width: 265px;height: auto;border-bottom: #c0c0c0 5px ridge;margin-left: 0;}
+.site-box .follow {color: #00cd95;font-size: 15px;transition-duration: 0.2s;}
+.site-box .follow:hover {letter-spacing: 3px;transition-duration: 0.2s;}
+.follow {background-color: black;border: none;color: #00cd95;font-size: 1.17em;text-shadow: 0 0 10px #00cd95;margin-left:0;padding:0;text-transform:uppercase;}

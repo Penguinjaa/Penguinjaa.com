@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2024 MEDIA LOG // PENGUINJAA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <!-- // THEMES // -->
+    <link id="themeOne" rel="stylesheet" href="/themes/themeOne.css">
+    <link id="themeTwo" rel="stylesheet" href="/themes/themeTwo.css" disabled>
+    <link id="themeThree" rel="stylesheet" href="/themes/themeThree.css" disabled>
+    <link id="themeFour" rel="stylesheet" href="/themes/themeFour.css" disabled>
+    <link id="themeFive" rel="stylesheet" href="/themes/themeFive.css" disabled>
+    <link id="themeSix" rel="stylesheet" href="/themes/themeSix.css" disabled>
+    <meta name="description" content="PENGUINJAA'S 2024 MEDIA LOG">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <meta content="#a4749a" data-react-helmet="true" name="theme-color"/>
+    <!-- // EMBEDS // -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="2024 MEDIA LOG // PENGUINJAA"/>
+    <meta property="og:description" content="PENGUINJAA'S 2024 MEDIA LOG"/>
+    <meta property="og:url" content="https://penguinjaa.com/media/2024"/>
+    <!-- // SCRIPTS // -->
+    <script src="/assets/stats.js"></script>
+    <script src="/assets/themes.js"></script>
+    <!-- // STYLES // -->
+    <style>
+        .moviecontainer {
+            width: 150px;
+            text-align: center;
+            position: relative;
+        }
+        .moviecontainer img {
+            height: 200px;
+            max-width: 150px;
+        }
+        .mediatitle {font-size: 5px;}
+        .albumcontainer {
+            width: 150px;
+            text-align: center;
+            position: relative;
+        }
+        .albumcontainer img {
+            height: 150px;
+            width: 150px;
+            margin-top: 15px;
+        }
+        .date {color: var(--subtitle-color);font-size: 18px;}
+        .description p {margin-top: 10px;}
+        .tabs {display: flex;justify-content: space-evenly;}
+        .tab-link {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+            color: var(--h2color);
+            font-size: var(--h3size);
+            text-shadow: var(--h2shadow);
+            text-decoration: underline;
+            filter: brightness(70%);
+        }
+        .tab-link:hover {filter: brightness(100%);}
+        .tab-link.active {filter: brightness(100%);}
+        .tab-content {display: none;}
+        .moviecontainer, .albumcontainer {
+            position: relative;
+            text-align: center;
+            margin: 15px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        .rating {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .rating span {font-size: 20px;color: var(--h4color);text-shadow: var(--h4shadow);}
+        .rating p {margin-top: 5px;}
+        .image-container:hover .overlay {opacity: 1;}
+        .image-container {position: relative;}
+        @media screen and (max-width:550px){
+            .box {
+                max-width: 92.5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="maincontainer">
+        <div id="headercontainer">
+            <div id="header">
+            </div>
+            <div id="navbar">
+                <h3><a href="/">HOME</a></h3>
+                <h3><a href="/blog">BLOG</a></h3>
+                <h3><a href="/media">MEDIA</a></h3>
+                <h3><a href="/links">LINKS</a></h3>
+                <h3><a href="/about">ABOUT</a></h3>
+            </div>
+        </div>
+        <div id="content">
+            <div>
+                <div class="tab-container">
+                    <div class="box" style="width: 990px;">
+                        <div class="boxhead">
+                            <div class="tabs">
+                                <button class="tab-link" onclick="openTab(event, 'Movies')"><h5 style="margin: 0; padding: 0;">MOVIES</h5></button>
+                                <button class="tab-link" onclick="openTab(event, 'Albums')"><h5 style="margin: 0; padding: 0;">ALBUMS</h5></button>
+                                <button class="tab-link" onclick="openTab(event, 'Other')"><h5 style="margin: 0; padding: 0;">OTHER</h5></button>
+                            </div>
+                        </div>
+                        <div class="boxbody" style="display: flex; flex-wrap: wrap; justify-content: space-between; max-height: 500px; overflow-y: scroll; padding: 0;scrollbar-width: 15px;">
+                            <div id="Movies" class="tab-content">
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/ex-machina-2015/" target="_blank">
+                                            <img loading="lazy" src="movies/ex-machina.jpg" alt="Ex Machina">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Ex Machina (2015)</p>
+                                    <span class="date">6.28.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/the-fall-guy-2024/" target="_blank">
+                                            <img loading="lazy" src="movies/fallguy.jpg" alt="The Fall Guy">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9734; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">The Fall Guy (2024)</p>
+                                    <span class="date">6.1.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/civil-war-2024/" target="_blank">
+                                            <img loading="lazy" src="movies/civilwar.jpg" alt="Civil War">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9734; &#9734; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9734; &#9734; &#9734; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Civil War (2024)</p>
+                                    <span class="date">6.1.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/over-the-hedge/" target="_blank">
+                                            <img loading="lazy" src="movies/overthehedge.jpg" alt="Over The Hedge">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9734; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Over The Hedge (2006)</p>
+                                    <span class="date">5.29.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/dune-2021/" target="_blank">
+                                            <img loading="lazy" src="movies/dune1.jpg" alt="Dune: Part One">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9734; &#9734; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Dune: Part One (2021)</p>
+                                    <span class="date">4.13.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/superbad/" target="_blank">
+                                            <img loading="lazy" src="movies/superbad.jpg" alt="Superbad">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Superbad (2007)</p>
+                                    <span class="date">4.1.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/the-boy-and-the-heron/1/" target="_blank">
+                                            <img loading="lazy" src="movies/boy-heron.jpg" alt="The Boy and the Heron">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">The Boy and the Heron (2023)</p>
+                                    <span class="date">3.24.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/office-space/" target="_blank">
+                                            <img loading="lazy" src="movies/office-space.jpg" alt="Office Space">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Office Space (1999)</p>
+                                    <span class="date">3.17.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/princess-mononoke/" target="_blank">
+                                            <img loading="lazy" src="movies/princess-mononoke.jpg" alt="Princess Mononoke">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Princess Mononoke (1997)</p>
+                                    <span class="date">3.15.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/eternal-sunshine-of-the-spotless-mind/" target="_blank">
+                                            <img loading="lazy" src="movies/eternal-sunshine-spotless-mind.jpg" alt="Eternal Sunshine of the Spotless Mind">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Eternal Sunshine of the Spotless Mind (2004)</p>
+                                    <span class="date">3.3.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/american-psycho/" target="_blank">
+                                            <img loading="lazy" src="movies/american-psycho.jpg" alt="American Psycho">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">American Psycho (2000)</p>
+                                    <span class="date">3.1.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/weathering-with-you/" target="_blank">
+                                            <img loading="lazy" src="movies/weathering-with-you.jpg" alt="Weathering With You">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Weathering With You (2019)</p>
+                                    <span class="date">2.23.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/my-neighbor-totoro/" target="_blank">
+                                            <img loading="lazy" src="movies/totoro.jpg" alt="My Neighbor Totoro">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">My Neighbor Totoro (1988)</p>
+                                    <span class="date">2.16.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/your-name/" target="_blank">
+                                            <img loading="lazy" src="movies/your-name.jpg" alt="your name.">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">your name. (2016)</p>
+                                    <span class="date">2.7.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/robocop/" target="_blank">
+                                            <img loading="lazy" src="movies/RoboCop.jpg" alt="RoboCop">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">RoboCop (1987)</p>
+                                    <span class="date">1.30.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/evangelion-30-you-can-not-redo/" target="_blank">
+                                            <img loading="lazy" src="movies/eva3.jpg" alt="Evangelion: 3.0 You Can (Not) Redo">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9734; &#9734; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9734; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9734; &#9734; &#9734; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Evangelion: 3.0 You Can (Not) Redo (2012)</p>
+                                    <span class="date">1.24.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/evangelion-20-you-can-not-advance/" target="_blank">
+                                            <img loading="lazy" src="movies/eva2.jpg" alt="Evangelion: 2.0 You Can (Not) Advance">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Evangelion: 2.0 You Can (Not) Advance (2009)</p>
+                                    <span class="date">1.18.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/evangelion-10-you-are-not-alone/" target="_blank">
+                                            <img loading="lazy" src="movies/eva1.jpg" alt="Evangelion: 1.0 You Are (Not) Alone">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Evangelion: 1.0 You Are (Not) Alone (2007)</p>
+                                    <span class="date">1.12.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <a href="https://letterboxd.com/penguinjaa/film/ghost-in-the-shell/" target="_blank">
+                                            <img loading="lazy" src="movies/Ghostintheshellposter.jpg" alt="Ghost In The Shell">
+                                            <div class="overlay">
+                                                <div class="rating"><p>overall</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>aesthetics</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                                </div>
+                                                <div class="rating"><p>plot</p>
+                                                    <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p class="mediatitle">Ghost In The Shell (1995)</p>
+                                    <span class="date">1.6.24</span>
+                                </div>
+                            </div>
+                            <div id="Albums" class="tab-content">
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/headrush.jpg" alt="Head Rush">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Cactus Water, Black & Mild</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Head Rush - Channel Tres (2024)</p>
+                                    <span class="date">7.1.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/samurai.jpg" alt="Samurai">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Mumble Rap, Samurai</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Samurai - Lupe Fiasco (2024)</p>
+                                    <span class="date">7.1.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/badcameo.jpg" alt="Bad Cameo">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: In Grey, Transport Me, Midnight</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Bad Cameo - James Blake & Lil Yachty (2024)</p>
+                                    <span class="date">6.28.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/tohellwithit.jpg" alt="to hell with it">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Pain, Passion, Just For Me</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">to hell with it - PinkPantheress (2021)</p>
+                                    <span class="date">6.20.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/hardstone.jpg" alt="HARDSTONE PSYCHO">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: PURPLE RAIN, 4X4, BACKSTREETS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">HARDSTONE PSYCHO - Don Toliver (2024)</p>
+                                    <span class="date">6.13.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/scarlet.jpg" alt="Scarlet">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Can't Wait, Love Life, WYM Freestyle</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Scarlet - Doja Cat (2023)</p>
+                                    <span class="date">6.13.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/timeless.jpg" alt="TIMELESS">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Spit It Out, Feel A Way, Witchy</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">TIMELESS - Kaytranada (2024)</p>
+                                    <span class="date">6.9.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/4yeo.jpg" alt="4 Your Eyez Only">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: 4 Your Eyez Only, For Whom The Bell Tolls</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">4 Your Eyez Only - J. Cole (2016)</p>
+                                    <span class="date">6.7.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/11thdimension.jpg" alt="11th Dimension">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Wake Up!, Shibuya</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">11th Dimension - Ski Mask The Slump God (2024)</p>
+                                    <span class="date">6.7.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/tetsuoyouth.jpg" alt="Tetsuo & Youth">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Mural, No Scratches</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Tetsuo & Youth - Lupe Fiasco (2015)</p>
+                                    <span class="date">5.28.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/dangerouswoman.jpg" alt="Dangerous Woman">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Jason's Song (Gave It Away), Thinking Bout You</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Dangerous Woman - Ariana Grande (2016)</p>
+                                    <span class="date">5.28.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/darktimes.jpg" alt="Dark Times">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Etouffee, black&blue</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Dark Times - Vince Staples (2024)</p>
+                                    <span class="date">5.23.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/blackstar1.jpg" alt="Mos Def & Talib Kweli Are Black Star">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Thieves In The Night, Respiration</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Mos Def & Talib Kweli Are Black Star - Black Star (1998)</p>
+                                    <span class="date">5.22.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/atavista.jpg" alt="Atavista">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Time, Human Sacrifice</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Atavista - Childish Gambino (2024)</p>
+                                    <span class="date">5.13.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/radical-optimism.jpg" alt="Radical Optimism">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Whatcha Doing, Anything For Love, Happy For You</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Radical Optimism - Dua Lipa (2024)</p>
+                                    <span class="date">5.3.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/u-made-me-a-star.jpg" alt="u made me a st4r">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9734; &#9734; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: stickerz "99", i hate to be alone</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">u made me a st4r - 4batz (2024)</p>
+                                    <span class="date">5.3.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/awakenmylove.jpg" alt="Awaken, My Love!">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Me And Your Mama, Riot</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">"Awaken, My Love!" - Childish Gambino (2016)</p>
+                                    <span class="date">4.22.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/section80.jpg" alt="Section.80">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Hol' Up, Rigamortis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Section.80 - Kendrick Lamar (2011)</p>
+                                    <span class="date">4.16.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/jeffery.jpg" alt="JEFFERY">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Future Swag, Floyd Mayweather</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">JEFFERY - Young Thug (2016)</p>
+                                    <span class="date">4.15.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/wsdty.jpg" alt="WE STILL DON'T TRUST YOU">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Show Of Hands, Overload</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">WE STILL DON'T TRUST YOU - Future & Metro Boomin (2024)</p>
+                                    <span class="date">4.12.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/blackyachtrockv1.jpg" alt="Black Yacht Rock Vol. 1">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9734; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Dandy Lying, Who Needs Rest?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Black Yacht Rock Vol. 1 - Pharrell Williams (2024)</p>
+                                    <span class="date">4.6.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/we-dont-trust-you.jpg" alt="WE DON'T TRUST YOU">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Like That, Type Sh*t, WTFYM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">WE DON'T TRUST YOU - Future & Metro Boomin (2024)</p>
+                                    <span class="date">3.22.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/kenny-9.jpg" alt="9">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: SLIP, US</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">9 - Kenny Mason (2024)</p>
+                                    <span class="date">3.17.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/motm1.jpg" alt="Man On The Moon: The End Of Day">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Make Her Say, Up Up & Away</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Man On The Moon: The End Of Day - Kid Cudi (2009)</p>
+                                    <span class="date">3.14.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/eternal-sunshine.jpg" alt="Eternal Sunshine">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Supernatural, Bye</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">eternal sunshine - Ariana Grande (2024)</p>
+                                    <span class="date">3.7.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/blue-lips.jpg" alt="BLUE LIPS">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Blue Slides, THank god 4 me</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">BLUE LIPS - ScHoolboy Q (2024)</p>
+                                    <span class="date">3.2.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/Lonerism.jpg" alt="Lonerism">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Feels Like We Only Go Backwards, Why Wont They Talk To Me</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Lonerism - Tame Impala (2012)</p>
+                                    <span class="date">2.20.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/scrapyard.jpg" alt="Scrapyard">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: TEXAS BLUE, EASIER</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Scrapyard - Quadeca (2024)</p>
+                                    <span class="date">2.16.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/vultures1.jpg" alt="VULTURES 1">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: GOOD (DONT DIE), BURN</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">VULTURES 1 - ¥$, Kanye West & Ty Dolla $ign (2024)</p>
+                                    <span class="date">2.9.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/dangerdoom.jpg" alt="THE MOUSE & THE MASK">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Benzi Box, Bada Bing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">THE MOUSE & THE MASK - DANGERDOOM (2005)</p>
+                                    <span class="date">2.6.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/born-like-this.jpg" alt="BORN LIKE THIS">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: LIGHTWORKS, STILL DOPE, SUPERVILLAINZ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">BORN LIKE THIS - MF DOOM (2009)</p>
+                                    <span class="date">2.6.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/michael.jpg" alt="MICHAEL">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: SCIENTISTS & ENGINEERS, SLUMMER</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">MICHAEL - Killer Mike (2023)</p>
+                                    <span class="date">2.6.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/currents.jpg" alt="Currents">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Yes I'm Changing, Disciples</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Currents - Tame Impala (2015)</p>
+                                    <span class="date">1.27.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/Heaven-Knows.jpg" alt="Heaven Knows">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Mosquito, The aisle</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Heaven Knows - Pink Pantheress (2023)</p>
+                                    <span class="date">1.27.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/LP.jpg" alt="LP! OFFLINE">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: HAZARD DUTY PAY!, TIRED, NERVOUS & BROKE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">LP! OFFLINE - JPEGMAFIA (2021)</p>
+                                    <span class="date">1.23.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/hypochondriac.jpg" alt="hypochondriac">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: intellectual greed, 5g</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">hypochondriac - brakence (2022)</p>
+                                    <span class="date">1.14.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/doa.jpg" alt="DOA">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: biga**bearman, dancinwithsomebawdy</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">DOA - ericdoa (2024)</p>
+                                    <span class="date">1.14.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/americandream.jpg" alt="american dream">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9734; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: née-nah, dark days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">american dream - 21 Savage (2024)</p>
+                                    <span class="date">1.12.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/insano.jpg" alt="INSANO">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9734; &#9734; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: BLUE SKY</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">INSANO - Kid Cudi (2024)</p>
+                                    <span class="date">1.12.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="albums/superdeparture.jpg" alt="Super Departure">
+                                        <div class="overlay">
+                                            <div class="rating">
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p>fav tracks: Sign of Summer, Don't Stop, ジャンプ!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Super Departure - i-dep (2006)</p>
+                                    <span class="date">1.1.24</span>
+                                </div>
+                            </div>
+                            <div id="Other" class="tab-content">
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="other/smilingfriends2.jpg" alt="Smiling Friends Season 2">
+                                        <div class="overlay">
+                                            <div class="rating"><p>overall</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating"><p>aesthetics</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating"><p>plot</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Smiling Friends Season 2 (2024)</p>
+                                    <span class="date">6.24.24</span>
+                                </div>
+                                <div class="albumcontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="other/leafgreen.jpg" alt="Pokémon LeafGreen">
+                                        <div class="overlay">
+                                            <div class="rating"><p>overall</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating"><p>aesthetics</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating"><p>gameplay</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Pokémon LeafGreen (2004)</p>
+                                    <span class="date">6.6.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="other/cowboybebop.jpg" alt="Cowboy Bebop">
+                                        <div class="overlay">
+                                            <div class="rating"><p>overall</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating"><p>aesthetics</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating"><p>plot</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Cowboy Bebop (1998)</p>
+                                    <span class="date">6.6.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="other/jeenyuhs.jpg" alt="jeen-yuhs">
+                                        <div class="overlay">
+                                            <div class="rating"><p>overall</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating"><p>aesthetics</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating"><p>plot</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">jeen-yuhs (2022)</p>
+                                    <span class="date">5.30.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="other/ttyd.jpg" alt="Paper Mario: The Thousand-Year Door">
+                                        <div class="overlay">
+                                            <div class="rating"><p>overall</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating"><p>aesthetics</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating"><p>gameplay</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Paper Mario: The Thousand-Year Door (2004)</p>
+                                    <span class="date">5.25.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="other/vince-staples-show.jpg" alt="The Vince Staples Show">
+                                        <div class="overlay">
+                                            <div class="rating"><p>overall</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating"><p>aesthetics</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating"><p>plot</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">The Vince Staples Show (2024)</p>
+                                    <span class="date">4.15.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="other/stardew.jpg" alt="Stardew Valley">
+                                        <div class="overlay">
+                                            <div class="rating"><p>overall</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating"><p>aesthetics</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating"><p>gameplay</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Stardew Valley (2016)</p>
+                                    <span class="date">4.12.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="other/scottpilgrimtakesoff.jpg" alt="Scott Pilgrim Takes Off">
+                                        <div class="overlay">
+                                            <div class="rating"><p>overall</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating"><p>aesthetics</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                            <div class="rating"><p>plot</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">Scott Pilgrim Takes Off (2023)</p>
+                                    <span class="date">2.6.24</span>
+                                </div>
+                                <div class="moviecontainer">
+                                    <div class="image-container">
+                                        <img loading="lazy" src="other/thecurse.jpg" alt="The Curse">
+                                        <div class="overlay">
+                                            <div class="rating"><p>overall</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                                            </div>
+                                            <div class="rating"><p>aesthetics</p>
+                                                <span>&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                                            </div>
+                                            <div class="rating"><p>plot</p>
+                                                <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mediatitle">The Curse (2024)</p>
+                                    <span class="date">1.15.24</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+        </div>
+        <div id="footer">
+            <p style="margin: 0;">PENGUINJAA.COM V4.44 [C] 2022 - 2099</p>
+            <p style="font-size: 18px; margin: 0;">
+                <a href="https://discord.com/users/264257846496067586">CONTACT</a> | 
+                <a href="/archive">ARCHIVE</a> |
+                <a href="/sitemap">SITEMAP</a> |
+                POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
+            </p>
+        </div>
+    </div>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "flex";
+            document.getElementById(tabName).style.flexWrap = "wrap";
+            document.getElementById(tabName).style.justifyContent = "space-evenly";
+            evt.currentTarget.className += " active";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector('.tab-link').click();
+        });
+    </script>
+</body>

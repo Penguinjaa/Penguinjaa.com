@@ -1,0 +1,66 @@
+/* // v3.33 // */
+
+:root {
+    /* BOX THEMING */
+    --header-img: url(/themes/assets/neo-banner2.jpg);
+    --background-img: url(/themes/assets/3/sparkling_star.gif);
+    --box-header-img: none;
+    --bgattatch: scroll;
+    --bgsize: auto;
+    --box-border: #644856 3px solid;
+    --box-border-radius: none;
+    --overlay: 0;
+
+    /* // COLORS // */
+    --header-color: #24171c;
+    --box-bg-color: #24171c;
+    --box-bg-img: none;
+    --blog-border: none;
+
+    /* SCROLLBAR */
+
+    --scrollbarcolor: #644856;
+    --scrollbarthumbcolor: #24171c;
+
+    /* // TEXT //*/
+    
+    --header-font: "MS Gothic";
+
+    /* p */
+    --content-font: "MS Gothic";
+    --main-text-size: 23px;
+    --main-text-color: #d6d1bc;
+
+    /* h1 */
+    --h1color: #d6d1bc;
+    --h1size: 2em;
+    --h1shadow: none;
+
+    /* h2 */
+    --h2color: #d6d1bc;
+    --h2size: 1.5em;
+    --h2shadow: none;
+
+    /* h3 */
+    --h3color: #d6d1bc;
+    --h3size: 1.5em;
+    --h3shadow: none;
+
+    /* h4 */
+    --h4color: #d6d1bc;
+    --h4size: 1.17em;
+    --h4shadow: none;
+
+    /* h5 */
+    --h5color: #d6d1bc;
+    --h5size: 1em;
+    --h5shadow: none;
+
+    /* h6 */
+    --h6color: #d6d1bc;
+    --h6size: .83em;
+    --h6shadow: none;
+}
+#retrozone p {
+    font-size: 23px;
+}
