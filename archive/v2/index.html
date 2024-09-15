@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Penguinjaa | Home</title>
+<link rel="icon" href="/favicon.ico?v=2" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="Penguinjaa"/>
+<meta property="og:description" content="Penguinjaa home page"/>
+<meta property="og:url" content="https://www.penguinjaa.com"/>
+<meta content="#a4749a" data-react-helmet="true" name="theme-color"/>
+<meta name="description" content="Penguinjaa Home Page">
+<link href="style.css" rel="stylesheet">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+		<style>
+			button {
+			  font-family: pixel; 
+			  font-size: 15px;
+			  background-color: #503b75;
+			  border-color: #503b75;
+			  color: black;
+			}
+			.im {
+				height: 150px;
+				margin-right: 10px;
+			}
+			.imtop {
+				margin-right: 10px;
+				height: 70px;
+				margin-bottom:75px;
+				position: absolute;
+			}
+			.imb {
+				margin-right: 10px;
+				height: 70px;
+			}
+			.marquee {
+				width: 115%;
+			}
+		    @media (max-width: 550px) {
+		        .mobile-text {
+		            display: block;
+		        }
+		    }
+		    @media (min-width: 550px) {
+		        .mobile-text {
+		            display: none;
+		        }
+		    }
+		    @keyframes marquee {
+				from {transform: translateX(100%); }
+				to {transform: translateX(-100%); }
+			}
+		</style>
+		<script src="nowplaying.js" async></script>
+		<script src="status.js" defer></script>
+		<script src="clock.js" async></script>
+	</head>
+	<body class="background">
+		</header>
+			<div id="content">
+				<table>
+					<tbody>
+						<tr>
+							<td id="lefttd">
+							<div class="column">
+								<a href="https://www.penguinjaa.com/valorant/"><img src="buttons/clock3.gif" style="float: left; margin-right: 10px; width: 35px;" onload="startTime()"></a>
+								<div id="clock" style="margin-top: 7px; margin-bottom: 7px;"></div>
+							</div>
+							<div class="column" id="sidebox">
+								<h2>Links:</h2>
+								<p><a href="https://penguinjaa.com">Home</a></p>
+								<p><a href="https://penguinjaa.com/blog">Blog</a>
+								<p><a href="https://penguinjaa.com/">Microblog</a>
+								<p><a href="https://penguinjaa.com/shrines">Shrines</a>
+								<p><a href="https://penguinjaa.com/">Board</a></p>
+								<!--<p><a href="https://www.penguinjaa.com/media/">Media</a></p>
+								<p><a href="https://www.penguinjaa.com/videos">Videos</a></p>-->
+								<p><a href="https://penguinjaa.com/">Vinyl Collection</a></p>
+								<p><a href="https://penguinjaa.com/">Guestbook</a></p>
+								<p><a href="https://penguinjaa.com/links/" style="margin-right: 5px;">Resources</a></p>
+								<p><a href="https://penguinjaa.com/">Updates</a></p>
+								<!--<p><a href="https://neocities.org/site/penguinjaa" target="_blank">Neocities Page</a></p>-->
+							</div>
+							<div class="column" id="sidebox">
+								<h2>Socials:</h2>
+								<p><a href="https://www.youtube.com/channel/UCAjVZ-Wl4UBXBDXACaK0rFQ" target="_blank">Youtube</a></p>
+								<p><a href="https://www.last.fm/user/Penguinjaa" target="_blank">Last.fm</a></p>
+								<p><a href="https://neocities.org/site/penguinjaa" target="_blank">Neocities</a></p>
+						</div>
+							</td>
+							<td id="maintd">
+								<div class="column" id="mainbox">
+									<h2>Welcome to penguinjaa.com!</h2>
+									<img src="images/pfp.png" style="height: 100px; float: left; margin-right: 10px; margin-bottom: 10px;">
+									<p style="line-height: 1.4;">Hello! Welcome to my website. This website is a personal project & a place to document my interests. It is inspired by 90s personal websites and <a href="https://neocities.org/" target="_blank">Neocities</a> sites.</p><p>This is my first coding project so it may be rough around the edges. Thank you for checking it out!</p><p class="mobile-text">This page is not optimized for mobile devices and I do not plan on fixing it. For the best viewing experience, come back on desktop!</p>
+								</div>
+								<div class="column" id="mainbox">
+									<h2>Profile</h2>
+									<img src="images/pfp2.png" style="height: 100px; float: left; margin-right: 10px; margin-bottom: 10px;">
+									<a>* Name: Mikey</a><br>
+									<a>* Age: 19</a><br>
+									<a>* Interests: Retro gaming, old web, retro tech/media, video editing, listening to music</a><br>
+									<div class="marquee-container" style="margin-top: 15px;">
+										<div class="marquee">
+											<img class="im" src="images/akira.jpg"/>
+											<img class="imtop" src="images/Graduation.jpg"/>
+											<img class="imb" src="images/Discovery.png"/>
+											<img class="im" src="images/eva.jpg"/>
+											<img class="imtop" src="images/808s.jpg"/>
+											<img class="imb" src="images/acnl.jpg"/>
+											<img class="im" src="images/acgc.png"/>
+											<img class="im" src="images/pikmin2.jpg"/>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td id="sidetd">
+							<div class="column" id="sidebox">
+								<h1 id="listeningStatus" style="font-family: pixel; font-size: 16px;">Currently Listening to:</h1>
+								<div id="recentSong">
+									<img id="albumCover" src="" alt="Album Cover" style="height: 75px;">
+									<div style="margin-left:5px">
+										<p id="songInfo"></p>
+										<p id="albumArtistInfo"></p>
+									</div>
+								</div>
+								<p id="lastPlayedInfo"></p>
+							</div>
+								<marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3" loop="infinite" style="margin-right: 7px; margin-left: 7px; margin-top: 5px;">
+									<a style="margin-right: 1px;" href="https://loevi.art/" target="_blank"><img src="buttons/loevi.png"></a>
+									<a style="margin-right: 1px;" href="https://dimden.dev/" target="_blank"><img src="buttons/dimden.gif"></a>
+									<a style="margin-right: 1px;" href="https://swirl.neocities.org/" target="_blank"><img src="buttons/swirl.gif"></a>
+									<a style="margin-right: 1px;" href="https://sadgrl.online/" target="_blank"><img src="https://sadgrl.online/assets/images/buttons/sadgrlonline.gif"></a>
+									<a style="margin-right: 1px;" href="https://warp.zone/" target="_blank"><img src="buttons/warpzone.gif"></a>
+									<a style="margin-right: 1px;" href="https://scouts-basement.neocities.org/" target="_blank"><img src="https://files.catbox.moe/nw16vo.gif"></a>
+									<a style="margin-right: 1px;" href="https://slashdiv.neocities.org" target="_blank"><img src="https://i.postimg.cc/0QcYFnHv/8831.gif" height="31" width="88"></a>
+									<a style="margin-right: 1px;" href="https://softheartclinic.neocities.org/home" target="_blank"><img src="buttons/softheartclinic.gif"></a>
+									<a style="margin-right: 1px;" href="https://im-baby.neocities.org/" target="_blank"><img src="buttons/babys.gif"></a>
+									<a style="margin-right: 1px;" href="https://lostlove.neocities.org/" target="_blank"><img src="buttons/lunospace.gif"></a>
+									<a style="margin-right: 1px;" href="https://nenrikido.neocities.org/" target="_blank"><img src="https://dl.dropbox.com/s/265wg2om8bjr5g6/nenrikido_button.gif"/></a>
+									<a style="margin-right: 1px;" href="https://yuentp.neocities.org/" target="_blank"><img src="https://i.imgur.com/cjEGuys.gif"></a>
+									<a style="margin-right: 1px;" href="https://cloudcover.neocities.org/" target="_blank"><img src="buttons/cloudcover.png"></a>
+								</marquee>
+								<marquee direction="right" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3" loop="infinite" style="margin-right: 7px; margin-left: 7px; margin-top: 5px;">
+									<a style="margin-right: 1px;"><img src="buttons/win95.gif"></a>
+									<a style="margin-right: 1px;"><img src="buttons/phonechump.gif"></a>
+									<a style="margin-right: 1px;"><img src="buttons/emulate.gif"></a>
+									<a style="margin-right: 1px;"><img src="buttons/gbcamera.gif"></a>
+									<a style="margin-right: 1px;" href="https://neocities.org/"><img src="buttons/neocities.gif"></a>
+									<a style="margin-right: 1px;" href="https://www.sublimetext.com/"><img src="buttons/sublime.png"></a>
+									<a style="margin-right: 1px;" href="https://neocities.org/"><img src="buttons/delete_instagram.gif"></a>
+									<a style="margin-right: 1px;"><img src="buttons/bestviewedcomp.gif"></a>
+									<a style="margin-right: 1px;"><img src="buttons/1080p.jpg"></a>
+								</marquee>
+								<!--<div>
+									<center>
+										<a href="https://www.penguinjaa.com/"><img src="/buttons/penguinjaa.png"></a><br>
+										<a style="font-family: pixel2; background-color: #a4749a; line-height: 0.2;">Link my website!</a>
+										<textarea rows="3" readonly style="max-width: 180px;"><a href="https://www.penguinjaa.com/" target="_blank"><img src="https://files.catbox.moe/1cinhb.png"></a></textarea><br>
+									</center>
+								</div>-->
+								<div id="statuscafe" style="margin-right: 5px; margin-left: 5px;">
+									<a href="https://status.cafe/users/penguinjaa"><p style="margin-left:5px">Status:</p></a>
+									<div id="statuscafe-content"></div>
+									<div id="statuscafe-username"></div>
+								</div>
+								<!--<div class="column">
+									<p>Currently Feeling...</p>
+									<a href="https://www.imood.com/users/penguinjaa"><img src="https://moods.imood.com/display/uname-penguinjaa/fg-1f1f3b/trans-1/imood.gif" alt="The current mood of penguinjaa at www.imood.com" border="0"></a>
+								</div>-->								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</body>
+</html>

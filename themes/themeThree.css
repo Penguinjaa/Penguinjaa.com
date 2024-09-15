@@ -7,7 +7,7 @@
     --box-header-img: url(/themes/assets/kanye/kanyeheader.png);
     --bgattatch: fixed;
     --bgsize: 100%;
-    --box-border: #303030 5px ridge;
+    --box-border: #303030 1px solid;
     --box-border-radius: none;
     --overlay: 0;
 

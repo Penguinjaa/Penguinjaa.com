@@ -1,0 +1,258 @@
+@font-face{
+    font-family:Pixel;
+    src:url(fonts/RetroGaming.ttf) format("TrueType");
+}
+@font-face{
+    font-family:Pixel2;
+    src:url(fonts/PixelOperator.ttf) format("TrueType");
+}
+@font-face{
+    font-family:Pixel2;
+    src:url(fonts/PixelOperator-Bold.ttf) format("TrueType");
+    font-weight:bold;
+}
+@font-face{
+    font-family:Earth;
+    src:url(fonts/Earth.ttf) format("TrueType");
+}
+@font-face{
+    font-family:ds;
+    src:url(fonts/DS.ttf) format("TrueType");
+}
+html{
+	overflow-x:hidden;
+}
+body,html{
+    font-family:Pixel
+}
+.background{
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-image:url(images/background.png)
+}
+table{
+    display:table;
+    border-collapse:separate;
+    box-sizing:border-box;
+    text-indent:initial;
+    border-spacing:2px;
+    border-color:gray;
+    margin-right:auto;
+    margin-left:auto
+}
+tbody{
+    display:table-row-group;
+    vertical-align:middle;
+    border-color:inherit
+}
+tr{
+    display:table-row;
+    vertical-align:inherit;
+    border-color:inherit
+}
+td{
+    display:table-cell;
+    vertical-align:inherit
+}
+.marquee {
+	animation: marquee 20s linear infinite;
+	white-space: nowrap;
+	font-size: 0;
+	width: 100%;
+}
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+}
+@keyframes marquee {
+	from {transform: translateX(100%); }
+	to {transform: translateX(-100%); }
+}
+footer{
+	font-family: ds;
+	font-size: 20px;
+	text-align: center;
+	color: #6da0a4;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 577px;
+	margin-left: 220px;
+}
+footer a{
+	text-decoration: none;
+}
+#maintd{
+    max-width:575px;
+    vertical-align:baseline
+}
+.column{
+    background:rgba(164,116,154,.9);
+    border:2px solid #503971;
+    border-radius:4px;
+    color:#1f1f3b;
+    padding:10px 15px;
+    margin:5px
+}
+#sidetd{
+    width:250px;
+    max-width:250px;
+    vertical-align: top;
+}
+#lefttd{
+    width:200px;
+    max-width:200px;
+    vertical-align: top
+}
+.leftbarContainer {
+	position: absolute;
+}
+#content{
+    margin-left:22%;
+    margin-right:22%;
+    margin-top: 2%;
+}
+#recentSong{
+    display:flex;
+    align-items:center;
+}
+#albumCover{
+    margin-right:5px
+}
+#recentSong div{
+    font-family:Pixel,sans-serif;
+    font-size:14px;
+    margin-left:10px;
+    text-decoration:none
+}
+#lastPlayedInfo{
+    margin-top:10px
+}
+*{
+    scrollbar-width:auto;
+    scrollbar-color: #cbd9e0 #a4749a
+}
+::-webkit-scrollbar{
+    width:5px;
+    border:1px solid #503971
+}
+::-webkit-scrollbar-track{
+	background-color:rgba(164,116,154,.85)
+}
+::-webkit-scrollbar-thumb{
+    background-color:#503970
+}
+a:link{
+    color:#503970;
+    text-shadow:#a4749a 0 0 1px
+}
+a:visited{
+    color:#503970;
+    text-shadow:#a4749a 0 0 1px
+}
+::selection {
+  background: #503b75;
+  color: #a4749a;
+}
+.todo {
+	font-family: pixel2;
+	font-size: 17px;
+}
+.scroll {
+	max-height: 90vh;
+	overflow: auto;
+}
+textarea {
+  resize: none;
+  background-color: #a4749a;
+  border-width: 2px;
+  border-color: #503b75;
+  border-radius: 2px;
+  outline: none;
+  color: #1f1f3b;
+  font-family: pixel2;
+  font-weight: bold;
+  font-size: 17px;
+}
+#statuscafe {
+    padding: .5em;
+    background:rgba(164,116,154,.9);
+    border:2px solid #503971;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+    font-family: pixel2;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+    color: #1f1f3b;
+}
+#revealButtonContainer {
+        display: none;
+    }
+@media screen and (max-width:550px){
+    #content{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    #sidetd{
+        max-width:130px
+    }
+    #recentSong{
+        flex-direction:column
+    }
+    #leftbarContainer, #sidebarContainer {
+        display: none;
+    }
+
+    #revealButtonContainer {
+        display: block;
+    }
+}
+body::before {
+    content: "";
+    position: fixed;
+    opacity: .2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    background-image: url(/images/overlay.png);
+    background-repeat: all;
+    background-position: 0 0;
+    animation-name: Static;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+    box-shadow: inset 0 0 10em rgb(0 0 0/40%)
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    background-image: url(/images/overlay2.png);
+    background-repeat: all;
+    background-position: 0 0;
+    animation-name: Static;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4)
+}
+@keyframes Static {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 0 4px
+    }
+}

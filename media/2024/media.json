@@ -1,0 +1,788 @@
+{
+    "movies": [
+    	{
+            "title": "Castle In The Sky (1986)",
+            "cover": "movies/castleinthesky.jpg",
+            "rating": "88",
+            "date": "9.13.24",
+            "link": "https://letterboxd.com/penguinjaa/film/castle-in-the-sky/"
+        },
+    	{
+            "title": "The Witch (2015)",
+            "cover": "movies/thewitch.jpg",
+            "rating": "54",
+            "date": "9.7.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-witch-2015/"
+        },
+    	{
+            "title": "Spider-Man 2 (2004)",
+            "cover": "movies/spiderman2.jpg",
+            "rating": "78",
+            "date": "9.7.24",
+            "link": "https://letterboxd.com/penguinjaa/film/spider-man-2/"
+        },
+    	{
+            "title": "Fight Club (1999)",
+            "cover": "movies/fightclub.jpg",
+            "rating": "94",
+            "date": "9.7.24",
+            "link": "https://letterboxd.com/penguinjaa/film/fight-club/"
+        },
+    	{
+            "title": "Parasite (2019)",
+            "cover": "movies/parasite.jpg",
+            "rating": "93",
+            "date": "9.6.24",
+            "link": "https://letterboxd.com/penguinjaa/film/parasite-2019/"
+        },
+        {
+            "title": "Pokémon: The First Movie (1998)",
+            "cover": "movies/pokemon.jpg",
+            "rating": "78",
+            "date": "9.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/pokemon-the-first-movie/"
+        },
+        {
+            "title": "Spider-Man (2002)",
+            "cover": "movies/spiderman.jpg",
+            "rating": "80",
+            "date": "9.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/spider-man/"
+        },
+        {
+            "title": "Deadpool & Wolverine (2024)",
+            "cover": "movies/deadpool3.jpg",
+            "rating": "56",
+            "date": "9.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/deadpool-wolverine/"
+        },
+        {
+            "title": "Animal Crossing: The Movie (2006)",
+            "cover": "movies/animalcrossing.jpg",
+            "rating": "67",
+            "date": "8.30.24",
+            "link": "https://letterboxd.com/penguinjaa/film/animal-crossing-the-movie/"
+        },
+        {
+            "title": "Inside Out 2 (2024)",
+            "cover": "movies/insideout2.jpg",
+            "rating": "71",
+            "date": "8.24.24",
+            "link": "https://letterboxd.com/penguinjaa/film/inside-out-2-2024/"
+        },
+        {
+            "title": "Inside Out (2015)",
+            "cover": "movies/insideout.jpg",
+            "rating": "83",
+            "date": "8.24.24",
+            "link": "https://letterboxd.com/penguinjaa/film/inside-out-2015/"
+        },
+        {
+            "title": "Twisters (2024)",
+            "cover": "movies/twisters.jpg",
+            "rating": "18",
+            "date": "8.24.24",
+            "link": "https://letterboxd.com/penguinjaa/film/twisters/"
+        },
+        {
+            "title": "Ex Machina (2015)",
+            "cover": "movies/ex-machina.jpg",
+            "rating": "90",
+            "date": "6.28.24",
+            "link": "https://letterboxd.com/penguinjaa/film/ex-machina-2015/"
+        },
+        {
+            "title": "The Fall Guy (2024)",
+            "cover": "movies/fallguy.jpg",
+            "rating": "43",
+            "date": "6.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-fall-guy-2024/"
+        },
+        {
+            "title": "Civil War (2024)",
+            "cover": "movies/civilwar.jpg",
+            "rating": "16",
+            "date": "6.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/civil-war-2024/"
+        },
+        {
+            "title": "Over The Hedge (2006)",
+            "cover": "movies/overthehedge.jpg",
+            "rating": "76",
+            "date": "5.29.24",
+            "link": "https://letterboxd.com/penguinjaa/film/over-the-hedge/"
+        },
+        {
+            "title": "Dune: Part One (2021)",
+            "cover": "movies/dune1.jpg",
+            "rating": "66",
+            "date": "4.13.24",
+            "link": "https://letterboxd.com/penguinjaa/film/dune-2021/"
+        },
+        {
+            "title": "Superbad (2007)",
+            "cover": "movies/superbad.jpg",
+            "rating": "94",
+            "date": "4.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/superbad/"
+        },
+        {
+            "title": "The Boy and the Heron (2023)",
+            "cover": "movies/boy-heron.jpg",
+            "rating": "79",
+            "date": "3.24.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-boy-and-the-heron/1/"
+        },
+        {
+            "title": "Office Space (1999)",
+            "cover": "movies/office-space.jpg",
+            "rating": "78",
+            "date": "3.17.24",
+            "link": "https://letterboxd.com/penguinjaa/film/office-space/"
+        },
+        {
+            "title": "Princess Mononoke (1997)",
+            "cover": "movies/princess-mononoke.jpg",
+            "rating": "92",
+            "date": "3.15.24",
+            "link": "https://letterboxd.com/penguinjaa/film/princess-mononoke/"
+        },
+        {
+            "title": "Eternal Sunshine of the Spotless Mind (2004)",
+            "cover": "movies/eternal-sunshine-spotless-mind.jpg",
+            "rating": "88",
+            "date": "3.3.24",
+            "link": "https://letterboxd.com/penguinjaa/film/eternal-sunshine-of-the-spotless-mind/"
+        },
+        {
+            "title": "American Psycho (2000)",
+            "cover": "movies/american-psycho.jpg",
+            "rating": "96",
+            "date": "3.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/american-psycho/"
+        },
+        {
+            "title": "Weathering With You (2019)",
+            "cover": "movies/weathering-with-you.jpg",
+            "rating": "69",
+            "date": "2.23.24",
+            "link": "https://letterboxd.com/penguinjaa/film/weathering-with-you/"
+        },
+        {
+            "title": "My Neighbor Totoro (1988)",
+            "cover": "movies/totoro.jpg",
+            "rating": "82",
+            "date": "2.16.24",
+            "link": "https://letterboxd.com/penguinjaa/film/my-neighbor-totoro/"
+        },
+        {
+            "title": "your name. (2016)",
+            "cover": "movies/your-name.jpg",
+            "rating": "93",
+            "date": "2.7.24",
+            "link": "https://letterboxd.com/penguinjaa/film/your-name/"
+        },
+        {
+            "title": "RoboCop (1987)",
+            "cover": "movies/RoboCop.jpg",
+            "rating": "75",
+            "date": "1.30.24",
+            "link": "https://letterboxd.com/penguinjaa/film/robocop/"
+        },
+        {
+            "title": "Evangelion: 3.0 You Can (Not) Redo (2012)",
+            "cover": "movies/eva3.jpg",
+            "rating": "8",
+            "date": "1.24.24",
+            "link": "https://letterboxd.com/penguinjaa/film/evangelion-30-you-can-not-redo/"
+        },
+        {
+            "title": "Evangelion: 2.0 You Can (Not) Advance (2009)",
+            "cover": "movies/eva2.jpg",
+            "rating": "17",
+            "date": "1.18.24",
+            "link": "https://letterboxd.com/penguinjaa/film/evangelion-20-you-can-not-advance/"
+        },
+        {
+            "title": "Evangelion: 1.0 You Are (Not) Alone (2007)",
+            "cover": "movies/eva1.jpg",
+            "rating": "29",
+            "date": "1.12.24",
+            "link": "https://letterboxd.com/penguinjaa/film/evangelion-10-you-are-not-alone/"
+        },
+        {
+            "title": "Ghost In The Shell (1995)",
+            "cover": "movies/Ghostintheshellposter.jpg",
+            "rating": "95",
+            "date": "1.6.24",
+            "link": "https://letterboxd.com/penguinjaa/film/ghost-in-the-shell/"
+        }
+    ],
+    "albums": [
+    	{
+            "title": "PEEP: The aPROcalypse - Pro Era (2012)",
+            "cover": "albums/aprocalypse.jpg",
+            "rating": "",
+            "date": "9.7.24",
+            "link": "77",
+            "favorite_songs": "Like Water, School High, Natural"
+        },
+    	{
+            "title": "AmeriKKKan Korruption Reloaded - Capital STEEZ (2012)",
+            "cover": "albums/amerikkkan.jpg",
+            "rating": "78",
+            "date": "9.7.24",
+            "link": "",
+            "favorite_songs": "Vibe Ratings, Infinity And Beyond, Doggybag"
+        },
+    	{
+            "title": "ATLiens - Outkast (1996)",
+            "cover": "albums/atliens.jpg",
+            "rating": "87",
+            "date": "9.6.24",
+            "link": "",
+            "favorite_songs": "ATLiens, Elevators, E.T."
+        },
+    	{
+            "title": "Marshall Mathers LP - Eminem (2000)",
+            "cover": "albums/mmlp.jpg",
+            "rating": "91",
+            "date": "8.25.24",
+            "link": "",
+            "favorite_songs": "Stan, Criminal"
+        },
+        {
+            "title": "Slim Shady LP - Eminem (1999)",
+            "cover": "albums/sslp.jpg",
+            "rating": "82",
+            "date": "8.25.24",
+            "link": "",
+            "favorite_songs": "Just Don't Give A F**k, Role Model"
+        },
+        {
+            "title": "Days Before Rodeo - Travis Scott (2014)",
+            "cover": "albums/dbr.jpg",
+            "rating": "82",
+            "date": "8.24.24",
+            "link": "",
+            "favorite_songs": "Drugs You Should Try it, Don't Play"
+        },
+        {
+            "title": "Vaudeville Villain - Viktor Vaughn (2003)",
+            "cover": "albums/vaudeville.jpg",
+            "rating": "86",
+            "date": "8.21.24",
+            "link": "",
+            "favorite_songs": "Let Me Watch, Vaudeville Villain, Mr. Clean"
+        },
+        {
+            "title": "Buzz - NIKI (2024)",
+            "cover": "albums/buzz.jpg",
+            "rating": "66",
+            "date": "8.9.24",
+            "link": "",
+            "favorite_songs": "Buzz, Colossol Loss, Focus"
+        },
+        {
+            "title": "VULTURES 2 - ¥$, Kanye West & Ty Dolla $ign (2024)",
+            "cover": "albums/vultures2.jpg",
+            "rating": "52",
+            "date": "8.3.24",
+            "link": "",
+            "favorite_songs": "Take Off Your Dress, River"
+        },
+        {
+            "title": "I LAY DOWN MY LIFE FOR YOU - JPEGMAFIA (2024)",
+            "cover": "albums/ildmlfy.jpg",
+            "rating": "94",
+            "date": "8.1.24",
+            "link": "",
+            "favorite_songs": "it's dark and hell is hot, either on or off the drugs, JPEGULTRA!"
+        },
+        {
+            "title": "Things Fall Apart - The Roots (1999)",
+            "cover": "albums/things-fall-apart.jpg",
+            "rating": "73",
+            "date": "7.29.24",
+            "link": "",
+            "favorite_songs": "100% Dundee, You Got Me"
+        },
+        {
+            "title": "Take Me To Your Leader - King Geedorah (2003)",
+            "cover": "albums/geedorah.jpg",
+            "rating": "68",
+            "date": "7.29.24",
+            "link": "",
+            "favorite_songs": "Anti-Matter, I Wonder"
+        },
+        {
+            "title": "Faith Of A Mustard Seed - Mustard (2024)",
+            "cover": "albums/mustard-seed.jpg",
+            "rating": "42",
+            "date": "7.26.24",
+            "link": "",
+            "favorite_songs": "Pressured Up, Parking Lot, Mines"
+        },
+        {
+            "title": "Bando Stone and The New World - Childish Gambino (2024)",
+            "cover": "albums/bandostone.jpg",
+            "rating": "76",
+            "date": "7.22.24",
+            "link": "",
+            "favorite_songs": "A Place Where Love Goes, Got To Be"
+        },
+        {
+            "title": "King Of The Mischievous South Vol. 2 - Denzel Curry (2024)",
+            "cover": "albums/kotms2.jpg",
+            "rating": "78",
+            "date": "7.18.24",
+            "link": "",
+            "favorite_songs": "G'Z UP, SKED"
+        },
+        {
+            "title": "Me Against The World - 2Pac (1995)",
+            "cover": "albums/meagainsttheworld.jpg",
+            "rating": "89",
+            "date": "7.13.24",
+            "link": "",
+            "favorite_songs": "Dear Mama, If I Die 2Nite"
+        },
+        {
+            "title": "The Auditorium, Vol. 1 - Common & Pete Rock (2024)",
+            "cover": "albums/auditorium.jpg",
+            "rating": "74",
+            "date": "7.11.24",
+            "link": "",
+            "favorite_songs": "Everything's So Grand, Fortunate"
+        },
+        {
+            "title": "The Death of Slim Shady (Coup de Grâce) - Eminem (2024)",
+            "cover": "albums/tdoss.jpg",
+            "rating": "19",
+            "date": "7.11.24",
+            "link": "",
+            "favorite_songs": "Fuel, Temporary"
+        },
+        {
+            "title": "Head Rush - Channel Tres (2024)",
+            "cover": "albums/headrush.jpg",
+            "rating": "64",
+            "date": "7.1.24",
+            "link": "",
+            "favorite_songs": "Cactus Water, Black & Mild"
+        },
+        {
+            "title": "Samurai - Lupe Fiasco (2024)",
+            "cover": "albums/samurai.jpg",
+            "rating": "75",
+            "date": "7.1.24",
+            "link": "",
+            "favorite_songs": "Mumble Rap, Samurai"
+        },
+        {
+            "title": "Bad Cameo - James Blake & Lil Yachty (2024)",
+            "cover": "albums/badcameo.jpg",
+            "rating": "80",
+            "date": "6.28.24",
+            "link": "",
+            "favorite_songs": "In Grey, Transport Me, Midnight"
+        },
+        {
+            "title": "to hell with it - PinkPantheress (2021)",
+            "cover": "albums/tohellwithit.jpg",
+            "rating": "71",
+            "date": "6.20.24",
+            "link": "",
+            "favorite_songs": "Pain, Passion, Just For Me"
+        },
+        {
+            "title": "HARDSTONE PSYCHO - Don Toliver (2024)",
+            "cover": "albums/hardstone.jpg",
+            "rating": "81",
+            "date": "6.13.24",
+            "link": "",
+            "favorite_songs": "PURPLE RAIN, 4X4, BACKSTREETS"
+        },
+        {
+            "title": "Scarlet - Doja Cat (2023)",
+            "cover": "albums/scarlet.jpg",
+            "rating": "63",
+            "date": "6.13.24",
+            "link": "",
+            "favorite_songs": "Can't Wait, Love Life, WYM Freestyle"
+        },
+        {
+            "title": "TIMELESS - Kaytranada (2024)",
+            "cover": "albums/timeless.jpg",
+            "rating": "67",
+            "date": "6.9.24",
+            "link": "",
+            "favorite_songs": "Spit It Out, Feel A Way, Witchy"
+        },
+        {
+            "title": "4 Your Eyez Only - J. Cole (2016)",
+            "cover": "albums/4yeo.jpg",
+            "rating": "93",
+            "date": "6.7.24",
+            "link": "",
+            "favorite_songs": "4 Your Eyez Only, For Whom The Bell Tolls"
+        },
+        {
+            "title": "11th Dimension - Ski Mask The Slump God (2024)",
+            "cover": "albums/11thdimension.jpg",
+            "rating": "36",
+            "date": "6.7.24",
+            "link": "",
+            "favorite_songs": "Wake Up!, Shibuya"
+        },
+        {
+            "title": "Tetsuo & Youth - Lupe Fiasco (2015)",
+            "cover": "albums/tetsuoyouth.jpg",
+            "rating": "62",
+            "date": "5.28.24",
+            "link": "",
+            "favorite_songs": "Mural, No Scratches"
+        },
+        {
+            "title": "Dangerous Woman - Ariana Grande (2016)",
+            "cover": "albums/dangerouswoman.jpg",
+            "rating": "68",
+            "date": "5.28.24",
+            "link": "",
+            "favorite_songs": "Jason's Song (Gave It Away), Thinking Bout You"
+        },
+        {
+            "title": "Dark Times - Vince Staples (2024)",
+            "cover": "albums/darktimes.jpg",
+            "rating": "72",
+            "date": "5.23.24",
+            "link": "",
+            "favorite_songs": "Etouffee, black&blue"
+        },
+        {
+            "title": "Mos Def & Talib Kweli Are Black Star - Black Star (1998)",
+            "cover": "albums/blackstar1.jpg",
+            "rating": "86",
+            "date": "5.22.24",
+            "link": "",
+            "favorite_songs": "Thieves In The Night, Respiration"
+        },
+        {
+            "title": "Atavista - Childish Gambino (2024)",
+            "cover": "albums/atavista.jpg",
+            "rating": "71",
+            "date": "5.13.24",
+            "link": "",
+            "favorite_songs": "Time, Human Sacrifice"
+        },
+        {
+            "title": "Radical Optimism - Dua Lipa (2024)",
+            "cover": "albums/radical-optimism.jpg",
+            "rating": "44",
+            "date": "5.3.24",
+            "link": "",
+            "favorite_songs": "Whatcha Doing, Anything For Love, Happy For You"
+        },
+        {
+            "title": "u made me a st4r - 4batz (2024)",
+            "cover": "albums/u-made-me-a-star.jpg",
+            "rating": "12",
+            "date": "5.3.24",
+            "link": "",
+            "favorite_songs": "stickerz \"99\", i hate to be alone"
+        },
+        {
+            "title": "\"Awaken, My Love!\" - Childish Gambino (2016)",
+            "cover": "albums/awakenmylove.jpg",
+            "rating": "67",
+            "date": "4.22.24",
+            "link": "",
+            "favorite_songs": "Me And Your Mama, Riot"
+        },
+        {
+            "title": "Section.80 - Kendrick Lamar (2011)",
+            "cover": "albums/section80.jpg",
+            "rating": "76",
+            "date": "4.16.24",
+            "link": "",
+            "favorite_songs": "Hol' Up, Rigamortis"
+        },
+        {
+            "title": "JEFFERY - Young Thug (2016)",
+            "cover": "albums/jeffery.jpg",
+            "rating": "73",
+            "date": "4.15.24",
+            "link": "",
+            "favorite_songs": "Future Swag, Floyd Mayweather"
+        },
+        {
+            "title": "WE STILL DON'T TRUST YOU - Future & Metro Boomin (2024)",
+            "cover": "albums/wsdty.jpg",
+            "rating": "57",
+            "date": "4.12.24",
+            "link": "",
+            "favorite_songs": "Show Of Hands, Overload"
+        },
+        {
+            "title": "Black Yacht Rock Vol. 1 - Pharrell Williams (2024)",
+            "cover": "albums/blackyachtrockv1.jpg",
+            "rating": "48",
+            "date": "4.6.24",
+            "link": "",
+            "favorite_songs": "Dandy Lying, Who Needs Rest?"
+        },
+        {
+            "title": "WE DON'T TRUST YOU - Future & Metro Boomin (2024)",
+            "cover": "albums/we-dont-trust-you.jpg",
+            "rating": "94",
+            "date": "3.22.24",
+            "link": "",
+            "favorite_songs": "Like That, Type Sh*t, WTFYM"
+        },
+        {
+            "title": "9 - Kenny Mason (2024)",
+            "cover": "albums/kenny-9.jpg",
+            "rating": "62",
+            "date": "3.17.24",
+            "link": "",
+            "favorite_songs": "SLIP, US"
+        },
+        {
+            "title": "Man On The Moon: The End Of Day - Kid Cudi (2009)",
+            "cover": "albums/motm1.jpg",
+            "rating": "96",
+            "date": "3.14.24",
+            "link": "",
+            "favorite_songs": "Make Her Say, Up Up & Away"
+        },
+        {
+            "title": "eternal sunshine - Ariana Grande (2024)",
+            "cover": "albums/eternal-sunshine.jpg",
+            "rating": "95",
+            "date": "3.7.24",
+            "link": "",
+            "favorite_songs": "Supernatural, Bye"
+        },
+        {
+            "title": "BLUE LIPS - ScHoolboy Q (2024)",
+            "cover": "albums/blue-lips.jpg",
+            "rating": "98",
+            "date": "3.2.24",
+            "link": "",
+            "favorite_songs": "Blue Slides, THank god 4 me"
+        },
+        {
+            "title": "Lonerism - Tame Impala (2012)",
+            "cover": "albums/Lonerism.jpg",
+            "rating": "74",
+            "date": "2.20.24",
+            "link": "",
+            "favorite_songs": "Feels Like We Only Go Backwards, Why Wont They Talk To Me"
+        },
+        {
+            "title": "Scrapyard - Quadeca (2024)",
+            "cover": "albums/scrapyard.jpg",
+            "rating": "85",
+            "date": "2.16.24",
+            "link": "",
+            "favorite_songs": "TEXAS BLUE, EASIER"
+        },
+        {
+            "title": "VULTURES 1 - ¥$, Kanye West & Ty Dolla $ign (2024)",
+            "cover": "albums/vultures1.jpg",
+            "rating": "65",
+            "date": "2.9.24",
+            "link": "",
+            "favorite_songs": "GOOD (DONT DIE), BURN"
+        },
+        {
+            "title": "THE MOUSE & THE MASK - DANGERDOOM (2005)",
+            "cover": "albums/dangerdoom.jpg",
+            "rating": "65",
+            "date": "2.6.24",
+            "link": "",
+            "favorite_songs": "Benzi Box, Bada Bing"
+        },
+        {
+            "title": "BORN LIKE THIS - MF DOOM (2009)",
+            "cover": "albums/born-like-this.jpg",
+            "rating": "70",
+            "date": "2.6.24",
+            "link": "",
+            "favorite_songs": "LIGHTWORKS, STILL DOPE, SUPERVILLAINZ"
+        },
+        {
+            "title": "MICHAEL - Killer Mike (2023)",
+            "cover": "albums/michael.jpg",
+            "rating": "89",
+            "date": "2.6.24",
+            "link": "",
+            "favorite_songs": "SCIENTISTS & ENGINEERS, SLUMMER"
+        },
+        {
+            "title": "Currents - Tame Impala (2015)",
+            "cover": "albums/currents.jpg",
+            "rating": "84",
+            "date": "1.27.24",
+            "link": "",
+            "favorite_songs": "Yes I'm Changing, Disciples"
+        },
+        {
+            "title": "Heaven Knows - Pink Pantheress (2023)",
+            "cover": "albums/Heaven-Knows.jpg",
+            "rating": "82",
+            "date": "1.27.24",
+            "link": "",
+            "favorite_songs": "Mosquito, The aisle"
+        },
+        {
+            "title": "LP! OFFLINE - JPEGMAFIA (2021)",
+            "cover": "albums/LP.jpg",
+            "rating": "84",
+            "date": "1.23.24",
+            "link": "",
+            "favorite_songs": "HAZARD DUTY PAY!, TIRED, NERVOUS & BROKE"
+        },
+        {
+            "title": "hypochondriac - brakence (2022)",
+            "cover": "albums/hypochondriac.jpg",
+            "rating": "53",
+            "date": "1.14.24",
+            "link": "",
+            "favorite_songs": "intellectual greed, 5g"
+        },
+        {
+            "title": "DOA - ericdoa (2024)",
+            "cover": "albums/doa.jpg",
+            "rating": "62",
+            "date": "1.14.24",
+            "link": "",
+            "favorite_songs": "bigassbearman, dancinwithsomebawdy"
+        },
+        {
+            "title": "american dream - 21 Savage (2024)",
+            "cover": "albums/americandream.jpg",
+            "rating": "24",
+            "date": "1.12.24",
+            "link": "",
+            "favorite_songs": "née-nah, dark days"
+        },
+        {
+            "title": "INSANO - Kid Cudi (2024)",
+            "cover": "albums/insano.jpg",
+            "rating": "8",
+            "date": "1.12.24",
+            "link": "",
+            "favorite_songs": "BLUE SKY"
+        },
+        {
+            "title": "Super Departure - i-dep (2006)",
+            "cover": "albums/superdeparture.jpg",
+            "rating": "63",
+            "date": "1.1.24",
+            "link": "",
+            "favorite_songs": "Sign of Summer, Don't Stop, ジャンプ!"
+        }
+    ],
+        "other": [
+        	{
+                "title": "The Legend Of Zelda Ocarina of Time (1998)",
+                "cover": "other/oot.jpg",
+                "rating": "100",
+                "date": "9.13.24",
+                "link": ""
+            },
+            {
+                "title": "Battleblock Theater (2013)",
+                "cover": "other/bbt.jpg",
+                "rating": "85",
+                "date": "8.29.24",
+                "link": ""
+            },
+            {
+                "title": "Bomb Rush Cyberfunk (2023)",
+                "cover": "other/brc.jpg",
+                "rating": "86",
+                "date": "8.11.24",
+                "link": ""
+            },
+            {
+                "title": "Gen V (2024)",
+                "cover": "other/genv.jpg",
+                "rating": "70",
+                "date": "8.6.24",
+                "link": ""
+            },
+            {
+                "title": "Smiling Friends Season 2 (2024)",
+                "cover": "other/smilingfriends2.jpg",
+                "rating": "86",
+                "date": "6.24.24",
+                "link": ""
+            },
+            {
+                "title": "Arrested Development (2003)",
+                "cover": "other/arrested-development.jpg",
+                "rating": "78",
+                "date": "7.18.24",
+                "link": ""
+            },
+            {
+                "title": "Pokémon LeafGreen (2004)",
+                "cover": "other/leafgreen.jpg",
+                "rating": "85",
+                "date": "6.6.24",
+                "link": ""
+            },
+            {
+                "title": "Cowboy Bebop (1998)",
+                "cover": "other/cowboybebop.jpg",
+                "rating": "96",
+                "date": "6.6.24",
+                "link": ""
+            },
+            {
+                "title": "jeen-yuhs (2022)",
+                "cover": "other/jeenyuhs.jpg",
+                "rating": "72",
+                "date": "5.30.24",
+                "link": ""
+            },
+            {
+                "title": "Paper Mario: The Thousand-Year Door (2004)",
+                "cover": "other/ttyd.jpg",
+                "rating": "93",
+                "date": "5.25.24",
+                "link": ""
+            },
+            {
+                "title": "The Vince Staples Show (2024)",
+                "cover": "other/vince-staples-show.jpg",
+                "rating": "78",
+                "date": "4.15.24",
+                "link": ""
+            },
+            {
+                "title": "Stardew Valley (2016)",
+                "cover": "other/stardew.jpg",
+                "rating": "100",
+                "date": "4.12.24",
+                "link": ""
+            },
+            {
+                "title": "Scott Pilgrim Takes Off (2023)",
+                "cover": "other/scottpilgrimtakesoff.jpg",
+                "rating": "89",
+                "date": "2.6.24",
+                "link": ""
+            },
+            {
+                "title": "The Curse (2024)",
+                "cover": "other/thecurse.jpg",
+                "rating": "77",
+                "date": "1.15.24",
+                "link": ""
+            }
+        ]
+    }
+    

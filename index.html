@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HOME // PENGUINJAA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet">
     <!-- // THEMES // -->
     <link id="themeOne" rel="stylesheet" href="/themes/themeOne.css">
     <link id="themeTwo" rel="stylesheet" href="/themes/themeTwo.css" disabled>
@@ -12,16 +10,22 @@
     <link id="themeFour" rel="stylesheet" href="/themes/themeFour.css" disabled>
     <link id="themeFive" rel="stylesheet" href="/themes/themeFive.css" disabled>
     <link id="themeSix" rel="stylesheet" href="/themes/themeSix.css" disabled>
+    <!-- // IMPORTS // -->
+    <link href="/newstyle.css" rel="stylesheet">
     <link href="/assets/nekowebring.css" rel="stylesheet">
-    <meta name="description" content="HOME // PENGUINJAA">
-    <link rel="icon" href="/assets/favicon.ico"/>
-    <meta content="#f46ee7" data-react-helmet="true" name="theme-color"/>
-    <!-- // SCRIPTS // -->
     <script src="/assets/themes.js" async></script>
     <script src="/assets/lastfm.js" defer></script>
     <script src="/assets/status.js" defer></script>
     <script src="/assets/stats.js" defer></script>
-    <!-- // STYLES // -->
+    <!-- // INFO // -->
+    <link href="/assets/favicon.ico" rel="icon">
+    <title>HOME // PENGUINJAA</title>
+    <meta name="description" content="penguinjaas digital home">
+    <meta content="#a4749a" data-react-helmet="true" name="theme-color"/>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HOME // PENGUINJAA"/>
+    <meta property="og:description" content="penguinjaas digital home"/>
+    <meta property="og:url" content="https://penguinjaa.com/"/>
     <style>
         .blogpost {
             border: var(--blog-border);
@@ -83,15 +87,13 @@
 <body>
     <div id="maincontainer">
         <div id="headercontainer">
-            <div id="header">
-            </div>
+            <div id="header"></div>
             <div id="navbar">
                 <h3><a href="/">HOME</a></h3>
                 <h3><a href="/blog">BLOG</a></h3>
                 <h3><a href="/media">MEDIA</a></h3>
                 <h3><a href="/links">LINKS</a></h3>
                 <h3><a href="/about">ABOUT</a></h3>
-                <!--<img src="/images/assets/new1.gif" height="11px" style="position: absolute; margin-top: 6px; margin-left: 50px; pointer-events: none;">-->
             </div>
         </div>
         <div id="content">
@@ -131,7 +133,7 @@
                          <div class="boxhead">
                              <h2 style="padding: 3px 11px;">FEATURED IMAGE</h2>
                          </div>
-                         <div class="boxbody" style="padding: 0;">
+                         <div class="boxbody" style="padding:0;">
                              <div id="featured-image"></div>
                          </div>
                      </div>
@@ -147,7 +149,7 @@
                                 <p>> CONSOLES</p>
                                 <p>> MEDIA CENTER</p>
                                 <p>> PHOTOS</p>
-                                <p>(put crt cart 3d model here change screen based on hover)</p>
+                                <p>(put crt cart low poly 3d model here change screen based on hover)</p>
                             </div>-->
                             <p>Coming Soon!!!</p><br>
                         </div>
@@ -196,19 +198,21 @@
                         <img src="/images/media-shelf/american-psycho-vhs.jpg" class="mediaitem" alt="American Psycho VHS">
                         <div style="display: flex; flex-direction: column;">
                             <img src="/images/media-shelf/graduation.jpg" style="max-height: 100px; max-width: 100px;" class="mediaitem" alt="Graduation by Kanye West">
-                            <img src="/images/media-shelf/lonerism.jpg" style="max-height: 100px; max-width: 100px;" class="mediaitem" alt="Lonerism by Tame Impala">
+                            <img src="/images/media-shelf/mmfood.jpg" style="max-height: 100px; max-width: 100px;" class="mediaitem" alt="Lonerism by Tame Impala">
                         </div>
                         <img src="/images/media-shelf/spirited-spine.jpg" style="max-height: 200px;" class="mediaitem" alt="Spirited Away VHS">
                         <img src="/images/media-shelf/ttyd-spine.jpg" style="max-height: 200px;" class="mediaitem" alt="Paper Mario: The Thousand-Year Door for Gamecube">
                     </div>
                 </div>
                 <div class="splitcontainer">
-                    <div class="box" style="margin-right: 15px; width: 30%;">
+                    <div class="box" style="margin-right: 15px; width: 35%;">
                         <div class="boxhead">
                             <h2>UPDATES</h2>
                         </div>
                         <div class="boxbody" style="padding: 0; height: 180px;">
-                            <div class="updates"  style="padding: 5px 5px 0 5px;">
+                            <div class="updates"  style="padding: 0 10px; max-width: 215px; height:180px;">
+                            	<h4><b>9.2.24</b></h4><p>> Cleaned up media log</p><p>> Switched method of displaying movies so much cleaner now ^_^</p>
+                                <h4><b>7.11.24</b></h4><p>> About Page overhaul</p><p>> Links Page touchups</p>
                                 <h4><b>6.4.24</b></h4><p>> Media Page overhaul</p><p>> Links Page overhaul (kinda)</p><p>> New Guestbook</p><p>> Switched to Max's lastfm code</p><p>> Tiny bit of mobile cleaning</p><p>> Cleaned up some disgusting code</p>
                                 <h4><b>5.13.24</b></h4><p>> joined nekowebring</p><p>> added follow on nekoweb button</p><p>> touched up little things</p>
                                 <h4><b>*v4.44* - 3.18.24</b></h4><p>NEW LAYOUT!!</p>
@@ -237,8 +241,6 @@
                         </div>
                         <div class="boxbody" style="height: 165px; overflow-y: scroll; padding-bottom: 0;">
                             <ul style="padding-left: 15px;margin: 0;">
-                                <li><p>> Blog Rework</p></li>
-                                <li><p>> About Me Rework</p></li>
                                 <li><p>> Finish shrines</p></li>
                                 <li><p>> Make icons for media pages</p></li>
                                 <li><p>> set up retro zone</p></li>
@@ -260,7 +262,7 @@
                     </div>
                     <div class="boxbody">
                         <div style="display: flex; align-items: center;">
-                            <img src="/images/assets/pfp2.jpg" style="width: 75px; margin-right: 15px;">
+                            <img src="/about/sable.jpg" style="width: 75px; margin-right: 15px;">
                             <div>
                                 <h3 style="margin: 0;">Penguinjaa</h3>
                                 <h5 style="margin: 0;">zen and monklike</h5>
@@ -360,15 +362,23 @@
                     </div>
                     <div class="boxbody" style="padding: 0; padding-top: 10px; image-rendering: pixelated;">
                         <marquee scrollamount="3" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" style="margin-top: -3px;">
-                            <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button6.gif"></a>
+                            <a href="https://nekoweb.org/" target="_blank"><img src="https://nekoweb.org/assets/buttons/button6.gif" loading="lazy"></a>
                             <a href="https://dimden.dev/" target="_blank"><img src="/images/buttons/dimden.gif" loading="lazy"></a>
                             <a href="https://alienheadshitkid.neocities.org/" target="_blank"><img src="/images/buttons/alienhead.gif" loading="lazy"></a>
                             <a href="https://candlelitsmiles.neocities.org/" target="_blank"><img src="/images/buttons/candlebutton.png" loading="lazy"></a>
                             <a href="https://rice.nekoweb.org/" target="_blank"><img src="https://rice.nekoweb.org/ricebutton.png" loading="lazy"></a>
+                            <a href="https://sloan.nekoweb.org/" target="_blank"><img src="/images/buttons/sloan-button.gif" loading="lazy"></a>
                             <a href="https://yuentp.neocities.org/" target="_blank"><img src="/images/buttons/chaos.gif" loading="lazy"></a>
+                            <a href="https://trademarkhell.net/" target="_blank"><img src="https://trademarkhell.net/tmsspecialhell.png" loading="lazy"></a>
                             <a href="https://caitsith.neocities.org/" target="_blank"><img src="/images/buttons/caitbutton.gif" loading="lazy"></a>
+                            <a href="https://unit00.neocities.org/" target="_blank"><img src="/images/buttons/unit00.gif"></a>
                             <a href="https://darkosparko.nekoweb.org/" target="_blank"><img src="/images/buttons/darko.png" loading="lazy"></a>
+                            <a href="https://vexlopy.nekoweb.org/" target="_blank"><img src="https://vexlopy.nekoweb.org/button.gif" loading="lazy"></a>
                             <a href="https://newshirt.nekoweb.org/" target="_blank"><img src="/images/buttons/newshirt.jpg" loading="lazy"></a>
+                            <a href="https://eye.nekoweb.org/" target="_blank"><img src="https://eye.nekoweb.org/images/sitebutton.gif" loading="lazy"></a>
+                            <a href="https://makoenergy.nekoweb.org/" target="_blank"><img src="/images/buttons/mako.gif"></a>
+                            <a href="https://deeply.nekoweb.org" target="_blank"><img src="https://deeply.nekoweb.org/assets/buttons/dee.gif"></a>
+                            <a href="https://maphren.neocities.org/" target="_blank"><img src="https://maphren.neocities.org/imgs/buttons/maphren.gif"></a>
                             <a href="https://districts.nekoweb.org/index.html" target="_blank"><img src="/images/buttons/districts.png" loading="lazy"></a>
                             <a href="https://amemoia.nekoweb.org/" target="_blank"><img src="https://amemoia.nekoweb.org/resources/buttons/amemoia.png"></a>
                             <a href="https://swirl.neocities.org/" target="_blank"><img src="/images/buttons/swirl.gif" loading="lazy"></a>
@@ -382,6 +392,13 @@
                             <a href="https://scouts-basement.neocities.org/" target="_blank"><img src="https://files.catbox.moe/nw16vo.gif" loading="lazy"></a>
                             <a href="https://kelprot.neocities.org/" target="_blank"><img src="https://files.catbox.moe/la8alb.gif" loading="lazy"/></a>
                             <a href="https://warp.zone/" target="_blank"><img src="/images/buttons/warpzone.gif" loading="lazy"/></a>
+                            <a href="https://kyubiworld.nekoweb.org/" target="_blank"><img src="/images/buttons/fbc411.gif"></a>
+                            <a href="https://snails.nekoweb.org" target="_blank"><img src="/images/buttons/snail.png"></a>
+                            <a href="https://softsy.nekoweb.org" target="_blank"><img src="https://softsy.nekoweb.org/softsy_button.gif"></a>
+                            <a href="https://kanade.nekoweb.org" target="_blank"><img src="https://kanade.nekoweb.org/images/button.gif"></a>
+                            <a href="https://raizinc0re.nekoweb.org/" target="_blank"><img src="/images/buttons/raizin.png"></a>
+                            <a href="https://kyubiworld.nekoweb.org/" target="_blank"><img src="/images/buttons/lelbutton.gif"></a>
+                            <a href="https://buttons.nekoweb.org/" target="_blank"><img alt="Neko Buttons" src="https://buttons.nekoweb.org/img/nekobuttons.png"></a>
                         </marquee>
                     </div>
                 </div>

@@ -1,0 +1,107 @@
+@font-face {
+	font-family: "pixel";
+	src: url("/assets/fonts/PixelOperator.ttf");
+	font-display: swap;
+}
+@font-face {
+	font-family: "pixel2";
+	src: url("/assets/fonts/PixelOperator-Bold.ttf");
+	font-display: swap;
+}
+html {
+    background: var(--background);
+}
+#header {
+    height: 200px;
+    background-image: var(--header-img);
+    background-size: cover;
+}
+#navbar {
+    background: repeating-linear-gradient(180deg,var(--head-color),var(--head-color) 3px,var(--head-stripe-color) 3px,var(--head-stripe-color) 6px);
+    font-family: "pixel", Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: var(--box-border);
+    bottom: -40px;
+}
+#navbar h3 {
+    margin: 0;
+    align-content: center;
+    color: var(--h3-color);
+    text-shadow: var(--h3-shadow);
+    font-size: 1.5em;
+}
+#headercontainer {
+    border: var(--box-border);
+    width: 100%;
+    margin-bottom: 15px;
+}
+#content {
+    margin: auto;
+    width: 1000px;
+    min-width: 600px;
+    margin-top: 25px;
+}
+#contentbox {
+    display: flex;
+    width: 100%;
+}
+#leftcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    width: 70%;
+}
+#rightcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.box {
+    border: var(--box-border);
+    width: 100%;
+}
+.boxtitle {
+    background-color: var(--head-color);
+    border-right: var(--head-stripe-color) 4px;
+    display: flex;
+    align-items: center;
+    width: min-content;
+    padding: 7px;
+    margin: 0;
+}
+.boxtitle h2 {
+    color: var(--h2-color);
+    text-shadow: var(--h2-shadow);
+    font-family: "pixel2", Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    margin: 0 10px 0 0;
+}
+.boxhead img {
+    width: 35px;
+    margin-right: 10px;
+}
+.boxhead {
+    background: repeating-linear-gradient(180deg,var(--head-color),var(--head-color) 3px,var(--head-stripe-color) 3px,var(--head-stripe-color) 6px);
+}
+.boxbody {
+    font-family: "pixel", Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    color: var(--body-color);
+    background-color: var(--box-background);
+    padding: 10px;
+}
+.boxbody p {
+    margin: 0;
+}
+a:link {
+    color: inherit;
+}
+a:visited {
+    color: inherit;
+}
+@media screen and (max-width:550px){
+
+}

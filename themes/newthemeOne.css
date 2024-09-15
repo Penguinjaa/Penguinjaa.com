@@ -1,0 +1,41 @@
+/* // NEO TOKYO // */
+
+:root {
+    /* HEADER */
+    --header-img: url(/themes/assets/neo-tokyo/neo-banner.gif);
+
+    /* HEADERS */
+    --head-color: #b8ff3c;
+    --head-stripe-color: #f4ffb3;
+    --head-shadow: var(--h2-color) 0 0 10px;
+
+    /* BODY */
+    --background: url(/themes/assets/neo-tokyo/neobg.jpg);
+    --body-color: #1b0088;
+    --box-background: #f1f6f2;
+    --box-border: #C0C0C0 4px ridge;
+
+    /* h1 */
+    --h1-color: #77a13e;
+    --h1-shadow: 0 0 10px var(--h1-color);
+
+    /* h2 */
+    --h2-color: #1b0088;
+    --h2-shadow: 0 0 10px var(--h2-color);
+
+    /* h3 */
+    --h3-color: #00cd95;
+    --h3-shadow: 0 0 10px var(--h3-color);
+
+    /* h4 */
+    --h4-color: #80d6a5;
+    --h4-shadow: 0 0 10px var(--h4-color);
+
+    /* h5 */
+    --h5-color: #ff7ddb;
+    --h5-shadow: 0 0 10px var(--h5-color);
+
+    /* h6 */
+    --h6-color: #f99cf5;
+    --h6-shadow: 0 0 10px var(--h6-color);
+}
