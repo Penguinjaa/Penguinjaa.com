@@ -5,26 +5,27 @@
     --header-img: url(/themes/assets/neo-tokyo/neo-banner.gif);
 
     /* HEADERS */
-    --head-color: #b8ff3c;
-    --head-stripe-color: #f4ffb3;
+    --stripes: repeating-linear-gradient(180deg,var(--head-color),var(--head-color) 6px,var(--head-stripe-color) 6px,var(--head-stripe-color) 12px);
+    --head-color: #000000;
+    --head-stripe-color: #2C201C;
     --head-shadow: var(--h2-color) 0 0 10px;
 
     /* BODY */
     --background: url(/themes/assets/neo-tokyo/neobg.jpg);
-    --body-color: #1b0088;
-    --box-background: #f1f6f2;
+    --body-color: #FEEDFD;
+    --box-background: #000000;
     --box-border: #C0C0C0 4px ridge;
 
     /* h1 */
-    --h1-color: #77a13e;
+    --h1-color: #ff7ddb;
     --h1-shadow: 0 0 10px var(--h1-color);
 
     /* h2 */
-    --h2-color: #1b0088;
+    --h2-color: #ff7ddb;
     --h2-shadow: 0 0 10px var(--h2-color);
 
     /* h3 */
-    --h3-color: #00cd95;
+    --h3-color: #05CD95;
     --h3-shadow: 0 0 10px var(--h3-color);
 
     /* h4 */
