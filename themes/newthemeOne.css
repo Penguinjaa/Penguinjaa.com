@@ -2,41 +2,41 @@
 
 :root {
     /* HEADER */
-    --header-img: url(/themes/assets/neo-tokyo/neo-banner.gif);
+    --header-img: #D1BB9E no-repeat;
 
     /* HEADERS */
     --stripes: repeating-linear-gradient(180deg,var(--head-color),var(--head-color) 6px,var(--head-stripe-color) 6px,var(--head-stripe-color) 12px);
-    --head-color: #000000;
-    --head-stripe-color: #2C201C;
+    --head-color: #AF8F6F;
+    --head-stripe-color: #74512D;
     --head-shadow: var(--h2-color) 0 0 10px;
 
     /* BODY */
-    --background: url(/themes/assets/neo-tokyo/neobg.jpg);
-    --body-color: #FEEDFD;
-    --box-background: #000000;
-    --box-border: #C0C0C0 4px ridge;
+    --background: #A79277 no-repeat fixed;
+    --body-color: #543310;
+    --box-background: #F8F4E1;
+    --box-border: var(--head-stripe-color) 4px solid;
 
     /* h1 */
-    --h1-color: #ff7ddb;
+    --h1-color: #543310;
     --h1-shadow: 0 0 10px var(--h1-color);
 
     /* h2 */
-    --h2-color: #ff7ddb;
+    --h2-color: #543310;
     --h2-shadow: 0 0 10px var(--h2-color);
 
     /* h3 */
-    --h3-color: #05CD95;
+    --h3-color: #543310;
     --h3-shadow: 0 0 10px var(--h3-color);
 
     /* h4 */
-    --h4-color: #80d6a5;
+    --h4-color: #543310;
     --h4-shadow: 0 0 10px var(--h4-color);
 
     /* h5 */
-    --h5-color: #ff7ddb;
+    --h5-color: #543310;
     --h5-shadow: 0 0 10px var(--h5-color);
 
     /* h6 */
-    --h6-color: #f99cf5;
+    --h6-color: #543310;
     --h6-shadow: 0 0 10px var(--h6-color);
 }
