@@ -1,6 +1,27 @@
 {
     "movies": [
     	{
+            "title": "The Truman Show (1998)",
+            "cover": "movies/trumanshow.jpg",
+            "rating": "95",
+            "date": "9.27.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-truman-show/"
+        },
+    	{
+            "title": "The Lego Movie (2014)",
+            "cover": "movies/legomovie.jpg",
+            "rating": "68",
+            "date": "9.20.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-lego-movie/"
+        },
+    	{
+            "title": "Spider-Man 3 (2007)",
+            "cover": "movies/spiderman3.jpg",
+            "rating": "72",
+            "date": "9.14.24",
+            "link": "https://letterboxd.com/penguinjaa/film/spider-man-3/"
+        },
+    	{
             "title": "Castle In The Sky (1986)",
             "cover": "movies/castleinthesky.jpg",
             "rating": "88",
@@ -220,11 +241,43 @@
     ],
     "albums": [
     	{
+            "title": "Nintindo Soul - Terrace Martin (2024)",
+            "cover": "albums/nintindo.jpg",
+            "rating": "76",
+            "date": "9.22.24",
+            "link": "",
+            "favorite_songs": "Forver, Can I Love You"
+        },
+    	{
+            "title": "Pointy Heights - Fousheé (2024)",
+            "cover": "albums/pointy-heights.jpg",
+            "rating": "67",
+            "date": "9.20.24",
+            "link": "",
+            "favorite_songs": "flowers, feel like home, still around"
+        },
+    	{
+            "title": "Mixtape Pluto - Future (2024)",
+            "cover": "albums/mixtape-pluto.jpg",
+            "rating": "74",
+            "date": "9.20.24",
+            "link": "",
+            "favorite_songs": "PRESS THE BUTTON, TOO FAST"
+        },
+    	{
+            "title": "The Don Killuminati: The 7 Day Theory - Makaveli (2Pac) (1996)",
+            "cover": "albums/7dt.jpg",
+            "rating": "89",
+            "date": "9.17.24",
+            "link": "",
+            "favorite_songs": "Toss It Up, To Live And Die In L.A."
+        },
+    	{
             "title": "PEEP: The aPROcalypse - Pro Era (2012)",
             "cover": "albums/aprocalypse.jpg",
-            "rating": "",
+            "rating": "77",
             "date": "9.7.24",
-            "link": "77",
+            "link": "",
             "favorite_songs": "Like Water, School High, Natural"
         },
     	{
@@ -685,6 +738,13 @@
         }
     ],
         "other": [
+        	{
+                "title": "Beserk (1997)",
+                "cover": "other/beserk.jpg",
+                "rating": "89",
+                "date": "9.19.24",
+                "link": ""
+            },
         	{
                 "title": "The Legend Of Zelda Ocarina of Time (1998)",
                 "cover": "other/oot.jpg",
