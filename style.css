@@ -36,14 +36,13 @@
 }
 #header {
     height: 200px;
-    background-image: var(--header-img);
+    background: var(--header-img);
 }
 #navbar {
     height: 45px;
     display: flex;
     justify-content: space-evenly;
-    background-image: var(--box-header-img);
-    background-color: var(--header-color);
+    background: var(--box-header-img);
     border-top: var(--box-border);
 }
 #content {

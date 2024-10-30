@@ -6,7 +6,7 @@
     --background-img: url(/themes/assets/neo-tokyo/neobg.jpg);
     --box-header-img: url(/themes/assets/neo-tokyo/content-body-bg-neo.jpg);
     --bgattatch: fixed;
-    --bgsize: 100%;
+    --bgsize: cover;
     --box-border: #C0C0C0 4px ridge;
     --box-border-radius: none;
     --overlay: 0;
