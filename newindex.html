@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- // THEMES // -->
-    <link id="themeOne" rel="stylesheet" href="/themes/newthemeOne.css">
+    <link id="themeOne" rel="stylesheet" href="/themes/neotokyo.css">
     <link id="themeTwo" rel="stylesheet" href="/themes/themeTwo.css" disabled>
-    <link id="themeThree" rel="stylesheet" href="/themes/themeThree.css" disabled>
+    <link id="themeThree" rel="stylesheet" href="/themes/kanye.css" disabled>
     <link id="themeFour" rel="stylesheet" href="/themes/themeFour.css" disabled>
     <link id="themeFive" rel="stylesheet" href="/themes/themeFive.css" disabled>
     <link id="themeSix" rel="stylesheet" href="/themes/themeSix.css" disabled>
@@ -17,6 +17,7 @@
     <script src="/assets/lastfm.js" defer></script>
     <script src="/assets/status.js" defer></script>
     <script src="/assets/stats.js" defer></script>
+    <script src="/assets/marquee.js" async></script>
     <!-- // INFO // -->
     <link href="/assets/favicon.ico" rel="icon">
     <title>X:\HOME</title>
@@ -26,55 +27,106 @@
     <meta property="og:title" content="HOME // PENGUINJAA"/>
     <meta property="og:description" content="penguinjaas digital home"/>
     <meta property="og:url" content="https://penguinjaa.com/"/>
-    <style>
-
-    </style>
 </head>
 <body>
     <div id="content">
         <div id="header">
             <div id="headerimg">
+                <div id="theme-buttons">
+                    <button onclick="setTheme('NEO-TOKYO')" data-theme="neo-tokyo" data-theme-name="Neo-Tokyo"></button>
+                    <button onclick="setTheme('MONOCHROME')" data-theme="monochrome" data-theme-name="Monochrome"></button>
+                    <button onclick="setTheme('KANYE UNIVERSE CITY')" data-theme="kanye-universe" data-theme-name="Kanye Universe City"></button>
+                    <button onclick="setTheme('v3.33')" data-theme="v3.33" data-theme-name="v3.33"></button>
+                    <button onclick="setTheme('v2.22')" data-theme="v2.22" data-theme-name="v2.22"></button>
+                    <button onclick="setTheme('v1.11')" data-theme="v1.11" data-theme-name="v1.11"></button>
+                </div>                
             </div>
             <div id="head-marquee">
-                <marquee>
-                    <h3>WELCOME TO PENGUINJAA.COM // SOMETIMES YOU NEED TO GET RID OF EVERYTHING</h3>
+                <marquee scrollamount="7">
+                    <h3 id="top-marquee">loading...</h3>
                 </marquee>
-            </div>
+            </div>                     
         </div>
         <div id="body">
             <div class="left-column">
                 <div class="container"> 
-                    <h3><a href="/">HOME</a></h3>
-                    <h3><a href="/blog">BLOG</a></h3>
-                    <h3><a href="/media">MEDIA</a></h3>
-                    <h3><a href="/links">LINKS</a></h3>
-                    <h3><a href="/about">ABOUT</a></h3>
+                    <div class="container-title">
+                        <h1>NAVIGATION</h1>
+                    </div>
+                    <div class="container-content">
+                        <span><img src="/assets/icons/welcome.png"><h3><a href="/">HOME</a></h3></span>
+                        <span><img src="/assets/icons/welcome.png"><h3><a href="/blog">BLOG</a></h3></span>
+                        <span><img src="/assets/icons/welcome.png"><h3><a href="/media">MEDIA</a></h3></span>
+                        <span><img src="/assets/icons/welcome.png"><h3><a href="/links">LINKS</a></h3></span>
+                        <span><img src="/assets/icons/welcome.png"><h3><a href="/about">ABOUT</a></h3></span>
+                    </div>
+                </div>
+                <div class="container"> 
+                    <div class="container-title">
+                        <h1>WEBRINGS</h1>
+                    </div>
+                    <div class="container-content">
+                        
+                    </div>
+                </div>
+                <div class="container"> 
+                    <div class="container-title">
+                        <h1>UPDATES</h1>
+                    </div>
+                    <div class="container-content">
+                        
+                    </div>
                 </div>
             </div>
             <div class="main-column">
                 <div class="container"> 
-                    <h1>HEADER 1</h1>
-                    <h2>Header 2</h2>
-                    <h3>Header 3</h3>
-                    <h4>Header 4</h4>
-                    <h5>Header 5</h5>
-                    <h6>Header 6</h6>
-                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ullamcorper mollis elit viverra dis hac viverra non cursus ultricies. Cursus aptent purus cubilia per nisl cursus sodales. Ullamcorper nisi suspendisse lectus sodales ligula nunc himenaeos urna aliquet. Auctor ipsum vivamus convallis tortor pulvinar fermentum. Diam tempor imperdiet ullamcorper quam placerat luctus mi. Dictum nullam suscipit dolor praesent sociosqu; dolor hac. Nascetur cursus nisl vehicula nulla lacinia vestibulum est integer nullam. Gravida rhoncus vehicula rutrum eros sapien posuere vehicula donec nec. Imperdiet conubia finibus turpis per dis in nisi fames. Nisi dapibus bibendum bibendum; lacinia bibendum curabitur at. Eget elit maecenas sollicitudin sed senectus amet litora felis velit. Cursus penatibus natoque vivamus magnis ultrices pharetra ultricies. Morbi platea congue torquent suspendisse vulputate. Feugiat quam etiam accumsan molestie dignissim phasellus. Hendrerit molestie nibh curabitur facilisis, vitae consectetur. Sodales ut finibus massa, feugiat augue lobortis taciti cubilia. Etiam eget nisl consectetur pulvinar ad nam. Ridiculus tortor sed mi taciti mattis eleifend dignissim. Laoreet facilisi molestie litora massa dis vehicula ullamcorper erat. Posuere tempus augue magnis mollis euismod penatibus cras lobortis. Bibendum fringilla sollicitudin interdum risus natoque cursus eget. Fusce hendrerit integer quis aliquet turpis mauris. Eros neque ac dapibus ultricies cursus nisl. Elementum praesent faucibus maecenas faucibus torquent lacus pulvinar quam torquent. Diam dapibus ullamcorper iaculis suscipit ligula curae. Quis efficitur ridiculus orci ridiculus fames finibus ridiculus primis risus. Maximus mi aliquet faucibus class semper etiam consequat hac feugiat. Lobortis molestie molestie nascetur convallis in tempus. Sociosqu faucibus arcu erat convallis mollis mattis. Auctor dictum dignissim diam mi nisi aliquam ad euismod. Dolor eu viverra ante lacus fringilla aptent sapien. Cras lacinia egestas mollis enim nullam quisque. Natoque metus taciti scelerisque eleifend sollicitudin; ornare dolor dignissim. Parturient accumsan auctor tincidunt netus elementum turpis. Dolor elementum quisque et elit ligula egestas habitasse nisl nascetur. Malesuada aliquam leo ligula dapibus varius. Nunc aliquam posuere aptent dictum imperdiet interdum id. Arcu egestas pharetra netus taciti magna euismod curae sociosqu. Nostra egestas justo est nisl magna natoque. Mollis malesuada leo egestas metus feugiat class dis rutrum magna. Dolor placerat justo rutrum torquent dapibus conubia dis mattis.</p>
+                    <div class="container-title">
+                        <h1>TEST</h1>
+                    </div>
+                    <div class="container-content">
+                        <h1>HEADER 1</h1>
+                        <h2>Header 2</h2>
+                        <h3>Header 3</h3>
+                        <h4>Header 4</h4>
+                        <h5>Header 5</h5>
+                        <h6>Header 6</h6>
+                        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ullamcorper mollis elit viverra dis hac viverra non cursus ultricies. Cursus aptent purus cubilia per nisl cursus sodales. Ullamcorper nisi suspendisse lectus sodales ligula nunc himenaeos urna aliquet. Auctor ipsum vivamus convallis tortor pulvinar fermentum. Diam tempor imperdiet ullamcorper quam placerat luctus mi. Dictum nullam suscipit dolor praesent sociosqu; dolor hac. Nascetur cursus nisl vehicula nulla lacinia vestibulum est integer nullam. Gravida rhoncus vehicula rutrum eros sapien posuere vehicula donec nec. Imperdiet conubia finibus turpis per dis in nisi fames. Nisi dapibus bibendum bibendum; lacinia bibendum curabitur at. Eget elit maecenas sollicitudin sed senectus amet litora felis velit. Cursus penatibus natoque vivamus magnis ultrices pharetra ultricies. Morbi platea congue torquent suspendisse vulputate. Feugiat quam etiam accumsan molestie dignissim phasellus. Hendrerit molestie nibh curabitur facilisis, vitae consectetur. Sodales ut finibus massa, feugiat augue lobortis taciti cubilia. Etiam eget nisl consectetur pulvinar ad nam. Ridiculus tortor sed mi taciti mattis eleifend dignissim. Laoreet facilisi molestie litora massa dis vehicula ullamcorper erat.</p>
+                    </div>
                 </div>
             </div>
             <div class="right-column">
                 <div class="container"> 
-                    <h1>Header 1</h1>
-                    <h2>Header 2</h2>
-                    <h3>Header 3</h3>
-                    <h4>Header 4</h4>
-                    <h5>Header 5</h5>
-                    <h6>Header 6</h6>
-                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ullamcorper mollis elit viverra dis hac viverra non cursus ultricies. Cursus aptent purus cubilia per nisl cursus sodales. Ullamcorper nisi suspendisse lectus sodales ligula nunc himenaeos urna aliquet. Auctor ipsum vivamus convallis tortor pulvinar fermentum. Diam tempor imperdiet ullamcorper quam placerat luctus mi. Dictum nullam suscipit dolor praesent sociosqu; dolor hac. Nascetur cursus nisl vehicula nulla lacinia vestibulum est integer nullam. Gravida rhoncus vehicula rutrum eros sapien posuere vehicula donec nec. Imperdiet conubia finibus turpis per dis in nisi fames. Nisi dapibus bibendum bibendum; lacinia bibendum curabitur at. Eget elit maecenas sollicitudin sed senectus amet litora felis velit. Cursus penatibus natoque vivamus magnis ultrices pharetra ultricies. Morbi platea congue torquent suspendisse vulputate. Feugiat quam etiam accumsan molestie dignissim phasellus. Hendrerit molestie nibh curabitur facilisis, vitae consectetur. Sodales ut finibus massa, feugiat augue lobortis taciti cubilia. Etiam eget nisl consectetur pulvinar ad nam. Ridiculus tortor sed mi taciti mattis eleifend dignissim. Laoreet facilisi molestie litora massa dis vehicula ullamcorper erat. Posuere tempus augue magnis mollis euismod penatibus cras lobortis. Bibendum fringilla sollicitudin interdum risus natoque cursus eget. Fusce hendrerit integer quis aliquet turpis mauris. Eros neque ac dapibus ultricies cursus nisl. Elementum praesent faucibus maecenas faucibus torquent lacus pulvinar quam torquent. Diam dapibus ullamcorper iaculis suscipit ligula curae. Quis efficitur ridiculus orci ridiculus fames finibus ridiculus primis risus. Maximus mi aliquet faucibus class semper etiam consequat hac feugiat. Lobortis molestie molestie nascetur convallis in tempus. Sociosqu faucibus arcu erat convallis mollis mattis. Auctor dictum dignissim diam mi nisi aliquam ad euismod. Dolor eu viverra ante lacus fringilla aptent sapien. Cras lacinia egestas mollis enim nullam quisque. Natoque metus taciti scelerisque eleifend sollicitudin; ornare dolor dignissim. Parturient accumsan auctor tincidunt netus elementum turpis. Dolor elementum quisque et elit ligula egestas habitasse nisl nascetur. Malesuada aliquam leo ligula dapibus varius. Nunc aliquam posuere aptent dictum imperdiet interdum id. Arcu egestas pharetra netus taciti magna euismod curae sociosqu. Nostra egestas justo est nisl magna natoque. Mollis malesuada leo egestas metus feugiat class dis rutrum magna. Dolor placerat justo rutrum torquent dapibus conubia dis mattis.</p>
+                    <div class="container-title">
+                        <h1>PROFILE</h1>
+                    </div>
+                    <div class="container-content">
+                        <div style="display: flex; align-items: center;">
+                            <img src="/about/sable.jpg" style="width: 75px; margin-right: 15px;">
+                            <div>
+                                <h3 style="margin: 0;">Penguinjaa</h3>
+                                <h5 style="margin: 0;">zen and monklike</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container"> 
+                    <div class="container-title">
+                        <h1>NOW LISTENING...</h1>
+                    </div>
+                    <div class="container-content">
+                        
+                    </div>
+                </div>
+                <div class="container"> 
+                    <div class="container-title">
+                        <h1>STATUS</h1>
+                    </div>
+                    <div class="container-content">
+                        
+                    </div>
                 </div>
             </div>
         </div>
-        <div style="height: 1000px;"></div>
     </div>
 </body>
 <footer>

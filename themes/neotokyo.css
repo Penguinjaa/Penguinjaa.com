@@ -4,8 +4,8 @@
     /* COLORS */
     --color-1: #2E1F1B; /*  */
     --color-2: #FEEDFD; /*  */
-    --color-3: #F36EE7; /*  */
-    --color-4: #7D4D74; /*  */
+    --color-3: #CD4039; /*  */
+    --color-4: #EA7A78; /*  */
     --color-5: #03F3C6; /*  */
     --color-6: #00CC95; /*  */
     --color-7: #CD4039; /*  */
@@ -14,19 +14,22 @@
     --color-10: #D1A344; /*  */
     --color-11: #CE5D3C; /*  */
     --color-12: #A13A3F; /*  */
-    --color-13: #6E7C63; /*  */
+    --color-13: rgba(255, 255, 255, 0.06); /*  */
     --color-14: #9E977D; /*  */
+
+    --marquee-text: #CD4039;
+    --marquee-shadow: 0px 0px 5px #cd403984;
 
     /* HEADER */
     --header-img: no-repeat url("/themes/assets/a2.jpg");
 
     /* HEADERS */
-    --stripes: repeating-linear-gradient(180deg,var(--color-1),var(--color-1) 3px,#000 3px,#000 6px);
+    --stripes: repeating-linear-gradient(180deg,var(--color-13),var(--color-13) 3px,#000 3px,#000 6px);
     --grid: linear-gradient(-90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),#000;
     --gridsize: 4px 4px,4px 4px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px;
 
     /* BODY */
     --background: url(/themes/assets/monochrome/crater.jpg) no-repeat fixed center/120vw;
     --body-color: #543310;
-    --box-border: #8c8c8c 4px ridge;
+    --box-border: #8B8798 4px ridge;
 }
