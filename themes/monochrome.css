@@ -1,0 +1,31 @@
+/* // MONOCHROME // */
+
+ :root {
+     /* HEADER */
+     --header-img: no-repeat url("/themes/assets/monochrome/explosion-banner.jpg");
+ 
+     /* COLORS */
+     --p-color: #FEEDFD;
+     --h1-color: #d6d1bc;
+     --h2-color: #d6d1bc;
+     --h3-color: #d6d1bc;
+     --h4-color: #d6d1bc;
+     --h5-color: #d6d1bc;
+     --h6-color: #d6d1bc;
+ 
+     --marquee-text: #d6d1bc;
+     --marquee-shadow: 0px 0px 5px #d6d1bcbe;
+ 
+     --scroll-color: #000000;
+     --scroll-thumb-color: #d6d1bc;
+ 
+     /* HEADERS */
+     --stripes: repeating-linear-gradient(180deg,#ffffff0f,#ffffff0f 3px,#000 3px,#000 6px);
+     --grid: linear-gradient(-90deg, #ffffff0f 1px, transparent 1px),linear-gradient(#ffffff0f 1px, transparent 1px),#000;
+     --gridsize: 4px 4px,4px 4px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px;
+ 
+     /* BODY */
+     --background: url(/themes/assets/monochrome/crater.jpg) no-repeat fixed center;
+     --body-color: #543310;
+     --box-border: #8B8798 4px ridge;
+ }

@@ -1,7 +1,7 @@
 /* FONTS */
 @font-face {
 	font-family: "LCD";
-	src: url("/assets/fonts/lcddot_tr.ttf");
+	src: url("/assets/fonts/LCD.woff") format(woff);
 	font-display: swap;
 }
 @font-face {
@@ -17,12 +17,13 @@
 /* BODY */
 body {
     background: var(--background);
+    background-size: cover;
 }
 #content {
     margin: auto;
-    width: 70vw;
+    width: 1000px;
     min-width: 600px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 #header {
     border: var(--box-border);
@@ -42,16 +43,16 @@ body {
 }
 #head-marquee h3 {
     font-family: LCD;
-    font-size: 62.5px;
-    margin: 9px;
+    font-size: 39px;
+    margin: 1px 0 0 0;
     color: var(--marquee-text);
-    text-shadow: var(--marquee-shadow)
+    text-shadow: var(--marquee-shadow);
 }
 #body {
     display: flex;
 }
 .left-column {
-    width: 18%;
+    width: 180px;
 }
 .main-column {
     width: 57%;
@@ -79,7 +80,13 @@ body {
 .container-content span img {
     width: 16px;
     height: 16px;
-    margin-right: 5px;
+    margin-right: 10px;
+}
+.container-content p {
+    margin-top: 0px;
+}
+.container-content hr {
+    margin-top: 19px;
 }
 .container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
     margin: 0;
@@ -88,26 +95,26 @@ body {
 
 /* TEXT */
 p {
-    color: var(--color-2);
+    color: var(--p-color);
 }
 h1 {
-    color: var(--color-3);
-    text-shadow: 0px 0px 5px #cd403984;
+    color: var(--h1-color);
+    text-shadow: 0px 0px 5px var(--h1-color);
 }
 h2 {
-    color: var(--color-3);
+    color: var(--h2-color);
 }
 h3 {
-    color: var(--color-7);
+    color: var(--h3-color);
 }
 h4 {
-    color: var(--color-9);
+    color: var(--h4-color);
 }
 h5 {
-    color: var(--color-11);
+    color: var(--h5-color);
 }
 h6 {
-    color: var(--color-13);
+    color: var(--h6-color);
 }
 p, h1, h2, h3, h4, h5, h6 {
     font-family: content;
@@ -118,6 +125,77 @@ a:link{
 a:visited{
     color: inherit;
 }
+html::-webkit-scrollbar {
+    width: 7px;
+    background-color: var(--scroll-color);
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+}
+
+#socials {
+    padding: 8px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+textarea {
+    color: #d6d1bc;
+    background-color: #0f0f0f;
+    resize: none;
+}
+textarea::-webkit-scrollbar {
+    display: none;
+}
+.updates {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 175px;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.updates h4 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.updates p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.updates::-webkit-scrollbar {display: none;}
+
+/* LASTFM */
+#recentSong{
+    display:flex;
+    align-items:center;
+}
+#albumCover{
+    margin-right:5px;
+}
+#recentSong div{
+    margin-left:10px;
+    text-decoration:none;
+}
+#lastPlayedInfo{
+    margin-top:10px;
+}
+.listening {
+    text-transform: uppercase;
+}
+#listening {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+#listening img {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+}
+#listening h3 {margin: 0;}
+#listening h5 {margin: 0;}
+
 
 /* THEME SELECTOR */
 #theme-buttons {
@@ -131,7 +209,7 @@ a:visited{
     width: 16px;
     height: 16px;
     position: relative;
-    border: 2px #000 solid;
+    border: 1px #000 solid;
     cursor: pointer;
     background: transparent;
     padding: 0;
@@ -160,9 +238,16 @@ a:visited{
 #theme-buttons button:hover::after {
     opacity: 1;
 }
-#theme-buttons button[data-theme="neo-tokyo"] { --color1: #CD4039; --color2: #000; }
+#theme-buttons button[data-theme="downtown"] { --color1: #CD4039; --color2: #000; }
+#theme-buttons button[data-theme="neo-tokyo"] { --color1: #f46ee7; --color2: #2e1f1a; }
 #theme-buttons button[data-theme="monochrome"] { --color1: #fff; --color2: #000; }
 #theme-buttons button[data-theme="kanye-universe"] { --color1: #EE135B; --color2: #4BB0DE; }
 #theme-buttons button[data-theme="v3.33"] { --color1: #24171C; --color2: #D6D1BC; }
 #theme-buttons button[data-theme="v2.22"] { --color1: #AD81A4; --color2: #513971; }
 #theme-buttons button[data-theme="v1.11"] { --color1: #9FB0FB; --color2: #F8E6FF; }
+
+@media screen and (max-width:1000px){
+    #content {
+        width: 99vw;
+    }
+}

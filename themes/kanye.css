@@ -1,27 +1,26 @@
 /* // KANYE UNIVERSE CITY // */
 
 :root {
-    /* COLORS */
-    --color-1: #2E1F1B; /*  */
-    --color-2: #FEEDFD; /*  */
-    --color-3: #CD4039; /*  */
-    --color-4: #EA7A78; /*  */
-    --color-5: #03F3C6; /*  */
-    --color-6: #00CC95; /*  */
-    --color-7: #CD4039; /*  */
-    --color-8: #EA7A78; /*  */
-    --color-9: #EFD073; /*  */
-    --color-10: #D1A344; /*  */
-    --color-11: #CE5D3C; /*  */
-    --color-12: #A13A3F; /*  */
-    --color-13: rgba(255, 255, 255, 0.06); /*  */
-    --color-14: #9E977D; /*  */
+     /* HEADER */
+     --header-img: no-repeat url("/themes/assets/a2.jpg");
+ 
+     /* COLORS */
+     --p-color: #FEEDFD;
+     --h1-color: #ed145b;
+     --h2-color: #ed145b;
+     --h3-color: #ed145b;
+     --h4-color: #03F3C6;
+     --h5-color: #03F3C6;
+     --h6-color: #03F3C6;
+
+     --scroll-color: #000;
+     --scroll-thumb-color: #8B8798;
 
     --marquee-text: #FEE403;
     --marquee-shadow: #fee5038e;
 
     /* HEADER */
-    --header-img: no-repeat url("/themes/assets/a2.jpg");
+    --header-img: no-repeat url("/themes/assets/kanye/glow-banner.jpg");
 
     /* HEADERS */
     --stripes: linear-gradient(180deg,#06415F, #000);
@@ -29,7 +28,8 @@
     --gridsize: 4px 4px,4px 4px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px;
 
     /* BODY */
-    --background: url(/themes/assets/monochrome/crater.jpg) no-repeat fixed center/120vw;
+    --background: #000 no-repeat fixed center;
     --body-color: #543310;
     --box-border: #8B8798 4px ridge;
 }
+
