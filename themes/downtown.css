@@ -15,9 +15,12 @@ colors{
     --h4-color: #CE5D3C;
     --h5-color: #CE5D3C;
     --h6-color: #CE5D3C;
+    --i-color: #EFD073;
+
+    --selection: #ce5e3c62;
 
     --marquee-text: #CD4039;
-    --marquee-shadow: 0px 0px 5px #cd403984;
+    --marquee-shadow: 0px 0px 7px #CD4039;
 
     --scroll-color: #2E1F1B;
     --scroll-thumb-color: #A13A3F;
@@ -30,5 +33,5 @@ colors{
     /* BODY */
     --background: url(/themes/assets/monochrome/crater.jpg) no-repeat fixed center;
     --body-color: #543310;
-    --box-border: #8B8798 4px ridge;
+    --box-border: #C0C0C0 4px ridge;
 }

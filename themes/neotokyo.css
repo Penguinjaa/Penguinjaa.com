@@ -12,9 +12,12 @@
      --h4-color: #00cd95;
      --h5-color: #f46ee7;
      --h6-color: #00cd95;
+     --i-color: #EFD073;
+
+     --selection: #7D4D74;
  
      --marquee-text: #CD4039;
-     --marquee-shadow: 0px 0px 5px #cd403984;
+     --marquee-shadow: 0px 0px 7px #CD4039;
  
      --scroll-color: #000;
      --scroll-thumb-color: #2e1f1a;
@@ -27,5 +30,5 @@
      /* BODY */
      --background: url(/themes/assets/neo-tokyo/neobg.jpg) no-repeat fixed center;
      --body-color: #543310;
-     --box-border: #8B8798 4px ridge;
+     --box-border: #C0C0C0 4px ridge;
  }

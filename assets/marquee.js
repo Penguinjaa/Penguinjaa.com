@@ -37,7 +37,7 @@ async function getStats() {
 
 function updateMarquee() {
     document.getElementById('top-marquee').innerHTML = 
-        `WELCOME TO PENGUINJAA.COM // YOU ARE VISITOR #${visitorsCount} // ${getCurrentTime()} // ${quote}`;
+        `WELCOME TO PENGUINJAA.COM v5.55 // YOU ARE VISITOR #${visitorsCount} // ${getCurrentTime()} // ${quote}`;
 }
 
 getStats();

@@ -2,23 +2,25 @@
 
 :root {
      /* HEADER */
-     --header-img: no-repeat url("/themes/assets/a2.jpg");
+    --header-img: no-repeat url("/themes/assets/a2.jpg");
  
      /* COLORS */
-     --p-color: #FEEDFD;
-     --h1-color: #ed145b;
-     --h2-color: #ed145b;
-     --h3-color: #ed145b;
-     --h4-color: #03F3C6;
-     --h5-color: #03F3C6;
-     --h6-color: #03F3C6;
+    --p-color: #FEEDFD;
+    --h1-color: #ed145b;
+    --h2-color: #ed145b;
+    --h3-color: #77d4ff;
+    --h4-color: #77d4ff;
+    --h5-color: #ed145b;
+    --h6-color: #77d4ff;
+    --i-color: #FEE403;
 
-     --scroll-color: #000;
-     --scroll-thumb-color: #8B8798;
+    --selection: #06415F;
 
     --marquee-text: #FEE403;
-    --marquee-shadow: #fee5038e;
+    --marquee-shadow: 0px 0px 7px #FEE403;
 
+    --scroll-color: #000;
+    --scroll-thumb-color: #8B8798;
     /* HEADER */
     --header-img: no-repeat url("/themes/assets/kanye/glow-banner.jpg");
 
@@ -30,6 +32,6 @@
     /* BODY */
     --background: #000 no-repeat fixed center;
     --body-color: #543310;
-    --box-border: #8B8798 4px ridge;
+    --box-border: #303030 4px ridge;
 }
 
