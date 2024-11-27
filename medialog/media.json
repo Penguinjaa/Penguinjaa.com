@@ -52,7 +52,7 @@
             "title": "The Fly (1986)",
             "cover": "images/movies/thefly.jpg",
             "rating": "94",
-            "review": "this might be my favorite movie i watched this october, its so cool. surprised i dont hear more about this movie",
+            "review": "this might be my favorite movie i watched this october, its so cool. surprised i dont hear more about it",
             "date": "10.25.24",
             "link": "https://letterboxd.com/penguinjaa/film/the-fly-1986/"
         },
@@ -387,6 +387,15 @@
     ],
     "albums": [
         {
+            "title": "Angel Eyes - Kenny Mason (2024)",
+            "cover": "images/albums/angeleyes.jpg",
+            "rating": "67",
+            "review": "i love kenny mason but his recent output has been pretty stale. this is a step in the right direction but still doesnt have that juice that angelic hoodrat and the supercut had.",
+            "date": "11.22.24",
+            "link": "",
+            "favorite_songs": "HOW TO SURVIVE, ANGEL EYES, BEEN HAVIN"
+        },
+        {
             "title": "GNX - Kendrick Lamar (2024)",
             "cover": "images/albums/gnx.jpg",
             "rating": "92",
@@ -394,6 +403,15 @@
             "date": "11.22.24",
             "link": "",
             "favorite_songs": "wacced out murals, heart pt. 6, squabble up"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>VOIR DIRE - Earl Sweatshirt & The Alchemist (2023)",
+            "cover": "images/albums/voirdire.jpg",
+            "rating": "83",
+            "review": "ive always liked earl but couldnt really get into him since his songs are so short, but i think ive started to grow ok with the shorter songs. gave this a relisten cause i was addicted to sentry and yeah i really like this whole album. excited to give his other projects a relisten now!",
+            "date": "11.21.24",
+            "link": "",
+            "favorite_songs": "Sentry, Vin Skully, The Caliphate"
         },
     	{
             "title": "Petrichor - 070 Shake (2024)",
@@ -480,7 +498,7 @@
             "title": "Pointy Heights - Fousheé (2024)",
             "cover": "images/albums/pointy-heights.jpg",
             "rating": "67",
-            "review": "test",
+            "review": "loved her last album, and this ones pretty good as well. less standout tracks for me but still enjoyed it",
             "date": "9.20.24",
             "link": "",
             "favorite_songs": "flowers, feel like home, still around"
@@ -489,7 +507,7 @@
             "title": "Mixtape Pluto - Future (2024)",
             "cover": "images/albums/mixtape-pluto.jpg",
             "rating": "64",
-            "review": "test",
+            "review": "least notable project from future this year imo. plutoski is really funny tho.",
             "date": "9.20.24",
             "link": "",
             "favorite_songs": "PRESS THE BUTTON, TOO FAST"
@@ -498,7 +516,7 @@
             "title": "The Don Killuminati: The 7 Day Theory - Makaveli (2Pac) (1996)",
             "cover": "images/albums/7dt.jpg",
             "rating": "89",
-            "review": "test",
+            "review": "listening to this for the first time cause kendrick has been referencing bomb first and just this album in general a lot. out of the tupac albums ive listened to so far, i think this is my favorite. been coming back to this a lot.",
             "date": "9.17.24",
             "link": "",
             "favorite_songs": "Toss It Up, To Live And Die In L.A."
@@ -507,7 +525,7 @@
             "title": "PEEP: The aPROcalypse - Pro Era (2012)",
             "cover": "images/albums/aprocalypse.jpg",
             "rating": "77",
-            "review": "test",
+            "review": "glad to be finally going through the pro era stuff, always been interested but havent gotten to it until now. this is a really good tape like water is incredible",
             "date": "9.7.24",
             "link": "",
             "favorite_songs": "Like Water, School High, Natural"
@@ -516,7 +534,7 @@
             "title": "AmeriKKKan Korruption Reloaded - Capital STEEZ (2012)",
             "cover": "images/albums/amerikkkan.jpg",
             "rating": "78",
-            "review": "test",
+            "review": "of course theres some mixing issues but man steez raps at such a high level R.I.P. man :(",
             "date": "9.7.24",
             "link": "",
             "favorite_songs": "Vibe Ratings, Infinity And Beyond, Doggybag"
@@ -525,7 +543,7 @@
             "title": "ATLiens - Outkast (1996)",
             "cover": "images/albums/atliens.jpg",
             "rating": "87",
-            "review": "test",
+            "review": "cant believe i took so long to get to this one, i love its. aquemini is still my fav but love to have more outkast in the playlist",
             "date": "9.6.24",
             "link": "",
             "favorite_songs": "ATLiens, Elevators, E.T."
@@ -533,26 +551,26 @@
     	{
             "title": "<i class='fa-solid fa-rotate'></i>Marshall Mathers LP - Eminem (2000)",
             "cover": "images/albums/mmlp.jpg",
-            "rating": "91",
-            "review": "test",
+            "rating": "98",
+            "review": "ive always hailed this as the best em album and i think i still stand on that, no misses for me and has his best rapping performances.",
             "date": "8.25.24",
             "link": "",
-            "favorite_songs": "Stan, Criminal"
+            "favorite_songs": "Stan, Criminal, Marshall Mathers"
         },
         {
             "title": "<i class='fa-solid fa-rotate'></i>Slim Shady LP - Eminem (1999)",
             "cover": "images/albums/sslp.jpg",
             "rating": "95",
-            "review": "test",
+            "review": "going through the eminem albums again with a new mind!! was a big em fan growing up but grew out of him. but i know these first few albums are incredible and wanted to give them proper relistens with my new ears. i actually loved this album a lot more now than i did when i was a kid. brain damage is a perfect song front to back wowowwowow",
             "date": "8.25.24",
             "link": "",
-            "favorite_songs": "Just Don't Give A F**k, Role Model"
+            "favorite_songs": "Brain Damage, Just Don't Give A F**k, Role Model"
         },
         {
             "title": "<i class='fa-solid fa-rotate'></i>Days Before Rodeo - Travis Scott (2014)",
             "cover": "images/albums/dbr.jpg",
             "rating": "82",
-            "review": "test",
+            "review": "i did give this a listen a long time ago, but dont remember caring much for it. now that its on streaming i gave it a proper relisten and i really liked it!! glad to have this on streaming",
             "date": "8.24.24",
             "link": "",
             "favorite_songs": "Drugs You Should Try it, Don't Play"
@@ -560,8 +578,8 @@
         {
             "title": "Vaudeville Villain - Viktor Vaughn (2003)",
             "cover": "images/albums/vaudeville.jpg",
-            "rating": "95",
-            "review": "test",
+            "rating": "98",
+            "review": "i think a lot of people dont really like the viktor vaughn albums? maybe its just the second one idk but i absolutely LOVE this album. its not my favorite doom album by any means but almost definitely my most listened to this year.",
             "date": "8.21.24",
             "link": "",
             "favorite_songs": "Let Me Watch, G.M.C., Vaudeville Villain"
@@ -570,7 +588,7 @@
             "title": "Buzz - NIKI (2024)",
             "cover": "images/albums/buzz.jpg",
             "rating": "66",
-            "review": "test",
+            "review": "a little bit of a letdown compared to nicole but thats ok nicole is a perfect album. still gonna take some tracks into my playlist.",
             "date": "8.9.24",
             "link": "",
             "favorite_songs": "Buzz, Colossol Loss, Focus"
@@ -578,8 +596,8 @@
         {
             "title": "VULTURES 2 - ¥$, Kanye West & Ty Dolla $ign (2024)",
             "cover": "images/albums/vultures2.jpg",
-            "rating": "32",
-            "review": "test",
+            "rating": "18",
+            "review": "im the biggest kanye fan in the whole wide world but theres just no defending this. its so sad to see him using AI and just not really being present suring the creation process. its especially sad cause ive heard the leaks and there is just a better version of this album that they could have released but opted to release ai and mumble verses. only positive thing to come out of this was getting a full version of take off your dress, and even that was a yeezy.com exclusive. river is pretty good too but they kinda butchered it a lil bit on the release version.",
             "date": "8.3.24",
             "link": "",
             "favorite_songs": "Take Off Your Dress, River"
@@ -587,8 +605,8 @@
         {
             "title": "I LAY DOWN MY LIFE FOR YOU - JPEGMAFIA (2024)",
             "cover": "images/albums/ildmlfy.jpg",
-            "rating": "94",
-            "review": "test",
+            "rating": "98",
+            "review": "oh my goddd the sample on either on or off the drugs is crazy!!!! this is 100% cracking top 3 of the year for me. production is top notch as always.",
             "date": "8.1.24",
             "link": "",
             "favorite_songs": "it's dark and hell is hot, either on or off the drugs, JPEGULTRA!"
@@ -597,7 +615,7 @@
             "title": "Things Fall Apart - The Roots (1999)",
             "cover": "images/albums/things-fall-apart.jpg",
             "rating": "73",
-            "review": "test",
+            "review": "this is a very unique hiphop album i wish i listened to this sooner it scratched an itch i didnt really know i had.",
             "date": "7.29.24",
             "link": "",
             "favorite_songs": "100% Dundee, You Got Me"
@@ -606,7 +624,7 @@
             "title": "Take Me To Your Leader - King Geedorah (2003)",
             "cover": "images/albums/geedorah.jpg",
             "rating": "68",
-            "review": "test",
+            "review": "a few standout tracks, and a lot of good ones, but this album hasnt really clicked for me like the other doom albums.",
             "date": "7.29.24",
             "link": "",
             "favorite_songs": "Anti-Matter, I Wonder"
@@ -615,16 +633,16 @@
             "title": "Faith Of A Mustard Seed - Mustard (2024)",
             "cover": "images/albums/mustard-seed.jpg",
             "rating": "42",
-            "review": "test",
+            "review": "mustard is a great producer, but he needed some better rappers on here for it to be a great album. however the good tracks are really good. some of my fav songs this year.",
             "date": "7.26.24",
             "link": "",
-            "favorite_songs": "Pressured Up, Parking Lot, Mines"
+            "favorite_songs": "Pressured Up, Parking Lot, A Song For Mom"
         },
         {
             "title": "Bando Stone and The New World - Childish Gambino (2024)",
             "cover": "images/albums/bandostone.jpg",
             "rating": "76",
-            "review": "test",
+            "review": "havent really gotten into gambino yet, but this was a good album and seems like a good starting point for me. the production is super nice and i like gambino on here. interested to see the movie that goes along with it.",
             "date": "7.22.24",
             "link": "",
             "favorite_songs": "A Place Where Love Goes, Got To Be"
@@ -633,7 +651,7 @@
             "title": "King Of The Mischievous South Vol. 2 - Denzel Curry (2024)",
             "cover": "images/albums/kotms2.jpg",
             "rating": "78",
-            "review": "test",
+            "review": "we need more albums like this. just a bunch of rappers rapping to rap. i like that its also platforming some smaller artists like mike dimes i love mike dimes. i will say im a little disappointed with project pat on sked, i prefer the single version that just has kenny mason.",
             "date": "7.18.24",
             "link": "",
             "favorite_songs": "G'Z UP, SKED"
@@ -641,8 +659,8 @@
         {
             "title": "Me Against The World - 2Pac (1995)",
             "cover": "images/albums/meagainsttheworld.jpg",
-            "rating": "89",
-            "review": "test",
+            "rating": "84",
+            "review": "this is my first pac album!! listened to this while playing ocarina of time and it was a good vibe. in hindsight, i havent been coming back to it as much as his other albums but i do really enjoy every song.",
             "date": "7.13.24",
             "link": "",
             "favorite_songs": "Dear Mama, If I Die 2Nite"
@@ -651,7 +669,7 @@
             "title": "The Auditorium, Vol. 1 - Common & Pete Rock (2024)",
             "cover": "images/albums/auditorium.jpg",
             "rating": "74",
-            "review": "test",
+            "review": "love to see a common album in 2024 AND its getting good reviews!!! everythings so grand is a top 10 song of the year",
             "date": "7.11.24",
             "link": "",
             "favorite_songs": "Everything's So Grand, Fortunate"
@@ -660,7 +678,7 @@
             "title": "The Death of Slim Shady (Coup de Grâce) - Eminem (2024)",
             "cover": "images/albums/tdoss.jpg",
             "rating": "19",
-            "review": "test",
+            "review": "i was actually cautiously optimistic for this album, it seemed like em had an actual plan and was excited to release something for the first time in forever. unfortunately the concept just was not executed properly. its so weird the way he did it i dont understand why he would make it seem like one big themed album then have most of that theme happen in like 3 songs. it was almost interesting just hearing slim shady but em just isnt like that anymore and it didnt have the same fire slim shady had. hes also just out of touch and yaps about a lot of nonsense on here. i did really like fuel though, happy to hear jid on an eminem song and eminem did great on here too. temporary is a good song for one listen as well.",
             "date": "7.11.24",
             "link": "",
             "favorite_songs": "Fuel, Temporary"
@@ -669,7 +687,7 @@
             "title": "Head Rush - Channel Tres (2024)",
             "cover": "images/albums/headrush.jpg",
             "rating": "64",
-            "review": "test",
+            "review": "i heard cactus water in some spotify mix and really liked it so i was waiting for this album. im not disappointed but also just not really impressed. just some jammy music that i wont mind coming on in my playlist.",
             "date": "7.1.24",
             "link": "",
             "favorite_songs": "Cactus Water, Black & Mild"
@@ -678,7 +696,7 @@
             "title": "Samurai - Lupe Fiasco (2024)",
             "cover": "images/albums/samurai.jpg",
             "rating": "75",
-            "review": "test",
+            "review": "im so happy lupe is dropping stuff man. i was a little worried seeing a song called mumble rap on the tracklist but it was actually good so hooray.",
             "date": "7.1.24",
             "link": "",
             "favorite_songs": "Mumble Rap, Samurai"
@@ -687,7 +705,7 @@
             "title": "Bad Cameo - James Blake & Lil Yachty (2024)",
             "cover": "images/albums/badcameo.jpg",
             "rating": "80",
-            "review": "test",
+            "review": "i loved lets start here a lot and im glad yachty is still doing that kinda stuff i think it works really well. never been a big james blake head but i liked him on here. great album to listen to late at night",
             "date": "6.28.24",
             "link": "",
             "favorite_songs": "In Grey, Transport Me, Midnight"
@@ -695,8 +713,8 @@
         {
             "title": "to hell with it - PinkPantheress (2021)",
             "cover": "images/albums/tohellwithit.jpg",
-            "rating": "71",
-            "review": "test",
+            "rating": "66",
+            "review": "its pretty impressive how much she improved between this and heaven knows. none of the tracks stuck out to me but it was a fun listen.",
             "date": "6.20.24",
             "link": "",
             "favorite_songs": "Pain, Passion, Just For Me"
@@ -704,17 +722,17 @@
         {
             "title": "HARDSTONE PSYCHO - Don Toliver (2024)",
             "cover": "images/albums/hardstone.jpg",
-            "rating": "81",
-            "review": "test",
+            "rating": "92",
+            "review": "this is the don toliver album ive been waiting for!!!! hes really come into his own on this one. im so happy that people are liking this a lot too. life of a don might still be my favorite but this is what i would call THE don toliver album he really uses his talent in a refreshing way on here.",
             "date": "6.13.24",
             "link": "",
-            "favorite_songs": "PURPLE RAIN, 4X4, BACKSTREETS"
+            "favorite_songs": "HARDSTONE NATIONAL ANTHEM, GLOCK, BACKSTREETS"
         },
         {
             "title": "Scarlet - Doja Cat (2023)",
             "cover": "images/albums/scarlet.jpg",
-            "rating": "63",
-            "review": "test",
+            "rating": "68",
+            "review": "saw she had a collab with teezo so i listened to the full album. ive been meaning to check her out for a bit now and im glad i did i love her energy. shes got that kanye type of crazy and on some great writing on the more introspective songs on here.",
             "date": "6.13.24",
             "link": "",
             "favorite_songs": "Can't Wait, Love Life, WYM Freestyle"
@@ -722,8 +740,8 @@
         {
             "title": "TIMELESS - Kaytranada (2024)",
             "cover": "images/albums/timeless.jpg",
-            "rating": "67",
-            "review": "test",
+            "rating": "72",
+            "review": "omg i love kaytranada so much... a few tracks that i didnt love, but the good ones are incredible. witchy and spit it out have been on repeat.",
             "date": "6.9.24",
             "link": "",
             "favorite_songs": "Spit It Out, Feel A Way, Witchy"
@@ -732,7 +750,7 @@
             "title": "<i class='fa-solid fa-rotate'></i>4 Your Eyez Only - J. Cole (2016)",
             "cover": "images/albums/4yeo.jpg",
             "rating": "93",
-            "review": "test",
+            "review": "im a little bit of a cole hater generally, but this is a near perfect album. its clear and concise its a really powerful and well put together project.",
             "date": "6.7.24",
             "link": "",
             "favorite_songs": "4 Your Eyez Only, For Whom The Bell Tolls"
@@ -741,7 +759,7 @@
             "title": "11th Dimension - Ski Mask The Slump God (2024)",
             "cover": "images/albums/11thdimension.jpg",
             "rating": "36",
-            "review": "test",
+            "review": "its just kinda another ski mask album and im not the biggest ski mask fan. wouldve loved to see some more unique songs on here",
             "date": "6.7.24",
             "link": "",
             "favorite_songs": "Wake Up!, Shibuya"
@@ -750,7 +768,7 @@
             "title": "Tetsuo & Youth - Lupe Fiasco (2015)",
             "cover": "images/albums/tetsuoyouth.jpg",
             "rating": "62",
-            "review": "test",
+            "review": "TETSUO!!! AKIRA REFERENCE!!!! i didnt really care for much on this album but mural is just a masterpiece of a song.",
             "date": "5.28.24",
             "link": "",
             "favorite_songs": "Mural, No Scratches"
@@ -759,7 +777,7 @@
             "title": "Dangerous Woman - Ariana Grande (2016)",
             "cover": "images/albums/dangerouswoman.jpg",
             "rating": "68",
-            "review": "test",
+            "review": "ive been avoiding these older ari albums, but i decided to check this out and i liked it. not a big fan of the rap features but other than that theres some great standouts on here.",
             "date": "5.28.24",
             "link": "",
             "favorite_songs": "Jason's Song (Gave It Away), Thinking Bout You"
@@ -768,7 +786,7 @@
             "title": "Dark Times - Vince Staples (2024)",
             "cover": "images/albums/darktimes.jpg",
             "rating": "72",
-            "review": "test",
+            "review": "didnt like this one as much as my brother but maybe ill just need to give it another listen. etouffee and black&blue are great tracks though",
             "date": "5.23.24",
             "link": "",
             "favorite_songs": "Etouffee, black&blue"
@@ -777,7 +795,7 @@
             "title": "Mos Def & Talib Kweli Are Black Star - Black Star (1998)",
             "cover": "images/albums/blackstar1.jpg",
             "rating": "86",
-            "review": "test",
+            "review": "mos def is amazing man. glad to have finally listened to this. been playing it a lot lately",
             "date": "5.22.24",
             "link": "",
             "favorite_songs": "Thieves In The Night, Respiration"
@@ -786,7 +804,7 @@
             "title": "Atavista - Childish Gambino (2024)",
             "cover": "images/albums/atavista.jpg",
             "rating": "71",
-            "review": "test",
+            "review": "never listened to the original of this album but i quite liked this. production is amazing",
             "date": "5.13.24",
             "link": "",
             "favorite_songs": "Time, Human Sacrifice"
@@ -795,7 +813,7 @@
             "title": "Radical Optimism - Dua Lipa (2024)",
             "cover": "images/albums/radical-optimism.jpg",
             "rating": "44",
-            "review": "test",
+            "review": "so much more boring than future nostalgia im sad",
             "date": "5.3.24",
             "link": "",
             "favorite_songs": "Whatcha Doing, Anything For Love, Happy For You"
@@ -804,7 +822,7 @@
             "title": "u made me a st4r - 4batz (2024)",
             "cover": "images/albums/u-made-me-a-star.jpg",
             "rating": "12",
-            "review": "test",
+            "review": "didnt expect to love this, but wow its worse than i couldve imagined. only really listened for the ye feature and meh.",
             "date": "5.3.24",
             "link": "",
             "favorite_songs": "stickerz \"99\", i hate to be alone"
@@ -813,7 +831,7 @@
             "title": "\"Awaken, My Love!\" - Childish Gambino (2016)",
             "cover": "images/albums/awakenmylove.jpg",
             "rating": "67",
-            "review": "test",
+            "review": "this is gonna need some relistend before i can properly review it tbh",
             "date": "4.22.24",
             "link": "",
             "favorite_songs": "Me And Your Mama, Riot"
@@ -822,7 +840,7 @@
             "title": "<i class='fa-solid fa-rotate'></i>Section.80 - Kendrick Lamar (2011)",
             "cover": "images/albums/section80.jpg",
             "rating": "76",
-            "review": "test",
+            "review": "i listened to this a while ago but its been so long and all the songs slowly faded out of my playlist. so now im back and i appreciate this project a lot more now.",
             "date": "4.16.24",
             "link": "",
             "favorite_songs": "Hol' Up, Rigamortis"
@@ -830,8 +848,8 @@
         {
             "title": "JEFFERY - Young Thug (2016)",
             "cover": "images/albums/jeffery.jpg",
-            "rating": "73",
-            "review": "test",
+            "rating": "64",
+            "review": "not too big on young thug aside from some features and that track on the metro album. but i enjoyed some tracks on this album. its just so 2016 i do kinda love that",
             "date": "4.15.24",
             "link": "",
             "favorite_songs": "Future Swag, Floyd Mayweather"
@@ -840,16 +858,16 @@
             "title": "WE STILL DON'T TRUST YOU - Future & Metro Boomin (2024)",
             "cover": "images/albums/wsdty.jpg",
             "rating": "57",
-            "review": "test",
+            "review": "pales in comparison to the first one but some great tracks here aswell. just much more low key and vibey than wdty.",
             "date": "4.12.24",
             "link": "",
-            "favorite_songs": "Show Of Hands, Overload"
+            "favorite_songs": "We Still Don't Trust You, Show Of Hands, Overload"
         },
         {
             "title": "Black Yacht Rock Vol. 1 - Pharrell Williams (2024)",
             "cover": "images/albums/blackyachtrockv1.jpg",
             "rating": "48",
-            "review": "test",
+            "review": "please pharrell just make another rap album i love in my mind please please please",
             "date": "4.6.24",
             "link": "",
             "favorite_songs": "Dandy Lying, Who Needs Rest?"
@@ -858,7 +876,7 @@
             "title": "WE DON'T TRUST YOU - Future & Metro Boomin (2024)",
             "cover": "images/albums/we-dont-trust-you.jpg",
             "rating": "94",
-            "review": "test",
+            "review": "dont even need to get into like that, kicked off the most memorable rap moment we will see in a long long time. aside from that, this is just a really great album. i havent listened to all of futures discography yet, but this is my fav album from him as of right now.",
             "date": "3.22.24",
             "link": "",
             "favorite_songs": "Like That, Type Sh*t, WTFYM"
@@ -867,7 +885,7 @@
             "title": "9 - Kenny Mason (2024)",
             "cover": "images/albums/kenny-9.jpg",
             "rating": "62",
-            "review": "test",
+            "review": "kenny needs to lock in and make a truly great album. it feels like he hasnt developed much as an artist. just another project from him to take a few tracks from and move on. he has lots of potential would love to see him fulfill that.",
             "date": "3.17.24",
             "link": "",
             "favorite_songs": "SLIP, US"
@@ -875,8 +893,8 @@
         {
             "title": "<i class='fa-solid fa-rotate'></i>Man On The Moon: The End Of Day - Kid Cudi (2009)",
             "cover": "images/albums/motm1.jpg",
-            "rating": "96",
-            "review": "test",
+            "rating": "100",
+            "review": "had an itch to give this a relisted, and glad i did. i appreciated all the tracks that i never came back to this time around. sometimes i forget kid cudi was incredible back in the day before he became what he is now.",
             "date": "3.14.24",
             "link": "",
             "favorite_songs": "Make Her Say, Up Up & Away"
@@ -885,7 +903,7 @@
             "title": "eternal sunshine - Ariana Grande (2024)",
             "cover": "images/albums/eternal-sunshine.jpg",
             "rating": "98",
-            "review": "test",
+            "review": "omg she did it!!! this is her best album imo its writing is a step up from her other albums and production is top notch. its short and sweet, doesnt overstay its welcome. im so geeked",
             "date": "3.7.24",
             "link": "",
             "favorite_songs": "Supernatural, Bye"
@@ -894,7 +912,7 @@
             "title": "BLUE LIPS - ScHoolboy Q (2024)",
             "cover": "images/albums/blue-lips.jpg",
             "rating": "98",
-            "review": "test",
+            "review": "serious album of the year conteder here. almost as good as oxymoron, schoolboy q is still at the top of his game its crazy. blue slides and thank god 4 me are just perfect songs",
             "date": "3.2.24",
             "link": "",
             "favorite_songs": "Blue Slides, THank god 4 me"
@@ -902,7 +920,7 @@
         {
             "title": "Lonerism - Tame Impala (2012)",
             "cover": "images/albums/Lonerism.jpg",
-            "review": "test",
+            "review": "feels like we only go backwards was my first tame impala song!! just now getting to the full album, and while i dont like it as much as the slow rush or currents, it has some great tracks. feels like we only go backwards is probably my fave tame impala song in general",
             "rating": "74",
             "date": "2.20.24",
             "link": "",
@@ -911,17 +929,17 @@
         {
             "title": "Scrapyard - Quadeca (2024)",
             "cover": "images/albums/scrapyard.jpg",
-            "review": "test",
+            "review": "quadecas artistic development is kinda insane. i remember him dissing ksi on youtube now hes making albums of his throwaways that are perfect. ive listened to this album too many times to count i really really like it.",
             "rating": "99",
             "date": "2.16.24",
             "link": "",
-            "favorite_songs": "TEXAS BLUE, EASIER"
+            "favorite_songs": "TEXAS BLUE, EASIER, GUIDE DOG"
         },
         {
             "title": "VULTURES 1 - ¥$, Kanye West & Ty Dolla $ign (2024)",
             "cover": "images/albums/vultures1.jpg",
             "rating": "65",
-            "review": "test",
+            "review": "getting a tad bit overhated but yeah not a great album by kanye standards. its such a shame the best song here got taken off for sample reasons. burn is great too, just surrounded by a lot of okay songs. beg forgiveness rules too, i wish chris browns part was a bit shorter though.",
             "date": "2.9.24",
             "link": "",
             "favorite_songs": "GOOD (DONT DIE), BURN"
@@ -930,7 +948,7 @@
             "title": "THE MOUSE & THE MASK - DANGERDOOM (2005)",
             "cover": "images/albums/dangerdoom.jpg",
             "rating": "72",
-            "review": "test",
+            "review": "really fun album, its impressive how much output doom had in just this like 2 year span.",
             "date": "2.6.24",
             "link": "",
             "favorite_songs": "Benzi Box, Bada Bing"
@@ -939,7 +957,7 @@
             "title": "<i class='fa-solid fa-rotate'></i>BORN LIKE THIS - MF DOOM (2009)",
             "cover": "images/albums/born-like-this.jpg",
             "rating": "76",
-            "review": "test",
+            "review": "got a lot more into doom since my last listen of this album, and i grabbed some more songs from here this time around. supervillainz is a really fun track with good rapping on it.",
             "date": "2.6.24",
             "link": "",
             "favorite_songs": "LIGHTWORKS, STILL DOPE, SUPERVILLAINZ"
@@ -948,7 +966,7 @@
             "title": "MICHAEL - Killer Mike (2023)",
             "cover": "images/albums/michael.jpg",
             "rating": "89",
-            "review": "test",
+            "review": "ive been listening to scientists and engineers since i came out cause i love andre, but didnt get around to this album. after it won the grammy i was like ok ill listen to it. its a real shame its getting hated on just cause he beat travis cause this is a really great album and he deserved the grammy more than travis.",
             "date": "2.6.24",
             "link": "",
             "favorite_songs": "SCIENTISTS & ENGINEERS, SLUMMER"
@@ -957,7 +975,7 @@
             "title": "Currents - Tame Impala (2015)",
             "cover": "images/albums/currents.jpg",
             "rating": "84",
-            "review": "test",
+            "review": "i actually like the slow rush more than this, which i think is a hot take? this is still great of course ive been listening to it a lot",
             "date": "1.27.24",
             "link": "",
             "favorite_songs": "Yes I'm Changing, Disciples"
@@ -966,7 +984,7 @@
             "title": "Heaven Knows - Pink Pantheress (2023)",
             "cover": "images/albums/Heaven-Knows.jpg",
             "rating": "82",
-            "review": "test",
+            "review": "this does something for me i really like this album!! mosquito is such a good song. super excited to hear more from her",
             "date": "1.27.24",
             "link": "",
             "favorite_songs": "Mosquito, The aisle"
@@ -975,7 +993,7 @@
             "title": "LP! OFFLINE - JPEGMAFIA (2021)",
             "cover": "images/albums/LP.jpg",
             "rating": "84",
-            "review": "test",
+            "review": "heard a lot of good things about this and after listening to enough of scaring the hoes i gave this a listen. i really liked it jpegmafia just has production like no one else its so good. ",
             "date": "1.23.24",
             "link": "",
             "favorite_songs": "HAZARD DUTY PAY!, TIRED, NERVOUS & BROKE"
@@ -984,7 +1002,7 @@
             "title": "hypochondriac - brakence (2022)",
             "cover": "images/albums/hypochondriac.jpg",
             "rating": "53",
-            "review": "test",
+            "review": "i think this is my friends all time favorite album? i liked some of the songs but didnt really hit for me overall.",
             "date": "1.14.24",
             "link": "",
             "favorite_songs": "intellectual greed, 5g"
@@ -992,8 +1010,8 @@
         {
             "title": "DOA - ericdoa (2024)",
             "cover": "images/albums/doa.jpg",
-            "rating": "62",
-            "review": "test",
+            "rating": "73",
+            "review": "my friend put me on ericdoa and ive liked him, but this album was a big step forward for me. i really liked every song on here. def my fav project from his so far.",
             "date": "1.14.24",
             "link": "",
             "favorite_songs": "bigassbearman, dancinwithsomebawdy"
@@ -1002,7 +1020,7 @@
             "title": "american dream - 21 Savage (2024)",
             "cover": "images/albums/americandream.jpg",
             "rating": "24",
-            "review": "test",
+            "review": "didnt really care for this all too much. 21 is getting a bit boring at this point and aside from a few tracks, didnt do much that i wouldnt have gotten from another album.",
             "date": "1.12.24",
             "link": "",
             "favorite_songs": "née-nah, dark days"
@@ -1011,7 +1029,7 @@
             "title": "INSANO - Kid Cudi (2024)",
             "cover": "images/albums/insano.jpg",
             "rating": "8",
-            "review": "test",
+            "review": "i didnt like a single full song on this. blue sky was the only passable song and still not in love with it. cudi needs to take a step back and really put in work if he wants to make a good album",
             "date": "1.12.24",
             "link": "",
             "favorite_songs": "BLUE SKY"
@@ -1020,7 +1038,7 @@
             "title": "Super Departure - i-dep (2006)",
             "cover": "images/albums/superdeparture.jpg",
             "rating": "63",
-            "review": "test",
+            "review": "heard sign of summer in some youtube comp a while ago and just decided i wanted to hear more. really happy upbeat album cant wait to listen to this in the sumer",
             "date": "1.1.24",
             "link": "",
             "favorite_songs": "Sign of Summer, Don't Stop, ジャンプ!"
@@ -1031,7 +1049,7 @@
                 "title": "Cyberpunk: Edgerunners (2022)",
                 "cover": "images/other/cyberpunk.jpg",
                 "rating": "67",
-                "review": "i hate david sorry just such an unlikable protaganist sorry im sorry ",
+                "review": "i hate david sorry hes just such an unlikable protaganist. you never really have a moment that makes you want to like him. asdie from that though, i didnt mind this show. i think lucy was a much better character than david and wish they either made her the main character or just made david a bit better and have him focus on her more. i just wouldnt really recommend this show to anyone that hasnt seen ghost in the shell. this is like a worse ghost in the shell and stretched out across 10 episodes. but if youve seen ghost in the shell and have some time to kill then yeah this was enjoyable enough to not regret watching it!!",
                 "date": "11.20.24",
                 "link": ""
             },
