@@ -31,4 +31,9 @@
      --background: url(/themes/assets/neo-tokyo/neobg.jpg) no-repeat fixed center;
      --body-color: #543310;
      --box-border: #C0C0C0 4px ridge;
+
+    /* BLOG */
+    --blog-border: #00cd95 dotted 2px;
+    --blog-header: linear-gradient(90deg, #7F547E 65%, #000);
+    --blog-title: #F89CF6;
  }

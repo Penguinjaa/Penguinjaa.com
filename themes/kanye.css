@@ -33,5 +33,10 @@
     --background: #000 no-repeat fixed center;
     --body-color: #543310;
     --box-border: #303030 4px ridge;
+
+    /* BLOG */
+    --blog-border: 1px solid #303030;
+    --blog-header: linear-gradient(90deg, #06415F 65%, #000);
+    --blog-title: #D31180;
 }
 

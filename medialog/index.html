@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // THEMES // -->
+    <link id="theme1" rel="stylesheet" href="/themes/downtown.css">
+    <link id="theme2" rel="stylesheet" href="/themes/neotokyo.css" disabled>
+    <link id="theme3" rel="stylesheet" href="/themes/monochrome.css" disabled>
+    <link id="theme4" rel="stylesheet" href="/themes/kanye.css" disabled>
+    <!-- // IMPORTS // -->
+    <link href="/style.css" rel="stylesheet">
+    <link href="/assets/blog.css" rel="stylesheet">
+    <link href="/assets/fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/assets/fonts/fontawesome/css/solid.css" rel="stylesheet">
+    <script src="/assets/themes.js" async></script>
+    <script src="/assets/marquee.js" defer></script>
+    <script src="log.js" async></script>
+    <!-- // INFO // -->
+    <link href="/assets/favicon.ico" rel="icon">
+    <title>MEDIA LOG // PENGUINJAA.COM</title>
+    <meta name="description" content="penguinjaa's digital media log">
+    <meta content="#a4749a" data-react-helmet="true" name="theme-color"/>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MEDIA LOG // PENGUINJAA"/>
+    <meta property="og:description" content="penguinjaa's digital media log"/>
+    <meta property="og:url" content="https://penguinjaa.com/medialog"/>
+</head>
+<body>
+    <div id="content">
+        <div id="header">
+            <div id="headerimg">
+                <div id="theme-buttons">
+                    <button onclick="setTheme('DOWNTOWN')" data-theme="downtown" data-theme-name="DOWNTOWN"></button>
+                    <button onclick="setTheme('NEO-TOKYO')" data-theme="neo-tokyo" data-theme-name="NEO-TOKYO"></button>
+                    <button onclick="setTheme('MONOCHROME')" data-theme="monochrome" data-theme-name="MONOCHROME"></button>
+                    <button onclick="setTheme('KANYE UNIVERSE CITY')" data-theme="kanye-universe" data-theme-name="KANYE UNIVERSE CITY"></button>
+                </div>                
+            </div>
+            <div id="head-marquee">
+                <marquee scrollamount="7">
+                    <h3 id="top-marquee">loading...</h3>
+                </marquee>
+            </div>                     
+        </div>
+        <div class="container"> 
+            <div class="container-content" style="display: flex; padding: 0;">
+                <div id="journalnav">
+                    <span style="padding: 5px;"><img src="/assets/icons/home.png"><a href="/"><h2>GO HOME?</h2></a></span>
+                    <h2 style="text-decoration: none;">JUMP TO...</h2>
+                    <span class="logcategory">
+                        <img src="/assets/icons/media2.png"><a href="#movies"><h3 style="margin: 5px 0;">MOVIES</h3></a>
+                    </span>
+                    <span class="logcategory">
+                        <img src="/assets/icons/vinyls.png"><a href="#music"><h3 style="margin: 5px 0;">MUSIC</h3></a>
+                    </span>
+                    <span class="logcategory">
+                        <img src="/assets/icons/links.png"><a href="#other"><h3 style="margin: 5px 0;">OTHER</h3></a>
+                    </span>
+                    <div id="currently">
+                        <h2>Currently...</h2>
+                        <h3>Watching:</h3>
+                        <h5>Dan Da Dan</h5>
+                        <h5>Breaking Bad</h5>
+                        <h3>Playing:</h3>
+                        <h5>Pokemon Colloseum</h5>
+                        <h5>Left 4 Dead 2</h5>
+                        <h3>Reading:</h3>
+                        <h5>Berserk</h5>
+                    </div>
+                </div>
+                <div id="entries">
+                    <div id="welcome" class="entry">
+                        <h2>WELCOME</h2>
+                        <p>welcome to my <i>media log</i>. this is a place for me to log and rate and (kinda) review media i watch/listen/play. any potential <i>spoilers</i> will be hidden <span class="spoiler">like this</span>. hover over it to reveal it.</p>   
+                    </div>
+                    <div id="movies"></div>
+                    <div id="music"></div>
+                    <div id="other"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer style="text-align: center;">
+    <p style="margin: 0;">PENGUINJAA.COM V5.55 [C] 2022 - 2099</p>
+    <p style="margin: 0;">
+        <a href="https://discord.com/users/264257846496067586">CONTACT</a> | 
+        <a href="/archive">ARCHIVE</a> |
+        <a href="/sitemap">SITEMAP</a> |
+        POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
+    </p>
+</footer>
+</html>

@@ -1,0 +1,1176 @@
+{
+    "movies": [
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Eternal Sunshine of the Spotless Mind (2004)",
+            "cover": "images/movies/eternal-sunshine-spotless-mind.jpg",
+            "rating": "93",
+            "review": "rewatch for goofin movie night!! super good i love the editing and transitions. love the details like <span class='spoiler'>the dent in the car being from clementine drunk driving</span> and the color leaving the books in the library. jim carrey also just the goat w rizz fr",
+            "date": "11.22.24",
+            "link": "https://letterboxd.com/penguinjaa/film/eternal-sunshine-of-the-spotless-mind/1/"
+        },
+    	{
+            "title": "Howl's Moving Castle (2004)",
+            "cover": "images/movies/howls.jpg",
+            "rating": "88",
+            "review": "visuals are soooo good. all the scenes with the ash flying through the air are incredible looking.",
+            "date": "11.15.24",
+            "link": "https://letterboxd.com/penguinjaa/film/howls-moving-castle/"
+        },
+    	{
+            "title": "Good Will Hunting (1997)",
+            "cover": "images/movies/goodwillhunting.jpg",
+            "rating": "94",
+            "review": "now that youre old enought to drink, i figured we had to get you some keys",
+            "date": "11.8.24",
+            "link": "https://letterboxd.com/penguinjaa/film/good-will-hunting/"
+        },
+    	{
+            "title": "Alien (1979)",
+            "cover": "images/movies/alien.jpg",
+            "rating": "82",
+            "review": "why are they so stupid its like they are in a movie and trying to progress the plot forward by making mistakes that make the alien scarier",
+            "date": "10.30.24",
+            "link": "https://letterboxd.com/penguinjaa/film/alien/"
+        },
+        {
+            "title": "Halloween (1978)",
+            "cover": "images/movies/halloween.jpg",
+            "rating": "76",
+            "review": "michael myers is awesome ive never seen this before but man i just love that hes an unstoppable force and the music is so good too wow",
+            "date": "10.30.24",
+            "link": "https://letterboxd.com/penguinjaa/film/halloween-1978/"
+        },
+    	{
+            "title": "The Wild Robot (2024)",
+            "cover": "images/movies/wildrobot.jpg",
+            "rating": "85",
+            "review": "really cute movie and super good animation highly recommend",
+            "date": "10.26.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-wild-robot/"
+        },
+    	{
+            "title": "The Fly (1986)",
+            "cover": "images/movies/thefly.jpg",
+            "rating": "94",
+            "review": "this might be my favorite movie i watched this october, its so cool. surprised i dont hear more about this movie",
+            "date": "10.25.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-fly-1986/"
+        },
+    	{
+            "title": "The Shining (1980)",
+            "cover": "images/movies/theshining.jpg",
+            "rating": "87",
+            "review": "i liked when he flashed his paws at her and said nyah!",
+            "date": "10.25.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-shining/"
+        },
+    	{
+            "title": "The Thing (1986)",
+            "cover": "images/movies/thething.jpg",
+            "rating": "91",
+            "review": "practical effects are top tier of course. i love the part where his chest opens up that was awesome. also jsut the first reveal of the thing was really gross and i love that",
+            "date": "10.18.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-thing/"
+        },
+    	{
+            "title": "Ring 2 (1999)",
+            "cover": "images/movies/ring2.jpg",
+            "rating": "56",
+            "review": "honestly couldve done without this, didnt add much to the original movie and was a bit of a slog for me aside from a couple scenes. the second half does pick up a bit though and i enjoyed that",
+            "date": "10.17.24",
+            "link": "https://letterboxd.com/penguinjaa/film/ring-2-1999/"
+        },
+    	{
+            "title": "Ring (1998)",
+            "cover": "images/movies/ring.jpg",
+            "rating": "87",
+            "review": "i really enjoyed this, pretty spooky and her fingernails are gross so even spookier. the part at the bottom of the well rules so hard",
+            "date": "10.15.24",
+            "link": "https://letterboxd.com/penguinjaa/film/ring-1998/"
+        },
+    	{
+            "title": "Five Nights At Freddys (2023)",
+            "cover": "images/movies/fnaf.jpg",
+            "rating": "28",
+            "review": "why is springtrap a redditor. i was disappointed with this movie and i went into it expecting it to be bad. i cant believe they had 2 chances for a spooky moment, first one being bonnie leaving the closet and second one being foxy running down the hall, but instead they made them happen out of frame. unfortunate truly",
+            "date": "10.11.24",
+            "link": "https://letterboxd.com/penguinjaa/film/five-nights-at-freddys/"
+        },
+    	{
+            "title": "Kiki's Delivery Service (1989)",
+            "cover": "images/movies/kikis-delivery-service.jpg",
+            "rating": "87",
+            "review": "this is the cutest ghibli movie i like the kitty cat!!! that nerd kid can die though hes a freak. as far as actual enjoyment though, probably bottom of the list of ghibli for me so far, but the worst ghibli movie is still incredible of course.",
+            "date": "10.4.24",
+            "link": "https://letterboxd.com/penguinjaa/film/kikis-delivery-service/"
+        },
+    	{
+            "title": "Perfect Blue (1997)",
+            "cover": "images/movies/perfect-blue.jpg",
+            "rating": "100",
+            "review": "perfect blue is a perfect 100! xD!! seriously though what an incredible movie i think this was made for me in particular. it has really cool <i>editing</i> and a plot that makes you think about what you know and if <span class='spoiler'>any of it was real</span>. the transitions also were really cool wowowowowow i love this movie!!!",
+            "date": "10.3.24",
+            "link": "https://letterboxd.com/penguinjaa/film/perfect-blue/"
+        },
+    	{
+            "title": "The Truman Show (1998)",
+            "cover": "images/movies/trumanshow.jpg",
+            "rating": "95",
+            "review": "in case i dont see ya. i love movies like this where you start to pick up on little things as it goes on and you learn more and more by the environment. also went into this not expecting the show element of it being revealed so soon, but i guess its in the title so maybe im stupid",
+            "date": "9.27.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-truman-show/"
+        },
+    	{
+            "title": "<i class='fa-solid fa-rotate'></i>The Lego Movie (2014)",
+            "cover": "images/movies/legomovie.jpg",
+            "rating": "68",
+            "review": "the animation is incredible of course, but man i wish it was a better written movie. its just an okay kids movie. imagine this animation quality but on a kids movie as well written as something like inside out!! would be generational.",
+            "date": "9.20.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-lego-movie/"
+        },
+    	{
+            "title": "Spider-Man 3 (2007)",
+            "cover": "images/movies/spiderman3.jpg",
+            "rating": "72",
+            "review": "spiderman is emo how awesome is that!! least favorite of the 3 but i did really like the villains, couldve been a bit more fleshed out tho. and maybe give venom a diff personality but its ok",
+            "date": "9.14.24",
+            "link": "https://letterboxd.com/penguinjaa/film/spider-man-3/"
+        },
+    	{
+            "title": "Castle In The Sky (1986)",
+            "cover": "images/movies/castleinthesky.jpg",
+            "rating": "88",
+            "review": "i loved this movie but i loved the robots more than anything in this world wow they are awesome. just these like <i>earthbound esque</i> robots and they are all covered in moss wow its beautiful",
+            "date": "9.13.24",
+            "link": "https://letterboxd.com/penguinjaa/film/castle-in-the-sky/"
+        },
+    	{
+            "title": "The Witch (2015)",
+            "cover": "images/movies/thewitch.jpg",
+            "rating": "54",
+            "review": "has cool moments and is well shot but just didnt really do much for me.",
+            "date": "9.7.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-witch-2015/"
+        },
+    	{
+            "title": "Spider-Man 2 (2004)",
+            "cover": "images/movies/spiderman2.jpg",
+            "rating": "78",
+            "review": "im writing these reviews late since i havent been writing reviews for a year, i dont remember what happened in this vs spiderman 1 sorry i remember i really liked this one tho",
+            "date": "9.7.24",
+            "link": "https://letterboxd.com/penguinjaa/film/spider-man-2/"
+        },
+    	{
+            "title": "Fight Club (1999)",
+            "cover": "images/movies/fightclub.jpg",
+            "rating": "98",
+            "review": "another movie with great editing and just everything i love in the world. i love all the <span class='spoiler'>hints to them being the same person scattered all over</span>. this is a pretty iconic movie but luckily i had never heard about what actually happens in it so i had a great first watch experience. definitely need to watch it again!!",
+            "date": "9.7.24",
+            "link": "https://letterboxd.com/penguinjaa/film/fight-club/"
+        },
+    	{
+            "title": "<i class='fa-solid fa-rotate'></i>Parasite (2019)",
+            "cover": "images/movies/parasite.jpg",
+            "rating": "93",
+            "review": "this is just a must watch movie, it just gets better and better as it goes on. <span class='spoiler'>that birthday party scene where he kills a lot of people rules so hard its one of my favorite scenes in any movie ive seen but like im not a psychopath ok</span>",
+            "date": "9.6.24",
+            "link": "https://letterboxd.com/penguinjaa/film/parasite-2019/"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Pokémon: The First Movie (1998)",
+            "cover": "images/movies/pokemon.jpg",
+            "rating": "78",
+            "review": "i remember love love loving this movie as a kid but honestly after coming back to it, its not too notable aside from that part at the end everyone knows about. its okay but gonna need to rewatch some other pokemon movies and see what holds up to me.",
+            "date": "9.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/pokemon-the-first-movie/"
+        },
+        {
+            "title": "Spider-Man (2002)",
+            "cover": "images/movies/spiderman.jpg",
+            "rating": "80",
+            "review": "im writing these reviews late since i havent been writing reviews for a year, i dont remember what happened in this vs spiderman 2 sorry i remember i really liked this one tho",
+            "date": "9.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/spider-man/"
+        },
+        {
+            "title": "Deadpool & Wolverine (2024)",
+            "cover": "images/movies/deadpool3.jpg",
+            "rating": "56",
+            "review": "really mid movie, for every joke that landed for me there were like 3 that didnt, but its ok i enjoyed it enough",
+            "date": "9.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/deadpool-wolverine/"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Animal Crossing: The Movie (2006)",
+            "cover": "images/movies/animalcrossing.jpg",
+            "rating": "67",
+            "review": "im the biggest animal crossing fan in the world and this movie is just so cute!! my main pfp is from it of course i love <i>sable</i>!!! but this really is not a good movie, but its really silly and fun. so if you like animal crossing you should watch it theres a lot of cute and funny moments. <span class='spoiler'>the part where Ai is crying about sally leaving then bianca laughs at her is funny, and the part where Yu fell down from the fossil and rosie ran away then he dies is also really funny</span>",
+            "date": "8.30.24",
+            "link": "https://letterboxd.com/penguinjaa/film/animal-crossing-the-movie/"
+        },
+        {
+            "title": "Inside Out 2 (2024)",
+            "cover": "images/movies/insideout2.jpg",
+            "rating": "71",
+            "review": "didnt like this one as much as the first but the first is incredible so thats ok. still really enjoyed it, just lacked the authenticity that the first did so well.",
+            "date": "8.24.24",
+            "link": "https://letterboxd.com/penguinjaa/film/inside-out-2-2024/"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Inside Out (2015)",
+            "cover": "images/movies/insideout.jpg",
+            "rating": "83",
+            "review": "this is maybe my favorite kids movie if i put my personal childhood movie biases aside. such a good movie on its own and i think it tackles a complicated topic for kids in a really friendly and good way.",
+            "date": "8.24.24",
+            "link": "https://letterboxd.com/penguinjaa/film/inside-out-2015/"
+        },
+        {
+            "title": "Twisters (2024)",
+            "cover": "images/movies/twisters.jpg",
+            "rating": "18",
+            "review": "i forgot movies could be this bad. dont have anything else to say",
+            "date": "8.24.24",
+            "link": "https://letterboxd.com/penguinjaa/film/twisters/"
+        },
+        {
+            "title": "Ex Machina (2015)",
+            "cover": "images/movies/ex-machina.jpg",
+            "rating": "90",
+            "review": "i liek robots. this movie rules so hard it exposes scifi nerds to women and not being turds to them wow i love it",
+            "date": "6.28.24",
+            "link": "https://letterboxd.com/penguinjaa/film/ex-machina-2015/"
+        },
+        {
+            "title": "The Fall Guy (2024)",
+            "cover": "images/movies/fallguy.jpg",
+            "rating": "43",
+            "review": "first half was very weak and 2nd half was ok but just didnt really care about this movie",
+            "date": "6.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-fall-guy-2024/"
+        },
+        {
+            "title": "Civil War (2024)",
+            "cover": "images/movies/civilwar.jpg",
+            "rating": "16",
+            "review": "the characters suck and developed weirdly. also they just threw random feel good moments in it and it kinda killed the vibes most of the time. some cool shots i enjoyed but other than that nothing redeems this to me",
+            "date": "6.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/civil-war-2024/"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Over The Hedge (2006)",
+            "cover": "images/movies/overthehedge.jpg",
+            "rating": "76",
+            "review": "watched this on youtube tv on my crt its over the hedge what can i say i love it",
+            "date": "5.29.24",
+            "link": "https://letterboxd.com/penguinjaa/film/over-the-hedge/"
+        },
+        {
+            "title": "Dune: Part One (2021)",
+            "cover": "images/movies/dune1.jpg",
+            "rating": "66",
+            "review": "put off watching this for a while since my friend really didnt like it, and yeah i didnt love it, but it is really beautiful. i was supposed to watch dune 2 but havent gotten around to that oops.",
+            "date": "4.13.24",
+            "link": "https://letterboxd.com/penguinjaa/film/dune-2021/"
+        },
+        {
+            "title": "Superbad (2007)",
+            "cover": "images/movies/superbad.jpg",
+            "rating": "94",
+            "review": "oh my god its innnnn. really good movie funny and has nice moments ",
+            "date": "4.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/superbad/"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>The Boy and the Heron (2023)",
+            "cover": "images/movies/boy-heron.jpg",
+            "rating": "parakeets and white blob guys are so cute",
+            "review": "test",
+            "date": "3.24.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-boy-and-the-heron/1/"
+        },
+        {
+            "title": "Office Space (1999)",
+            "cover": "images/movies/office-space.jpg",
+            "rating": "86",
+            "review": "i liked him ripping the fish spine out and tossing it on the desk",
+            "date": "3.17.24",
+            "link": "https://letterboxd.com/penguinjaa/film/office-space/"
+        },
+        {
+            "title": "Princess Mononoke (1997)",
+            "cover": "images/movies/princess-mononoke.jpg",
+            "rating": "92",
+            "review": "this might be my favorite ghibli movie its everything i love about ghibli and a pretty unique aesthetic compared to their other movies i think",
+            "date": "3.15.24",
+            "link": "https://letterboxd.com/penguinjaa/film/princess-mononoke/"
+        },
+        {
+            "title": "Eternal Sunshine of the Spotless Mind (2004)",
+            "cover": "images/movies/eternal-sunshine-spotless-mind.jpg",
+            "rating": "88",
+            "review": "I'm watching this movie cause ariana grandes new album coming out tonight is named after it so i thought it would be fun to watch it before the album comes out. I didnt really expect to feel crazy about this movie but i really liked it. the shots and editing are really cool im a big fan of good or unique editing. also just the entire plot of the movie is really interesting i never felt bored! W movie tbh i quite liked it!",
+            "date": "3.3.24",
+            "link": "https://letterboxd.com/penguinjaa/film/eternal-sunshine-of-the-spotless-mind/"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>American Psycho (2000)",
+            "cover": "images/movies/american-psycho.jpg",
+            "rating": "100",
+            "review": "one of my favorite movies, dont let the incel edits deter you its a great movie",
+            "date": "3.1.24",
+            "link": "https://letterboxd.com/penguinjaa/film/american-psycho/"
+        },
+        {
+            "title": "Weathering With You (2019)",
+            "cover": "images/movies/weathering-with-you.jpg",
+            "rating": "69",
+            "review": "hadoka had opps, not as good as your name but i still enjoyed it",
+            "date": "2.23.24",
+            "link": "https://letterboxd.com/penguinjaa/film/weathering-with-you/"
+        },
+        {
+            "title": "My Neighbor Totoro (1988)",
+            "cover": "images/movies/totoro.jpg",
+            "rating": "78",
+            "review": "one of those classic ghibli movies, its a lower ranked one for me i think but totoro is so cute. also i remember having a dream about this movie as a kid despite never watching it i think it was cause i liked a girl that liked it i dont remember. not important just a fun personal note isnt that so cute",
+            "date": "2.16.24",
+            "link": "https://letterboxd.com/penguinjaa/film/my-neighbor-totoro/"
+        },
+        {
+            "title": "your name. (2016)",
+            "cover": "images/movies/your-name.jpg",
+            "rating": "93",
+            "review": "really really beautiful movie the scene of <span class='spoiler'>taki going through the fabrics of time</span> was so beautiful. my only gripe would be that it ends a tad bit abruptly imo but sorta just a nitpick i love this movie",
+            "date": "2.7.24",
+            "link": "https://letterboxd.com/penguinjaa/film/your-name/"
+        },
+        {
+            "title": "RoboCop (1987)",
+            "cover": "images/movies/RoboCop.jpg",
+            "rating": "75",
+            "review": "fun watch on my crt. the stop motion robot ruled so hard",
+            "date": "1.30.24",
+            "link": "https://letterboxd.com/penguinjaa/film/robocop/"
+        },
+        {
+            "title": "Evangelion: 3.0 You Can (Not) Redo (2012)",
+            "cover": "images/movies/eva3.jpg",
+            "rating": "8",
+            "review": "<i>PENGUINJAA EVANGELION RANT INCOMING!! BEWARE!!!</i> i honestly didnt really like this movie sorry sports fans. it gave me the same feeling you get from reboots of classic tv shows that completely miss the mark idk!! also the animation in this one is different and looks really weird i cant quite put my finger on it but the characters looks weird. they also use cgi too much and it looks goofy. there were some tropy lines as well like yelling <i>activate</i> when starting the ship or the eva was silly more of a nitpick but didnt like it regardless. there are still elements i like but overall not a massive fan. as for the whole series (so far) i think it is sorta a waste. the 2nd movie was really good but the first was alright and this one was kinda bad. it had to be a lot more rushed since its condensed into movies but i feel like they focused on the <i>wrong parts</i> sometimes leading to the characters not being as likable. for example, i was already not really a fan of <i>asuka</i> in the show but her one redeeming quality to me wasnt really touched on in the movies. she never really talks about her personal issues and is just a brick wall the whole time. i get theres another movie but still feels like that should have been introduced by now. yeah i could probably go on for a while about why i dont like it but i dont wanna so yeah sorry. maybe im just an <i>eva old head</i> and im blind to the new school hip movies i dont know",
+            "date": "1.24.24",
+            "link": "https://letterboxd.com/penguinjaa/film/evangelion-30-you-can-not-redo/"
+        },
+        {
+            "title": "Evangelion: 2.0 You Can (Not) Advance (2009)",
+            "cover": "images/movies/eva2.jpg",
+            "rating": "73",
+            "review": "changes it up a lot more from the anime, and is really epic!!! i liked the dynamic between shinji and rei more in this than the anime which is nice cause they are my 2 favorite characters. they introduced a new character that im not sure was necessary maybe she will do more in the next movie or maybe its just another girl for them to put in the marketing and get white people to watch it idk",
+            "date": "1.18.24",
+            "link": "https://letterboxd.com/penguinjaa/film/evangelion-20-you-can-not-advance/"
+        },
+        {
+            "title": "Evangelion: 1.0 You Are (Not) Alone (2007)",
+            "cover": "images/movies/eva1.jpg",
+            "rating": "29",
+            "review": "doesnt differ much from the anime and seems unnecessary, will have to watch the others but nothing special about this one in particular",
+            "date": "1.12.24",
+            "link": "https://letterboxd.com/penguinjaa/film/evangelion-10-you-are-not-alone/"
+        },
+        {
+            "title": "Ghost In The Shell (1995)",
+            "cover": "images/movies/Ghostintheshellposter.jpg",
+            "rating": "95",
+            "review": "The aesthetics of this movie are so cool!!!! the city looks super cool its like a dark version of neo tokyo from akira and i love that!!",
+            "date": "1.6.24",
+            "link": "https://letterboxd.com/penguinjaa/film/ghost-in-the-shell/"
+        }
+    ],
+    "albums": [
+        {
+            "title": "GNX - Kendrick Lamar (2024)",
+            "cover": "images/albums/gnx.jpg",
+            "rating": "92",
+            "review": "wow i cant believe he actually dropped. this year has been so legendary!!! he comes in so hot with <i>wacced out murals</i> and <i>squabble up</i> back to back thats crazy.. also really funny that the <span class='spoiler'>snippet from the NLU video was not the song called reincarnated</span> i got gobsmacked when squabble up came on. i also love all the goofier stuff kendrick does on here like screaming mustard on <i>tv off</i>. i'm just so happy he gave us more west coast bangers wow this rules so hard i love the world!!",
+            "date": "11.22.24",
+            "link": "",
+            "favorite_songs": "wacced out murals, heart pt. 6, squabble up"
+        },
+    	{
+            "title": "Petrichor - 070 Shake (2024)",
+            "cover": "images/albums/petrichor.jpg",
+            "rating": "86",
+            "review": "such a beautiful album im going to be listening to this a lot while working on this new layout <3 ",
+            "date": "11.15.24",
+            "link": "",
+            "favorite_songs": "Sin, Blood On Your Hands, Vagabond"
+        },
+    	{
+            "title": "Soul Burger - Ab-Soul (2024)",
+            "cover": "images/albums/soulburger.jpg",
+            "rating": "58",
+            "review": "my brother loves this album i just cant get into it. his rapping style is just not for me i think i cant help but laugh sometimes.",
+            "date": "11.15.24",
+            "link": "",
+            "favorite_songs": "Paiday, Go Pro, Crazier"
+        },
+    	{
+            "title": "The Crossroads - Cordae (2024)",
+            "cover": "images/albums/crossroads.jpg",
+            "rating": "78",
+            "review": "i love when cordae is in his kanye bag, and i think this album is a good example of it. lost boy maybe was too much kanye inspiration for a lot of people, but from a birds eye view was not very good. this is in the middle where its uniquely cordae but he wears his inpiration on his sleeve and i really like it!! ",
+            "date": "11.15.24",
+            "link": "",
+            "favorite_songs": "Nothings Promised, Don't Walk Away, Syrup Sandwiches"
+        },
+    	{
+            "title": "Eternal Atake 2 - Lil Uzi Vert (2024)",
+            "cover": "images/albums/eternalatake2.jpg",
+            "rating": "22",
+            "review": "wow hes also on the nitrous and is rapping about it what a beautiful album i love you lil uzi vert ",
+            "date": "11.1.24",
+            "link": "",
+            "favorite_songs": "Light Year (Practice), Conceited, Chill Bae"
+        },
+        {
+            "title": "BRAVADO + INTiMO - IDK (2024)",
+            "cover": "images/albums/bravadointimo.jpg",
+            "rating": "82",
+            "review": "really cool album!! love the dichotomy of styles. second fav IDK album after simple probably.",
+            "date": "11.1.24",
+            "link": "",
+            "favorite_songs": "SUPERNOVA, SWiTCH, SEE YOU AGAiN!"
+        },
+    	{
+            "title": "CHROMAKOPIA - Tyler, The Creator (2024)",
+            "cover": "images/albums/chromakopia.jpg",
+            "rating": "94",
+            "review": "this album was rolled out so perfectly i know a couple people that could take some notes.... i love tylers energy on this, and its awesome that hes being more vulnerable on some of these songs. a couple really heavy verses. for sure an aoty contender",
+            "date": "10.28.24",
+            "link": "",
+            "favorite_songs": "Darling I, Hey Jane, Take Your Mask Off"
+        },
+    	{
+            "title": "Glimmer Of God - Jean Dawson (2024)",
+            "cover": "images/albums/glimmerofgod.jpg",
+            "rating": "74",
+            "review": "maybe a little less unique than chaos now but i still enjoyed it. always nice to get some more jean",
+            "date": "10.21.24",
+            "link": "",
+            "favorite_songs": "Play Dead, P4IN"
+        },
+        {
+            "title": "BRAT - Charli xcx (2024)",
+            "cover": "images/albums/brat.jpg",
+            "rating": "58",
+            "review": "not a big pop guy but had to see the hype, plus ariana grande is gonna be on a remix of one of these songs so i had to check it out. and yeah turns out me not being a big pop guy caused me not really to enjoy this too much but i do like a few tracks. and i see why it got so much hype, even the songs i didnt like i could see why they were popular if that makes sense.",
+            "date": "10.7.24",
+            "link": "",
+            "favorite_songs": "Sympathy is a knife, So I, I might say something stupid"
+        },
+    	{
+            "title": "Nintindo Soul - Terrace Martin (2024)",
+            "cover": "images/albums/nintindo.jpg",
+            "rating": "76",
+            "review": "test",
+            "date": "9.22.24",
+            "link": "",
+            "favorite_songs": "Forver, Can I Love You"
+        },
+    	{
+            "title": "Pointy Heights - Fousheé (2024)",
+            "cover": "images/albums/pointy-heights.jpg",
+            "rating": "67",
+            "review": "test",
+            "date": "9.20.24",
+            "link": "",
+            "favorite_songs": "flowers, feel like home, still around"
+        },
+    	{
+            "title": "Mixtape Pluto - Future (2024)",
+            "cover": "images/albums/mixtape-pluto.jpg",
+            "rating": "64",
+            "review": "test",
+            "date": "9.20.24",
+            "link": "",
+            "favorite_songs": "PRESS THE BUTTON, TOO FAST"
+        },
+    	{
+            "title": "The Don Killuminati: The 7 Day Theory - Makaveli (2Pac) (1996)",
+            "cover": "images/albums/7dt.jpg",
+            "rating": "89",
+            "review": "test",
+            "date": "9.17.24",
+            "link": "",
+            "favorite_songs": "Toss It Up, To Live And Die In L.A."
+        },
+    	{
+            "title": "PEEP: The aPROcalypse - Pro Era (2012)",
+            "cover": "images/albums/aprocalypse.jpg",
+            "rating": "77",
+            "review": "test",
+            "date": "9.7.24",
+            "link": "",
+            "favorite_songs": "Like Water, School High, Natural"
+        },
+    	{
+            "title": "AmeriKKKan Korruption Reloaded - Capital STEEZ (2012)",
+            "cover": "images/albums/amerikkkan.jpg",
+            "rating": "78",
+            "review": "test",
+            "date": "9.7.24",
+            "link": "",
+            "favorite_songs": "Vibe Ratings, Infinity And Beyond, Doggybag"
+        },
+    	{
+            "title": "ATLiens - Outkast (1996)",
+            "cover": "images/albums/atliens.jpg",
+            "rating": "87",
+            "review": "test",
+            "date": "9.6.24",
+            "link": "",
+            "favorite_songs": "ATLiens, Elevators, E.T."
+        },
+    	{
+            "title": "<i class='fa-solid fa-rotate'></i>Marshall Mathers LP - Eminem (2000)",
+            "cover": "images/albums/mmlp.jpg",
+            "rating": "91",
+            "review": "test",
+            "date": "8.25.24",
+            "link": "",
+            "favorite_songs": "Stan, Criminal"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Slim Shady LP - Eminem (1999)",
+            "cover": "images/albums/sslp.jpg",
+            "rating": "95",
+            "review": "test",
+            "date": "8.25.24",
+            "link": "",
+            "favorite_songs": "Just Don't Give A F**k, Role Model"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Days Before Rodeo - Travis Scott (2014)",
+            "cover": "images/albums/dbr.jpg",
+            "rating": "82",
+            "review": "test",
+            "date": "8.24.24",
+            "link": "",
+            "favorite_songs": "Drugs You Should Try it, Don't Play"
+        },
+        {
+            "title": "Vaudeville Villain - Viktor Vaughn (2003)",
+            "cover": "images/albums/vaudeville.jpg",
+            "rating": "95",
+            "review": "test",
+            "date": "8.21.24",
+            "link": "",
+            "favorite_songs": "Let Me Watch, G.M.C., Vaudeville Villain"
+        },
+        {
+            "title": "Buzz - NIKI (2024)",
+            "cover": "images/albums/buzz.jpg",
+            "rating": "66",
+            "review": "test",
+            "date": "8.9.24",
+            "link": "",
+            "favorite_songs": "Buzz, Colossol Loss, Focus"
+        },
+        {
+            "title": "VULTURES 2 - ¥$, Kanye West & Ty Dolla $ign (2024)",
+            "cover": "images/albums/vultures2.jpg",
+            "rating": "32",
+            "review": "test",
+            "date": "8.3.24",
+            "link": "",
+            "favorite_songs": "Take Off Your Dress, River"
+        },
+        {
+            "title": "I LAY DOWN MY LIFE FOR YOU - JPEGMAFIA (2024)",
+            "cover": "images/albums/ildmlfy.jpg",
+            "rating": "94",
+            "review": "test",
+            "date": "8.1.24",
+            "link": "",
+            "favorite_songs": "it's dark and hell is hot, either on or off the drugs, JPEGULTRA!"
+        },
+        {
+            "title": "Things Fall Apart - The Roots (1999)",
+            "cover": "images/albums/things-fall-apart.jpg",
+            "rating": "73",
+            "review": "test",
+            "date": "7.29.24",
+            "link": "",
+            "favorite_songs": "100% Dundee, You Got Me"
+        },
+        {
+            "title": "Take Me To Your Leader - King Geedorah (2003)",
+            "cover": "images/albums/geedorah.jpg",
+            "rating": "68",
+            "review": "test",
+            "date": "7.29.24",
+            "link": "",
+            "favorite_songs": "Anti-Matter, I Wonder"
+        },
+        {
+            "title": "Faith Of A Mustard Seed - Mustard (2024)",
+            "cover": "images/albums/mustard-seed.jpg",
+            "rating": "42",
+            "review": "test",
+            "date": "7.26.24",
+            "link": "",
+            "favorite_songs": "Pressured Up, Parking Lot, Mines"
+        },
+        {
+            "title": "Bando Stone and The New World - Childish Gambino (2024)",
+            "cover": "images/albums/bandostone.jpg",
+            "rating": "76",
+            "review": "test",
+            "date": "7.22.24",
+            "link": "",
+            "favorite_songs": "A Place Where Love Goes, Got To Be"
+        },
+        {
+            "title": "King Of The Mischievous South Vol. 2 - Denzel Curry (2024)",
+            "cover": "images/albums/kotms2.jpg",
+            "rating": "78",
+            "review": "test",
+            "date": "7.18.24",
+            "link": "",
+            "favorite_songs": "G'Z UP, SKED"
+        },
+        {
+            "title": "Me Against The World - 2Pac (1995)",
+            "cover": "images/albums/meagainsttheworld.jpg",
+            "rating": "89",
+            "review": "test",
+            "date": "7.13.24",
+            "link": "",
+            "favorite_songs": "Dear Mama, If I Die 2Nite"
+        },
+        {
+            "title": "The Auditorium, Vol. 1 - Common & Pete Rock (2024)",
+            "cover": "images/albums/auditorium.jpg",
+            "rating": "74",
+            "review": "test",
+            "date": "7.11.24",
+            "link": "",
+            "favorite_songs": "Everything's So Grand, Fortunate"
+        },
+        {
+            "title": "The Death of Slim Shady (Coup de Grâce) - Eminem (2024)",
+            "cover": "images/albums/tdoss.jpg",
+            "rating": "19",
+            "review": "test",
+            "date": "7.11.24",
+            "link": "",
+            "favorite_songs": "Fuel, Temporary"
+        },
+        {
+            "title": "Head Rush - Channel Tres (2024)",
+            "cover": "images/albums/headrush.jpg",
+            "rating": "64",
+            "review": "test",
+            "date": "7.1.24",
+            "link": "",
+            "favorite_songs": "Cactus Water, Black & Mild"
+        },
+        {
+            "title": "Samurai - Lupe Fiasco (2024)",
+            "cover": "images/albums/samurai.jpg",
+            "rating": "75",
+            "review": "test",
+            "date": "7.1.24",
+            "link": "",
+            "favorite_songs": "Mumble Rap, Samurai"
+        },
+        {
+            "title": "Bad Cameo - James Blake & Lil Yachty (2024)",
+            "cover": "images/albums/badcameo.jpg",
+            "rating": "80",
+            "review": "test",
+            "date": "6.28.24",
+            "link": "",
+            "favorite_songs": "In Grey, Transport Me, Midnight"
+        },
+        {
+            "title": "to hell with it - PinkPantheress (2021)",
+            "cover": "images/albums/tohellwithit.jpg",
+            "rating": "71",
+            "review": "test",
+            "date": "6.20.24",
+            "link": "",
+            "favorite_songs": "Pain, Passion, Just For Me"
+        },
+        {
+            "title": "HARDSTONE PSYCHO - Don Toliver (2024)",
+            "cover": "images/albums/hardstone.jpg",
+            "rating": "81",
+            "review": "test",
+            "date": "6.13.24",
+            "link": "",
+            "favorite_songs": "PURPLE RAIN, 4X4, BACKSTREETS"
+        },
+        {
+            "title": "Scarlet - Doja Cat (2023)",
+            "cover": "images/albums/scarlet.jpg",
+            "rating": "63",
+            "review": "test",
+            "date": "6.13.24",
+            "link": "",
+            "favorite_songs": "Can't Wait, Love Life, WYM Freestyle"
+        },
+        {
+            "title": "TIMELESS - Kaytranada (2024)",
+            "cover": "images/albums/timeless.jpg",
+            "rating": "67",
+            "review": "test",
+            "date": "6.9.24",
+            "link": "",
+            "favorite_songs": "Spit It Out, Feel A Way, Witchy"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>4 Your Eyez Only - J. Cole (2016)",
+            "cover": "images/albums/4yeo.jpg",
+            "rating": "93",
+            "review": "test",
+            "date": "6.7.24",
+            "link": "",
+            "favorite_songs": "4 Your Eyez Only, For Whom The Bell Tolls"
+        },
+        {
+            "title": "11th Dimension - Ski Mask The Slump God (2024)",
+            "cover": "images/albums/11thdimension.jpg",
+            "rating": "36",
+            "review": "test",
+            "date": "6.7.24",
+            "link": "",
+            "favorite_songs": "Wake Up!, Shibuya"
+        },
+        {
+            "title": "Tetsuo & Youth - Lupe Fiasco (2015)",
+            "cover": "images/albums/tetsuoyouth.jpg",
+            "rating": "62",
+            "review": "test",
+            "date": "5.28.24",
+            "link": "",
+            "favorite_songs": "Mural, No Scratches"
+        },
+        {
+            "title": "Dangerous Woman - Ariana Grande (2016)",
+            "cover": "images/albums/dangerouswoman.jpg",
+            "rating": "68",
+            "review": "test",
+            "date": "5.28.24",
+            "link": "",
+            "favorite_songs": "Jason's Song (Gave It Away), Thinking Bout You"
+        },
+        {
+            "title": "Dark Times - Vince Staples (2024)",
+            "cover": "images/albums/darktimes.jpg",
+            "rating": "72",
+            "review": "test",
+            "date": "5.23.24",
+            "link": "",
+            "favorite_songs": "Etouffee, black&blue"
+        },
+        {
+            "title": "Mos Def & Talib Kweli Are Black Star - Black Star (1998)",
+            "cover": "images/albums/blackstar1.jpg",
+            "rating": "86",
+            "review": "test",
+            "date": "5.22.24",
+            "link": "",
+            "favorite_songs": "Thieves In The Night, Respiration"
+        },
+        {
+            "title": "Atavista - Childish Gambino (2024)",
+            "cover": "images/albums/atavista.jpg",
+            "rating": "71",
+            "review": "test",
+            "date": "5.13.24",
+            "link": "",
+            "favorite_songs": "Time, Human Sacrifice"
+        },
+        {
+            "title": "Radical Optimism - Dua Lipa (2024)",
+            "cover": "images/albums/radical-optimism.jpg",
+            "rating": "44",
+            "review": "test",
+            "date": "5.3.24",
+            "link": "",
+            "favorite_songs": "Whatcha Doing, Anything For Love, Happy For You"
+        },
+        {
+            "title": "u made me a st4r - 4batz (2024)",
+            "cover": "images/albums/u-made-me-a-star.jpg",
+            "rating": "12",
+            "review": "test",
+            "date": "5.3.24",
+            "link": "",
+            "favorite_songs": "stickerz \"99\", i hate to be alone"
+        },
+        {
+            "title": "\"Awaken, My Love!\" - Childish Gambino (2016)",
+            "cover": "images/albums/awakenmylove.jpg",
+            "rating": "67",
+            "review": "test",
+            "date": "4.22.24",
+            "link": "",
+            "favorite_songs": "Me And Your Mama, Riot"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Section.80 - Kendrick Lamar (2011)",
+            "cover": "images/albums/section80.jpg",
+            "rating": "76",
+            "review": "test",
+            "date": "4.16.24",
+            "link": "",
+            "favorite_songs": "Hol' Up, Rigamortis"
+        },
+        {
+            "title": "JEFFERY - Young Thug (2016)",
+            "cover": "images/albums/jeffery.jpg",
+            "rating": "73",
+            "review": "test",
+            "date": "4.15.24",
+            "link": "",
+            "favorite_songs": "Future Swag, Floyd Mayweather"
+        },
+        {
+            "title": "WE STILL DON'T TRUST YOU - Future & Metro Boomin (2024)",
+            "cover": "images/albums/wsdty.jpg",
+            "rating": "57",
+            "review": "test",
+            "date": "4.12.24",
+            "link": "",
+            "favorite_songs": "Show Of Hands, Overload"
+        },
+        {
+            "title": "Black Yacht Rock Vol. 1 - Pharrell Williams (2024)",
+            "cover": "images/albums/blackyachtrockv1.jpg",
+            "rating": "48",
+            "review": "test",
+            "date": "4.6.24",
+            "link": "",
+            "favorite_songs": "Dandy Lying, Who Needs Rest?"
+        },
+        {
+            "title": "WE DON'T TRUST YOU - Future & Metro Boomin (2024)",
+            "cover": "images/albums/we-dont-trust-you.jpg",
+            "rating": "94",
+            "review": "test",
+            "date": "3.22.24",
+            "link": "",
+            "favorite_songs": "Like That, Type Sh*t, WTFYM"
+        },
+        {
+            "title": "9 - Kenny Mason (2024)",
+            "cover": "images/albums/kenny-9.jpg",
+            "rating": "62",
+            "review": "test",
+            "date": "3.17.24",
+            "link": "",
+            "favorite_songs": "SLIP, US"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Man On The Moon: The End Of Day - Kid Cudi (2009)",
+            "cover": "images/albums/motm1.jpg",
+            "rating": "96",
+            "review": "test",
+            "date": "3.14.24",
+            "link": "",
+            "favorite_songs": "Make Her Say, Up Up & Away"
+        },
+        {
+            "title": "eternal sunshine - Ariana Grande (2024)",
+            "cover": "images/albums/eternal-sunshine.jpg",
+            "rating": "98",
+            "review": "test",
+            "date": "3.7.24",
+            "link": "",
+            "favorite_songs": "Supernatural, Bye"
+        },
+        {
+            "title": "BLUE LIPS - ScHoolboy Q (2024)",
+            "cover": "images/albums/blue-lips.jpg",
+            "rating": "98",
+            "review": "test",
+            "date": "3.2.24",
+            "link": "",
+            "favorite_songs": "Blue Slides, THank god 4 me"
+        },
+        {
+            "title": "Lonerism - Tame Impala (2012)",
+            "cover": "images/albums/Lonerism.jpg",
+            "review": "test",
+            "rating": "74",
+            "date": "2.20.24",
+            "link": "",
+            "favorite_songs": "Feels Like We Only Go Backwards, Why Wont They Talk To Me"
+        },
+        {
+            "title": "Scrapyard - Quadeca (2024)",
+            "cover": "images/albums/scrapyard.jpg",
+            "review": "test",
+            "rating": "99",
+            "date": "2.16.24",
+            "link": "",
+            "favorite_songs": "TEXAS BLUE, EASIER"
+        },
+        {
+            "title": "VULTURES 1 - ¥$, Kanye West & Ty Dolla $ign (2024)",
+            "cover": "images/albums/vultures1.jpg",
+            "rating": "65",
+            "review": "test",
+            "date": "2.9.24",
+            "link": "",
+            "favorite_songs": "GOOD (DONT DIE), BURN"
+        },
+        {
+            "title": "THE MOUSE & THE MASK - DANGERDOOM (2005)",
+            "cover": "images/albums/dangerdoom.jpg",
+            "rating": "72",
+            "review": "test",
+            "date": "2.6.24",
+            "link": "",
+            "favorite_songs": "Benzi Box, Bada Bing"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>BORN LIKE THIS - MF DOOM (2009)",
+            "cover": "images/albums/born-like-this.jpg",
+            "rating": "76",
+            "review": "test",
+            "date": "2.6.24",
+            "link": "",
+            "favorite_songs": "LIGHTWORKS, STILL DOPE, SUPERVILLAINZ"
+        },
+        {
+            "title": "MICHAEL - Killer Mike (2023)",
+            "cover": "images/albums/michael.jpg",
+            "rating": "89",
+            "review": "test",
+            "date": "2.6.24",
+            "link": "",
+            "favorite_songs": "SCIENTISTS & ENGINEERS, SLUMMER"
+        },
+        {
+            "title": "Currents - Tame Impala (2015)",
+            "cover": "images/albums/currents.jpg",
+            "rating": "84",
+            "review": "test",
+            "date": "1.27.24",
+            "link": "",
+            "favorite_songs": "Yes I'm Changing, Disciples"
+        },
+        {
+            "title": "Heaven Knows - Pink Pantheress (2023)",
+            "cover": "images/albums/Heaven-Knows.jpg",
+            "rating": "82",
+            "review": "test",
+            "date": "1.27.24",
+            "link": "",
+            "favorite_songs": "Mosquito, The aisle"
+        },
+        {
+            "title": "LP! OFFLINE - JPEGMAFIA (2021)",
+            "cover": "images/albums/LP.jpg",
+            "rating": "84",
+            "review": "test",
+            "date": "1.23.24",
+            "link": "",
+            "favorite_songs": "HAZARD DUTY PAY!, TIRED, NERVOUS & BROKE"
+        },
+        {
+            "title": "hypochondriac - brakence (2022)",
+            "cover": "images/albums/hypochondriac.jpg",
+            "rating": "53",
+            "review": "test",
+            "date": "1.14.24",
+            "link": "",
+            "favorite_songs": "intellectual greed, 5g"
+        },
+        {
+            "title": "DOA - ericdoa (2024)",
+            "cover": "images/albums/doa.jpg",
+            "rating": "62",
+            "review": "test",
+            "date": "1.14.24",
+            "link": "",
+            "favorite_songs": "bigassbearman, dancinwithsomebawdy"
+        },
+        {
+            "title": "american dream - 21 Savage (2024)",
+            "cover": "images/albums/americandream.jpg",
+            "rating": "24",
+            "review": "test",
+            "date": "1.12.24",
+            "link": "",
+            "favorite_songs": "née-nah, dark days"
+        },
+        {
+            "title": "INSANO - Kid Cudi (2024)",
+            "cover": "images/albums/insano.jpg",
+            "rating": "8",
+            "review": "test",
+            "date": "1.12.24",
+            "link": "",
+            "favorite_songs": "BLUE SKY"
+        },
+        {
+            "title": "Super Departure - i-dep (2006)",
+            "cover": "images/albums/superdeparture.jpg",
+            "rating": "63",
+            "review": "test",
+            "date": "1.1.24",
+            "link": "",
+            "favorite_songs": "Sign of Summer, Don't Stop, ジャンプ!"
+        }
+    ],
+        "other": [
+        	{
+                "title": "Cyberpunk: Edgerunners (2022)",
+                "cover": "images/other/cyberpunk.jpg",
+                "rating": "67",
+                "review": "i hate david sorry just such an unlikable protaganist sorry im sorry ",
+                "date": "11.20.24",
+                "link": ""
+            },
+        	{
+                "title": "The Legend Of Zelda Majora's Mask (2000)",
+                "cover": "images/other/majorasmask.jpg",
+                "rating": "78",
+                "review": "really cool atmosphere and when its good, its great. but it also has a lot weighing it down. theres a lot of tedious sections and lacks the polish and intuitiveness a lot of ocarina of time had. still really enjoyed it but had to look at a walkthrough a lot unfortunately. final boss was lots of fun and his second stage was really silly i laughed out loud",
+                "date": "11.19.24",
+                "link": ""
+            },
+        	{
+                "title": "<i class='fa-solid fa-rotate'></i>Avatar: The Last Airbender (2005)",
+                "cover": "images/other/atla.jpg",
+                "rating": "93",
+                "review": "rewatch with my buddies!!! all time classic show zukos character development in particular is masterful wow i love it. iroh is my favorite character btw hes so zen and monklike and the prison part where he works out is awesome",
+                "date": "10.28.24",
+                "link": ""
+            },
+        	{
+                "title": "Berserk (1997)",
+                "cover": "images/other/beserk.jpg",
+                "rating": "89",
+                "review": "my buddy recommended this to me and i guess this is kinda my first time watching an anime to watch an anime instead of it falling into one of my interests. i really liked this!! the animation is really good and the characters are all great. i do wish i couldve gotten more from guts' story, so i might read the manga cause i hear its epic.",
+                "date": "9.19.24",
+                "link": ""
+            },
+        	{
+                "title": "<i class='fa-solid fa-rotate'></i>The Legend Of Zelda Ocarina of Time (1998)",
+                "cover": "images/other/oot.jpg",
+                "rating": "100",
+                "review": "one of the best games ever made i dont think you need to hear that from me. 10/10 gameplay 10/10 soundtrack 10/10 atmosphere. and now especially with ship of harkinian you can do some other really cool stuff i love this game",
+                "date": "9.13.24",
+                "link": ""
+            },
+            {
+                "title": "<i class='fa-solid fa-rotate'></i>Battleblock Theater (2013)",
+                "cover": "images/other/bbt.jpg",
+                "rating": "85",
+                "review": "one of my favorite co-op games ever it has everything a good co-op game should. you can kill your friend or just lock in and finish levels as fast as possible its great",
+                "date": "8.29.24",
+                "link": ""
+            },
+            {
+                "title": "Bomb Rush Cyberfunk (2023)",
+                "cover": "images/other/brc.jpg",
+                "rating": "96",
+                "review": "oh my GOD!!!!! if you havent heard of this game or havent played it please just buy it and play it. its so much fun and really well made. a lot of games that try to emulate the feeling you get from old games fail, but this hits the mark perfectly. and after you finish the game, theres some score achievements that are fun and most important of all this game has an incredible modding community. you can play online, get custom skins, some movement tweaks, and new maps and just a lot of great stuff seriously check this game out you will love me forever.",
+                "date": "8.11.24",
+                "link": ""
+            },
+            {
+                "title": "Gen V (2024)",
+                "cover": "images/other/genv.jpg",
+                "rating": "64",
+                "review": "the boys if it was worse",
+                "date": "8.6.24",
+                "link": ""
+            },
+            {
+                "title": "Smiling Friends Season 2 (2024)",
+                "cover": "images/other/smilingfriends-s2.jpg",
+                "rating": "86",
+                "review": "not as good as first season but still awesome",
+                "date": "6.24.24",
+                "link": ""
+            },
+            {
+                "title": "Arrested Development (2003)",
+                "cover": "images/other/arrested-development.jpg",
+                "rating": "89",
+                "review": "ignore the last 2 seasons, this show is a really good comedy show glad i watched it.",
+                "date": "7.18.24",
+                "link": ""
+            },
+            {
+                "title": "Pokémon LeafGreen (2004)",
+                "cover": "images/other/leafgreen.jpg",
+                "rating": "85",
+                "review": "its a pokemon game you know whats good and bad about it. my finishing team was blastoise, nidoqueen, raichu, ninetales, primape, and parasect.",
+                "date": "6.6.24",
+                "link": ""
+            },
+            {
+                "title": "Cowboy Bebop (1998)",
+                "cover": "images/other/cowboybebop.jpg",
+                "rating": "96",
+                "review": "best soundtrack ever wowowoww and the show rules. watching stuff on my crt makes it a million times better too. although i would like to rewatch soon cause the app on my xbox i was using to watch it on my crt broke halfway through it and i had to take a break.",
+                "date": "6.6.24",
+                "link": ""
+            },
+            {
+                "title": "jeen-yuhs (2022)",
+                "cover": "images/other/jeenyuhs.jpg",
+                "rating": "72",
+                "review": "first 2 episodes are awesome highly recommend even if you hate kanye. its truly inspirational. thrid episode needed something else to it, it lingered too much on the coodies personal life and the parts that did have kanye lacked substance. which is unfortunate cause i wouldve liked some insight on the era of kanye where he was more paranoid and started to heal himself and accept his bipolar and all that.",
+                "date": "5.30.24",
+                "link": ""
+            },
+            {
+                "title": "<i class='fa-solid fa-rotate'></i>Paper Mario: The Thousand-Year Door (2004)",
+                "cover": "images/other/ttyd.jpg",
+                "rating": "93",
+                "review": "the best paper mario game by far and is a classic of my childhood. there arent really any sections i dislike aside from the pikmin type thing in the tree, but thats just cause of bad ai. glitzville and the train levels are some of the best things nintendo has ever produced.",
+                "date": "5.25.24",
+                "link": ""
+            },
+            {
+                "title": "The Vince Staples Show (2024)",
+                "cover": "images/other/vince-staples-show.jpg",
+                "rating": "78",
+                "review": "put this on in the background while working on stuff, had some good laughs and some really well made episodes. vince staples is awesome i love him",
+                "date": "4.15.24",
+                "link": ""
+            },
+            {
+                "title": "<i class='fa-solid fa-rotate'></i>Stardew Valley (2016)",
+                "cover": "images/other/stardew.jpg",
+                "rating": "100",
+                "review": "just one of the best games of all time no contest. all made by one guy too is crazy. i dont think theres any other game that i can play with my friends and just have this fun of a time both in the gameplay and laughing with friends.",
+                "date": "4.12.24",
+                "link": ""
+            },
+            {
+                "title": "Scott Pilgrim Takes Off (2023)",
+                "cover": "images/other/scottpilgrimtakesoff.jpg",
+                "rating": "89",
+                "review": "fun show!! love the art style",
+                "date": "2.6.24",
+                "link": ""
+            },
+            {
+                "title": "The Curse (2024)",
+                "cover": "images/other/thecurse.jpg",
+                "rating": "77",
+                "review": "i love nathan fielder",
+                "date": "1.15.24",
+                "link": ""
+            }
+        ]
+    }
+    

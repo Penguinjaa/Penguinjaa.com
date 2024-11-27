@@ -13,7 +13,7 @@ colors{
     --h2-color: #CD4039;
     --h3-color: #CD4039;
     --h4-color: #CE5D3C;
-    --h5-color: #CE5D3C;
+    --h5-color: #F17315;
     --h6-color: #CE5D3C;
     --i-color: #EFD073;
 
@@ -34,4 +34,10 @@ colors{
     --background: url(/themes/assets/monochrome/crater.jpg) no-repeat fixed center;
     --body-color: #543310;
     --box-border: #C0C0C0 4px ridge;
+
+    /* BLOG */
+    --blog-border: #CE5D3C dotted 2px;
+    --blog-header: linear-gradient(90deg, #CE5D3C 65%, #000);
+    --blog-title: #F4EF36;
+
 }
