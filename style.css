@@ -196,6 +196,9 @@ textarea::-webkit-scrollbar {
     scrollbar-width: none;
     border: var(--blog-border);
 }
+lite-youtube {
+    border: var(--blog-border);
+}
 .updates h4 {
     margin-bottom: 5px;
     margin-top: 10px;

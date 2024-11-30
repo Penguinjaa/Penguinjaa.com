@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // IMPORTS // -->
+    <script src="discogs.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <!-- // INFO // -->
+    <link href="/assets/favicon.ico" rel="icon">
+    <title>VINYL COLLECTION // PENGUINJAA.COM</title>
+    <meta name="description" content="penguinjaa's digital vinyl collection">
+    <meta content="#a4749a" data-react-helmet="true" name="theme-color"/>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VINYL COLLECTION // PENGUINJAA"/>
+    <meta property="og:description" content="penguinjaa's digital vinyl collection"/>
+    <meta property="og:url" content="https://penguinjaa.com/vinyls"/>
+    <style>
+        body {
+            background: #DFDEC0;
+            margin: 0;
+            overflow: hidden;
+        }
+        .vinyl-content {
+            justify-content: center;
+            display: flex;
+            top: 3vh;
+        }
+        .vinyl-container {
+            background: #ECEBCD;
+            border-radius: 10px;
+            width: 54vw;
+            left: 30vw;
+            height: 90vh;
+            overflow: scroll;
+            padding: 0;
+            position: absolute;
+            top: inherit
+        }
+        .vinyl-container::-webkit-scrollbar{display: none;}
+        .vinyl-tabs-wrapper {
+            position: absolute;
+            top: 51.96vh;
+            right: 13.5vw;
+        }
+        .vinyl-tabs {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            transform: rotate(90deg);
+            transform-origin: top right;
+        }
+
+        .vinyl-tabs h3 {
+            margin: 0 5px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            font-family: 'orbitron', Arial, Helvetica, sans-serif;
+            padding: 5px 10px 10px 10px;
+            background: #ECEBCD;
+            color: #E38E18;
+        }
+        .vinyl-tabs h3:hover {
+            color: white !important;
+            text-shadow: -2px 2px 0 #E38E18;
+        }
+        .vinyl-nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 15px;
+            overflow: hidden;
+            max-height: 100vh;
+            width: 25vw;
+            text-align: right;
+        }
+        .vinyl-nav img {
+            border-radius: 15px;
+            height: 80vh;
+            width: 25vw;
+        }
+        .vinyl-nav h2 {
+            margin: 5px 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .vinyl-nav .homelink h2:hover {
+            color: white !important;
+            text-shadow: -3px 3px 0 #E38E18;
+        }
+        .type {
+            position: absolute;
+            visibility: hidden; 
+            white-space: nowrap;
+        }
+        h2:hover .type {
+            visibility: visible;
+        }
+        #collection, #wantlist {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+        .albumcontainer {
+            width: 160px;
+            margin: 15px;
+        }
+        .albumcontainer img{
+            max-height: 150px;
+            object-fit: contain;
+        }
+        .albumtitle {
+            font-family: 'orbitron', Arial, Helvetica, sans-serif;
+            color: #000;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+        }
+        .albumtitle:hover {
+            color: #E38E18;
+        }
+        .artistname {
+            color: #000;
+            font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        #pagination {
+            text-align: center;
+            display: none;
+            position: sticky;
+            bottom: 0;
+            background-color: #ECEBCD;
+            z-index: 1;
+            padding: 10px 0;
+        }
+        #wantlist.active + #pagination {
+            display: block;
+        }
+        #pagination button {
+            font-family: 'orbitron', Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            font-weight: 900;
+            cursor: pointer;
+            vertical-align: center;
+            margin: 0 5px 0 5px;
+            border: 0;
+        }
+        .active {
+            background: none;
+            color: #E38E18;
+        }
+        .inactive, .next, .prev {
+            background: none;
+            color: #000;
+        }
+        .inactive:hover, .next:hover, .prev:hover {
+            color: #E38E18;
+            filter: brightness(90%);
+        }
+        a:link, a:visited{
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="vinyl-nav">
+        <img src="bombpaint.gif">
+        <h2 style="font-size: 2em;">// VINYL COLLECTION</h2>
+        <img src="bombpaint.gif">
+        <div class="homelink">
+            <a href="/" style="text-decoration: none;"><h2 id="hoverText" style="color: #E38E18; font-family: 'Orbitron', Arial, Helvetica, sans-serif; font-size: 1.8em;">GO BACK HOME?<span class="type">???</span></h2></a>
+        </div>
+        <img src="bombpaint.gif">
+    </div>
+    <div class="vinyl-content">
+        <div class="vinyl-container">
+            <div id="collection"></div>
+            <div id="wantlist"></div>
+            <div id="pagination"></div>
+        </div> 
+        <div class="vinyl-tabs-wrapper">
+            <div class="vinyl-tabs">
+                <h3 id="collection-tab">COLLECTION</h3>
+                <h3 id="wantlist-tab">WANTLIST</h3>
+            </div>
+        </div>
+    </div>
+    <img src="djcyber.png" style="position: absolute; right: 0; bottom: 0;z-index: -1; height: 60vh;">
+</body>
+<!--<footer style="text-align: center;">
+    <p style="margin: 0;">PENGUINJAA.COM V5.55 [C] 2022 - 2099</p>
+    <p style="margin: 0;">
+        <a href="https://discord.com/users/264257846496067586">CONTACT</a> | 
+        <a href="/archive">ARCHIVE</a> |
+        <a href="/sitemap">SITEMAP</a> |
+        POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
+    </p>
+</footer>-->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const hoverText = document.getElementById("hoverText");
+    const typeSpan = hoverText.querySelector(".type");
+    const fullText = typeSpan.textContent;
+    let index = 0;
+
+    hoverText.addEventListener("mouseover", () => {
+        typeSpan.textContent = "";
+        index = 0;
+        const interval = setInterval(() => {
+            if (index < fullText.length) {
+                typeSpan.textContent += fullText[index];
+                index++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 50);
+    });
+
+    hoverText.addEventListener("mouseout", () => {
+        typeSpan.textContent = fullText;
+    });
+});
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const collectionTab = document.getElementById("collection-tab");
+    const wantlistTab = document.getElementById("wantlist-tab");
+    const collectionDiv = document.getElementById("collection");
+    const wantlistDiv = document.getElementById("wantlist");
+    const paginationDiv = document.getElementById("pagination");
+
+    function toggleTab(selectedTab) {
+        if (selectedTab === "collection") {
+            collectionDiv.style.display = "flex";
+            wantlistDiv.style.display = "none";
+            paginationDiv.style.display = "none";
+        } else if (selectedTab === "wantlist") {
+            wantlistDiv.style.display = "flex";
+            collectionDiv.style.display = "none";
+            paginationDiv.style.display = "block";
+        }
+    }
+
+    toggleTab("collection");
+
+    collectionTab.addEventListener("click", () => toggleTab("collection"));
+    wantlistTab.addEventListener("click", () => toggleTab("wantlist"));
+});
+</script>
+</html>
