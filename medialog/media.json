@@ -1,6 +1,38 @@
 {
     "movies": [
         {
+            "title": "Die Hard (1988)",
+            "cover": "images/movies/die-hard.jpg",
+            "rating": "76",
+            "review": "really silly movie me and my buddies had fun watching it!!! its crazy that just no one made any good decisions besides like 2 people in this whole situation.",
+            "date": "12.22.24",
+            "link": "https://letterboxd.com/penguinjaa/film/die-hard/"
+        },
+        {
+            "title": "The Nightmare Before Christmas (1993)",
+            "cover": "images/movies/tnbc.jpg",
+            "rating": "88",
+            "review": "first full watch of this !!! visually <i>beautiful</i> and i quite liked it. it really went by fast it is a shorter movie but still went by fast time flies when ur havin fun i guess!! also just now finding out this is from <i>1993</i> wow i thought it was like 2008 or something idk why",
+            "date": "12.13.24",
+            "link": "https://letterboxd.com/penguinjaa/film/the-nightmare-before-christmas/"
+        },
+        {
+            "title": "Paprika (2006)",
+            "cover": "images/movies/paprika.jpg",
+            "rating": "97",
+            "review": "holy wowowowow i went into this movie blind i didnt even know it was made by the same people that did <i>perfect blue</i> and i really really loved perfect blue. this movie does a lot of the stuff i also loved about perfect blue, <i>creative editing</i>, <i>cool transitions</i>, and <span class='spoiler'>makes you question what you really know about the characters.</span> there were a lot of moments where they did something cool and i just smiled while watching, and honestly this might be my favorite movie in terms of <i>creative choices</i> there were so many moments that blew me away.",
+            "date": "12.6.24",
+            "link": "https://letterboxd.com/penguinjaa/film/paprika-2006/"
+        },
+    	{
+            "title": "<i class='fa-solid fa-rotate'></i>Spirited Away (2001)",
+            "cover": "images/movies/spiritedaway.jpg",
+            "rating": "95",
+            "review": "2nd time watching!!! this is kinda the definitive ghibli movie, its really good and most people would like it. top 2 or 3 ghibli for me.",
+            "date": "12.6.24",
+            "link": "https://letterboxd.com/penguinjaa/film/spirited-away/1/"
+        },
+        {
             "title": "<i class='fa-solid fa-rotate'></i>Eternal Sunshine of the Spotless Mind (2004)",
             "cover": "images/movies/eternal-sunshine-spotless-mind.jpg",
             "rating": "93",
@@ -387,10 +419,64 @@
     ],
     "albums": [
         {
+            "title": "The Genuine Articulate - The Alchemist (2024)",
+            "cover": "images/albums/genuinearticulate.jpg",
+            "rating": "68",
+            "review": "i dont think i knew alchemist rapped but now that im listening to this im sure he has some verses on songs i have in my playlist. production is incredible obviously what do you expect!!!",
+            "date": "12.21.24",
+            "link": "",
+            "favorite_songs": "Ferraris In The Rain, Diego Maradona, Details"
+        },
+        {
+            "title": "Imaginal Disk - Magdalena Bay (2024)",
+            "cover": "images/albums/imaginaldisk.jpg",
+            "rating": "96",
+            "review": "this album has gotten a lot of talk this year, and i wish i listened when everyone was saying to listen to it!! man this is such a good album i could cry. an interesting tidbit is the <i>Love Is Everywhere</i> instrumental is a more developed version of <i>running out of time</i> from Lil Yachtys album last year, i guess they produced or had a hand in producing that song which is really cool.",
+            "date": "12.20.24",
+            "link": "",
+            "favorite_songs": "Cry For Me, Death & Romance, Love Is Everywhere"
+        },
+        {
+            "title": "LANA - SZA (2024)",
+            "cover": "images/albums/lana.jpg",
+            "rating": "74",
+            "review": "im not really a fan of artists releasing deluxes that are whole new albums especially when its been this long, but i get why she did it here. i really like the good tracks on here and they are probably my favorite songs from this and <i>SOS</i> combined. i think this is a more consistent set of tracks than SOS but its hard to look at them as anymore than just extra SOS songs. also i absoultely <i>LOVE</i> the album cover, idk why i saw so many people saying they hate it. i just love aliens bruh.",
+            "date": "12.20.24",
+            "link": "",
+            "favorite_songs": "Kitchen, Diamond Boy (DTM), 30 For 30"
+        },
+        {
+            "title": "Alligator Bites Never Heal - Doechii (2024)",
+            "cover": "images/albums/alligatorbites.jpg",
+            "rating": "86",
+            "review": "this album made a lot of noise when it came out but just with how much music i listened to this year, wasnt able to get to it. had to fit it in before the end of the year though, and its so good!! <i>DENIAL IS A RIVER</i> is maybe one of my fav tracks this year, feels like something youd hear as a feature on a <i>DOOM</i> song but as a whole song and its perfect!! although a lot of the songs are shorter she kills on on every song, she raps well and sings well. wouldve loved to hear <i>Doja Cat</i> on one of the tracks, maybe <i>BOILED PEANUTS</i> or <i>BULLFROG</i>.",
+            "date": "12.6.24",
+            "link": "",
+            "favorite_songs": "DENIAL IS A RVIER, BOILED PEANUTS, BEVERLY HILLS"
+        },
+        {
+            "title": "JRNY - Jordan Ward & Joony (2024)",
+            "cover": "images/albums/jrny.jpg",
+            "rating": "78",
+            "review": "i discovered jordan ward from <i>FAMJAM4000</i> coming on my spotify dj, and i just loved that instrumental so much. i still need to listen to <i>FORWARD</i>, but im going through the remaining 2024 releases before the year ends right now. i wasnt entirely sold on his vocal performances at first, but this EP has raised him up in my mind, so i'm a bit more excited to check his other stuff out. also, i think it would be really neat to hear him do a collab with <i>Kaycyy</i>.",
+            "date": "11.30.24",
+            "link": "",
+            "favorite_songs": "One Too Many Times, Homebody, Burning Rubber"
+        },
+        {
+            "title": "You Only Die 1nce - Freddie Gibbs (2024)",
+            "cover": "images/albums/onlydie1nce.jpg",
+            "rating": "75",
+            "review": "i have yet to really get into freddie gibbs, but after listening to this i think i gotta give <i>pinata</i> and <i>bandana</i> relistens. On The Set is a pretty darn beautiful closer as well.",
+            "date": "11.30.24",
+            "link": "",
+            "favorite_songs": "Brick Fees, It's Your Anniversary, Origami"
+        },
+        {
             "title": "Angel Eyes - Kenny Mason (2024)",
             "cover": "images/albums/angeleyes.jpg",
             "rating": "67",
-            "review": "i love kenny mason but his recent output has been pretty stale. this is a step in the right direction but still doesnt have that juice that angelic hoodrat and the supercut had.",
+            "review": "i love kenny mason but his recent output has been pretty stale. this is a step in the right direction but still doesnt have that juice that <i>angelic hoodrat</i> and the <i>supercut</i> had.",
             "date": "11.22.24",
             "link": "",
             "favorite_songs": "HOW TO SURVIVE, ANGEL EYES, BEEN HAVIN"
@@ -398,11 +484,11 @@
         {
             "title": "GNX - Kendrick Lamar (2024)",
             "cover": "images/albums/gnx.jpg",
-            "rating": "92",
+            "rating": "96",
             "review": "wow i cant believe he actually dropped. this year has been so legendary!!! he comes in so hot with <i>wacced out murals</i> and <i>squabble up</i> back to back thats crazy.. also really funny that the <span class='spoiler'>snippet from the NLU video was not the song called reincarnated</span> i got gobsmacked when squabble up came on. i also love all the goofier stuff kendrick does on here like screaming mustard on <i>tv off</i>. i'm just so happy he gave us more west coast bangers wow this rules so hard i love the world!!",
             "date": "11.22.24",
             "link": "",
-            "favorite_songs": "wacced out murals, heart pt. 6, squabble up"
+            "favorite_songs": "reincarnated, wacced out murals, squabble up"
         },
         {
             "title": "<i class='fa-solid fa-rotate'></i>VOIR DIRE - Earl Sweatshirt & The Alchemist (2023)",
@@ -1045,11 +1131,19 @@
         }
     ],
         "other": [
+            {
+                "title": "DAN DA DAN Season 1 (2024)",
+                "cover": "images/other/dandadans1.jpg",
+                "rating": "74",
+                "review": "This actually has a lot of neat concepts and is very well put together!!! It does get watered down for me by some of the <i>sillier stuff</i> that someone more tapped in with anime probably doesnt care about, but im not a big fan of some of the things like Okarun losing his balls and the women getting forced onto by aliens. If it took itself a bit more seriously I would like it a lot more. But the elements i do like, i really like!! The <i>demon and alien</i> stuff is cool, and all of the creatures designs are great. Some standouts are <i>Episode 7</i> with <i>Acrobat Silky</i>, that episode was great!!! I also really liked in <i>Episode 12</i> the creatures in the woods outside Jiji's house, that shot of them was really creepy and effective!! Speaking of <i>Jiji</i>, I was worried he was gonna suck but this last episode redeemed him in my eyes, him wanting to be friends with okarun is nice. <i>Overall</i>, i enjoyed this more than i expected to, the sillyness isnt particularly for me but the more serious elements made up for that.",
+                "date": "12.21.24",
+                "link": ""
+            },
         	{
                 "title": "Cyberpunk: Edgerunners (2022)",
                 "cover": "images/other/cyberpunk.jpg",
                 "rating": "67",
-                "review": "i hate david sorry hes just such an unlikable protaganist. you never really have a moment that makes you want to like him. asdie from that though, i didnt mind this show. i think lucy was a much better character than david and wish they either made her the main character or just made david a bit better and have him focus on her more. i just wouldnt really recommend this show to anyone that hasnt seen ghost in the shell. this is like a worse ghost in the shell and stretched out across 10 episodes. but if youve seen ghost in the shell and have some time to kill then yeah this was enjoyable enough to not regret watching it!!",
+                "review": "i hate david sorry hes just such an unlikable protaganist. you never really have a moment that makes you want to like him. aside from that though, i didnt mind this show. i think lucy was a much better character than david and wish they either made her the main character or just made david a bit better and have him focus on her more. i just wouldnt really recommend this show to anyone that hasnt seen ghost in the shell. this is like a worse ghost in the shell and stretched out across 10 episodes. but if youve seen ghost in the shell and have some time to kill then yeah this was enjoyable enough to not regret watching it!!",
                 "date": "11.20.24",
                 "link": ""
             },

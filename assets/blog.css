@@ -43,9 +43,16 @@
 .cover {
     float: left;
 }
-.cover img {
-    width: 150px;
+#music .entry .cover img {
+    width: 137px;
     height: auto;
+    margin-right: 10px;
+}
+#movies .entry .cover img, #other .entry .cover img {
+    width: auto;
+    height: 232px;
+    max-width: 170px;
+    object-fit: contain;
     margin-right: 10px;
 }
 .logcategory {

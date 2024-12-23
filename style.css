@@ -187,7 +187,10 @@ textarea {
 textarea::-webkit-scrollbar {
     display: none;
 }
-.updates {
+.cover {
+    float: left;
+}
+.updates, .todo, #currently {
     overflow-y: scroll;
     overflow-x: hidden;
     height: 175px;
@@ -203,11 +206,13 @@ lite-youtube {
     margin-bottom: 5px;
     margin-top: 10px;
 }
-.updates p {
-    margin-bottom: 5px;
-    margin-top: 5px;
+.updates p, .todo p {
+    margin: 5px 0;
 }
 .updates::-webkit-scrollbar {display: none;}
+#currently h5 {
+    padding-left: 10px;
+}
 
 /* LASTFM */
 #recentSong{

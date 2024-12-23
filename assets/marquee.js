@@ -4,14 +4,13 @@ const quotes = [
     "ALSO TRY SLOAN.NEKOWEB.ORG!",
     "ALSO TRY LOEVI.ART!",
     "BELL PEPPER SUMMER",
-    "No way Spirited Away is better than Akira... NOOO WAAAY... sorry was just looking at a youtube of top 10 anime films"
+    "SOMETIMES I GET EMOTIONAL OVER FONTS",
+    "HARDER, BETTER, FASTER, STRONGER",
+    "I BELIEVE IN ALIENS I DONT BELIEVE IN LUCK"
 ];
 
 let showColon = true;
 let quote = quotes[Math.floor(Math.random() * quotes.length)];
-let visitorsCount = "LOADING...";
-let followersCount = "LOADING...";
-let lastUpdated = "LOADING...";
 
 function getCurrentTime() {
     const now = new Date();
@@ -22,26 +21,12 @@ function getCurrentTime() {
     return `${hours}<span style="visibility: ${colon};">:</span>${minutes}`;
 }
 
-async function getStats() {
-    const username = "penguinjaa";
-    try {
-        const request = await fetch(`https://nekoweb.org/api/site/info/${username}`);
-        const json = await request.json();
-        visitorsCount = `${json.views}`;
-        followersCount = `${json.followers} Followers`;
-        lastUpdated = `Last Updated: ${new Date(json.updated_at).toLocaleDateString()}`;
-    } catch (error) {
-        console.error("Error fetching stats:", error);
-    }
-}
 
 function updateMarquee() {
     document.getElementById('top-marquee').innerHTML = 
-        `WELCOME TO PENGUINJAA.COM v5.55 // YOU ARE VISITOR #${visitorsCount} // ${getCurrentTime()} // ${quote}`;
+        `WELCOME TO PENGUINJAA.COM // ${getCurrentTime()} // ${quote}`;
 }
 
-getStats();
 updateMarquee();
 
 setInterval(updateMarquee, 750); 
-setInterval(getStats, 120000);

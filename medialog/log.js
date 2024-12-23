@@ -26,7 +26,7 @@ fetch('media.json')
                 <h2>${album.title} // ${album.date}</h2>
                 <h3>RATING: ${album.rating}/100</h3>
                 <p>${album.review}</p>
-                <h5>favorite tracks: ${album.favorite_songs}</h5>`;
+                <h5>FAVORITE TRACKS: ${album.favorite_songs}</h5>`;
             musicContainer.appendChild(albumDiv);
         });
 
