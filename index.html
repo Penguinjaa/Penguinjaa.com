@@ -79,7 +79,7 @@
                 </div>                
             </div>
             <div id="head-marquee">
-                <marquee scrollamount="7">
+                <marquee scrollamount="7" style="height: 50px;">
                     <h3 id="top-marquee">loading...</h3>
                 </marquee>
             </div>                     
@@ -115,8 +115,10 @@
                         
                     </div>
                 </div>
-                <iframe width="180" height="180" style="border:none; margin-bottom: 7px;" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
-                <iframe width="180" height="180" style="border:none; margin-bottom: 7px;" src="https://rice.nekoweb.org/nekolink.html"></iframe>
+                <div id="navlinks">
+                    <iframe width="180" height="180" style="border:none; margin-bottom: 7px;" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
+                    <iframe width="180" height="180" style="border:none; margin-bottom: 7px;" src="https://rice.nekoweb.org/nekolink.html"></iframe>
+                </div>
             </div>
             <div class="main-column">
                 <div class="container"> 
@@ -200,43 +202,45 @@
                         </div>
                     </div>
                 </div>
-                <marquee scrollamount="4" loop="infinite" behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();" style="margin-top: -3px;">
-                    <a href="https://nekoweb.org/" target="_blank"><img src="https://nekoweb.org/assets/buttons/button6.gif" loading="lazy"></a>
-                    <a href="https://dimden.dev/" target="_blank"><img src="/images/buttons/dimden.gif" loading="lazy"></a>
-                    <a href="https://alienheadshitkid.neocities.org/" target="_blank"><img src="/images/buttons/alienhead.gif" loading="lazy"></a>
-                    <a href="https://candlelitsmiles.neocities.org/" target="_blank"><img src="/images/buttons/candlebutton.png" loading="lazy"></a>
-                    <a href="https://yuentp.neocities.org/" target="_blank"><img src="/images/buttons/chaos.gif" loading="lazy"></a>
-                    <a href="https://saikyo-central.neocities.org/" target="_blank"><img src="/images/buttons/saikyo.gif" loading="lazy"></a>
-                    <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceplace.png" loading="lazy"></a>
-                    <a href="https://strayos.nekoweb.org/" target="_blank"><img src="/images/buttons/strayos.gif" loading="lazy"></a>
-                    <a href="https://caitsith.neocities.org/" target="_blank"><img src="/images/buttons/caitbutton.gif" loading="lazy"></a>
-                    <a href="https://darkosparko.nekoweb.org/" target="_blank"><img src="/images/buttons/darko.png" loading="lazy"></a>
-                    <a href="https://daniele63.neocities.org/" target="_blank"><img src="/images/buttons/danieles.jpg" loading="lazy"/></a>
-                    <a href="https://maphren.neocities.org/" target="_blank"><img src="https://maphren.neocities.org/imgs/buttons/maphren.gif" loading="lazy"></a>
-                    <a href="https://lostlove.neocities.org/" target="_blank"><img src="/images/buttons/lunospace.gif" loading="lazy"></a>
-                    <a href="https://madville.neocities.org/" target="_blank"><img src="/images/buttons/madville.gif" loading="lazy"></a>
-                    <a href="https://warp.zone/" target="_blank"><img src="/images/buttons/warpzone.gif" loading="lazy"/></a>
-                    <a href="https://raizinc0re.nekoweb.org/" target="_blank"><img src="/images/buttons/raizin.png" loading="lazy"></a>
-                </marquee>
-                <marquee scrollamount="3" loop="infinite" direction="left" behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();" style="margin-top: -3px;">
-                    <a href="https://sloan.nekoweb.org/" target="_blank"><img src="https://sloan.nekoweb.org/images/buttons/sIoan.gif" loading="lazy"></a>
-                    <a href="https://sloan.nekoweb.org/" target="_blank"><img src="/images/buttons/sloan-button.gif" loading="lazy"></a>
-                    <a href="https://loevi.art/" target="_blank"><img src="/images/buttons/loevi.png" loading="lazy"></a>
-                    <a href="https://trademarkhell.net/" target="_blank"><img src="https://trademarkhell.net/tmsspecialhell.png" loading="lazy"></a>
-                    <a href="https://unit00.neocities.org/" target="_blank"><img src="/images/buttons/unit00.gif" loading="lazy"></a>
-                    <a href="https://newshirt.nekoweb.org/" target="_blank"><img src="/images/buttons/newshirt.jpg" loading="lazy"></a>
-                    <a href="https://eye.nekoweb.org/" target="_blank"><img src="https://eye.nekoweb.org/images/sitebutton.gif" loading="lazy"></a>
-                    <a href="https://makoenergy.nekoweb.org/" target="_blank"><img src="/images/buttons/mako.gif" loading="lazy"></a>
-                    <a href="https://deeply.nekoweb.org" target="_blank"><img src="https://deeply.nekoweb.org/assets/buttons/dee.gif" loading="lazy"></a>
-                    <a href="https://districts.nekoweb.org/index.html" target="_blank"><img src="/images/buttons/districts.png" loading="lazy"></a>
-                    <a href="https://sadgrl.online/" target="_blank"><img src="https://sadgrl.online/assets/images/buttons/sadgrlonline.gif" loading="lazy"></a>
-                    <a href="https://im-baby.neocities.org/" target="_blank"><img src="/images/buttons/babys.gif" loading="lazy"></a>
-                    <a href="https://cloudcover.neocities.org/" target="_blank"><img src="/images/buttons/cloudcover.png" loading="lazy"></a>
-                    <a href="https://scouts-basement.neocities.org/" target="_blank"><img src="https://files.catbox.moe/nw16vo.gif" loading="lazy"></a>
-                    <a href="https://warp.zone/" target="_blank"><img src="/images/buttons/warpzone.gif" loading="lazy"/></a>
-                    <a href="https://lel.nekoweb.org/" target="_blank"><img src="/images/buttons/lelbutton.gif" loading="lazy"></a>
-                    <a href="https://buttons.nekoweb.org/" target="_blank"><img alt="Neko Buttons" src="https://buttons.nekoweb.org/img/nekobuttons.png" loading="lazy"></a>
-                </marquee>
+                <div id="button-marquees">
+                    <marquee scrollamount="4" loop="infinite" behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();" style="margin-top: -3px;">
+                        <a href="https://nekoweb.org/" target="_blank"><img src="https://nekoweb.org/assets/buttons/button6.gif" loading="lazy"></a>
+                        <a href="https://dimden.dev/" target="_blank"><img src="/images/buttons/dimden.gif" loading="lazy"></a>
+                        <a href="https://alienheadshitkid.neocities.org/" target="_blank"><img src="/images/buttons/alienhead.gif" loading="lazy"></a>
+                        <a href="https://candlelitsmiles.neocities.org/" target="_blank"><img src="/images/buttons/candlebutton.png" loading="lazy"></a>
+                        <a href="https://yuentp.neocities.org/" target="_blank"><img src="/images/buttons/chaos.gif" loading="lazy"></a>
+                        <a href="https://saikyo-central.neocities.org/" target="_blank"><img src="/images/buttons/saikyo.gif" loading="lazy"></a>
+                        <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceplace.png" loading="lazy"></a>
+                        <a href="https://strayos.nekoweb.org/" target="_blank"><img src="/images/buttons/strayos.gif" loading="lazy"></a>
+                        <a href="https://caitsith.neocities.org/" target="_blank"><img src="/images/buttons/caitbutton.gif" loading="lazy"></a>
+                        <a href="https://darkosparko.nekoweb.org/" target="_blank"><img src="/images/buttons/darko.png" loading="lazy"></a>
+                        <a href="https://daniele63.neocities.org/" target="_blank"><img src="/images/buttons/danieles.jpg" loading="lazy"/></a>
+                        <a href="https://maphren.neocities.org/" target="_blank"><img src="https://maphren.neocities.org/imgs/buttons/maphren.gif" loading="lazy"></a>
+                        <a href="https://lostlove.neocities.org/" target="_blank"><img src="/images/buttons/lunospace.gif" loading="lazy"></a>
+                        <a href="https://madville.neocities.org/" target="_blank"><img src="/images/buttons/madville.gif" loading="lazy"></a>
+                        <a href="https://warp.zone/" target="_blank"><img src="/images/buttons/warpzone.gif" loading="lazy"/></a>
+                        <a href="https://raizinc0re.nekoweb.org/" target="_blank"><img src="/images/buttons/raizin.png" loading="lazy"></a>
+                    </marquee>
+                    <marquee scrollamount="3" loop="infinite" direction="left" behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();" style="margin-top: -3px;">
+                        <a href="https://sloan.nekoweb.org/" target="_blank"><img src="https://sloan.nekoweb.org/images/buttons/sIoan.gif" loading="lazy"></a>
+                        <a href="https://sloan.nekoweb.org/" target="_blank"><img src="/images/buttons/sloan-button.gif" loading="lazy"></a>
+                        <a href="https://loevi.art/" target="_blank"><img src="/images/buttons/loevi.png" loading="lazy"></a>
+                        <a href="https://trademarkhell.net/" target="_blank"><img src="https://trademarkhell.net/tmsspecialhell.png" loading="lazy"></a>
+                        <a href="https://unit00.neocities.org/" target="_blank"><img src="/images/buttons/unit00.gif" loading="lazy"></a>
+                        <a href="https://newshirt.nekoweb.org/" target="_blank"><img src="/images/buttons/newshirt.jpg" loading="lazy"></a>
+                        <a href="https://eye.nekoweb.org/" target="_blank"><img src="https://eye.nekoweb.org/images/sitebutton.gif" loading="lazy"></a>
+                        <a href="https://makoenergy.nekoweb.org/" target="_blank"><img src="/images/buttons/mako.gif" loading="lazy"></a>
+                        <a href="https://deeply.nekoweb.org" target="_blank"><img src="https://deeply.nekoweb.org/assets/buttons/dee.gif" loading="lazy"></a>
+                        <a href="https://districts.nekoweb.org/index.html" target="_blank"><img src="/images/buttons/districts.png" loading="lazy"></a>
+                        <a href="https://sadgrl.online/" target="_blank"><img src="https://sadgrl.online/assets/images/buttons/sadgrlonline.gif" loading="lazy"></a>
+                        <a href="https://im-baby.neocities.org/" target="_blank"><img src="/images/buttons/babys.gif" loading="lazy"></a>
+                        <a href="https://cloudcover.neocities.org/" target="_blank"><img src="/images/buttons/cloudcover.png" loading="lazy"></a>
+                        <a href="https://scouts-basement.neocities.org/" target="_blank"><img src="https://files.catbox.moe/nw16vo.gif" loading="lazy"></a>
+                        <a href="https://warp.zone/" target="_blank"><img src="/images/buttons/warpzone.gif" loading="lazy"/></a>
+                        <a href="https://lel.nekoweb.org/" target="_blank"><img src="/images/buttons/lelbutton.gif" loading="lazy"></a>
+                        <a href="https://buttons.nekoweb.org/" target="_blank"><img alt="Neko Buttons" src="https://buttons.nekoweb.org/img/nekobuttons.png" loading="lazy"></a>
+                    </marquee>
+                </div>
                 <lite-youtube videoid="lmNez5l2RV0" style="width: 100%; margin-bottom: 10px;" params="loop=1"></lite-youtube>
                 <marquee scrollamount="3" loop="infinite" direction="right" behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();" style="margin-top: -3px;">
                     <img src="/images/stamps/acstamp.gif" loading="lazy">
