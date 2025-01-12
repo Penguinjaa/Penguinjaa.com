@@ -1,6 +1,14 @@
 {
     "movies": [
         {
+            "title": "Blade Runner (1982)",
+            "cover": "images/movies/bladerunner.jpg",
+            "rating": "82",
+            "review": "expected to like this more than i did but still enjoyed!! what stuck out most to me was the audio i really liked the audio. its super quiet most of the time with lower key music and just is super atmospheric. the visuals are also really cool i always love retrofuturistic stuff of course",
+            "date": "1.4.25",
+            "link": "https://letterboxd.com/penguinjaa/film/blade-runner/"
+        },
+        {
             "title": "Die Hard (1988)",
             "cover": "images/movies/die-hard.jpg",
             "rating": "76",
