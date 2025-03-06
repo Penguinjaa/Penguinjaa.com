@@ -1,6 +1,6 @@
 async function populateCurrently() {
     try {
-        const dataResponse = await fetch("/assets/activity.json");
+        const dataResponse = await fetch("/medialog/activity.json");
         if (!dataResponse.ok) throw new Error("Failed to fetch activity data.");
         
         const data = await dataResponse.json();

@@ -1,6 +1,86 @@
 {
     "movies": [
         {
+            "title": "Sonic the Hedgehog 3 (2024)",
+            "cover": "images/movies/sonic3.jpg",
+            "rating": "41",
+            "review": "Constant barrage of jokes that will only appeal to adhd children i felt my brain melting watching this. Shadow shouldve been cooler they whitewashed him unfortunately and eggmans grandpa did not have one good moment I did like parts here and there though just think a lost of missed potential and i am cautiously optimistic for metal sonic in the next one",
+            "date": "3.1.25",
+            "link": "https://letterboxd.com/penguinjaa/film/sonic-the-hedgehog-3/"
+        },
+        {
+            "title": "The Matrix (1999)",
+            "cover": "images/movies/thematrix.jpg",
+            "rating": "92",
+            "review": "movie wouldve been better if he took the blue pill",
+            "date": "2.28.25",
+            "link": "https://letterboxd.com/penguinjaa/film/the-matrix/"
+        },
+        {
+            "title": "21 Jump Street (2012)",
+            "cover": "images/movies/21jumpstreet.jpg",
+            "rating": "86",
+            "review": "Shoutout to jonah hill for making kanye not anti semetic ❤️",
+            "date": "2.21.25",
+            "link": "https://letterboxd.com/penguinjaa/film/21-jump-street/"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Your Name. (2016)",
+            "cover": "images/movies/your-name.jpg",
+            "rating": "97",
+            "review": "2nd watch!!! Wasnt able to give it my full attention but wow i forgot just how beautiful the animation is at the drinking sake part",
+            "date": "2.14.25",
+            "link": "https://letterboxd.com/penguinjaa/film/your-name/1/"
+        },
+        {
+            "title": "Moana 2 (2024)",
+            "cover": "images/movies/moana2.jpg",
+            "rating": "42",
+            "review": "the monster designs in this look really bad they look like monsters vs aliens characters!!!! music was worse than first one too. story was okay on it own though but i dont like the confirmation of another movie i dont think this one should have existed in the first place",
+            "date": "2.8.25",
+            "link": "https://letterboxd.com/penguinjaa/film/moana-2/"
+        },
+        {
+            "title": "Past Lives (2023)",
+            "cover": "images/movies/past-lives.jpg",
+            "rating": "61",
+            "review": "idk if im stupid i did not really understand the point of all this??? like i think the point is she did what was right despite liking the korean guy more but idk it didnt really move me how i saw it did for other people. i will say the korean subtitles when shes talking to korean guy and english when talking to american guy is really cool!!!!",
+            "date": "2.7.25",
+            "link": "https://letterboxd.com/penguinjaa/film/past-lives/"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Scott Pilgrim vs. the World (2010)",
+            "cover": "images/movies/scottpilgrim.jpg",
+            "rating": "87",
+            "review": "wheres scott? he just left",
+            "date": "2.5.25",
+            "link": "https://letterboxd.com/penguinjaa/film/scott-pilgrim-vs-the-world/"
+        },
+    	{
+            "title": "Baby Driver (2017)",
+            "cover": "images/movies/babydriver.jpg",
+            "rating": "77",
+            "review": "why on earth did she choose to do all this for baby when she knew him for two days anyone know ?! really really loved the pink ipod scene where he says now i am is really funny",
+            "date": "1.4.25",
+            "link": "https://letterboxd.com/penguinjaa/film/baby-driver/"
+        },
+        {
+            "title": "<i class='fa-solid fa-rotate'></i>Spider-Man: Into the Spider-Verse (2018)",
+            "cover": "images/movies/spiderverse1.jpg",
+            "rating": "91",
+            "review": "i remember thinking the second one was way way way better but now i think its only slightly better i liked this more than i remember liking it smile emoji",
+            "date": "1.17.25",
+            "link": "https://letterboxd.com/penguinjaa/film/spider-man-into-the-spider-verse/1/"
+        },
+        {
+            "title": "Blade Runner 2049 (2017)",
+            "cover": "images/movies/bladerunner2049.jpg",
+            "rating": "97",
+            "review": "this was incredible holy wowie!! i think this is just the most visually stunning movie ive seen imo it feels like every five minutes i was geeking about how good a shot looked. the part with the hologram girlfriend phasing in and out of the real girl was super cool, the room that had the water ripple shadows in it was awesome, and the city itself looked great. they did a great job with the whole aesthetic, a lot of times these futuristic aesthetics go overboard but this was a good amount.",
+            "date": "1.10.25",
+            "link": "https://letterboxd.com/penguinjaa/film/blade-runner-2049/"
+        },
+        {
             "title": "Blade Runner (1982)",
             "cover": "images/movies/bladerunner.jpg",
             "rating": "82",
@@ -426,6 +506,42 @@
         }
     ],
     "albums": [
+        {
+            "title": "I Don't Like Shit, I Don't Go Outside - Earl Sweatshirt (2015)",
+            "cover": "images/albums/idontlike.jpg",
+            "rating": "76",
+            "review": "continuing my earl journey!! didnt like this one as much as voir dire or sick but it was an enjoyable listen. gonna have to come back to this",
+            "date": "2.20.25",
+            "link": "",
+            "favorite_songs": "Grief, Wool"
+        },
+    	{
+            "title": "Atrocity Exhibition - Danny Brown (2016)",
+            "cover": "images/albums/atrocityexhibition.jpg",
+            "rating": "88",
+            "review": "took far too long to get to this album its so well regarded and for some reason i hadnt listened until now. aint it funny is an incredible song i love how danny just makes music in general it always sounds so unique.",
+            "date": "2.18.25",
+            "link": "",
+            "favorite_songs": "Ain't It Funny, Really Doe, Tell Me What I Don't Know"
+        },
+    	{
+            "title": "Mama's Gun - Erykah Badu (2000)",
+            "cover": "images/albums/mamasgun.jpg",
+            "rating": "93",
+            "review": "in my rnb/soul era!!! this album is incredible ive been listening on repeat all week wow",
+            "date": "2.16.25",
+            "link": "",
+            "favorite_songs": "A.D. 2000, Orange Moon, Kiss Me On My Neck"
+        },
+        {
+            "title": "Tha Carter II - Lil Wayne (2005)",
+            "cover": "images/albums/carter2.jpg",
+            "rating": "78",
+            "review": "saw some discussion on if this was better than carter 3 or not, so i decided to give it a proper listen since i love carter 3. its really good idk why i didnt listen sooner i just started at carter 3 for some reason. i dont think its better than carter 3 but it is more consistent i think. that verse on shooter is an all time wayne verse.",
+            "date": "2.7.25",
+            "link": "",
+            "favorite_songs": "Shooter, Fireman"
+        },
         {
             "title": "The Genuine Articulate - The Alchemist (2024)",
             "cover": "images/albums/genuinearticulate.jpg",

@@ -12,7 +12,7 @@
     <link href="/style.css" rel="stylesheet">
     <script src="/assets/marquee.js" defer></script>
     <script src="/assets/themes.js" defer></script>
-    <script src="/assets/activity.js" defer></script>
+    <script src="/medialog/activity.js" defer></script>
     <link href="/assets/nekowebring.css" rel="stylesheet">
     <link href="/assets/fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="/assets/fonts/fontawesome/css/solid.css" rel="stylesheet">
@@ -283,7 +283,7 @@
     </p>
 </footer>
 <script>
-fetch('/assets/activity.json')
+fetch('/medialog/activity.json')
     .then(response => response.json())
     .then(data => {
         const blogList = document.getElementById('blog-list');
