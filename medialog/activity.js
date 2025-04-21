@@ -9,12 +9,12 @@ async function populateCurrently() {
         if (currentlyDiv && data?.currently) {
             currentlyDiv.innerHTML = `
             <h2>CURRENTLY...</h2>
-                <h3>Watching:</h3>
-                ${data.currently.watching.map(item => `<h5>${item}</h5>`).join('')}
-                <h3>Playing:</h3>
-                ${data.currently.playing.map(item => `<h5>${item}</h5>`).join('')}
-                <h3>Reading:</h3>
-                ${data.currently.reading.map(item => `<h5>${item}</h5>`).join('')}
+                <h4><b>Watching:</b></h4>
+                ${data.currently.watching.map(item => `<p>${item}</p>`).join('')}
+                <h4><b>Playing:</b></h4>
+                ${data.currently.playing.map(item => `<p>${item}</p>`).join('')}
+                <h4><b>Reading:</b></h4>
+                ${data.currently.reading.map(item => `<p>${item}</p>`).join('')}
             `;
         }
     } catch (error) {

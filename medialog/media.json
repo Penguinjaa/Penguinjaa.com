@@ -1,6 +1,54 @@
 {
     "movies": [
         {
+            "title": "Mickey 17 (2025)",
+            "cover": "images/movies/mickey17.jpg",
+            "rating": "76",
+            "review": "finally on streaming hip hip hooray! this was really good i liked the way this unfolded everytime something was revealed i was like ooo aaa",
+            "date": "4.17.25",
+            "link": "https://letterboxd.com/penguinjaa/film/mickey-17/"
+        },
+        {
+            "title": "Kill Bill Vol. 2 (2004)",
+            "cover": "images/movies/killbill2.jpg",
+            "rating": "86",
+            "review": "both of these are very very good movies it is funny hearing those sound effects with how iconic they are now",
+            "date": "3.22.25",
+            "link": "https://letterboxd.com/penguinjaa/film/kill-bill-vol-2/"
+        },
+        {
+            "title": "Kill Bill Vol. 1 (2003)",
+            "cover": "images/movies/killbill1.jpg",
+            "rating": "88",
+            "review": "her ripping that guys eye out then the movie going black and white for a while is one of the coolest things ive ever seen",
+            "date": "3.22.25",
+            "link": "https://letterboxd.com/penguinjaa/film/kill-bill-vol-1/"
+        },
+        {
+            "title": "Anora (2024)",
+            "cover": "images/movies/anora.jpg",
+            "rating": "63",
+            "review": "was i supposed to like igor at the end cause he still sucks i dont get it!!!! pretty good movie just confused on why people are happy with the ending and like ivan hes kinda horrible?? also had a thought during the first 30ish mins if ivan was replaced with mclovin i would love that okay",
+            "date": "3.10.25",
+            "link": "https://letterboxd.com/penguinjaa/film/anora/"
+        },
+        {
+            "title": "Grave of the Fireflies (1988)",
+            "cover": "images/movies/graveofthefireflies.jpg",
+            "rating": "98",
+            "review": "this completely surprised me!! i feel like i dont hear about it as much compared to most ghibli movies but this is one of my favorites. maybe the most upset a movie has made me wowowow",
+            "date": "3.7.25",
+            "link": "https://letterboxd.com/penguinjaa/film/grave-of-the-fireflies/"
+        },
+        {
+            "title": "American Zombieland (2020)",
+            "cover": "images/movies/americanzombieland.jpg",
+            "rating": "9",
+            "review": "absolutely terrible movie with no redeeming qualities whatsoever other than it being fun to laugh at. found this cause it was recorded in my friends hometown so we watched it together and yeah it sucks. main character has the least charisma of any person ever maybe",
+            "date": "3.6.25",
+            "link": "https://letterboxd.com/penguinjaa/film/fat-ass-zombies/"
+        },
+        {
             "title": "Sonic the Hedgehog 3 (2024)",
             "cover": "images/movies/sonic3.jpg",
             "rating": "41",
@@ -506,6 +554,114 @@
         }
     ],
     "albums": [
+        {
+            "title": "Donny Hathaway - Donny Hathaway (1971)",
+            "cover": "images/albums/donnyhathaway.jpg",
+            "rating": "",
+            "review": "",
+            "date": "4.20.25",
+            "link": "",
+            "favorite_songs": "She Is My Lady, I Believe In Music"
+        },
+        {
+            "title": "Roberta Flack & Donny Hathaway - Roberta Flack & Donny Hathaway (1972)",
+            "cover": "images/albums/robertaflackdonnyhathaway.jpg",
+            "rating": "76",
+            "review": "they mesh so well together this is crazy its so good",
+            "date": "4.20.25",
+            "link": "",
+            "favorite_songs": "Baby I Love You, When Love Has Grown"
+        },
+        {
+            "title": "Everything Is Everything - Donny Hathaway (1970)",
+            "cover": "images/albums/everythingiseverything.jpg",
+            "rating": "71",
+            "review": "need to get a car again so i can drive to this",
+            "date": "4.20.25",
+            "link": "",
+            "favorite_songs": "I Believe To My Soul"
+        },
+        {
+            "title": "Extension of a Man - Donny Hathaway (1973)",
+            "cover": "images/albums/extensionofaman.jpg",
+            "rating": "79",
+            "review": "donny hathaway has been sampled a million times and just had an itch to listen to the originals today.",
+            "date": "4.19.25",
+            "link": "",
+            "favorite_songs": "Love, Love, Love, Someday We'll All Be Free"
+        },
+        {
+            "title": "Spooky Summer - Az Chike (2024)",
+            "cover": "images/albums/spookysummer.jpg",
+            "rating": "68",
+            "review": "first heard az chike on the schoolboy q album and the kendrick album and i checked out his singe Whatx2 and thats been on repeat so i put on this album while i waited for my pizza to cook!!",
+            "date": "4.13.25",
+            "link": "",
+            "favorite_songs": "Perc 3X, No I Ain't"
+        },
+        {
+            "title": "Black On Both Sides - Mos Def (1999)",
+            "cover": "images/albums/bobs.jpg",
+            "rating": "91",
+            "review": "been listening to so much good music lately i revisted the black star album and remembered i needed to check this album out. i see why this album is so well regarded its incredible and i gotta listen to more of this like era/style of rap i love it so much",
+            "date": "4.13.25",
+            "link": "",
+            "favorite_songs": "Mathematics, Brooklyn, Climb"
+        },
+        {
+            "title": "SADDEST TRUTH - KayCyy & sign crushes motorist (2025)",
+            "cover": "images/albums/saddesttruth.jpg",
+            "rating": "89",
+            "review": "its been so long since kaycyy has dropped a project im so so so happy!!! i know hes been having issues with his label and thats why but its crazy ive been waiting for his album for like 4 years now and this isnt even the same album, so idk if that other one will ever come out. regardless, i love this album its so good and really atmospheric. kaycyy and scm really compliment eachother on here and ive been listening all week.",
+            "date": "4.11.25",
+            "link": "",
+            "favorite_songs": "Make Sure You're Loved, My Heart Is, BRUISED"
+        },
+        {
+            "title": "FORWARD - Jordan Ward (2023)",
+            "cover": "images/albums/forward.jpg",
+            "rating": "71",
+            "review": "famjam4000 came on in one of my queues forever ago and ive been meaning to listen ever since so here i am!! ive listened to his ep with joony before and i loved that one, i think i liked it more than this album but still some good vibes on here",
+            "date": "4.6.25",
+            "link": "",
+            "favorite_songs": "FAMJAM4000, WHITE CROCS"
+        },
+        {
+            "title": "From The Private Collection Of Saba and No ID - Saba & No ID (2025)",
+            "cover": "images/albums/ftpcosani.jpg",
+            "rating": "72",
+            "review": "only ever listened to a couple saba songs here and there but this was getting some talk and so i decided to check it out. i really liked it and i think im gonna check his other albums out and listen to a lot of saba this summer im loving the vibes.",
+            "date": "4.6.25",
+            "link": "",
+            "favorite_songs": ""
+        },
+        {
+            "title": "Only Built For Infinity Links - Quavo & Takeoff (2022)",
+            "cover": "images/albums/obfil.jpg",
+            "rating": "65",
+            "review": "havent listened to much migos but this album has looked interesting to me since it came out and just decided the vibe was right to listen today!! ",
+            "date": "3.24.25",
+            "link": "",
+            "favorite_songs": "Chocolate, See Bout It"
+        },
+        {
+            "title": "BULLY V1 - Kanye West (2025)",
+            "cover": "images/albums/bully.jpg",
+            "rating": "23",
+            "review": "kanye is a complete psychopath and nothing he does is predictable but i hope his tweet about recording over this and getting rid of the ai is true cause the production is great and honestly could be his most cohesive album since yeezus is he gets rid of ai and doesnt include any of his weird nazi stuff",
+            "date": "3.18.25",
+            "link": "",
+            "favorite_songs": "HIGHS AND LOWS, WHITE LINES"
+        },
+        {
+            "title": "MUSIC - Playboi Carti (2025)",
+            "cover": "images/albums/music.jpg",
+            "rating": "78",
+            "review": "crazy that this actually came out but i think carti is the only case where im glad he released this as a bloated 25 track album. its been so long and hes not known for making the most thematic albums so im just happy to have a bunch of new music to listen to. and i didnt dislike any of the songs here so i love it. some songs are louder than others and its a little annoying but other than that i have no gripes. really cool we got a kendrick feature on here and it was funny to hear him do adlibs for carti.",
+            "date": "3.14.25",
+            "link": "",
+            "favorite_songs": "LIKE WHEEZY, GOOD CREDIT, CHARGE DEM HOES A FEE"
+        },
         {
             "title": "I Don't Like Shit, I Don't Go Outside - Earl Sweatshirt (2015)",
             "cover": "images/albums/idontlike.jpg",

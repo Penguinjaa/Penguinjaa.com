@@ -5,14 +5,14 @@
      --header-img: no-repeat url("/themes/assets/neo-tokyo/neo-banner.gif");
  
      /* COLORS */
-     --p-color: #FEEDFD;
-     --h1-color: #f46ee7;
-     --h2-color: #f46ee7;
-     --h3-color: #00cd95;
-     --h4-color: #00cd95;
-     --h5-color: #f46ee7;
-     --h6-color: #00cd95;
-     --i-color: #EFD073;
+     --p-color: #ffffff;
+     --h1-color: #ff7ada;
+     --h2-color: #ff7ada;
+     --h3-color: #00d9a0;
+     --h4-color: #00d9a0;
+     --h5-color: #ff7ada;
+     --h6-color: #00d9a0;
+     --i-color: #f7c66a;
 
      --selection: #7D4D74;
  
@@ -33,7 +33,7 @@
      --box-border: #C0C0C0 4px ridge;
 
     /* BLOG */
-    --blog-border: #00cd95 dotted 2px;
-    --blog-header: linear-gradient(90deg, #7F547E 65%, #000);
+    --blog-border: #C0C0C0 dotted 2px;
+    --blog-header: linear-gradient(90deg, #421c2e 65%, #00000000);
     --blog-title: #F89CF6;
  }

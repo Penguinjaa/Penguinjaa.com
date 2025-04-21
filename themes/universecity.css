@@ -22,7 +22,7 @@
     --scroll-color: #000;
     --scroll-thumb-color: #8B8798;
     /* HEADER */
-    --header-img: no-repeat url("/themes/assets/kanye/glow-banner.jpg");
+    --header-img: no-repeat url("/themes/assets/universecity/glow-banner.jpg");
 
     /* HEADERS */
     --stripes: linear-gradient(180deg,#06415F, #000);
@@ -36,7 +36,11 @@
 
     /* BLOG */
     --blog-border: 1px solid #303030;
-    --blog-header: linear-gradient(90deg, #06415F 65%, #000);
+    --blog-header: linear-gradient(90deg, #06415F 65%, #00000000);
     --blog-title: #D31180;
 }
 
+.crt-overlay {
+    display: none !important;
+    animation: none !important;
+}

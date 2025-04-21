@@ -20,6 +20,14 @@ body {
     background-size: cover;
     font-family: "content";
 }
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+  
 #content {
     margin: auto;
     width: 1000px;
@@ -58,7 +66,8 @@ body {
 }
 .right-column {width: 25%;}
 .container {
-    background: black;
+    background: black url(/images/assets/scanlines3.png);
+    background-size: 64px;
     border: var(--box-border);
     margin-bottom: 10px;
 }
@@ -85,6 +94,7 @@ body {
 .container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
     margin: 0;
     padding: 3px;
+    animation: pulse 0.1s infinite;
 }
 .container-row {
     display: flex;
@@ -97,7 +107,7 @@ footer {text-align: center;}
 p {color: var(--p-color);}
 h1 {
     color: var(--h1-color);
-    text-shadow: 0px 0px 5px var(--h1-color);
+    text-shadow: 0 0 6px var(--h1-color);
 }
 h2 {
     color: var(--h2-color);
@@ -118,12 +128,16 @@ h3 a:link, h3 a:visited {
     text-underline-offset: 2px;
     text-decoration-color: var(--h4-color);
 }
-
+a:not(a img):hover{
+    filter: invert(100%) hue-rotate(180deg);
+  }
+  
 ::selection{background: var(--selection);}
 
 i {
     color: var(--i-color);
     text-shadow: 0px 0px 6px var(--i-color);
+    font-style: normal;
 }
 .spoiler {
     display: inline !important;
@@ -149,9 +163,9 @@ html {
     scrollbar-color: var(--scroll-thumb-color) var(--scroll-color);
     scrollbar-width: thin;
 }
-
+  
 /* WIDGETS */
-#currently h5 {padding-left: 10px;}
+#currently p {padding-left: 10px;line-height: 15px;}
 
 #socials {
     padding: 7px 5px;
@@ -261,10 +275,11 @@ lite-youtube {border: var(--blog-border);}
 #theme-buttons button:hover::after {
     opacity: 1;
 }
-#theme-buttons button[data-theme="downtown"] { --color1: #CD4039; --color2: #000; }
 #theme-buttons button[data-theme="neo-tokyo"] { --color1: #f46ee7; --color2: #2e1f1a; }
 #theme-buttons button[data-theme="monochrome"] { --color1: #fff; --color2: #000; }
-#theme-buttons button[data-theme="kanye-universe"] { --color1: #EE135B; --color2: #4BB0DE; }
+#theme-buttons button[data-theme="universe-city"] { --color1: #EE135B; --color2: #4BB0DE; }
+#theme-buttons button[data-theme="2049"] { --color1: #d54aa5; --color2: #181483; }
+#theme-buttons button[data-theme="downtown"] { --color1: #CD4039; --color2: #000; }
 #theme-buttons button[data-theme="v3.33"] { --color1: #24171C; --color2: #D6D1BC; }
 #theme-buttons button[data-theme="v2.22"] { --color1: #AD81A4; --color2: #513971; }
 #theme-buttons button[data-theme="v1.11"] { --color1: #9FB0FB; --color2: #F8E6FF; }
@@ -306,4 +321,30 @@ lite-youtube {border: var(--blog-border);}
     #button-marquees {
         text-align: center;
     }
+}
+
+.crt-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.2),
+        rgba(255,255,255,0.2) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    animation: flicker 0.2s infinite;
+    mix-blend-mode: overlay;
+}
+@keyframes flicker {
+  0%   { opacity: 0.85; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.9; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.97; }
+  50% { opacity: 1; }
 }

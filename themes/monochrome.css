@@ -34,6 +34,6 @@
 
     /* BLOG */
     --blog-border: #d6d1bc dotted 2px;
-    --blog-header: linear-gradient(90deg, #C0C0C0 65%, #000);
+    --blog-header: linear-gradient(90deg, #C0C0C0 65%, #00000000);
     --blog-title: #000;
  }

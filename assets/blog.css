@@ -34,6 +34,7 @@
     padding-left: 10px;
     display: flex;
     align-items: center;
+    animation: none !important;
 }
 .entry h2 i {
     color: inherit;
