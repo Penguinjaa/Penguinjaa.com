@@ -29,8 +29,9 @@
  
      /* BODY */
      --background: url(/themes/assets/monochrome/crater.jpg) no-repeat fixed center;
-     --body-color: #543310;
+     --box-bg: #000;
      --box-border: #C0C0C0 4px ridge;
+     --cursor: url(/themes/assets/monochrome/cursor.png);
 
     /* BLOG */
     --blog-border: #d6d1bc dotted 2px;

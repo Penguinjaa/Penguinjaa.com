@@ -1,35 +1,35 @@
-/* // 2049 // */
+/* // MIKU // */
 
 :root {
     /* HEADER */
-    --header-img: no-repeat url("/themes/assets/2049/2049-banner2.jpg");
+    --header-img: no-repeat url("/themes/assets/miku/bg1.jpg");
 
     /* COLORS */
-    --p-color: #ffffff;
-    --h1-color: #d54aa5;
-    --h2-color: #d54aa5;
-    --h3-color: #7b7dba;
-    --h4-color: #7b7dba;
-    --h5-color: #d54aa5;
-    --h6-color: #7b7dba;
-    --i-color: #ce2896;
+    --p-color: #000;
+    --h1-color: #e12885;
+    --h2-color: #e12885;
+    --h3-color: #137a7f;
+    --h4-color: #137a7f;
+    --h5-color: #e12885;
+    --h6-color: #137a7f;
+    --i-color: #e12885;
 
     --selection: #7D4D74;
 
-    --marquee-text: #4e30a2;
-    --marquee-shadow: 0px 0px 7px #4e30a2;
+    --marquee-text: #137a7f;
+    --marquee-shadow: 0px 0px 7px #137a7f;
 
     --scroll-color: #000;
     --scroll-thumb-color: #2e1f1a;
 
     /* HEADERS */
-    --stripes: repeating-linear-gradient(180deg,#2B201C,#2B201C 3px,#000 3px,#000 6px);
+    --stripes: repeating-linear-gradient(180deg,#c9eff2,#c9eff2 3px,#fff 3px,#fff 6px);
     --grid: linear-gradient(-90deg, #ffffff0f 1px, transparent 1px),linear-gradient(#ffffff0f 1px, transparent 1px),#000;
     --gridsize: 4px 4px,4px 4px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px;
 
     /* BODY */
-    --background: url(/themes/assets/2049/bg.jpg) no-repeat fixed center;
-    --box-bg: #000;
+    --background: url(/themes/assets/miku/bg2.png) no-repeat fixed center;
+    --box-bg: #fff;
     --box-border: #C0C0C0 4px ridge;
 
    /* BLOG */

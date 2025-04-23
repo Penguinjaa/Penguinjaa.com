@@ -19,6 +19,7 @@ body {
     background: var(--background);
     background-size: cover;
     font-family: "content";
+    cursor: var(--cursor), auto;
 }
 body::before {
     content: "";
@@ -66,7 +67,7 @@ body::before {
 }
 .right-column {width: 25%;}
 .container {
-    background: black url(/images/assets/scanlines3.png);
+    background: var(--box-bg) url(/images/assets/scanlines3.png);
     background-size: 64px;
     border: var(--box-border);
     margin-bottom: 10px;
@@ -94,7 +95,6 @@ body::before {
 .container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
     margin: 0;
     padding: 3px;
-    animation: pulse 0.1s infinite;
 }
 .container-row {
     display: flex;
@@ -108,6 +108,7 @@ p {color: var(--p-color);}
 h1 {
     color: var(--h1-color);
     text-shadow: 0 0 6px var(--h1-color);
+    animation: pulse 0.1s infinite;
 }
 h2 {
     color: var(--h2-color);
@@ -128,7 +129,7 @@ h3 a:link, h3 a:visited {
     text-underline-offset: 2px;
     text-decoration-color: var(--h4-color);
 }
-a:not(a img):hover{
+a:hover{
     filter: invert(100%) hue-rotate(180deg);
   }
   
@@ -198,6 +199,13 @@ textarea::-webkit-scrollbar {display: none;}
 .updates h4 {margin-bottom: 5px;margin-top: 10px;}
 
 lite-youtube {border: var(--blog-border);}
+
+
+#changelog {
+    width: 70%;
+    height: 500px;
+}
+
 
 /* LASTFM */
 #recentSong{
@@ -278,6 +286,7 @@ lite-youtube {border: var(--blog-border);}
 #theme-buttons button[data-theme="neo-tokyo"] { --color1: #f46ee7; --color2: #2e1f1a; }
 #theme-buttons button[data-theme="monochrome"] { --color1: #fff; --color2: #000; }
 #theme-buttons button[data-theme="universe-city"] { --color1: #EE135B; --color2: #4BB0DE; }
+#theme-buttons button[data-theme="MIKU"] { --color1: #137a7f; --color2: #e12885; }
 #theme-buttons button[data-theme="2049"] { --color1: #d54aa5; --color2: #181483; }
 #theme-buttons button[data-theme="downtown"] { --color1: #CD4039; --color2: #000; }
 #theme-buttons button[data-theme="v3.33"] { --color1: #24171C; --color2: #D6D1BC; }
@@ -345,6 +354,6 @@ lite-youtube {border: var(--blog-border);}
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 0.97; }
+  0%, 100% { opacity: 0.93;}
   50% { opacity: 1; }
 }

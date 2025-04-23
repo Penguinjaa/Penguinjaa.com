@@ -31,7 +31,7 @@
 
     /* BODY */
     --background: #000 no-repeat fixed center;
-    --body-color: #543310;
+    --box-bg: #000;
     --box-border: #303030 4px ridge;
 
     /* BLOG */

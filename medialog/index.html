@@ -7,15 +7,15 @@
     <link id="theme1" rel="stylesheet" href="/themes/neotokyo.css">
     <link id="theme2" rel="stylesheet" href="/themes/monochrome.css" disabled>
     <link id="theme3" rel="stylesheet" href="/themes/universecity.css" disabled>
-    <link id="theme4" rel="stylesheet" href="/themes/2049.css" disabled>
+    <link id="theme4" rel="stylesheet" href="/themes/miku.css" disabled>
     <!-- // IMPORTS // -->
     <link href="/style.css" rel="stylesheet">
-    <link href="/assets/blog.css" rel="stylesheet">
+    <link href="assets/blog.css" rel="stylesheet">
     <link href="/assets/fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="/assets/fonts/fontawesome/css/solid.css" rel="stylesheet">
     <script src="/assets/themes.js" async></script>
     <script src="/assets/marquee.js" defer></script>
-    <script src="/assets/activity.js" defer></script>
+    <script src="activity.js" defer></script>
     <script src="log.js" async></script>
     <!-- // INFO // -->
     <link href="/assets/favicon.ico" rel="icon">
@@ -26,6 +26,64 @@
     <meta property="og:title" content="MEDIA LOG // PENGUINJAA"/>
     <meta property="og:description" content="penguinjaa's digital media log"/>
     <meta property="og:url" content="https://penguinjaa.com/medialog"/>
+    <style>
+        #entries {
+            padding: 0 15px;
+            height: 70vh;
+            width: 100%;
+            overflow: hidden scroll;
+            scrollbar-width: none;
+            scroll-behavior: smooth;
+        }
+        .entry {
+            margin: 10px 0 20px 0;
+            border: var(--blog-border);
+            padding: 10px;
+        }
+        #movies .entry, #other .entry {min-height: 225px;}
+        #music .entry {min-height: 150px;}
+        .entry h2 {
+            color: var(--blog-title);
+            background: var(--blog-header);
+            text-decoration: none;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            animation: none !important;
+        }
+        .entry h2 i {
+            color: inherit;
+            text-shadow: inherit;
+            margin-right: 7px;
+        }
+        .cover {
+            float: left;
+        }
+        #music .entry .cover img {
+            width: 137px;
+            height: auto;
+            margin-right: 10px;
+        }
+        #movies .entry .cover img, #other .entry .cover img {
+            width: auto;
+            height: 232px;
+            max-width: 170px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+        .logcategory {
+            padding-left: 10px;
+        }
+        .logcategory h3 {
+            text-decoration: underline;
+        }
+        #currently {
+            margin-top: 10px;
+        }
+        #currently h5 {
+            padding-left: 15px;
+        }
+    </style>
 </head>
 <body>
     <div id="content">
@@ -35,7 +93,7 @@
                     <button onclick="setTheme('NEO-TOKYO')" data-theme="neo-tokyo" data-theme-name="NEO-TOKYO"></button>
                     <button onclick="setTheme('MONOCHROME')" data-theme="monochrome" data-theme-name="MONOCHROME"></button>
                     <button onclick="setTheme('UNIVERSE CITY')" data-theme="universe-city" data-theme-name="UNIVERSE CITY"></button>
-                    <button onclick="setTheme('2049')" data-theme="2049" data-theme-name="2049"></button>
+                    <button onclick="setTheme('MIKU')" data-theme="MIKU" data-theme-name="MIKU"></button>
                 </div>                
             </div>
             <div id="head-marquee">
@@ -44,30 +102,47 @@
                 </marquee>
             </div>                     
         </div>
-        <div class="container"> 
-            <div class="container-content" style="display: flex; padding: 0;">
-                <div id="journalnav">
-                    <span style="padding: 5px;"><img src="/assets/icons/home.png"><a href="/"><h2>GO HOME?</h2></a></span>
-                    <h2 style="text-decoration: none;">JUMP TO...</h2>
-                    <span class="logcategory">
-                        <img src="/assets/icons/media2.png"><a href="#movies"><h3 style="margin: 5px 0;">MOVIES</h3></a>
-                    </span>
-                    <span class="logcategory">
-                        <img src="/assets/icons/vinyls.png"><a href="#music"><h3 style="margin: 5px 0;">MUSIC</h3></a>
-                    </span>
-                    <span class="logcategory">
-                        <img src="/assets/icons/links.png"><a href="#other"><h3 style="margin: 5px 0;">OTHER</h3></a>
-                    </span>
-                    <div id="currently" style="height: fit-content; border: none;"></div>
-                </div>
-                <div id="entries">
-                    <div id="welcome" class="entry">
-                        <h2>WELCOME</h2>
-                        <p>welcome to my <i>media log</i>. this is a place for me to log and rate and (kinda) review media i watch/listen/play. any potential <i>spoilers</i> will be hidden <span class="spoiler">like this</span>. hover over it to reveal it. any reviews before 11.22.24 were written retrospectively.</p>   
+        <div id="body">
+            <div class="left-column">
+                <div class="container">
+                    <div class="container-title">
+                        <h1>LINKS</h1>
                     </div>
-                    <div id="movies"></div>
-                    <div id="music"></div>
-                    <div id="other"></div>
+                    <div class="container-content">
+                        <span><img src="/assets/icons/home.png"><h3><a href="/">HOME</a></h3></span>
+                        <span><img src="/assets/icons/vinyls.png"><h3><a href="/vinyls">VINYLS</a></h3></span>
+                        <span><img src="/assets/icons/journal2.png"><h3><a href="/journal">JOURNAL</a></h3></span>
+                        <span><img src="/assets/icons/blog.png"><h3><a href="/blog">BLOG</a></h3></span>
+                        <span><img src="/assets/icons/scrapbook2.png"><h3><a href="/scrapbook">SCRAPBOOK</a></h3></span>
+                        <h2 style="margin-top: 10px;">JUMP TO...</h2>
+                        <div>
+                            <span class="logcategory">
+                                <img src="/assets/icons/media2.png"><a href="#movies"><h3 style="margin: 5px 0;">MOVIES</h3></a>
+                            </span>
+                            <span class="logcategory">
+                                <img src="/assets/icons/vinyls.png"><a href="#music"><h3 style="margin: 5px 0;">MUSIC</h3></a>
+                            </span>
+                            <span class="logcategory">
+                                <img src="/assets/icons/links.png"><a href="#other"><h3 style="margin: 5px 0;">OTHER</h3></a>
+                            </span>
+                            <div id="currently" style="height: fit-content; border: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-column" style="width: 100%; margin-right: 0;">
+                <div class="container"> 
+                    <div class="container-content" style="display: flex; padding: 0;">
+                        <div id="entries">
+                            <div id="welcome" class="entry">
+                                <h2>WELCOME</h2>
+                                <p>welcome to my <i>media log</i>. this is a place for me to log and rate and (kinda) review media i watch/listen/play. any potential <i>spoilers</i> will be hidden <span class="spoiler">like this</span>. hover over it to reveal it. any reviews before 11.22.24 were written retrospectively.</p>   
+                            </div>
+                            <div id="movies"></div>
+                            <div id="music"></div>
+                            <div id="other"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

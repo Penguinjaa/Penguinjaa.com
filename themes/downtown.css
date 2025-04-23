@@ -32,7 +32,7 @@ colors{
 
     /* BODY */
     --background: url(/themes/assets/monochrome/crater.jpg) no-repeat fixed center;
-    --body-color: #543310;
+    --box-bg: #000;
     --box-border: #C0C0C0 4px ridge;
 
     /* BLOG */
