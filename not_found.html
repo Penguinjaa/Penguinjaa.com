@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <title>PAGE.NOT.FOUND</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet">
     <!-- // THEMES // -->
-    <link id="themeOne" rel="stylesheet" href="/themes/themeOne.css">
     <meta name="description" content="// PAGE.NOT.FOUND //">
     <link rel="icon" href="/favicon.ico" />
     <meta content="#a4749a" data-react-helmet="true" name="theme-color"/>
@@ -15,31 +13,100 @@
     <meta property="og:title" content="PAGE.NOT.FOUND"/>
     <meta property="og:description" content="PAGE.NOT.FOUND"/>
     <meta property="og:url" content="https://penguinjaa.com/not_found.html"/>
-	<script src="/themes.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display:flex;
+            height:100vh;
+            align-items:center;
+            background-image: linear-gradient(0deg, #ffffff 25%, #f4edf5 25%, #f4edf5 50%, #ffffff 50%, #ffffff 75%, #f4edf5 75%, #f4edf5 100%);
+            background-size: 8px 8px;
+        }
+        #maincontainer {
+            width: 100%;
+            margin: 0 auto;
+        }
+        #resetticontainer {
+            position: relative;
+            background: url(/assets/icons/404bg.png);
+            background-repeat: repeat-x;
+            background-size: contain;
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            font-size: 2em;
+        }
+        #resetticontainer::before,
+        #resetticontainer::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 60px;
+            height: 110%;
+            margin: -10px 0;
+            z-index: 1;
+            pointer-events: none;
+        }
+        #resetticontainer::before {
+            left: 0;
+            background: linear-gradient(to right, #fff 0%, transparent 100%);
+        }
+        #resetticontainer::after {
+            right: 0;
+            background: linear-gradient(to left, #fff 0%, transparent 100%);
+        }
+        .resetti {
+            text-align: center;
+        }
+        .gradient-overlay {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 9998;
+        }
+        .crt-overlay {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 9999;
+            background: repeating-linear-gradient(
+                to bottom,
+                rgba(255,255,255,0.4),
+                rgba(255,255,255,0.4) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            animation: flicker 0.2s infinite;
+            mix-blend-mode: overlay;
+        }
+        @keyframes flicker {
+            0%   { opacity: 0.85; }
+            50%  { opacity: 1; }
+            100% { opacity: 0.9; }
+        }
+    </style>
 </head>
 <body>
+    <div class="crt-overlay"></div>
+    <div class="gradient-overlay"></div>
     <div id="maincontainer">
-        <div id="content">
-            <div style="margin-top: 20vh; flex: 1;">
-                <div class="box">
-                    <div class="boxhead">
-                        <h2>404 PAGE NOT FOUND</h2>
-                    </div>
-                    <div class="boxbody" style="padding: 30px;">
-                        <p>Oops! You seem to have gotten lost. or maybe i broke one of my links.</p>
-						<a href="/"><h3>GO HOME</h3></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="footer">
-            <p style="margin: 0;">PENGUINJAA.COM V4.44 [C] 2022 - 2099</p>
-            <p style="font-size: 18px; margin: 0;">
-                <a href="/cdn-cgi/l/email-protection#8ae9e5e4feebe9fecafaefe4edffe3e4e0ebeba4e9e5e7">CONTACT</a> | 
-                <a href="/archive">ARCHIVE</a> |
-                <a href="/sitemap">SITEMAP</a> |
-                POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
-            </p>
+        <div id="resetticontainer">
+            <img src="/assets/icons/404.png" class="resetti">
+            <p>404 Page not found.</p>
+            <a href="/"><p>Go back home?</p></a>
         </div>
     </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+    <!--<div id="footer">
+        <p style="margin: 0;">PENGUINJAA.COM V4.44 [C] 2022 - 2099</p>
+        <p style="font-size: 18px; margin: 0;">
+            <a href="/cdn-cgi/l/email-protection#8ae9e5e4feebe9fecafaefe4edffe3e4e0ebeba4e9e5e7">CONTACT</a> | 
+            <a href="/archive">ARCHIVE</a> |
+            <a href="/sitemap">SITEMAP</a> |
+            POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
+        </p>
+    </div>-->
+</body>

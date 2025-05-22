@@ -9,24 +9,26 @@ fetch('media.json')
             movieDiv.id = `movie${i + 1}`;
             movieDiv.innerHTML = `
                 <div class="cover"><img src="${movie.cover}" alt="${movie.title}" loading="lazy"></div>
-                <h2>${movie.title} // ${movie.date}</h2>
-                <h3>RATING: ${movie.rating}/100</h3>
+                <h2>${movie.title} // ${movie.year}</h2>
+                <h3>${movie.rating}/100 // WATCHED ${movie.date}</h3>
                 <p>${movie.review}</p>`;
             movieContainer.appendChild(movieDiv);
         });
 
         const musicContainer = document.getElementById('music');
-        musicContainer.innerHTML = '<h2>MUSIC LOG</h2>';
         data.albums.forEach((album, i) => {
             const albumDiv = document.createElement('div');
             albumDiv.classList.add('entry');
             albumDiv.id = `music${i + 1}`;
             albumDiv.innerHTML = `
-                <div class="cover"><img src="${album.cover}" alt="${album.title}" loading="lazy"></div>
-                <h2>${album.title} // ${album.date}</h2>
-                <h3>RATING: ${album.rating}/100</h3>
-                <p>${album.review}</p>
-                <h5>FAVORITE TRACKS: ${album.favorite_songs}</h5>`;
+                <div class="albumdetails">
+                    <div class="cover"><img src="${album.cover}" alt="${album.title}" loading="lazy"></div>
+                    <h2>${album.title} (${album.year})</h2>
+                    <h5>${album.artist}</h5>
+                    <h3>${album.rating}/100 // LISTENED ${album.date}</h3>
+                </div>
+                <h5>FAVORITE TRACKS: ${album.favorite_songs}</h5>
+                <!--<p>${album.review}</p>-->`;
             musicContainer.appendChild(albumDiv);
         });
 

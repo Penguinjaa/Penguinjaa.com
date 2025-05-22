@@ -1,7 +1,8 @@
 {
     "movies": [
         {
-            "title": "Mickey 17 (2025)",
+            "title": "Mickey 17",
+            "year": "2025",
             "cover": "images/movies/mickey17.jpg",
             "rating": "76",
             "review": "finally on streaming hip hip hooray! this was really good i liked the way this unfolded everytime something was revealed i was like ooo aaa",
@@ -555,16 +556,20 @@
     ],
     "albums": [
         {
-            "title": "Donny Hathaway - Donny Hathaway (1971)",
+            "title": "Donny Hathaway",
+            "artist": "Donny Hathaway",
+            "year": "1971",
             "cover": "images/albums/donnyhathaway.jpg",
-            "rating": "",
+            "rating": "79",
             "review": "",
             "date": "4.20.25",
             "link": "",
             "favorite_songs": "She Is My Lady, I Believe In Music"
         },
         {
-            "title": "Roberta Flack & Donny Hathaway - Roberta Flack & Donny Hathaway (1972)",
+            "title": "Roberta Flack & Donny Hathaway",
+            "artist": "Roberta Flack & Donny Hathaway",
+            "year": "1972",
             "cover": "images/albums/robertaflackdonnyhathaway.jpg",
             "rating": "76",
             "review": "they mesh so well together this is crazy its so good",
@@ -573,16 +578,20 @@
             "favorite_songs": "Baby I Love You, When Love Has Grown"
         },
         {
-            "title": "Everything Is Everything - Donny Hathaway (1970)",
+            "title": "Everything Is Everything",
+            "artist": "Donny Hathaway",
+            "year": "1970",
             "cover": "images/albums/everythingiseverything.jpg",
-            "rating": "71",
+            "rating": "68",
             "review": "need to get a car again so i can drive to this",
             "date": "4.20.25",
             "link": "",
             "favorite_songs": "I Believe To My Soul"
         },
         {
-            "title": "Extension of a Man - Donny Hathaway (1973)",
+            "title": "Extension of a Man",
+            "artist": "Donny Hathaway",
+            "year": "1973",
             "cover": "images/albums/extensionofaman.jpg",
             "rating": "79",
             "review": "donny hathaway has been sampled a million times and just had an itch to listen to the originals today.",
@@ -591,16 +600,20 @@
             "favorite_songs": "Love, Love, Love, Someday We'll All Be Free"
         },
         {
-            "title": "Spooky Summer - Az Chike (2024)",
+            "title": "Spooky Summer",
+            "artist": "Az Chike",
+            "year": "2024",
             "cover": "images/albums/spookysummer.jpg",
-            "rating": "68",
+            "rating": "54",
             "review": "first heard az chike on the schoolboy q album and the kendrick album and i checked out his singe Whatx2 and thats been on repeat so i put on this album while i waited for my pizza to cook!!",
             "date": "4.13.25",
             "link": "",
             "favorite_songs": "Perc 3X, No I Ain't"
         },
         {
-            "title": "Black On Both Sides - Mos Def (1999)",
+            "title": "Black On Both Sides",
+            "artist": "Mos Def",
+            "year": "1999",
             "cover": "images/albums/bobs.jpg",
             "rating": "91",
             "review": "been listening to so much good music lately i revisted the black star album and remembered i needed to check this album out. i see why this album is so well regarded its incredible and i gotta listen to more of this like era/style of rap i love it so much",
@@ -609,7 +622,9 @@
             "favorite_songs": "Mathematics, Brooklyn, Climb"
         },
         {
-            "title": "SADDEST TRUTH - KayCyy & sign crushes motorist (2025)",
+            "title": "SADDEST TRUTH",
+            "artist": "KayCyy & sign crushes motorist",
+            "year": "2025",
             "cover": "images/albums/saddesttruth.jpg",
             "rating": "89",
             "review": "its been so long since kaycyy has dropped a project im so so so happy!!! i know hes been having issues with his label and thats why but its crazy ive been waiting for his album for like 4 years now and this isnt even the same album, so idk if that other one will ever come out. regardless, i love this album its so good and really atmospheric. kaycyy and scm really compliment eachother on here and ive been listening all week.",
@@ -618,7 +633,9 @@
             "favorite_songs": "Make Sure You're Loved, My Heart Is, BRUISED"
         },
         {
-            "title": "FORWARD - Jordan Ward (2023)",
+            "title": "FORWARD",
+            "artist": "Jordan Ward",
+            "year": "2023",
             "cover": "images/albums/forward.jpg",
             "rating": "71",
             "review": "famjam4000 came on in one of my queues forever ago and ive been meaning to listen ever since so here i am!! ive listened to his ep with joony before and i loved that one, i think i liked it more than this album but still some good vibes on here",
