@@ -11,8 +11,6 @@
     <!-- // IMPORTS // -->
     <link href="/style.css" rel="stylesheet">
     <link href="assets/blog.css" rel="stylesheet">
-    <link href="/assets/fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/assets/fonts/fontawesome/css/solid.css" rel="stylesheet">
     <script src="/assets/themes.js" async></script>
     <script src="/assets/marquee.js" defer></script>
     <script src="activity.js" defer></script>
@@ -29,82 +27,127 @@
     <style>
         #entries {
             padding: 0 15px;
-            height: 70vh;
+            height: 60vh;
             width: 100%;
             overflow: hidden scroll;
             scrollbar-width: none;
             scroll-behavior: smooth;
         }
-        .entry {
-            margin: 10px 0 20px 0;
-            border: var(--blog-border);
-            padding: 10px;
-        }
-        #movies .entry, #other .entry {
-            min-height: 105px;
-        }
-        #music .entry {
-            min-height: 137px;
-            margin: 5px 0;
-        }
-        .entry h2 {
-            color: var(--blog-title);
+        #movie, #album, #others {
             background: var(--blog-header);
-            text-decoration: none;
-            padding-left: 10px;
-            display: flex;
-            align-items: center;
-            animation: none !important;
+            margin: 10px 0 0 -25px !important;
+            padding: 0 0 5px 25px;
         }
-        .entry h2 i {
-            color: inherit;
-            text-shadow: inherit;
-            margin-right: 7px;
-        }
-        .cover {
-            float: left;
-        }
-        #music .cover {
-            height: 100px;
-        }
-        #music {
+        #movies, #music, #other {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
-        #music .entry .cover img {
-            width: 100px;
-            height: auto;
-            margin-right: 10px;
+
+        .movie-container, .album-container, .other-container {
+            width: 130px;
+            text-align: center;
+            position: relative;
         }
-        #music .entry {
-            width: 46.5%;
-        }
-        .albumdetails {
-            height: 110px;
-        }
-        #movies .entry .cover img, #other .entry .cover img {
+        .movie-container img, .other-container img {
+            height: 200px;
             width: auto;
-            height: 105px;
-            max-width: 170px;
+            max-width: 100%;
             object-fit: contain;
+        }
+        .album-container img {
+            height: 150px;
+            width: 150px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        .movie-container h2, .album-container h2, .other-container h2 {
+            font-size: 1.2em;
+            color: var(--h2-color);
+        }
+        .movie-container h3, .album-container h3, .other-container h3 {
+            font-size: 1em;
+        }
+        .movie-container p {
+            display: none;
+        }
+        .ratedate {display: flex; width: 100%; justify-content: space-evenly; color: var(--p-color);}
+        .rating {color: var(--i-color);}
+        .date {color: var(--h3-color);}
+
+        #tab-content {
+            padding-top: 10px;
+        }
+        .tab-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .tab-hidden {
+            display: none !important;
+        }
+        #media-tabs {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 0;
+        }
+
+
+        .focused-entry {
+            width: 100%;
+            display: flex;
+            height: auto;
+            min-height: 210px;
+        }
+        .focused-entry img {
+            max-width: 130px;
+            object-position: top;
+        }
+        .focused-entry h2 {
+            background: var(--blog-header);
+            padding: 0 0 7px 15px;
+            text-align: left;
+        }
+        .focused-entry p {
+            margin-left: 25px;
+            display: block;
+            text-align: left;
+        }
+        .focused-entry h5 {
+            text-align: left;
+            margin-left: 10px;
+        }
+        .focused-entry .ratedate {
+            justify-content: space-between;
+            padding: 0 15px;
+            width: auto;
+            flex-direction: row-reverse;
+        }
+        .entry.focused-entry, .focused-entry .entry-info {
+            width: 100%;
+        }
+
+        .review-button {
+            font-family: "content";
+            font-weight: 900;
+            font-size: 1.1em;
+            color: var(--h3-color);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        #view-toggle-buttons button {
+            background: none;
+            border: none;
             margin-right: 10px;
         }
-        .logcategory {
-            padding-left: 10px;
-        }
-        .logcategory h3 {
-            text-decoration: underline;
-        }
-        #currently {
-            margin-top: 10px;
-        }
-        #currently h5 {
-            padding-left: 15px;
+        .svg-fill {
+            fill: var(--h2-color);
         }
     </style>
 </head>
 <body>
+    <div class="crt-overlay"></div>
     <div id="content">
         <div id="header">
             <div id="headerimg">
@@ -123,43 +166,54 @@
         </div>
         <div id="body">
             <div class="left-column">
-                <div class="container" style="margin-bottom: 0; height: 70vh; overflow-y: hidden">
+                <div class="container" style="margin-bottom: 0; overflow-y: hidden">
                     <div class="container-title">
                         <h1>LINKS</h1>
                     </div>
-                    <div class="container-content">
+                    <div class="container-content" style="height: 60vh; padding: 0 10px;">
+                        <div id="media-tabs">
+                            <button onclick="showTab('movies')">MOVIES</button>
+                            <button onclick="showTab('music')">MUSIC</button>
+                            <button onclick="showTab('other')">OTHER</button>
+                        </div>
                         <span><img src="/assets/icons/home.png"><h3><a href="/">HOME</a></h3></span>
                         <span><img src="/assets/icons/vinyls.png"><h3><a href="/vinyls">VINYLS</a></h3></span>
                         <span><img src="/assets/icons/journal2.png"><h3><a href="/journal">JOURNAL</a></h3></span>
                         <span><img src="/assets/icons/blog.png"><h3><a href="/blog">BLOG</a></h3></span>
                         <span><img src="/assets/icons/scrapbook2.png"><h3><a href="/scrapbook">SCRAPBOOK</a></h3></span>
-                        <h2 style="margin-top: 10px;">JUMP TO...</h2>
-                        <div>
-                            <span class="logcategory">
-                                <img src="/assets/icons/media2.png"><a href="#movies"><h3>MOVIES</h3></a>
-                            </span>
-                            <span class="logcategory">
-                                <img src="/assets/icons/vinyls.png"><a href="#music"><h3>MUSIC</h3></a>
-                            </span>
-                            <span class="logcategory">
-                                <img src="/assets/icons/links.png"><a href="#other"><h3>OTHER</h3></a>
-                            </span>
-                            <div id="currently" style="height: fit-content; border: none;"></div>
-                        </div>
+                        <!--<div id="currently" style="height: fit-content; border: none;"></div>-->
                     </div>
                 </div>
             </div>
             <div class="main-column" style="width: 100%; margin-right: 0;">
                 <div class="container"> 
-                    <div class="container-content" style="display: flex; padding: 0;">
+                    <div class="container-title" style="display: flex; justify-content: space-between; max-height: 40px;">
+                        <h1>MEDIA LOG</h1>
+                        <div id="view-toggle-buttons" style="display: flex; justify-content: center;">
+                            <button id="btn-list-view" class="view-toggle" aria-label="List view">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="4" width="18" height="3" class="svg-fill"/>
+                                <rect x="3" y="11" width="18" height="3" class="svg-fill"/>
+                                <rect x="3" y="18" width="18" height="3" class="svg-fill"/>
+                            </svg>
+                            </button>
+                            <button id="btn-grid-view" class="view-toggle" aria-label="Grid view">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="3" width="7" height="7" class="svg-fill"/>
+                                <rect x="14" y="3" width="7" height="7" class="svg-fill"/>
+                                <rect x="3" y="14" width="7" height="7" class="svg-fill"/>
+                                <rect x="14" y="14" width="7" height="7" class="svg-fill"/>
+                            </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container-content" style="display: flex; padding: 0 10px; ">
                         <div id="entries">
-                            <div id="welcome" class="entry">
-                                <h2>WELCOME</h2>
-                                <p>welcome to my <i>media log</i>. this is a place for me to log and rate and (kinda) review media i watch/listen/play. any potential <i>spoilers</i> will be hidden <span class="spoiler">like this</span>. hover over it to reveal it. any reviews before 11.22.24 were written retrospectively.</p>   
+                            <div id="tab-content">
+                                <div id="movies" class="tab-section"></div>
+                                <div id="music" class="tab-section"></div>
+                                <div id="other" class="tab-section"></div>
                             </div>
-                            <div id="movies"></div>
-                            <h2>MUSIC LOG</h2><div id="music"></div>
-                            <div id="other"></div>
                         </div>
                     </div>
                 </div>

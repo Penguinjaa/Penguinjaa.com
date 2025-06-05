@@ -66,8 +66,7 @@ body::before {
 }
 .right-column {width: 25%;}
 .container {
-    background: var(--box-bg) url(/images/assets/scanlines3.png);
-    background-size: 64px;
+    background: var(--box-bg) url(/images/stripe.png);
     border: var(--box-border);
     margin-bottom: 10px;
 }
@@ -130,7 +129,10 @@ h3 a:link, h3 a:visited {
 }
 a:hover{
     filter: invert(100%) hue-rotate(180deg);
-  }
+}
+button:hover{
+    cursor: pointer;
+}
   
 ::selection{background: var(--selection);}
 

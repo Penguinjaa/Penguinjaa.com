@@ -1,52 +1,170 @@
+function showTab(tab) {
+    document.querySelectorAll('.tab-section').forEach(section => {
+        section.style.display = 'none';
+    });
+    const activeTab = document.getElementById(tab);
+    if (activeTab) {
+        activeTab.style.display = 'flex';
+    }
+    document.getElementById('entries').scrollTop = 0;
+    history.pushState(null, '', `#${tab}`);
+}
+
+let detailedView = false;
+
+function setViewMode(detailed) {
+    detailedView = detailed;
+    localStorage.setItem('mediaViewMode', detailed ? 'detailed' : 'simple');
+
+    const allContainers = document.querySelectorAll('.movie-container, .album-container, .other-container');
+    const allEntries = document.querySelectorAll('.entry');
+    const allReviews = document.querySelectorAll('.review-text');
+    const allButtons = document.querySelectorAll('.review-button');
+
+    if (detailedView) {
+        allContainers.forEach(el => el.classList.add('focused-entry'));
+        allEntries.forEach(el => el.classList.add('focused-entry'));
+        allReviews.forEach(p => {
+            p.classList.add('open');
+            // Reset inline styles to show review fully
+            p.style.maxHeight = 'none';
+            p.style.opacity = '1';
+        });
+        allButtons.forEach(b => b.style.display = 'none');
+    } else {
+        allContainers.forEach(el => el.classList.remove('focused-entry'));
+        allEntries.forEach(el => el.classList.remove('focused-entry'));
+        allReviews.forEach(p => {
+            p.classList.remove('open');
+            // Reset inline styles to hide reviews
+            p.style.maxHeight = '0';
+            p.style.opacity = '0';
+        });
+        allButtons.forEach(b => {
+            b.style.display = 'inline-block';
+            b.textContent = '[REVIEW]';
+        });
+    }
+}
+
+function attachReviewHandlers() {
+    document.querySelectorAll('.review-button').forEach(button => {
+        button.addEventListener('click', () => {
+            if (detailedView) return;
+
+            const currentContainer = button.closest('.movie-container, .album-container, .other-container');
+            const parentEntry = button.closest('.entry');
+            const review = currentContainer.querySelector('.review-text');
+            const alreadyFocused = currentContainer.classList.contains('focused-entry');
+
+            // Close all reviews instantly
+            document.querySelectorAll('.focused-entry').forEach(el => el.classList.remove('focused-entry'));
+            document.querySelectorAll('.entry.focused-entry').forEach(el => el.classList.remove('focused-entry'));
+            document.querySelectorAll('.review-text').forEach(p => {
+                p.style.maxHeight = '0';
+                p.style.opacity = '0';
+            });
+            document.querySelectorAll('.review-button').forEach(b => b.textContent = '[REVIEW]');
+
+            // If not already open, open this one instantly
+            if (!alreadyFocused) {
+                currentContainer.classList.add('focused-entry');
+                parentEntry.classList.add('focused-entry');
+
+                review.style.maxHeight = 'none';
+                review.style.opacity = '1';
+
+                button.textContent = '[CLOSE]';
+
+                // Scroll immediately to entry
+                parentEntry.scrollIntoView({ behavior: 'auto', block: 'start' });
+            } else {
+                // Closing: scroll immediately
+                parentEntry.scrollIntoView({ behavior: 'auto', block: 'start' });
+            }
+        });
+    });
+}
+
 fetch('media.json')
     .then(response => response.json())
     .then(data => {
-        const movieContainer = document.getElementById('movies');
-        movieContainer.innerHTML = '<h2>MOVIE LOG</h2>';
-        data.movies.forEach((movie, i) => {
-            const movieDiv = document.createElement('div');
-            movieDiv.classList.add('entry');
-            movieDiv.id = `movie${i + 1}`;
-            movieDiv.innerHTML = `
-                <div class="cover"><img src="${movie.cover}" alt="${movie.title}" loading="lazy"></div>
-                <h2>${movie.title} // ${movie.year}</h2>
-                <h3>${movie.rating}/100 // WATCHED ${movie.date}</h3>
-                <p>${movie.review}</p>`;
-            movieContainer.appendChild(movieDiv);
-        });
+        const createEntry = (item, type, i) => {
+            const container = document.getElementById(type);
+            const entryDiv = document.createElement('div');
+            entryDiv.classList.add('entry');
+            entryDiv.id = `${type}${i + 1}`;
 
-        const musicContainer = document.getElementById('music');
-        data.albums.forEach((album, i) => {
-            const albumDiv = document.createElement('div');
-            albumDiv.classList.add('entry');
-            albumDiv.id = `music${i + 1}`;
-            albumDiv.innerHTML = `
-                <div class="albumdetails">
-                    <div class="cover"><img src="${album.cover}" alt="${album.title}" loading="lazy"></div>
-                    <h2>${album.title} (${album.year})</h2>
-                    <h5>${album.artist}</h5>
-                    <h3>${album.rating}/100 // LISTENED ${album.date}</h3>
+            const hasReview = item.review && item.review.trim() !== '';
+            const reviewButton = hasReview ? `<button class="review-button">[REVIEW]</button>` : '';
+            const reviewHTML = hasReview ? `<p class="review-text">${item.review}</p>` : '';
+
+            let extraHTML = '';
+            if (type === 'music') {
+                extraHTML = `<h5>${item.artist}</h5>`;
+            }
+
+            entryDiv.innerHTML = `
+                <div class="${type === 'movies' ? 'movie-container' : type === 'music' ? 'album-container' : 'other-container'}"> 
+                    <div class="cover"><img src="${item.cover}" alt="${item.title}" loading="lazy"></div>
+                    <div class="entry-info">
+                        <h2>${item.title}${item.year ? ` (${item.year})` : ''}</h2>
+                        ${extraHTML}
+                        <h3 class="ratedate"><span class="date">${item.date}</span><span class="rating">${item.rating}/100</span></h3>
+                        ${reviewHTML}
+                        ${reviewButton}
+                    </div>
                 </div>
-                <h5>FAVORITE TRACKS: ${album.favorite_songs}</h5>
-                <!--<p>${album.review}</p>-->`;
-            musicContainer.appendChild(albumDiv);
-        });
+            `;
+            container.appendChild(entryDiv);
+        };
 
-        const otherContainer = document.getElementById('other');
-        otherContainer.innerHTML = '<h2>OTHER LOG</h2>';
-        data.other.forEach((item, i) => {
-            const otherDiv = document.createElement('div');
-            otherDiv.classList.add('entry');
-            otherDiv.id = `other${i + 1}`;
-            otherDiv.innerHTML = `
-                <div class="cover"><img src="${item.cover}" alt="${item.title}" loading="lazy"></div>
-                <h2>${item.title} // ${item.date}</h2>
-                <h3>RATING: ${item.rating}/100</h3>
-                <p>${item.review}</p>`;
-            otherContainer.appendChild(otherDiv);
-        });
+        data.movies.forEach((movie, i) => createEntry(movie, 'movies', i));
+        data.albums.forEach((album, i) => createEntry(album, 'music', i));
+        data.other.forEach((item, i) => createEntry(item, 'other', i));
 
-        const hash = window.location.hash;
-        if (hash) document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' });
+        attachReviewHandlers();
+
+        const hash = window.location.hash.substring(1);
+        const validTabs = ['movies', 'music', 'other'];
+        if (validTabs.includes(hash)) {
+            showTab(hash);
+        } else {
+            showTab('movies');
+        }
+
+        const savedView = localStorage.getItem('mediaViewMode');
+        setViewMode(savedView === 'detailed');
     })
     .catch(err => console.error('Error loading media data:', err));
+
+window.addEventListener('DOMContentLoaded', () => {
+    const btnList = document.getElementById('btn-list-view');
+    const btnGrid = document.getElementById('btn-grid-view');
+
+    function updateButtonStyles(selected) {
+        if (selected === 'grid') {
+            btnList.style.filter = 'invert(100%) hue-rotate(180deg)';
+            btnGrid.style.filter = '';
+        } else {
+            btnGrid.style.filter = 'invert(100%) hue-rotate(180deg)';
+            btnList.style.filter = '';
+        }
+    }
+
+    btnList.addEventListener('click', () => {
+        setViewMode(true);
+        document.getElementById('entries').scrollTop = 0;
+        updateButtonStyles('list');
+    });
+
+    btnGrid.addEventListener('click', () => {
+        setViewMode(false);
+        document.getElementById('entries').scrollTop = 0;
+        updateButtonStyles('grid');
+    });
+
+    // On page load, apply style based on saved mode
+    const savedView = localStorage.getItem('mediaViewMode');
+    updateButtonStyles(savedView === 'detailed' ? 'list' : 'grid');
+});
