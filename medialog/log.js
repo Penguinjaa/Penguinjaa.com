@@ -2,13 +2,24 @@ function showTab(tab) {
     document.querySelectorAll('.tab-section').forEach(section => {
         section.style.display = 'none';
     });
+
     const activeTab = document.getElementById(tab);
     if (activeTab) {
         activeTab.style.display = 'flex';
     }
+
     document.getElementById('entries').scrollTop = 0;
     history.pushState(null, '', `#${tab}`);
+
+    document.querySelectorAll('.media-tab').forEach(btn => {
+        if (btn.dataset.tab === tab) {
+            btn.style.filter = '';
+        } else {
+            btn.style.filter = 'invert(100%) hue-rotate(180deg)';
+        }
+    });
 }
+
 
 let detailedView = false;
 
@@ -26,7 +37,6 @@ function setViewMode(detailed) {
         allEntries.forEach(el => el.classList.add('focused-entry'));
         allReviews.forEach(p => {
             p.classList.add('open');
-            // Reset inline styles to show review fully
             p.style.maxHeight = 'none';
             p.style.opacity = '1';
         });
@@ -36,7 +46,6 @@ function setViewMode(detailed) {
         allEntries.forEach(el => el.classList.remove('focused-entry'));
         allReviews.forEach(p => {
             p.classList.remove('open');
-            // Reset inline styles to hide reviews
             p.style.maxHeight = '0';
             p.style.opacity = '0';
         });
@@ -57,7 +66,6 @@ function attachReviewHandlers() {
             const review = currentContainer.querySelector('.review-text');
             const alreadyFocused = currentContainer.classList.contains('focused-entry');
 
-            // Close all reviews instantly
             document.querySelectorAll('.focused-entry').forEach(el => el.classList.remove('focused-entry'));
             document.querySelectorAll('.entry.focused-entry').forEach(el => el.classList.remove('focused-entry'));
             document.querySelectorAll('.review-text').forEach(p => {
@@ -66,7 +74,6 @@ function attachReviewHandlers() {
             });
             document.querySelectorAll('.review-button').forEach(b => b.textContent = '[REVIEW]');
 
-            // If not already open, open this one instantly
             if (!alreadyFocused) {
                 currentContainer.classList.add('focused-entry');
                 parentEntry.classList.add('focused-entry');
@@ -76,10 +83,8 @@ function attachReviewHandlers() {
 
                 button.textContent = '[CLOSE]';
 
-                // Scroll immediately to entry
                 parentEntry.scrollIntoView({ behavior: 'auto', block: 'start' });
             } else {
-                // Closing: scroll immediately
                 parentEntry.scrollIntoView({ behavior: 'auto', block: 'start' });
             }
         });
@@ -97,7 +102,14 @@ fetch('media.json')
 
             const hasReview = item.review && item.review.trim() !== '';
             const reviewButton = hasReview ? `<button class="review-button">[REVIEW]</button>` : '';
-            const reviewHTML = hasReview ? `<p class="review-text">${item.review}</p>` : '';
+            let reviewHTML = '';
+            if (hasReview) {
+                reviewHTML = `<p class="review-text">${item.review}`;
+                if (type === 'music' && item.favorite_songs && item.favorite_songs.trim() !== '') {
+                    reviewHTML += `<br><br><i>FAVORITE TRACKS: ${item.favorite_songs}</i>`;
+                }
+                reviewHTML += `</p>`;
+            }
 
             let extraHTML = '';
             if (type === 'music') {
