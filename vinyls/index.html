@@ -22,45 +22,38 @@
             background: #DFDEC0;
             margin: 0;
             overflow: hidden;
+            display: flex;
         }
         .vinyl-content {
-            justify-content: center;
             display: flex;
-            top: 3vh;
+            justify-content: end;
+            height: 100%;
+            margin: auto;
         }
         .vinyl-container {
             background: #ECEBCD;
             border-radius: 10px;
-            width: 54vw;
-            left: 30vw;
-            height: 90vh;
+            height: 88vh;
+            width: 58vw;
+            position: relative;
             overflow: scroll;
-            padding: 0;
-            position: absolute;
-            top: inherit
+            z-index: 99;
         }
         .vinyl-container::-webkit-scrollbar{display: none;}
-        .vinyl-tabs-wrapper {
-            position: absolute;
-            top: 51.96vh;
-            right: 13.5vw;
-        }
         .vinyl-tabs {
             display: flex;
-            flex-direction: row;
-            align-items: center;
             transform: rotate(90deg);
-            transform-origin: top right;
+            transform-origin: left;
+            height: 165px;
+            gap: 10px;
         }
-
         .vinyl-tabs h3 {
-            margin: 0 5px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             cursor: pointer;
-            font-size: 1.5em;
+            font-size: 2em;
             font-family: 'orbitron', Arial, Helvetica, sans-serif;
-            padding: 5px 10px 10px 10px;
+            padding: 5px 10px 20px 10px;
             background: #ECEBCD;
             color: #E38E18;
         }
@@ -72,17 +65,13 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin-left: 15px;
+            margin: 0 15px;
             overflow: hidden;
             max-height: 100vh;
-            width: 25vw;
+            width: 20vw;
             text-align: right;
         }
-        .vinyl-nav img {
-            border-radius: 15px;
-            height: 80vh;
-            width: 25vw;
-        }
+        .vinyl-nav img {border-radius: 15px;}
         .vinyl-nav h2 {
             margin: 5px 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -95,6 +84,7 @@
             position: absolute;
             visibility: hidden; 
             white-space: nowrap;
+            z-index: 555;
         }
         h2:hover .type {
             visibility: visible;
@@ -103,14 +93,14 @@
             display: flex;
             flex-wrap: wrap;
             text-align: center;
-            justify-content: center;
+            justify-content: space-evenly;
         }
         .albumcontainer {
-            width: 160px;
+            width: 13%;
             margin: 15px;
         }
         .albumcontainer img{
-            max-height: 150px;
+            width: 100%;
             object-fit: contain;
         }
         .albumtitle {
@@ -147,6 +137,7 @@
             vertical-align: center;
             margin: 0 5px 0 5px;
             border: 0;
+            background: none;
         }
         .active {
             background: none;
@@ -166,6 +157,14 @@
         ::selection{
             background: #E38E18;
         }
+        a:hover {
+            color: #E38E18;
+        }
+        #hoverText {
+            color: #E38E18;
+            font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+            font-size: 1.8em;
+        }
     </style>
 </head>
 <body>
@@ -174,7 +173,7 @@
         <h2 style="font-size: 2em;">// VINYL COLLECTION</h2>
         <img src="bombpaint.gif">
         <div class="homelink">
-            <a href="/" style="text-decoration: none;"><h2 id="hoverText" style="color: #E38E18; font-family: 'Orbitron', Arial, Helvetica, sans-serif; font-size: 1.8em;">GO BACK HOME?<span class="type">???</span></h2></a>
+            <a href="/" style="text-decoration: none;"><h2 id="hoverText">GO BACK HOME?<span class="type">???</span></h2></a>
         </div>
         <img src="bombpaint.gif">
     </div>
@@ -184,34 +183,22 @@
             <div id="wantlist"></div>
             <div id="pagination"></div>
         </div> 
-        <div class="vinyl-tabs-wrapper">
-            <div class="vinyl-tabs">
-                <h3 id="collection-tab">COLLECTION</h3>
-                <h3 id="wantlist-tab">WANTLIST</h3>
-            </div>
-        </div>
-        <div style="position: absolute; bottom: 10px; left: 42vw; text-align: center; font-family: Arial, Helvetica, sans-serif; font-weight: 600;">
-            <p style="margin: 0;">PENGUINJAA.COM V5.55 [C] 2022 - 2099</p>
-            <p style="margin: 0;">
-                <a href="https://discord.com/users/264257846496067586">CONTACT</a> | 
-                <a href="/archive">ARCHIVE</a> |
-                <a href="/sitemap">SITEMAP</a> |
-                POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
-            </p>
+        <div class="vinyl-tabs">
+            <h3 id="collection-tab">COLLECTION</h3>
+            <h3 id="wantlist-tab">WANTLIST</h3>
         </div>
     </div>
-    
     <img src="djcyber.png" style="position: absolute; right: 0; bottom: 0;z-index: -1; height: 60vh;">
+    <div style="position: absolute; bottom: 10px; left: 42vw; text-align: center; font-family: Arial, Helvetica, sans-serif; font-weight: 600;">
+        <p style="margin: 0;">PENGUINJAA.COM V5.55 [C] 2022 - 2099</p>
+        <p style="margin: 0;">
+            <a href="https://discord.com/users/264257846496067586">CONTACT</a> | 
+            <a href="/archive">ARCHIVE</a> |
+            <a href="/sitemap">SITEMAP</a> |
+            POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
+        </p>
+    </div>
 </body>
-<!--<footer style="text-align: center;">
-    <p style="margin: 0;">PENGUINJAA.COM V5.55 [C] 2022 - 2099</p>
-    <p style="margin: 0;">
-        <a href="https://discord.com/users/264257846496067586">CONTACT</a> | 
-        <a href="/archive">ARCHIVE</a> |
-        <a href="/sitemap">SITEMAP</a> |
-        POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
-    </p>
-</footer>-->
 <script>
     document.addEventListener("DOMContentLoaded", () => {
     const hoverText = document.getElementById("hoverText");

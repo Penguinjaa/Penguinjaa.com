@@ -1,55 +1,39 @@
 const userToken = 'LZUKrcvsphzIlVFaPceVRDZQKkvIEfgvAzRvZKwf';
 const username = 'Penguinjaa';
-const itemsPerPage = 10;
+const itemsPerPage = 24;
 let currentPage = 1;
+let currentTab = 'collection';
+let allCollection = [];
+let allWants = [];
 
-function fetchDiscogsData(endpoint, page = 1) {
-    const url = `https://api.discogs.com/users/${username}/${endpoint}?page=${page}&per_page=${itemsPerPage}&token=${userToken}`;
-
+function fetchDiscogsPage(endpoint, page = 1, perPage = 100) {
+    const url = `https://api.discogs.com/users/${username}/${endpoint}?page=${page}&per_page=${perPage}&token=${userToken}`;
     return fetch(url)
-        .then(response => response.json())
-        .catch(error => console.error('Error fetching data:', error));
+        .then(res => res.json())
+        .catch(() => null);
 }
 
 function removeParentheses(str) {
     return str.replace(/\s*\(.*?\)\s*/g, '');
 }
 
-function displayCollection(data) {
-    const collectionDiv = document.getElementById('collection');
-    collectionDiv.innerHTML = '';
-    data.releases.forEach(release => {
-        const releaseDiv = document.createElement('div');
-        releaseDiv.classList.add('albumcontainer');
-        releaseDiv.innerHTML = `
-            <img src="${release.basic_information.cover_image}" alt="${release.basic_information.title}" width="150">
-            <p class="albumtitle"><strong><a href="https://www.discogs.com/release/${release.basic_information.id}" target="_blank">${release.basic_information.title}</a></strong></p><p class="artistname"> ${release.basic_information.artists[0].name}</p>
+function displayItems(items, containerId) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = '';
+    const start = (currentPage - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const pageItems = items.slice(start, end);
+
+    pageItems.forEach(item => {
+        const release = item.basic_information || item;
+        const div = document.createElement('div');
+        div.classList.add('albumcontainer');
+        div.innerHTML = `
+            <img loading="lazy" src="${release.cover_image}" alt="${release.title}">
+            <p class="albumtitle"><strong><a href="${release.uri}" target="_blank">${release.title}</a></strong></p>
+            <p class="artistname">${removeParentheses(release.artists[0].name)}</p>
         `;
-        collectionDiv.appendChild(releaseDiv);
-    });
-
-    const elements = document.querySelectorAll('.artistname');
-    elements.forEach(element => {
-        element.textContent = removeParentheses(element.textContent);
-    });
-}
-
-function displayWantlist(data) {
-    const wantlistDiv = document.getElementById('wantlist');
-    wantlistDiv.innerHTML = '';
-    data.wants.forEach(want => {
-        const wantDiv = document.createElement('div');
-        wantDiv.classList.add('albumcontainer');
-        wantDiv.innerHTML = `
-            <img src="${want.basic_information.cover_image}" alt="${want.basic_information.title}" width="150">
-            <p class="albumtitle"><strong><a href="https://www.discogs.com/release/${want.basic_information.id}" target="_blank">${want.basic_information.title}</a></strong></p><p class="artistname"> ${want.basic_information.artists[0].name}</p>
-        `;
-        wantlistDiv.appendChild(wantDiv);
-    });
-
-    const elements = document.querySelectorAll('.artistname');
-    elements.forEach(element => {
-        element.textContent = removeParentheses(element.textContent);
+        container.appendChild(div);
     });
 }
 
@@ -57,75 +41,106 @@ function updatePagination(totalPages) {
     const paginationDiv = document.getElementById('pagination');
     paginationDiv.innerHTML = '';
 
-    // Previous page button
-    const prevPageButton = document.createElement('button');
-    prevPageButton.textContent = "◄";
-    prevPageButton.addEventListener('click', () => {
+    const prevBtn = document.createElement('button');
+    prevBtn.textContent = '◄';
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.addEventListener('click', () => {
         if (currentPage > 1) {
             currentPage--;
-            updateWantlist();
+            displayPage();
+            updatePagination(totalPages);
         }
     });
-    prevPageButton.classList.add('pagination-button', 'prev');
-    paginationDiv.appendChild(prevPageButton);
+    paginationDiv.appendChild(prevBtn);
 
-    // Numbered pages
     for (let i = 1; i <= totalPages; i++) {
-        const pageButton = document.createElement('button');
-        pageButton.textContent = i;
-        pageButton.addEventListener('click', () => {
-            currentPage = i;
-            updateWantlist();
+        const btn = document.createElement('button');
+        btn.textContent = i;
+        btn.className = i === currentPage ? 'active' : 'inactive';
+        btn.addEventListener('click', () => {
+            if (i !== currentPage) {
+                currentPage = i;
+                displayPage();
+                updatePagination(totalPages);
+            }
         });
-
-        pageButton.classList.add('pagination-button');
-        if (i === currentPage) {
-            pageButton.classList.add('active');
-        } else {
-            pageButton.classList.add('inactive');
-        }
-
-        paginationDiv.appendChild(pageButton);
+        paginationDiv.appendChild(btn);
     }
 
-    const nextPageButton = document.createElement('button');
-    nextPageButton.textContent = "▶";
-    nextPageButton.addEventListener('click', () => {
+    const nextBtn = document.createElement('button');
+    nextBtn.textContent = '▶';
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.addEventListener('click', () => {
         if (currentPage < totalPages) {
             currentPage++;
-            updateWantlist();
+            displayPage();
+            updatePagination(totalPages);
         }
     });
-    nextPageButton.classList.add('pagination-button', 'next');
-    paginationDiv.appendChild(nextPageButton);
+    paginationDiv.appendChild(nextBtn);
 }
 
-function updateWantlist() {
-    fetchDiscogsData('wants', currentPage)
-        .then(data => {
-            displayWantlist(data);
-            updatePagination(Math.ceil(data.pagination.items / itemsPerPage));
-        });
+async function fetchAllPages(endpoint, key) {
+    let page = 1;
+    let allItems = [];
+    let data = await fetchDiscogsPage(endpoint, page, 100);
+    if (!data) return allItems;
+    allItems = data[key];
+
+    while (page < data.pagination.pages) {
+        page++;
+        data = await fetchDiscogsPage(endpoint, page, 100);
+        if (!data) break;
+        allItems = allItems.concat(data[key]);
+    }
+    return allItems;
 }
 
-
-function init() {
-    fetchDiscogsData('collection/folders/0/releases')
-        .then(data => displayCollection(data));
-
-    updateWantlist();
-
-    document.getElementById('prevPage').addEventListener('click', () => {
-        if (currentPage > 1) {
-            currentPage--;
-            updateWantlist();
-        }
-    });
-
-    document.getElementById('nextPage').addEventListener('click', () => {
-        currentPage++;
-        updateWantlist();
-    });
+async function loadInitialCollection() {
+    const data = await fetchDiscogsPage('collection/folders/0/releases', 1, 100);
+    if (data) {
+        allCollection = data.releases;
+        displayPage();
+        updatePagination(Math.ceil(allCollection.length / itemsPerPage));
+    }
 }
 
-document.addEventListener('DOMContentLoaded', init);
+async function loadAllCollection() {
+    allCollection = await fetchAllPages('collection/folders/0/releases', 'releases');
+}
+
+async function loadAllWants() {
+    allWants = await fetchAllPages('wants', 'wants');
+}
+
+function displayPage() {
+    if (currentTab === 'collection') {
+        displayItems(allCollection, 'collection');
+        const totalPages = Math.ceil(allCollection.length / itemsPerPage);
+        document.getElementById('pagination').style.display = totalPages > 1 ? 'block' : 'none';
+        updatePagination(totalPages);
+    } else {
+        displayItems(allWants, 'wantlist');
+        const totalPages = Math.ceil(allWants.length / itemsPerPage);
+        document.getElementById('pagination').style.display = totalPages > 1 ? 'block' : 'none';
+        updatePagination(totalPages);
+    }
+}
+
+function toggleTab(tab) {
+    currentTab = tab;
+    currentPage = 1;
+    document.getElementById('collection').style.display = tab === 'collection' ? 'flex' : 'none';
+    document.getElementById('wantlist').style.display = tab === 'wantlist' ? 'flex' : 'none';
+    displayPage();
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadInitialCollection();
+    loadAllCollection();
+    loadAllWants();
+    toggleTab(currentTab);
+
+    document.getElementById('collection-tab').addEventListener('click', () => toggleTab('collection'));
+    document.getElementById('wantlist-tab').addEventListener('click', () => toggleTab('wantlist'));
+});

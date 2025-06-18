@@ -20,7 +20,6 @@ function showTab(tab) {
     });
 }
 
-
 let detailedView = false;
 
 function setViewMode(detailed) {
@@ -147,36 +146,32 @@ fetch('media.json')
 
         const savedView = localStorage.getItem('mediaViewMode');
         setViewMode(savedView === 'detailed');
+
+        const btnList = document.getElementById('btn-list-view');
+        const btnGrid = document.getElementById('btn-grid-view');
+
+        function updateButtonStyles(selected) {
+            if (selected === 'grid') {
+                btnList.style.filter = 'invert(100%) hue-rotate(180deg)';
+                btnGrid.style.filter = '';
+            } else {
+                btnGrid.style.filter = 'invert(100%) hue-rotate(180deg)';
+                btnList.style.filter = '';
+            }
+        }
+
+        btnList.addEventListener('click', () => {
+            setViewMode(true);
+            document.getElementById('entries').scrollTop = 0;
+            updateButtonStyles('list');
+        });
+
+        btnGrid.addEventListener('click', () => {
+            setViewMode(false);
+            document.getElementById('entries').scrollTop = 0;
+            updateButtonStyles('grid');
+        });
+
+        updateButtonStyles(savedView === 'detailed' ? 'list' : 'grid');
     })
     .catch(err => console.error('Error loading media data:', err));
-
-window.addEventListener('DOMContentLoaded', () => {
-    const btnList = document.getElementById('btn-list-view');
-    const btnGrid = document.getElementById('btn-grid-view');
-
-    function updateButtonStyles(selected) {
-        if (selected === 'grid') {
-            btnList.style.filter = 'invert(100%) hue-rotate(180deg)';
-            btnGrid.style.filter = '';
-        } else {
-            btnGrid.style.filter = 'invert(100%) hue-rotate(180deg)';
-            btnList.style.filter = '';
-        }
-    }
-
-    btnList.addEventListener('click', () => {
-        setViewMode(true);
-        document.getElementById('entries').scrollTop = 0;
-        updateButtonStyles('list');
-    });
-
-    btnGrid.addEventListener('click', () => {
-        setViewMode(false);
-        document.getElementById('entries').scrollTop = 0;
-        updateButtonStyles('grid');
-    });
-
-    // On page load, apply style based on saved mode
-    const savedView = localStorage.getItem('mediaViewMode');
-    updateButtonStyles(savedView === 'detailed' ? 'list' : 'grid');
-});
