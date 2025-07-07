@@ -29,7 +29,7 @@
  
      /* BODY */
      --background: url(/themes/assets/neo-tokyo/neobg.jpg) no-repeat fixed center;
-     --box-bg: #000;
+     --box-bg: #000 url(/images/blackstripe.png);
      --box-border: #C0C0C0 4px ridge;
      --cursor: url(/themes/assets/neo-tokyo/cursor.png);
 

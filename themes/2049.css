@@ -29,7 +29,7 @@
 
     /* BODY */
     --background: url(/themes/assets/2049/bg.jpg) no-repeat fixed center;
-    --box-bg: #000;
+    --box-bg: #000 url(/images/whitestripe.png);
     --box-border: #C0C0C0 4px ridge;
 
    /* BLOG */

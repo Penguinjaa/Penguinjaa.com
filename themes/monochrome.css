@@ -23,13 +23,13 @@
      --scroll-thumb-color: #d6d1bc;
  
      /* HEADERS */
-     --stripes: repeating-linear-gradient(180deg,#ffffff0f,#ffffff0f 3px,#000 3px,#000 6px);
+     --stripes: repeating-linear-gradient(180deg,#1d1d1d,#1d1d1d 3px,#000 3px,#000 6px);
      --grid: linear-gradient(-90deg, #ffffff0f 1px, transparent 1px),linear-gradient(#ffffff0f 1px, transparent 1px),#000;
      --gridsize: 4px 4px,4px 4px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px;
  
      /* BODY */
      --background: url(/themes/assets/monochrome/crater.jpg) no-repeat fixed center;
-     --box-bg: #000;
+     --box-bg: #000 url(/images/blackstripe.png);
      --box-border: #C0C0C0 4px ridge;
      --cursor: url(/themes/assets/monochrome/cursor.png);
 

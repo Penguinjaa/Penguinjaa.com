@@ -1,0 +1,98 @@
+{
+  "forward": [
+    {
+      "href": "https://nekoweb.org/",
+      "src": "https://nekoweb.org/assets/buttons/button6.gif"
+    },
+    {
+      "href": "https://dimden.dev/",
+      "src": "/images/buttons/dimden.gif"
+    },
+    {
+      "href": "https://alienheadshitkid.neocities.org/",
+      "src": "/images/buttons/alienhead.gif"
+    },
+    {
+      "href": "https://candlelitsmiles.neocities.org/",
+      "src": "/images/buttons/candlebutton.png"
+    },
+    {
+      "href": "https://yuentp.neocities.org/",
+      "src": "/images/buttons/chaos.gif"
+    },
+    {
+      "href": "https://saikyo-central.neocities.org/",
+      "src": "/images/buttons/saikyo.gif"
+    },
+    {
+      "href": "https://rice.place/",
+      "src": "https://rice.nekoweb.org/button/riceplace.png"
+    },
+    {
+      "href": "https://sos.nekoweb.org/",
+      "src": "/images/buttons/strayos.gif"
+    },
+    {
+      "href": "https://caitsith.neocities.org/",
+      "src": "/images/buttons/caitbutton.gif"
+    },
+    {
+      "href": "https://darkosparko.nekoweb.org/",
+      "src": "/images/buttons/darko.png"
+    },
+    {
+      "href": "https://daniele63.neocities.org/",
+      "src": "/images/buttons/danieles.jpg"
+    },
+    {
+      "href": "https://maphren.neocities.org/",
+      "src": "https://maphren.neocities.org/imgs/buttons/maphren.gif"
+    },
+    {
+      "href": "https://madville.neocities.org/",
+      "src": "/images/buttons/madville.gif"
+    }
+  ],
+  "reverse": [
+    {
+      "href": "https://sloan.nekoweb.org/",
+      "src": "https://sloan.nekoweb.org/images/buttons/sIoan.gif"
+    },
+    {
+      "href": "https://sloan.nekoweb.org/",
+      "src": "/images/buttons/sloan-button.gif"
+    },
+    {
+      "href": "https://unicodeangel.neocities.org",
+      "src": "https://unicodeangel.neocities.org/imgs/UnicodeAngelButton.gif"
+    },
+    {
+      "href": "https://unit00.neocities.org/",
+      "src": "/images/buttons/unit00.gif"
+    },
+    {
+      "href": "https://makoenergy.nekoweb.org/",
+      "src": "/images/buttons/mako.gif"
+    },
+    {
+      "href": "https://districts.nekoweb.org/index.html",
+      "src": "/images/buttons/districts.png"
+    },
+    {
+      "href": "https://sadgrl.online/",
+      "src": "/images/buttons/sadgrlonline.gif"
+    },
+    {
+      "href": "https://cloudcover.neocities.org/",
+      "src": "/images/buttons/cloudcover.png"
+    },
+    {
+      "href": "https://scouts-basement.neocities.org/",
+      "src": "https://files.catbox.moe/nw16vo.gif"
+    },
+    {
+      "href": "https://warp.zone/",
+      "src": "/images/buttons/warpzone.gif"
+    }
+  ]
+}

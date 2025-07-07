@@ -579,6 +579,46 @@
   ],
   "albums": [
     {
+      "title": "Goyard Ibn Said",
+      "year": "2025",
+      "cover": "images/albums/goyard_ibn_said_ghais_guevara.jpg",
+      "rating": "89",
+      "review": "\"The Old Guard Is Dead\" was played at the intro of Kendrick's superbowl performance and ive been especially autistic about Kendrick lately!!! This album is actually incredible and is probably top 3 of the year for me and could even be top 1. ive never heard of Ghais Guevara before, but im really liking the style. Gives me vibes of Lupe or Earl and i loooooove them so i think im gonna love this guy as i dive more into his discog.",
+      "date": "6.29.25",
+      "artist": "Ghais Guevara",
+      "favorite_songs": "4L, The Old Guard Is Dead, 3400"
+    },
+    {
+      "title": "Blush",
+      "year": "2025",
+      "cover": "images/albums/blush_kevin_abstract.jpg",
+      "rating": "86",
+      "review": "have yet to dive into kevins discog but the moment i saw quadecas involvement you know a white boy had to check it out. very very good i love that this album doesnt really have a massive presence from kevin himself, it feels like a bunch of people coming together just to make a great album. which seems mostly true based off the few things ive seen from like pics of the studio and whatnot",
+      "date": "6.27.25",
+      "artist": "Kevin Abstract",
+      "favorite_songs": "Abandon Me, NOLA"
+    },
+    {
+      "title": "Baduizm",
+      "year": "1997",
+      "cover": "images/albums/baduizm_erykah_badu.jpg",
+      "rating": "78",
+      "review": "",
+      "date": "6.26.25",
+      "artist": "Erykah Badu",
+      "favorite_songs": "No Love, Appletree"
+    },
+    {
+      "title": "Love Deluxe",
+      "year": "1992",
+      "cover": "images/albums/love_deluxe_sade.jpg",
+      "rating": "83",
+      "review": "holy crap its the mf doom sample!!!!!!",
+      "date": "6.22.25",
+      "artist": "Sade",
+      "favorite_songs": "Kiss Of Life, No Ordinary Love"
+    },
+    {
       "title": "BEFORE I WAS BORN",
       "year": "2025",
       "cover": "images/albums/before_i_was_born_kaycyy.jpg",
@@ -1644,7 +1684,7 @@
       "title": "Berserk",
       "cover": "images/other/beserk.jpg",
       "rating": "89",
-      "review": "my PIKMIN POOKIE recommended this to me and i guess this is kinda my first time watching an anime to watch an anime instead of it falling into one of my interests. i really liked this!! the animation is really good and the characters are all great. i do wish i couldve gotten more from guts' story, so i might read the manga cause i hear its epic.",
+      "review": "my buddy twin recommended this to me and i guess this is kinda my first time watching an anime to watch an anime instead of it falling into one of my interests. i really liked this!! the animation is really good and the characters are all great. i do wish i couldve gotten more from guts' story, so i might read the manga cause i hear its epic.",
       "date": "9.19.24",
       "year": "1997"
     },

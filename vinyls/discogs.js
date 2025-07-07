@@ -26,11 +26,12 @@ function displayItems(items, containerId) {
 
     pageItems.forEach(item => {
         const release = item.basic_information || item;
+        const discogsUrl = `https://www.discogs.com/release/${release.id}`;
         const div = document.createElement('div');
         div.classList.add('albumcontainer');
         div.innerHTML = `
             <img loading="lazy" src="${release.cover_image}" alt="${release.title}">
-            <p class="albumtitle"><strong><a href="${release.uri}" target="_blank">${release.title}</a></strong></p>
+            <p class="albumtitle"><strong><a href="${discogsUrl}" target="_blank">${release.title}</a></strong></p>
             <p class="artistname">${removeParentheses(release.artists[0].name)}</p>
         `;
         container.appendChild(div);

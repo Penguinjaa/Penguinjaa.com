@@ -29,7 +29,7 @@
 
     /* BODY */
     --background: url(/themes/assets/miku/bg2.png) no-repeat fixed center;
-    --box-bg: #fff;
+    --box-bg: #fff url(/images/whitestripe.png);
     --box-border: #C0C0C0 4px ridge;
 
    /* BLOG */

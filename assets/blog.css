@@ -25,37 +25,6 @@
     border: var(--blog-border);
     padding: 10px;
 }
-#movies .entry, #other .entry {min-height: 225px;}
-#music .entry {min-height: 150px;}
-.entry h2 {
-    color: var(--blog-title);
-    background: var(--blog-header);
-    text-decoration: none;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-    animation: none !important;
-}
-.entry h2 i {
-    color: inherit;
-    text-shadow: inherit;
-    margin-right: 7px;
-}
-.cover {
-    float: left;
-}
-#music .entry .cover img {
-    width: 137px;
-    height: auto;
-    margin-right: 10px;
-}
-#movies .entry .cover img, #other .entry .cover img {
-    width: auto;
-    height: 232px;
-    max-width: 170px;
-    object-fit: contain;
-    margin-right: 10px;
-}
 .logcategory {
     padding-left: 10px;
 }

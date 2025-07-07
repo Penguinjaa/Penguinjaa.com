@@ -1,38 +1,33 @@
 {
-    "currently": {
-        "watching": ["Serial Experiments Lain", "Breaking Bad"],
-        "playing": ["ELDEN RING", "CHRONO TRIGGER", "Left 4 Dead 2"],
-        "reading": ["Berserk"]
-    },
     "tags": {
-        "crt": {"bgColor": ["#2D2C30", "#494B52"], "borderColor": "#41464D", "textColor": "#EBEBEB"},
+        "tech": {"bgColor": ["#2D2C30", "#494B52"], "borderColor": "#41464D", "textColor": "#EBEBEB"},
         "media": {"bgColor": ["#000", "#373E33"], "borderColor": "#4E4E4D", "textColor": "#E4021B"},
-        "tech": {"bgColor": ["#9FBE20", "#8FAF1D"], "borderColor": "#183E17", "textColor": "#183E17"},
         "review": {"bgColor": ["#fff", "#fff"], "borderColor": "#000", "textColor": "#000"},
+        "update": {"bgColor": ["#2e1f1a", "#000"], "borderColor": "#C0C0C0", "textColor": "#ff7ada"},
         "rant": {"bgColor": ["#820300", "#B80000"], "borderColor": "#820300", "textColor": "#FF9800"},
         "year in review": {"bgColor": ["#4B1800", "#6B340D"], "borderColor": "#292D42", "textColor": "#FFB30B"}
     },
     "blogPosts": [
         {
-            "title": "I Love Bomb Rush Cyberfunk",
-            "link": "/blog/brc",
-            "tags": ["review", "media"],
+            "title": "v5.55 Is Here!",
+            "link": "/blog/v5",
+            "tags": ["update"],
             "date": "12-20-2025",
-            "summary": "A lengthy praise of one of my favorite games"
+            "summary": "yapping about my new layout and you will enjoy it"
         },
         {
             "title": "4:3 Raspberry Pi Media Center",
             "link": "/blog/crtpi",
-            "tags": ["crt", "tech"],
+            "tags": ["tech", "media"],
             "date": "12-20-2025",
-            "summary": "Turning my Raspberry Pi into a media center for my CRT"
+            "summary": "showing off my raspberry pi crt setup for emulation and watching stuff"
         },
         {
             "title": "End Of 2024 Blog Post",
             "link": "/blog/2024",
             "tags": ["year in review", "media"],
             "date": "12-31-2024",
-            "summary": "My favorite media from 2024, and some reflection of the past year"
+            "summary": "reminiscing this past year and ranking my top 10 albums of 2024"
         }
     ]
 }

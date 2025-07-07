@@ -10,10 +10,8 @@
     <link id="theme4" rel="stylesheet" href="/themes/miku.css" disabled>
     <!-- // IMPORTS // -->
     <link href="/style.css" rel="stylesheet">
-    <link href="assets/blog.css" rel="stylesheet">
     <script src="/assets/themes.js" async></script>
     <script src="/assets/marquee.js" defer></script>
-    <script src="activity.js" defer></script>
     <script src="log.js" async></script>
     <!-- // INFO // -->
     <link href="/assets/favicon.ico" rel="icon">
@@ -26,7 +24,6 @@
     <meta property="og:url" content="https://penguinjaa.com/medialog"/>
     <style>
         #entries {
-            padding: 0 15px;
             height: 60vh;
             width: 100%;
             overflow: hidden scroll;
@@ -41,13 +38,14 @@
         #movies, #music, #other {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
+            gap: 10px;
         }
-
         .movie-container, .album-container, .other-container {
             width: 130px;
             text-align: center;
             position: relative;
+            padding: 0 0 10px 0;
         }
         .movie-container img, .other-container img {
             height: 200px;
@@ -74,7 +72,6 @@
         .ratedate {display: flex; width: 100%; justify-content: space-evenly; color: var(--p-color);}
         .rating {color: var(--i-color);}
         .date {color: var(--h3-color); font-size: 1em;}
-
         #tab-content {
             padding-top: 10px;
         }
@@ -86,10 +83,14 @@
         .tab-hidden {
             display: none !important;
         }
+        #media-header {
+            width: 100%;
+        }
         #media-tabs {
             display: flex;
-            flex-direction: column;
-            padding: 15px 0;
+            justify-content: center;
+            gap: 25px;
+            padding: 0 0 15px 0;
         }
         #media-tabs button {
             font-family: content;
@@ -101,8 +102,6 @@
             margin: 0;
             padding: 0 !important;
         }
-
-
         .focused-entry {
             width: 100%;
             display: flex;
@@ -135,7 +134,6 @@
         .entry.focused-entry, .focused-entry .entry-info {
             width: 100%;
         }
-
         .review-button {
             font-family: "content";
             font-weight: 900;
@@ -152,6 +150,10 @@
         }
         .svg-fill {
             fill: var(--h2-color);
+        }
+        .no-review {
+            color: #aaaaaa;
+            font-style: italic;
         }
     </style>
 </head>
@@ -180,17 +182,11 @@
                         <h1>LINKS</h1>
                     </div>
                     <div class="container-content" style="height: 60vh; padding: 0 10px;">
-                        <div id="media-tabs">
-                            <button class="media-tab" onclick="showTab('movies')" data-tab="movies"><h1>MOVIES</h1></button>
-                            <button class="media-tab" onclick="showTab('music')" data-tab="music"><h1>MUSIC</h1></button>
-                            <button class="media-tab" onclick="showTab('other')" data-tab="other"><h1>OTHER</h1></button>
-                        </div>
                         <span><img src="/assets/icons/home.png"><h3><a href="/">HOME</a></h3></span>
                         <span><img src="/assets/icons/vinyls.png"><h3><a href="/vinyls">VINYLS</a></h3></span>
                         <span><img src="/assets/icons/journal2.png"><h3><a href="/journal">JOURNAL</a></h3></span>
                         <span><img src="/assets/icons/blog.png"><h3><a href="/blog">BLOG</a></h3></span>
                         <span><img src="/assets/icons/scrapbook2.png"><h3><a href="/scrapbook">SCRAPBOOK</a></h3></span>
-                        <!--<div id="currently" style="height: fit-content; border: none;"></div>-->
                     </div>
                 </div>
             </div>
@@ -216,8 +212,18 @@
                             </button>
                         </div>
                     </div>
-                    <div class="container-content" style="display: flex; padding: 0 10px; ">
+                    <div class="container-content" style="padding: 0 10px;">
                         <div id="entries">
+                            <div id="media-header">
+                                <div id="media-info">
+                                    <p>Welcome to the Media Log. Browse movies, albums, and other entries I've reviewed.</p>
+                                </div>
+                                <div id="media-tabs">
+                                    <button class="media-tab" onclick="showTab('movies')" data-tab="movies"><h1>MOVIES</h1></button>
+                                    <button class="media-tab" onclick="showTab('music')" data-tab="music"><h1>MUSIC</h1></button>
+                                    <button class="media-tab" onclick="showTab('other')" data-tab="other"><h1>OTHER</h1></button>
+                                </div>
+                            </div>
                             <div id="tab-content">
                                 <div id="movies" class="tab-section"></div>
                                 <div id="music" class="tab-section"></div>

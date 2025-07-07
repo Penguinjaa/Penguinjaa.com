@@ -101,14 +101,17 @@ fetch('media.json')
 
             const hasReview = item.review && item.review.trim() !== '';
             const reviewButton = hasReview ? `<button class="review-button">[REVIEW]</button>` : '';
-            let reviewHTML = '';
+            let reviewHTML = `<p class="review-text">`;
             if (hasReview) {
-                reviewHTML = `<p class="review-text">${item.review}`;
+                reviewHTML += item.review;
                 if (type === 'music' && item.favorite_songs && item.favorite_songs.trim() !== '') {
                     reviewHTML += `<br><br><i>FAVORITE TRACKS: ${item.favorite_songs}</i>`;
                 }
-                reviewHTML += `</p>`;
+            } else {
+                reviewHTML += `<span class="no-review">No review written.</span>`;
             }
+            reviewHTML += `</p>`;
+
 
             let extraHTML = '';
             if (type === 'music') {

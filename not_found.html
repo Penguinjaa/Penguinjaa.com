@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- // THEMES // -->
     <meta name="description" content="// PAGE.NOT.FOUND //">
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/assets/favicon.ico" />
     <meta content="#a4749a" data-react-helmet="true" name="theme-color"/>
     <!-- // EMBEDS // -->
     <meta property="og:type" content="website">
@@ -38,6 +38,7 @@
             align-items: center;
             justify-content: center;
             font-family: monospace;
+            font-weight: 900;
             font-size: 2em;
         }
         #resetticontainer::before,
@@ -46,20 +47,54 @@
             position: absolute;
             top: 0;
             width: 60px;
-            height: 110%;
-            margin: -10px 0;
+            height: 100vh;
+            margin: -15vh 0;
             z-index: 1;
             pointer-events: none;
         }
         #resetticontainer::before {
             left: 0;
-            background: linear-gradient(to right, #fff 0%, transparent 100%);
+            background: linear-gradient(to right, #fff 50%, transparent 100%);
         }
         #resetticontainer::after {
             right: 0;
-            background: linear-gradient(to left, #fff 0%, transparent 100%);
+            background: linear-gradient(to left, #fff 50%, transparent 100%);
         }
         .resetti {
+            text-align: center;
+        }
+        a.button {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            font-family: monospace;
+            font-size: 2em;
+            font-weight: 900;
+            padding: 10px 0 20px 0;
+            border-top: #adadab 2px solid;
+            background: linear-gradient(#fff, #c7c8c3);
+            color: black;
+            z-index: 999;
+            transition: 0.15s;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+        }
+        .button:active {
+            filter: brightness(70%);
+        }
+        .error {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            font-family: monospace;
+            font-size: 2em;
+            font-weight: 900;
+            padding: 10px 0 15px 0;
+            border-bottom: #777873 4px solid;
+            z-index: 999;
+            background: linear-gradient(#40404b, #5a5b55);
+            color: white;
             text-align: center;
         }
         .gradient-overlay {
@@ -94,19 +129,11 @@
     <div class="crt-overlay"></div>
     <div class="gradient-overlay"></div>
     <div id="maincontainer">
+        <div class="error">An error has occurred.</div>
         <div id="resetticontainer">
             <img src="/assets/icons/404.png" class="resetti">
             <p>404 Page not found.</p>
-            <a href="/"><p>Go back home?</p></a>
         </div>
+        <a href="/" class="button">Go back home?</a>
     </div>
-    <!--<div id="footer">
-        <p style="margin: 0;">PENGUINJAA.COM V4.44 [C] 2022 - 2099</p>
-        <p style="font-size: 18px; margin: 0;">
-            <a href="/cdn-cgi/l/email-protection#8ae9e5e4feebe9fecafaefe4edffe3e4e0ebeba4e9e5e7">CONTACT</a> | 
-            <a href="/archive">ARCHIVE</a> |
-            <a href="/sitemap">SITEMAP</a> |
-            POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
-        </p>
-    </div>-->
 </body>
