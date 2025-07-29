@@ -6,9 +6,7 @@ lite-youtube {
     background-position: center center;
     background-size: cover;
     cursor: pointer;
-    max-width: 720px;
 }
-
 /* gradient */
 lite-youtube::before {
     content: attr(data-title);
@@ -29,14 +27,9 @@ lite-youtube::before {
     text-overflow: ellipsis;
     box-sizing: border-box;
 }
-
 lite-youtube:hover::before {
     color: white;
 }
-
-/* responsive iframe with a 16:9 aspect ratio
-    thanks https://css-tricks.com/responsive-iframes/
-*/
 lite-youtube::after {
     content: "";
     display: block;
@@ -50,7 +43,6 @@ lite-youtube > iframe {
     left: 0;
     border: 0;
 }
-
 /* play button */
 lite-youtube > .lty-playbtn {
     display: block;
@@ -68,12 +60,10 @@ lite-youtube > .lty-playbtn {
     transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
     border: 0;
 }
-
 lite-youtube:hover > .lty-playbtn,
 lite-youtube .lty-playbtn:focus {
     filter: none;
 }
-
 /* Post-click styles */
 lite-youtube.lyt-activated {
     cursor: unset;
@@ -83,7 +73,6 @@ lite-youtube.lyt-activated > .lty-playbtn {
     opacity: 0;
     pointer-events: none;
 }
-
 .lyt-visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);

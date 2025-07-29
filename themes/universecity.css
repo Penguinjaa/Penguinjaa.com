@@ -5,24 +5,24 @@
     --header-img: no-repeat url("/themes/assets/a2.jpg");
  
      /* COLORS */
-    --p-color: #FEEDFD;
+    --p-color: #ffffff;
     --h1-color: #ed145b;
     --h2-color: #ed145b;
     --h3-color: #77d4ff;
     --h4-color: #77d4ff;
     --h5-color: #ed145b;
     --h6-color: #77d4ff;
-    --i-color: #FEE403;
+    --i-color: #fecd00;
 
     --selection: #06415F;
 
-    --marquee-text: #FEE403;
-    --marquee-shadow: 0px 0px 7px #FEE403;
+    --marquee-text: #00ffff;
+    --marquee-shadow: 0px 0px 7px #00ffff;
 
     --scroll-color: #000;
     --scroll-thumb-color: #8B8798;
     /* HEADER */
-    --header-img: no-repeat url("/themes/assets/universecity/glow-banner.jpg");
+    --header-img: no-repeat url("/themes/assets/universecity/banner.png");
 
     /* HEADERS */
     --stripes: linear-gradient(180deg,#06415F, #000);
@@ -40,7 +40,13 @@
     --blog-title: #D31180;
 }
 
-.crt-overlay {
-    display: none !important;
-    animation: none !important;
+.container-title {
+    border-bottom: #074667 1px solid;
+}
+#headerimg {
+    background-position: 0 -130px;
+    background-size: cover;
+}
+p, li {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
 }

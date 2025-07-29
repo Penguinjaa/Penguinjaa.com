@@ -17,12 +17,20 @@
       "src": "/images/buttons/candlebutton.png"
     },
     {
+      "href": "https://tofokyo.com/",
+      "src": "/images/buttons/tofoko.png"
+    },
+    {
       "href": "https://yuentp.neocities.org/",
       "src": "/images/buttons/chaos.gif"
     },
     {
       "href": "https://saikyo-central.neocities.org/",
       "src": "/images/buttons/saikyo.gif"
+    },
+    {
+      "href": "https://housepen.nekoweb.org/",
+      "src": "/images/buttons/housepen.gif"
     },
     {
       "href": "https://rice.place/",
@@ -69,6 +77,10 @@
     {
       "href": "https://unit00.neocities.org/",
       "src": "/images/buttons/unit00.gif"
+    },
+    {
+      "href": "https://july.lol/",
+      "src": "/images/buttons/july.gif"
     },
     {
       "href": "https://makoenergy.nekoweb.org/",

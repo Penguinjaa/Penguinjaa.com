@@ -20,6 +20,7 @@
     <script src="/assets/themes.js" defer></script>
     <script src="/medialog/activity.js" defer></script>
     <link href="/assets/nekowebring.css" rel="stylesheet">
+    <script src="/assets/stats.js" defer></script>
     <link rel="stylesheet" href="/assets/lite-yt-embed.css"/>
     <script src="/assets/lite-yt-embed.js" async></script>
     <script src="/assets/activity.js" defer></script>
@@ -27,7 +28,7 @@
     <link id="theme1" rel="stylesheet" href="/themes/neotokyo.css">
     <link id="theme2" rel="stylesheet" href="/themes/monochrome.css" disabled>
     <link id="theme3" rel="stylesheet" href="/themes/universecity.css" disabled>
-    <link id="theme4" rel="stylesheet" href="/themes/miku.css" disabled>
+    <link id="theme4" rel="stylesheet" href="/themes/downtown.css" disabled>
 </head>
 <body>
     <div class="crt-overlay"></div>
@@ -38,12 +39,12 @@
                     <button onclick="setTheme('NEO-TOKYO')" data-theme="neo-tokyo" data-theme-name="NEO-TOKYO"></button>
                     <button onclick="setTheme('MONOCHROME')" data-theme="monochrome" data-theme-name="MONOCHROME"></button>
                     <button onclick="setTheme('UNIVERSE CITY')" data-theme="universe-city" data-theme-name="UNIVERSE CITY"></button>
-                    <button onclick="setTheme('MIKU')" data-theme="MIKU" data-theme-name="MIKU"></button>
+                    <button onclick="setTheme('DOWNTOWN')" data-theme="downtown" data-theme-name="DOWNTOWN"></button>
                 </div>                
             </div>
             <div id="head-marquee">
                 <marquee scrollamount="7" style="height: 50px;">
-                    <h3 id="top-marquee">loading...</h3>
+                    <h3 id="top-marquee">LOADING...</h3>
                 </marquee>
             </div>                     
         </div>
@@ -60,6 +61,7 @@
                         <span><img src="/assets/icons/journal2.png"><h3><a href="/journal">JOURNAL</a></h3></span>
                         <span><img src="/assets/icons/blog.png"><h3><a href="/blog">BLOG</a></h3></span>
                         <span><img src="/assets/icons/scrapbook2.png"><h3><a href="/scrapbook">SCRAPBOOK</a></h3></span>
+                        <span><img src="/assets/icons/resources.png"><h3><a href="/resources">RESOURCES</a></h3></span>
                         <!--<h2 style="margin-top: 10px;">SHRINES</h2>
                         <span><img src="/assets/icons/kanye.png"><h3><a href="/kanye">KANYE WEST</a></h3></span>
                         <span><img src="/assets/icons/ac.png"><h3><a href="/animalcrossing">ANIMAL CROSSING</a></h3></span>-->
@@ -94,6 +96,7 @@
                     <a href="/VALORANT"><img src="/images/stamps/VALORANTstamp.jpg" loading="lazy"></a>
                 </marquee>
                 <marquee scrollamount="3" loop="infinite" direction="left" behavior="alternate" style="margin-top: -3px;">
+                    <a href="https://lucida.to/" target="_blank"><img src="/images/funbuttons/lucida.gif" loading="lazy"></a>
                     <img src="/images/funbuttons/1080p.jpg" loading="lazy">
                     <img src="/images/funbuttons/3dsbutton.png" loading="lazy">
                     <img src="/images/funbuttons/bestviewedcomp.gif" loading="lazy">
@@ -116,18 +119,32 @@
                         <p>I really like Akira, CRTs, retro consoles, & retrofuturism. I collect pretty much anything that connects to a CRT. My favorite games are <i>Animal Crossing New Leaf</i>, Pikmin 2, & Mario 64. Some of my favorite albums are <i>Discovery - Daft Punk</i> & Graduation - Kanye West.</p>
                     </div>
                 </div>
+                <div class="container-row">
+                    <div class="container featured-vid">
+                        <div class="container-title"><h1>// FEATURED VIDEO //</h1></div>
+                        <lite-youtube videoid="7eqT51MNHNQ" params="loop=1"></lite-youtube>
+                    </div>
+                    <div class="container" style="width: 39%; margin-left: 10px;">
+                        <div class="container-title">
+                            <h1>CURRENTLY...</h1>
+                        </div>
+                        <div class="container-content" style="overflow-y: scroll; max-height: 155px;">
+                            <h3>Playing</h3>
+                            <p>DK Bananza</p>
+                            <h3>Watching</h3>
+                            <p>Breaking Bad, Serial Experiments Lain</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="container">
                     <div class="container-title">
-                        <h1>RECENT ACTIVITY</h1>
+                        <h1>BLOG</h1>
                     </div>
                     <div class="container-content">
                         <div id="blog-section">
                             <div id="blog-list"></div>
                         </div>
                     </div>
-                </div>
-                <div class="container-row">
-                    <lite-youtube videoid="lmNez5l2RV0" style="width: 70%;" params="loop=1"></lite-youtube>
                 </div>
             </div>
             <div class="right-column">
@@ -194,22 +211,37 @@
                         <h1>INFO</h1>
                     </div>
                     <div class="container-content">
+                        <div class="box">
+                            <div class="boxhead" style="display: flex;">
+                                <img src="/images/assets/codecatputer.gif" style="margin: -10px 10px 10px -10px;">
+                                <h2 style="padding-left: 0;">NEKOWEB STATS</h2>
+                            </div>
+                            <div class="boxbody stats">
+                                <p id="visitors">Loading..</p>
+                                <p id="followers">Loading..</p> 
+                                <p id="updated">Loading..</p>
+                                <p>Date Created:10/22/2022</p>
+                                <a href="https://nekoweb.org/follow/penguinjaa" target="_blank"><h3>follow on nekoweb</h3></a>
+                            </div>
+                        </div>
                         <hr>
                         <h2>UPDATES</h2>
-                        <h4><b>9.2.24</b></h4><p>> Cleaned up media log</p><p>> Switched method of displaying movies so much cleaner now ^_^</p>
-                        <h4><b>7.11.24</b></h4><p>> About Page overhaul</p><p>> Links Page touchups</p>
-                        <h4><b>6.4.24</b></h4><p>> Media Page overhaul</p><p>> Links Page overhaul (kinda)</p><p>> New Guestbook</p><p>> Switched to Max's lastfm code</p><p>> Tiny bit of mobile cleaning<p><p>> Cleaned up some disgusting code</p>
-                        <h4><b>5.13.24</b></h4><p>> joined nekowebring</p><p>> added follow on nekoweb button</p><p>> touched up little things</p>
-                        <h4><b>*v4.44* - 3.18.24</b></h4><p>NEW LAYOUT!!</p>
-                        <h4><b>3.9.24</b></h4><p>> Migrated to nekoweb. woo!</p><p>> Added a shrines category</p>
-                        <h4><b>*v3.33* - 12.31.23</b></h4><p>> New Index</p><p>> 2 Column Layout</p><p>> Profile Bar</p>
-                        <h4><b>11.3.23</b></h4><p>> Replaced About Me Tab With Profile Tab</p><p>> Added Socials Tab</p>
-                        <h4><b>9.26.23</b></h4><p>> New Media Page</p><p>> Updated Vinyl Collection Page</p>
-                        <h4><b>9.19.23</b></h4><p>> New Guestbook Page</p>
-                        <h4><b>8.9.23</b></h4><p>> New Vinyl Collection Page</p>
-                        <h4><b>*v2.22* - 7.27.23</b></h4><p>> New Index</p><p>> 3 Column Layout</p><p>> OldWeb Aesthetic</p><p>> Currently Playing Widget</p><p>> Blog Rework</p>
-                        <h4><b>*v1.11* - 10.22.22</b></h4><p>> Blank Index</p><p>> Top Navigation Bar</p>
-                        <hr>
+                        <div class="updates">
+                            <div><h4><b>// 9.2.24 //</b></h4><p>> Cleaned up media log</p><p>> Switched method of displaying movies</p></div>
+                            <div><h4><b>// 7.11.24 //</b></h4><p>> About Page overhaul</p><p>> Links Page touchups</p></div>
+                            <div><h4><b>// 6.4.24 //</b></h4><p>> Media Page overhaul</p><p>> Links Page overhaul (kinda)</p><p>> New Guestbook</p><p>> Switched to Max's lastfm code</p><p>> Tiny bit of mobile cleaning<p><p>> Cleaned up some disgusting code</p></div>
+                            <div><h4><b>// 5.13.24 //</b></h4><p>> joined nekowebring</p><p>> added follow on nekoweb button</p><p>> touched up little things</p></div>
+                            <div><h4><b>// *v4.44* - 3.18.24 //</b></h4><p>NEW LAYOUT!!</p></div>
+                            <div><h4><b>// 3.9.24 //</b></h4><p>> Migrated to nekoweb. woo!</p><p>> Added a shrines category</p></div>
+                            <div><h4><b>// *v3.33* - 12.31.23 //</b></h4><p>> New Index</p><p>> 2 Column Layout</p><p>> Profile Bar</p></div>
+                            <div><h4><b>// 11.3.23 //</b></h4><p>> Replaced About Me Tab With Profile Tab</p><p>> Added Socials Tab</p></div>
+                            <div><h4><b>// 9.26.23 //</b></h4><p>> New Media Page</p><p>> Updated Vinyl Collection Page</p></div>
+                            <div><h4><b>// 9.19.23 //</b></h4><p>> New Guestbook Page</p></div>
+                            <div><h4><b>// 8.9.23 //</b></h4><p>> New Vinyl Collection Page</p></div>
+                            <div><h4><b>// *v2.22* - 7.27.23 //</b></h4><p>> New Index</p><p>> 3 Column Layout</p><p>> OldWeb Aesthetic</p><p>> Currently Playing Widget</p><p>> Blog Rework</p></div>
+                            <div><h4><b>// *v1.11* - 10.22.22 //</b></h4><p>> Blank Index</p><p>> Top Navigation Bar</p></div>
+                        </div>
+                        <hr style="margin-top: 0;">
                     </div>
                 </div>
             </div>
@@ -276,11 +308,21 @@ fetch('/blog/blog.json')
 
             const tags = post.tags.map(tag => {
                 const style = data.tags[tag];
-                return style ? `<span class="blog-tag" style="
-                    background: linear-gradient(30deg, ${style.bgColor[0]} 0%, ${style.bgColor[1]} 100%);
-                    border: 1px solid ${style.borderColor};
+                if (!style) return '';
+
+                const isGradientBorder = Array.isArray(style.borderColor);
+                const borderCSS = isGradientBorder
+                    ? `border: 1px solid transparent;
+                       background:
+                           linear-gradient(30deg, ${style.bgColor[0]} 0%, ${style.bgColor[1]} 100%) padding-box,
+                           linear-gradient(to right, ${style.borderColor.join(', ')}) border-box;`
+                    : `border: 1px solid ${style.borderColor};
+                       background: linear-gradient(30deg, ${style.bgColor[0]} 0%, ${style.bgColor[1]} 100%);`;
+
+                return `<span class="blog-tag" style="
+                    ${borderCSS}
                     color: ${style.textColor};
-                ">${tag}</span>` : '';
+                ">${tag}</span>`;
             }).join('');
 
             postDiv.innerHTML = `
@@ -289,7 +331,6 @@ fetch('/blog/blog.json')
                     <div class="blog-tags">${tags}</div>
                     <p class="blog-date">${post.date}</p>
                 </div>
-                <p class="blog-summary">${post.summary}</p>
             `;
 
             blogList.appendChild(postDiv);

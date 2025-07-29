@@ -1,0 +1,221 @@
+body {
+    background: #DFDEC0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+.vinyl-content {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    height: 88vh;
+    margin: auto;
+}
+.vinyl-container {
+    background: #ECEBCD;
+    border-radius: 10px;
+    height: 88vh;
+    width: 58vw;
+    position: relative;
+    overflow: scroll;
+    z-index: 99;
+}
+.vinyl-container::-webkit-scrollbar{display: none;}
+.vinyl-tabs {
+    display: flex;
+    transform: rotate(90deg);
+    transform-origin: left;
+    height: 165px;
+    gap: 10px;
+}
+.vinyl-tabs h3 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: 'orbitron', Arial, Helvetica, sans-serif;
+    padding: 5px 10px 20px 10px;
+    background: #ECEBCD;
+    color: #E38E18;
+}
+.vinyl-tabs h3:hover {
+    color: white !important;
+    text-shadow: -2px 2px 0 #E38E18;
+}
+.vinyl-nav {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 15px;
+    overflow: hidden;
+    max-height: 100vh;
+    text-align: right;
+}
+.vinyl-nav img {border-radius: 15px;}
+.vinyl-nav h2 {
+    margin: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.vinyl-nav .homelink h2:hover {
+    color: white !important;
+    text-shadow: -3px 3px 0 #E38E18;
+}
+.type {
+    position: absolute;
+    visibility: hidden; 
+    white-space: nowrap;
+    z-index: 555;
+}
+h2:hover .type {
+    visibility: visible;
+}
+#collection, #wantlist {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.albumcontainer {
+    width: 13%;
+    margin: 15px;
+}
+.albumcontainer img{
+    width: 100%;
+    object-fit: contain;
+}
+.albumtitle {
+    font-family: 'orbitron', Arial, Helvetica, sans-serif;
+    color: #000;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+.albumtitle strong:hover {
+    color: #E38E18;
+}
+.artistname {
+    color: #000;
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#pagination {
+    text-align: center;
+    display: none;
+    position: sticky;
+    bottom: 0;
+    background-color: #ECEBCD;
+    z-index: 1;
+    padding: 10px 0;
+}
+#wantlist.active + #pagination {
+    display: block;
+}
+#pagination button {
+    font-family: 'orbitron', Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: 900;
+    cursor: pointer;
+    vertical-align: center;
+    margin: 0 5px 0 5px;
+    border: 0;
+    background: none;
+}
+.active {
+    background: none;
+    color: #E38E18;
+}
+.inactive, .next, .prev {
+    background: none;
+    color: #000;
+}
+.inactive:hover, .next:hover, .prev:hover {
+    color: #E38E18;
+    filter: brightness(90%);
+}
+a:link, a:visited{
+    color: inherit;
+}
+::selection{
+    background: #E38E18;
+}
+.vfooter a:hover {
+    color: #E38E18;
+}
+#hoverText {
+    color: #E38E18;
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+}
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+        align-items: center;
+    }
+    .vinyl-nav {
+        width: 100%;
+        flex: none;
+        text-align: center;
+        margin: 15px 0 5px 0;
+    }
+    .vinyl-nav img {
+        display: none;
+    }
+    .vinyl-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .vinyl-tabs {
+        order: -1;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        gap: 10px;
+    }
+    .vinyl-tabs h3 {
+        font-size: 1.1em;
+        transform: none;
+        padding: 8px 12px;
+        writing-mode: horizontal-tb;
+        margin: 0;
+    }
+    .vinyl-container {
+        width: 95vw;
+        height: auto;
+        max-height: unset;
+        overflow: visible;
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+    #collection, #wantlist {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .albumcontainer {
+        width: 42%;
+        margin: 10px;
+    }
+    .albumtitle, .artistname {
+        font-size: 0.85em;
+    }
+    .vfooter {
+        font-size: 0.8em;
+        padding: 10px;
+        text-align: center;
+    }
+    .vfooter a {
+        display: inline-block;
+        margin: 0 3px;
+    }
+    img[src="djcyber.png"] {
+        display: none;
+    }
+}

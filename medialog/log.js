@@ -120,8 +120,9 @@ fetch('media.json')
 
             entryDiv.innerHTML = `
                 <div class="${type === 'movies' ? 'movie-container' : type === 'music' ? 'album-container' : 'other-container'}"> 
-                    <div class="cover"><img src="${item.cover}" alt="${item.title}" loading="lazy"></div>
+                    
                     <div class="entry-info">
+                        <div class="cover"><img src="${item.cover}" alt="${item.title}" loading="lazy"></div>
                         <h2>${item.title}${item.year ? ` (${item.year})` : ''}</h2>
                         ${extraHTML}
                         <h3 class="ratedate"><span class="date">${item.date}</span><span class="rating">${item.rating}/100</span></h3>

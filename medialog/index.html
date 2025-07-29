@@ -24,9 +24,7 @@
     <meta property="og:url" content="https://penguinjaa.com/medialog"/>
     <style>
         #entries {
-            height: 60vh;
             width: 100%;
-            overflow: hidden scroll;
             scrollbar-width: none;
             scroll-behavior: smooth;
         }
@@ -39,7 +37,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            gap: 10px;
+            gap: 15px;
         }
         .movie-container, .album-container, .other-container {
             width: 130px;
@@ -54,7 +52,6 @@
             object-fit: contain;
         }
         .album-container img {
-            height: 150px;
             width: 150px;
             max-width: 100%;
             object-fit: contain;
@@ -69,11 +66,14 @@
         .movie-container p {
             display: none;
         }
-        .ratedate {display: flex; width: 100%; justify-content: space-evenly; color: var(--p-color);}
+        .cover {float: left; margin-right: 15px;}
+        .ratedate {display: flex; width: 100%; justify-content: space-evenly; color: var(--p-color); padding: 3px 0;}
         .rating {color: var(--i-color);}
         .date {color: var(--h3-color); font-size: 1em;}
         #tab-content {
             padding-top: 10px;
+            overflow-y: scroll;
+            max-height: 55vh;
         }
         .tab-section {
             display: flex;
@@ -86,11 +86,13 @@
         #media-header {
             width: 100%;
         }
+        #media-info {
+            padding: 5px;
+        }
         #media-tabs {
             display: flex;
             justify-content: center;
             gap: 25px;
-            padding: 0 0 15px 0;
         }
         #media-tabs button {
             font-family: content;
@@ -109,7 +111,7 @@
             min-height: 210px;
         }
         .focused-entry img {
-            max-width: 130px;
+            max-width: 150px;
             object-position: top;
         }
         .focused-entry h2 {
@@ -118,18 +120,18 @@
             text-align: left;
         }
         .focused-entry p {
-            margin-left: 25px;
             display: block;
             text-align: left;
         }
         .focused-entry h5 {
             text-align: left;
-            margin-left: 10px;
         }
         .focused-entry .ratedate {
             justify-content: space-between;
-            padding: 0 15px;
             width: auto;
+        }
+        .focused-entry .movie-container img, .focused-entry .other-container img {
+            height: auto !important;
         }
         .entry.focused-entry, .focused-entry .entry-info {
             width: 100%;
@@ -155,6 +157,12 @@
             color: #aaaaaa;
             font-style: italic;
         }
+        @media screen and (max-width:1000px){
+            #media-tabs {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -176,7 +184,7 @@
             </div>                     
         </div>
         <div id="body">
-            <div class="left-column">
+            <!--<div class="left-column">
                 <div class="container" style="margin-bottom: 0; overflow-y: hidden">
                     <div class="container-title">
                         <h1>LINKS</h1>
@@ -189,8 +197,8 @@
                         <span><img src="/assets/icons/scrapbook2.png"><h3><a href="/scrapbook">SCRAPBOOK</a></h3></span>
                     </div>
                 </div>
-            </div>
-            <div class="main-column" style="width: 100%; margin-right: 0;">
+            </div>-->
+            <div class="main-column" style="width: 100%; margin: 0;">
                 <div class="container"> 
                     <div class="container-title" style="display: flex; justify-content: space-between; max-height: 40px;">
                         <h1>MEDIA LOG</h1>
@@ -215,16 +223,18 @@
                     <div class="container-content" style="padding: 0 10px;">
                         <div id="entries">
                             <div id="media-header">
-                                <div id="media-info">
-                                    <p>Welcome to the Media Log. Browse movies, albums, and other entries I've reviewed.</p>
+                                <div id="media-info" style="position: relative;">
+                                    <div id="media-tabs">
+                                        <a href="/" style="position: absolute; left: 0;"><button class="media-tab"><h1>< HOME</h1></button></a>
+                                        <button class="media-tab" onclick="showTab('movies')" data-tab="movies"><h1>[MOVIES]</h1></button>
+                                        <button class="media-tab" onclick="showTab('music')" data-tab="music"><h1>[MUSIC]</h1></button>
+                                        <button class="media-tab" onclick="showTab('other')" data-tab="other"><h1>[OTHER]</h1></button>
+                                    </div>
                                 </div>
-                                <div id="media-tabs">
-                                    <button class="media-tab" onclick="showTab('movies')" data-tab="movies"><h1>MOVIES</h1></button>
-                                    <button class="media-tab" onclick="showTab('music')" data-tab="music"><h1>MUSIC</h1></button>
-                                    <button class="media-tab" onclick="showTab('other')" data-tab="other"><h1>OTHER</h1></button>
-                                </div>
+                                <hr style="margin: 0;">
                             </div>
                             <div id="tab-content">
+                                <p>Welcome to the <i>Media Log</i>. Browse movies, albums, and other entries I've reviewed. and by review i mean jot down my initial thoughts that may or may not be interesting whatsoever. this serves more as a personal log than a review or recommendation page, but i encourage you to check anything i rate highly out!!</p>
                                 <div id="movies" class="tab-section"></div>
                                 <div id="music" class="tab-section"></div>
                                 <div id="other" class="tab-section"></div>

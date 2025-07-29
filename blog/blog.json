@@ -1,5 +1,6 @@
 {
     "tags": {
+        "music": {"bgColor": ["#000000", "#1d1f1c"], "borderColor": ["#993638", "#b7653e", "#b5a83c", "#2d6243", "#3b3f6c", "#343a5f"], "textColor": "#dbdae2"},
         "tech": {"bgColor": ["#2D2C30", "#494B52"], "borderColor": "#41464D", "textColor": "#EBEBEB"},
         "media": {"bgColor": ["#000", "#373E33"], "borderColor": "#4E4E4D", "textColor": "#E4021B"},
         "review": {"bgColor": ["#fff", "#fff"], "borderColor": "#000", "textColor": "#000"},
@@ -12,22 +13,19 @@
             "title": "v5.55 Is Here!",
             "link": "/blog/v5",
             "tags": ["update"],
-            "date": "12-20-2025",
-            "summary": "yapping about my new layout and you will enjoy it"
+            "date": "12-20-2025"
         },
         {
             "title": "4:3 Raspberry Pi Media Center",
             "link": "/blog/crtpi",
             "tags": ["tech", "media"],
-            "date": "12-20-2025",
-            "summary": "showing off my raspberry pi crt setup for emulation and watching stuff"
+            "date": "12-20-2025"
         },
         {
-            "title": "End Of 2024 Blog Post",
-            "link": "/blog/2024",
-            "tags": ["year in review", "media"],
-            "date": "12-31-2024",
-            "summary": "reminiscing this past year and ranking my top 10 albums of 2024"
+            "title": "MY FAVORITE KANYE ALBUM NEVER CAME OUT",
+            "link": "/blog/gaj",
+            "tags": ["music"],
+            "date": "1-2-2024"
         }
     ]
 }

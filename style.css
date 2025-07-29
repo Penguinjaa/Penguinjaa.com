@@ -1,7 +1,7 @@
 /* FONTS */
 @font-face {
 	font-family: "LCD";
-	src: url("/assets/fonts/LCD.woff") format(woff);
+	src: url("/assets/fonts/lcd.woff") format('woff');
 	font-display: swap;
 }
 @font-face {
@@ -25,6 +25,7 @@
 body {
     background: var(--background);
     background-size: cover;
+    background-attachment: fixed;
     font-family: 'content', monospace;
     margin: 0;
     height: 100vh;
@@ -53,9 +54,9 @@ body {
 #top-marquee {margin: auto;}
 #head-marquee h3 {
     font-family: LCD;
-    font-size: 2.5em;
+    font-size: 40px;
     line-height: 48px;
-    font-weight: 100;
+    font-weight: 60;
     color: var(--marquee-text);
     text-shadow: var(--marquee-shadow);
 }
@@ -98,11 +99,10 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
-.container-row div {padding: 0 5px;}
-footer {text-align: center;}
+footer {text-align: center; padding: 15px 0;}
 
 /* TEXT */
-p {color: var(--p-color);}
+p, li {color: var(--p-color);}
 h1 {
     color: var(--h1-color);
     text-shadow: 0 0 6px var(--h1-color);
@@ -134,7 +134,11 @@ button:hover{
     cursor: pointer;
 }
   
-::selection{background: var(--selection);}
+::selection{
+    color: var(--h1-color);
+    text-shadow: 0 0 6px var(--h1-color);
+    animation: pulse 0.1s infinite;
+}
 
 i {
     color: var(--i-color);
@@ -167,7 +171,6 @@ html {
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: auto;
     font-feature-settings: "liga" 0;
-    background-color: var(--scroll-thumb-color);
 }
 
 /* BLOG */
@@ -199,6 +202,8 @@ html {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 2px;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 .blog-summary {
     font-size: 1em;
@@ -222,19 +227,28 @@ textarea {
     border: 1px var(--p-color) solid;
 }
 textarea::-webkit-scrollbar {display: none;}
-.updates {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 175px;
-    width: 150px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    border: var(--blog-border);
+.stats p {
+    margin: 5px 0;
 }
-.updates::-webkit-scrollbar {display: none;}
-.updates p {margin: 5px 0;}
-.updates h4 {margin-bottom: 5px;margin-top: 10px;}
-lite-youtube {border: var(--blog-border);}
+.updates {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.updates div {
+    background-color: #000000c9;
+    padding: 5px;
+    margin: 10px 0;
+    border: #fff 1px solid;
+}
+.updates div h4 {
+    text-align: center;
+    font-size: 1.2em;
+}
+.featured-vid {
+    width: 60%;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
 /* ACTIVITY */
 #recentSong{
@@ -307,7 +321,6 @@ lite-youtube {border: var(--blog-border);}
 .marquee-container:hover .marquee-track {
   animation-play-state: paused;
 }
-
 @keyframes marquee-scroll {
   0% {
     transform: translateX(0);
@@ -422,8 +435,18 @@ lite-youtube {border: var(--blog-border);}
         order: -1;
     }
     .main-column, .right-column, .left-column {
-        width: 95.7vw;
+        width: fit-content;
         margin: 0;
+    }
+    .container-row {
+        flex-direction: column;
+    }
+    .container-row .container {
+        width: unset !important;
+        margin-left: 0 !important;
+    }
+    .container-row .container .container-content {
+        width: 100%;
     }
     #navlinks {
         display: flex;

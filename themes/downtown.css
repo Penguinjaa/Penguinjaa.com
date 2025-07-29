@@ -32,7 +32,7 @@ colors{
 
     /* BODY */
     --background: url(/themes/assets/monochrome/crater.jpg) no-repeat fixed center;
-    --box-bg: #000 url(/images/whitestripe.png);
+    --box-bg: #000 url(/images/blackstripe.png);
     --box-border: #C0C0C0 4px ridge;
 
     /* BLOG */

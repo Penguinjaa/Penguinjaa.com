@@ -23,6 +23,47 @@
     <meta property="og:title" content="JOURNAL // PENGUINJAA"/>
     <meta property="og:description" content="penguinjaa's digital journal"/>
     <meta property="og:url" content="https://penguinjaa.com/journal"/>
+    <style>
+        #journalnav {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            padding: 5px 0 0 10px;
+            border-right: var(--blog-border);
+        }
+        .journaltab {
+            font-family: "content", Geneva, Verdana, sans-serif;
+            text-align: left;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        #entries {
+            padding: 0 15px;
+            height: 58vh;
+            width: 100%;
+            overflow: hidden scroll;
+            scrollbar-width: none;
+            scroll-behavior: smooth;
+        }
+        .entry {
+            margin: 10px 0 20px 0;
+            border: var(--blog-border);
+            padding: 10px;
+        }
+        .logcategory {
+            padding-left: 10px;
+        }
+        .logcategory h3 {
+            text-decoration: underline;
+        }
+        #currently {
+            margin-top: 20px;
+        }
+        #currently h5 {
+            padding-left: 15px;
+        }
+    </style>
 </head>
 <body>
     <div id="content">

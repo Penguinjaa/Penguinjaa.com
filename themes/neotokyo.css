@@ -17,7 +17,8 @@
      --selection: #7D4D74;
  
      --marquee-text: #CD4039;
-     --marquee-shadow: 0px 0px 7px #CD4039;
+     --marquee-shadow: 0 0 12px #CD4039;
+
  
      --scroll-color: #000;
      --scroll-thumb-color: #2e1f1a;

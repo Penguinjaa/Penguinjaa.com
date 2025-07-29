@@ -1,0 +1,197 @@
+@font-face{
+    font-family: Silicon;
+    src:url(silicon.ttf) format("TrueType");
+}
+/*ads*/
+#towerAds {
+    float:left;}
+#topbanner {
+    width:728px;
+    margin:auto;
+    margin-top: 18px;
+}
+/*layout // theming*/
+body {
+    width:980px;
+    color:#fff;
+    margin:0 auto;
+    padding:0;
+    background:#000;
+    font-family:  Arial, Verdana, Helvetica, sans-serif;
+    font-size:.8em;
+}
+h2 {
+    color:#77d4ff;
+    font-weight:lighter;
+    margin:0;
+    padding:0 0 18px 0;
+    font-size:1.1em;
+    text-decoration: none;
+}
+h3 {
+    color:#ed145b;
+    font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:1em;
+}
+h4 {
+    font-weight:bold;
+    font-size:1.1em;
+}
+h5 {
+    color:#77d4ff;
+    font-weight:bold;
+    margin:0;
+    padding:0 0 1px 0;
+    font-size:1.2em;
+}
+h6 {
+    color:#ed145b;
+    font-weight:lighter;
+    margin:0;
+    padding:0 0 18px 0;
+    font-size:1em;
+}
+#header {
+    background:#000;
+    height:81px;
+    padding: 20px 0 0 0;
+    border-top:1px solid #303030;
+    margin:20px 0 0 0 ;
+}
+#nav {
+    margin-bottom:42px;
+    font-family: silicon;
+    color: palevioletred;
+    font-size: 18px;
+}
+#nav a {
+    color:#a21543;
+    font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-size:.9em;
+}
+#sidebar {
+    float:right;
+    width:300px;
+    font-weight:normal;
+    font-size:1.1em;
+}
+#sidebar form {
+    padding:5px 0px;
+    text-transform:uppercase;
+    color:#DB1254;
+}
+#sidebar form input {
+    border:1px solid #03354E;
+    background:#000;
+    color:#fff;
+    font-size:11px;
+}
+#sidebar #searchButton {
+    color:#CBBD26;
+}
+#sidebar #searchField {
+    width:220px;
+}
+#entries {
+    float:left;
+    padding:0 0 0 10px;
+}
+.rapper	{
+    padding:10px 5px 20px 35px;
+    background:url(images/entryFanciness.gif) no-repeat;
+}
+.blogEntry {
+    width:538px;
+    background:#070707 url(images/entry_bg.gif) repeat-y;
+    border-right:1px solid #303030;
+    border-bottom:1px solid #303030;
+    margin-bottom:20px;
+}
+#entries img {
+    display:block;
+    border:0;
+    padding:0;
+}
+.blogImage {
+    border:2px solid #fff;
+    max-width: 475px;
+    margin-bottom: 15px;
+}
+.son_of_link {
+    font-size:.9em;
+}
+.son_of_link a {
+    padding:3px;
+    text-decoration:none
+}
+
+
+a:link ,a:visited, a:hover	{color:#fff;}
+.latest						{color:#4cb0de;background:#010f16;padding:9px 7px;font-size:.8em;margin:0 0 5px 0;font-weight:bold;}
+.latest	a					{color:#4cb0de;}
+.latest2					{color:#4cb0de;background:#010f16;padding:9px 7px;font-size:.8em;margin:0 0 5px 0;font-weight:bold;text-transform: uppercase;}
+.latest2	a				{color:#4cb0de;}
+.latest3					{color:#4cb0de;background:#010f16;padding:9px 7px;font-size:.9em;margin:0 0 5px 0;font-weight:bold;text-transform: uppercase;}
+.latest3	a				{color:#4cb0de;}
+.more						{display:block;padding:10px 0 0 0;font-weight:bold;}
+#blogCategories				{list-style:none;margin:0;padding:0;}
+#footer						{clear:both;color:#333;font-size:10px;padding:14px 2px;}
+#footer a					{color:#666;}
+
+#linksList					{list-style:none;margin:0;padding:0;}
+#linksList li				{margin:0;padding:0 0 1px 0 ;}
+#linksList a				{color:#4cb0de;font-weight:bold;font-size:.8em;}
+
+/*comments*/
+#loginForm					{color:#fff;}
+#comments					{padding:0;color:#fff; ;}
+/*#comments h3				{font-size:1.2em;border-bottom:1px dotted;padding:0 0 5px 0;}*/
+.comment_form				{margin:40px 0px;}
+#ugcTable					{padding:10px;color:#777;}
+#ugcComments				{width:441px;height:100px;border:none;}
+#ugcComment					{display:none;}
+#ugcTable 					{position:relative;left:-10px;}
+#ugcPages					{padding:7px 0;}
+.comment {
+    padding:20px 15px 15px 15px;
+    border-bottom:1px solid #303030;
+    width:350px;
+}
+.comment_alternate			{background:#f1f1f1;}
+.avatar {
+    float:left;
+    border:1px solid #000;
+    margin:0 20px 10px 0;
+    width: 70px;
+    max-height: 70px;
+}
+.meta						{color:#6abadf;}
+
+#fPassword, #fComUserName	{border:0;background:#f0f0f0}
+#order_button				{background:#E9FFCA;}
+
+footer {
+    margin-left:25%;
+    margin-right:25%;
+    margin-top: 15px;
+    text-align: center;
+    font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.discogcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.discogcontainer img{
+    width: 64px;
+    max-height: 64px;
+    margin: 3px;
+    border: 1px solid white;
+}
+.discogcontainer img:hover {
+    border: 1px solid #ed145b;
+}

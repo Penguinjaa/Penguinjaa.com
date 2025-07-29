@@ -1,6 +1,14 @@
 {
   "movies": [
     {
+      "title": "Spider-Man: Across the Spider-Verse",
+      "year": "2023",
+      "cover": "images/movies/spider-man_across_the_spider-verse.jpg",
+      "rating": "96",
+      "review": "just the most beautiful thing you will ever see the animation is insane",
+      "date": "7.28.25"
+    },
+    {
       "title": "Django Unchained",
       "year": "2012",
       "cover": "images/movies/django_unchained.jpg",
@@ -578,6 +586,36 @@
     }
   ],
   "albums": [
+    {
+      "title": "Alfredo",
+      "year": "2020",
+      "cover": "images/albums/alfredo_freddie_gibbs.jpg",
+      "rating": "87",
+      "review": "listening in anticipation for alfredo 2, this is my first listen and i really freaking like it man alc is so goated and freddie has #swag",
+      "date": "7.28.25",
+      "artist": "Freddie Gibbs",
+      "favorite_songs": "Babies & Fools, Look At Me, Frank Lucas"
+    },
+    {
+      "title": "Vanisher, Horizon Scraper",
+      "year": "2025",
+      "cover": "images/albums/vanisher_horizon_scraper_quadeca.jpg",
+      "rating": "97",
+      "review": "at a loss for words rn to be honest i will come back to this later probably and write a real thing",
+      "date": "7.25.25",
+      "artist": "Quadeca",
+      "favorite_songs": "THUNDRRR, CASPER, THAT'S WHY"
+    },
+    {
+      "title": "Let God Sort Em Out",
+      "year": "2025",
+      "cover": "images/albums/let_god_sort_em_out_clipse.jpg",
+      "rating": "93",
+      "review": "have yet to listen to the original clipse projects, but ive been a pusha fan for a while now. really glad the so be it sample got cleared, hearing that other beat on first listen was a big letdown, but now we have the good version. malice for sure had the better performances on here generally, but both did great. pharrell also did incredible, the production is insane. this album feels like a perfect blend of what i love about that early 2000s type rap and incorporates some modern sounds to make this easily my favorite album of the year.",
+      "date": "7.11.25",
+      "artist": "Clipse",
+      "favorite_songs": "The Birds Don't Sing, So Be It, Chains & Whips"
+    },
     {
       "title": "Goyard Ibn Said",
       "year": "2025",
@@ -1640,6 +1678,14 @@
     }
   ],
   "other": [
+    {
+      "title": "Donkey Kong Bananza",
+      "year": "2025",
+      "cover": "images/other/donkey_kong_bananza.jpg",
+      "rating": "100",
+      "review": "Spoilers ahead, you have been FREAKING WARNED. <br><br>Nintendo freaking did it dude this game is incredible!!!! This is easily top 10 nintendo ALL TIME it is their best platformer (even better than sm64) and most important of all it is SO CHARMING!!!! Oh my god i love this game it has that same specialness to it that gamecube era games have, I havent had this much childlike wonder in so long. All of the little NPCs with dynamic dialogue based on what youve done are so cute. Like at the beginning there is this one monkey saying everything is gonna be okay and dont panic then you punch him and he starts freaking out and all the other monkeys next to him freak out too. The Feast Kingdom especially gives gamecube energy, it reminds me of Pinna Park from Mario Sunshine. I am a pretty big pauline hater normally, but this game has changed me forever im fake and I switched up, this game made me like her more. I was a little worried that the more disney esque elements would be cringe and weigh down the game, but I actually really liked it, it works and is cute. Obviously the destruction is really satisfying, you can tell they put a lot of time into perfecting the feel of it.<br><br><i>REAL SPOILERS AHEAD!!! FINAL WARNING!!!</i> The last parts of the game are super super cool I was soyfacing and pointing at the screen when K. Rool showed up. In Odyssey I wasnt a fan of new donk city just cause the switch couldnt render enough to make it look good, but it looked really good in this game. I'm really happy they didnt show off K. Rool and all of the bananzas in the trailers, I feel like nintendo and most companies show way too much in trailers and theres no surprises while playing, but they didnt do that here. The elephant bananza is really good they really did everything possible to make it the most satisfying it can be.",
+      "date": "7.24.25"
+    },
     {
       "title": "Metroid: Zero Mission",
       "year": "2004",

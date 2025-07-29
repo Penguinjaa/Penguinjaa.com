@@ -1,39 +1,11 @@
-#journalnav {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    padding: 5px 0 0 10px;
-    border-right: var(--blog-border);
+.post {
+    padding: 5px 15px;
+    line-height: 1.3 !important;
 }
-.journaltab {
-    font-family: "content", Geneva, Verdana, sans-serif;
-    text-align: left;
-    background: none;
-    border: none;
-    cursor: pointer;
+.post hr {
+    margin: 15px 0;
 }
-#entries {
-    padding: 0 15px;
-    height: 58vh;
-    width: 100%;
-    overflow: hidden scroll;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-}
-.entry {
-    margin: 10px 0 20px 0;
-    border: var(--blog-border);
-    padding: 10px;
-}
-.logcategory {
-    padding-left: 10px;
-}
-.logcategory h3 {
-    text-decoration: underline;
-}
-#currently {
-    margin-top: 20px;
-}
-#currently h5 {
-    padding-left: 15px;
+.date {
+    font-size: 1.2em;
+    margin: 0 !important;
 }
