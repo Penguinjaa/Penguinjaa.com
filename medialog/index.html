@@ -109,6 +109,7 @@
             display: flex;
             height: auto;
             min-height: 210px;
+            padding-bottom: 3px;
         }
         .focused-entry img {
             max-width: 150px;
@@ -135,6 +136,10 @@
         }
         .entry.focused-entry, .focused-entry .entry-info {
             width: 100%;
+            padding-top: 10px;
+        }
+        #movies:has(.focused-entry), #music:has(.focused-entry), #other:has(.focused-entry) {
+            gap: 0;
         }
         .review-button {
             font-family: "content";

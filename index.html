@@ -20,7 +20,6 @@
     <script src="/assets/themes.js" defer></script>
     <script src="/medialog/activity.js" defer></script>
     <link href="/assets/nekowebring.css" rel="stylesheet">
-    <script src="/assets/stats.js" defer></script>
     <link rel="stylesheet" href="/assets/lite-yt-embed.css"/>
     <script src="/assets/lite-yt-embed.js" async></script>
     <script src="/assets/activity.js" defer></script>
@@ -56,11 +55,11 @@
                     </div>
                     <div class="container-content">
                         <span><img src="/assets/icons/home.png"><h3><a href="/">HOME</a></h3></span>
-                        <span><img src="/assets/icons/media2.png"><h3><a href="/medialog">MEDIA LOG</a></h3></span>
+                        <span><img src="/assets/icons/media.png"><h3><a href="/medialog">MEDIA LOG</a></h3></span>
                         <span><img src="/assets/icons/vinyls.png"><h3><a href="/vinyls">VINYLS</a></h3></span>
-                        <span><img src="/assets/icons/journal2.png"><h3><a href="/journal">JOURNAL</a></h3></span>
+                        <span><img src="/assets/icons/journal.png"><h3><a href="/journal">JOURNAL</a></h3></span>
                         <span><img src="/assets/icons/blog.png"><h3><a href="/blog">BLOG</a></h3></span>
-                        <span><img src="/assets/icons/scrapbook2.png"><h3><a href="/scrapbook">SCRAPBOOK</a></h3></span>
+                        <span><img src="/assets/icons/scrapbook.png"><h3><a href="/scrapbook">SCRAPBOOK</a></h3></span>
                         <span><img src="/assets/icons/resources.png"><h3><a href="/resources">RESOURCES</a></h3></span>
                         <!--<h2 style="margin-top: 10px;">SHRINES</h2>
                         <span><img src="/assets/icons/kanye.png"><h3><a href="/kanye">KANYE WEST</a></h3></span>
@@ -81,33 +80,64 @@
                     <iframe width="180" height="180" style="border:none" src="https://rubybulbs.net/neko.html"></iframe>
                     <iframe width="180" height="180" style="border:none; margin-bottom: 7px;" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
                 </div>
-                <marquee scrollamount="3" loop="infinite" direction="right" behavior="alternate" style="margin-top: -3px;">
-                    <img src="/images/stamps/acstamp.gif" loading="lazy">
-                    <img src="/images/stamps/akirastamp.jpg" loading="lazy">
-                    <img src="/images/stamps/dondastamp.jpg" loading="lazy">
-                    <img src="/images/stamps/earthboundstamp.gif" loading="lazy">
-                    <img src="/images/stamps/evastamp.jpg" loading="lazy">
-                    <img src="/images/stamps/jermastamp.jpg" loading="lazy">
-                    <img src="/images/stamps/kanyestamp.jpg" loading="lazy">
-                    <img src="/images/stamps/n64stamp.png" loading="lazy">
-                    <img src="/images/stamps/orangutanstamp.jpg" loading="lazy">
-                    <img src="/images/stamps/pikminstamp.png" loading="lazy">
-                    <img src="/images/stamps/spongestamp.png" loading="lazy">
-                    <a href="/VALORANT"><img src="/images/stamps/VALORANTstamp.jpg" loading="lazy"></a>
-                </marquee>
-                <marquee scrollamount="3" loop="infinite" direction="left" behavior="alternate" style="margin-top: -3px;">
-                    <a href="https://lucida.to/" target="_blank"><img src="/images/funbuttons/lucida.gif" loading="lazy"></a>
-                    <img src="/images/funbuttons/1080p.jpg" loading="lazy">
-                    <img src="/images/funbuttons/3dsbutton.png" loading="lazy">
-                    <img src="/images/funbuttons/bestviewedcomp.gif" loading="lazy">
-                    <img src="/images/funbuttons/buttonmother3.png" loading="lazy">
-                    <img src="/images/funbuttons/delete_instagram.gif" loading="lazy">
-                    <img src="/images/funbuttons/emulate.gif" loading="lazy">
-                    <img src="/images/funbuttons/gbcamera.gif" loading="lazy">
-                    <img src="/images/funbuttons/nerv.gif" loading="lazy">
-                    <img src="/images/funbuttons/phonechump.gif" loading="lazy">
-                    <img src="/images/funbuttons/win95.gif" loading="lazy">
-                </marquee>
+                <div class="marquee marquee-hover-pause m1">
+                    <div class="marquee-content stamps">
+                        <img src="/images/stamps/acstamp.gif" loading="lazy">
+                        <img src="/images/stamps/akirastamp.jpg" loading="lazy">
+                        <img src="/images/stamps/dondastamp.jpg" loading="lazy">
+                        <img src="/images/stamps/earthboundstamp.gif" loading="lazy">
+                        <img src="/images/stamps/evastamp.jpg" loading="lazy">
+                        <img src="/images/stamps/jermastamp.jpg" loading="lazy">
+                        <img src="/images/stamps/kanyestamp.jpg" loading="lazy">
+                        <img src="/images/stamps/n64stamp.png" loading="lazy">
+                        <img src="/images/stamps/orangutanstamp.jpg" loading="lazy">
+                        <img src="/images/stamps/pikminstamp.png" loading="lazy">
+                        <img src="/images/stamps/spongestamp.png" loading="lazy">
+                        <a href="/VALORANT"><img src="/images/stamps/VALORANTstamp.jpg" loading="lazy"></a>
+                    </div>
+                    <div class="marquee-content stamps" aria-hidden="true">
+                        <img src="/images/stamps/acstamp.gif" loading="lazy">
+                        <img src="/images/stamps/akirastamp.jpg" loading="lazy">
+                        <img src="/images/stamps/dondastamp.jpg" loading="lazy">
+                        <img src="/images/stamps/earthboundstamp.gif" loading="lazy">
+                        <img src="/images/stamps/evastamp.jpg" loading="lazy">
+                        <img src="/images/stamps/jermastamp.jpg" loading="lazy">
+                        <img src="/images/stamps/kanyestamp.jpg" loading="lazy">
+                        <img src="/images/stamps/n64stamp.png" loading="lazy">
+                        <img src="/images/stamps/orangutanstamp.jpg" loading="lazy">
+                        <img src="/images/stamps/pikminstamp.png" loading="lazy">
+                        <img src="/images/stamps/spongestamp.png" loading="lazy">
+                        <a href="/VALORANT"><img src="/images/stamps/VALORANTstamp.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="marquee marquee-hover-pause marquee-reverse m2">
+                    <div class="marquee-content">
+                        <a href="https://lucida.to/" target="_blank"><img src="/images/funbuttons/lucida.gif" loading="lazy"></a>
+                        <img src="/images/funbuttons/1080p.jpg" loading="lazy">
+                        <img src="/images/funbuttons/3dsbutton.png" loading="lazy">
+                        <img src="/images/funbuttons/bestviewedcomp.gif" loading="lazy">
+                        <img src="/images/funbuttons/buttonmother3.png" loading="lazy">
+                        <img src="/images/funbuttons/delete_instagram.gif" loading="lazy">
+                        <img src="/images/funbuttons/emulate.gif" loading="lazy">
+                        <img src="/images/funbuttons/gbcamera.gif" loading="lazy">
+                        <img src="/images/funbuttons/nerv.gif" loading="lazy">
+                        <img src="/images/funbuttons/phonechump.gif" loading="lazy">
+                        <img src="/images/funbuttons/win95.gif" loading="lazy">
+                    </div>
+                    <div class="marquee-content" aria-hidden="true">
+                        <a href="https://lucida.to/" target="_blank"><img src="/images/funbuttons/lucida.gif" loading="lazy"></a>
+                        <img src="/images/funbuttons/1080p.jpg" loading="lazy">
+                        <img src="/images/funbuttons/3dsbutton.png" loading="lazy">
+                        <img src="/images/funbuttons/bestviewedcomp.gif" loading="lazy">
+                        <img src="/images/funbuttons/buttonmother3.png" loading="lazy">
+                        <img src="/images/funbuttons/delete_instagram.gif" loading="lazy">
+                        <img src="/images/funbuttons/emulate.gif" loading="lazy">
+                        <img src="/images/funbuttons/gbcamera.gif" loading="lazy">
+                        <img src="/images/funbuttons/nerv.gif" loading="lazy">
+                        <img src="/images/funbuttons/phonechump.gif" loading="lazy">
+                        <img src="/images/funbuttons/win95.gif" loading="lazy">
+                    </div>
+                </div>
             </div>
             <div class="main-column">
                 <div class="container"> 
@@ -130,7 +160,8 @@
                         </div>
                         <div class="container-content" style="overflow-y: scroll; max-height: 155px;">
                             <h3>Playing</h3>
-                            <p>DK Bananza</p>
+                            <p>Castle Crashers</p>
+                            <p>Powerwash Simulator</p>
                             <h3>Watching</h3>
                             <p>Breaking Bad, Serial Experiments Lain</p>
                         </div>
@@ -174,7 +205,6 @@
                             </div>
                             <h4 id="discordPlayTime" style="margin: 5px 0 0 0;"></h4><hr>
                         </div>
-                        <!--<div style="display: flex; align-items: center;"><img src="/images/assets/pfp3.png" style="width: 75px; margin-right: 15px;"><div><h3 style="margin: 0;">Penguinjaa</h3><h5 style="margin: 0;">zen and monklike</h5></div></div><hr>-->
                         <h2 id="listeningStatus"></h2>
                         <div id="listening"></div>
                         <div id="currentlylistening"></div>
@@ -184,7 +214,7 @@
                         <div id="socials">
                             <a href="https://www.youtube.com/@Penguinjaa" target="_blank"><img src="/images/assets/Youtube.png" style="width: 35px;"></a>
                             <a href="https://www.twitch.tv/penguinjaa" target="_blank"><img src="/images/assets/twitch.png" style="height: 35px;"></a>
-                            <a href="https://www.last.fm/user/Penguinjaa" target="_blank"><img src="/images/assets/lastfm.png" style="width: 35px; border-radius: 5px;"></a>
+                            <a href="https://www.last.fm/user/Penguinjaa" target="_blank"><img src="/images/assets/lastfm.jpg" style="width: 35px; border-radius: 5px;"></a>
                             <a href="https://letterboxd.com/Penguinjaa/" target="_blank"><img src="/images/assets/letterboxd.jpg" style="width: 35px; border-radius: 5px;"></a>
                         </div><hr style="margin-top: 5px;">
                         <h2>MY BUTTONS</h2>
@@ -200,11 +230,69 @@
                         </div>
                     </div>
                 </div>
-                <div class="marquee-container">
-                    <div class="marquee-track" id="marquee-track-forward"></div>
+                <div class="marquee marquee-hover-pause m1">
+                    <div class="marquee-content">
+                        <a href="https://dimden.dev/" target="_blank"><img src="/images/buttons/dimden.gif" loading="lazy" alt="Dimden.dev"></a>
+                        <a href="https://alienheadshitkid.neocities.org/" target="_blank"><img src="/images/buttons/alienhead.gif" loading="lazy" alt="Alien Head Shit Kid"></a>
+                        <a href="https://saikyocentral.com/" target="_blank"><img src="/images/buttons/saikyo.gif" loading="lazy" alt="Saikyo Central"></a>
+                        <a href="https://candlelitsmiles.neocities.org/" target="_blank"><img src="/images/buttons/candlebutton.png" loading="lazy" alt="Candle Lit Smiles"></a>
+                        <a href="https://tofokyo.com/" target="_blank"><img src="/images/buttons/tofokyo.gif" loading="lazy" alt="Tofokyo"></a>
+                        <a href="https://yuentp.neocities.org/" target="_blank"><img src="/images/buttons/chaos.gif" loading="lazy" alt="YUE'S SPACE OF CHAOS"></a>
+                        <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceplace.png" loading="lazy" alt="Rice's Place"></a>
+                        <a href="https://sos.nekoweb.org/" target="_blank"><img src="/images/buttons/strayos.gif" loading="lazy" alt="StrayOS"></a>
+                        <a href="https://darkosparko.nekoweb.org/" target="_blank"><img src="/images/buttons/darko.png" loading="lazy" alt="Spark-Web"></a>
+                        <a href="https://unicodeangel.neocities.org" target="_blank"><img src="https://unicodeangel.neocities.org/imgs/UnicodeAngelButton.gif" loading="lazy" alt="Unicode Angel"></a>
+                        <a href="https://scouts-basement.neocities.org/" target="_blank"><img src="https://files.catbox.moe/nw16vo.gif" loading="lazy" alt="Scout's Basement"></a>
+                        <a href="https://unit00.neocities.org/" target="_blank"><img src="/images/buttons/unit00.gif" loading="lazy" alt="unit-00"></a>
+                        <a href="https://makoenergy.nekoweb.org/" target="_blank"><img src="/images/buttons/mako.gif" loading="lazy" alt="makoenergy"></a>
+                        <a href="https://maphren.neocities.org/" target="_blank"><img src="https://maphren.neocities.org/imgs/buttons/maphren.gif" loading="lazy" alt="Maphren"></a>
+                        <a href="https://daniele63.neocities.org/" target="_blank"><img src="/images/buttons/danieles.jpg" loading="lazy" alt="Daniele's"></a>
+                        <a href="https://cloudcover.neocities.org/" target="_blank"><img src="/images/buttons/cloudcover.png" loading="lazy" alt="Cloud Cover"></a>
+                        <a href="https://warp.zone/" target="_blank"><img src="/images/buttons/warpzone.gif" loading="lazy" alt="Warpzone"></a>
+                        <a href="https://madville.neocities.org/" target="_blank"><img src="/images/buttons/madville.gif" loading="lazy" alt="Madville"></a>
+                    </div>
+                    <div class="marquee-content" aria-hidden="true">
+                        <a href="https://dimden.dev/" target="_blank"><img src="/images/buttons/dimden.gif" loading="lazy" alt="Dimden.dev"></a>
+                        <a href="https://alienheadshitkid.neocities.org/" target="_blank"><img src="/images/buttons/alienhead.gif" loading="lazy" alt="Alien Head Shit Kid"></a>
+                        <a href="https://saikyocentral.com/" target="_blank"><img src="/images/buttons/saikyo.gif" loading="lazy" alt="Saikyo Central"></a>
+                        <a href="https://candlelitsmiles.neocities.org/" target="_blank"><img src="/images/buttons/candlebutton.png" loading="lazy" alt="Candle Lit Smiles"></a>
+                        <a href="https://tofokyo.com/" target="_blank"><img src="/images/buttons/tofokyo.gif" loading="lazy" alt="Tofokyo"></a>
+                        <a href="https://yuentp.neocities.org/" target="_blank"><img src="/images/buttons/chaos.gif" loading="lazy" alt="YUE'S SPACE OF CHAOS"></a>
+                        <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceplace.png" loading="lazy" alt="Rice's Place"></a>
+                        <a href="https://sos.nekoweb.org/" target="_blank"><img src="/images/buttons/strayos.gif" loading="lazy" alt="StrayOS"></a>
+                        <a href="https://darkosparko.nekoweb.org/" target="_blank"><img src="/images/buttons/darko.png" loading="lazy" alt="Spark-Web"></a>
+                        <a href="https://unicodeangel.neocities.org" target="_blank"><img src="https://unicodeangel.neocities.org/imgs/UnicodeAngelButton.gif" loading="lazy" alt="Unicode Angel"></a>
+                        <a href="https://scouts-basement.neocities.org/" target="_blank"><img src="https://files.catbox.moe/nw16vo.gif" loading="lazy" alt="Scout's Basement"></a>
+                        <a href="https://unit00.neocities.org/" target="_blank"><img src="/images/buttons/unit00.gif" loading="lazy" alt="unit-00"></a>
+                        <a href="https://makoenergy.nekoweb.org/" target="_blank"><img src="/images/buttons/mako.gif" loading="lazy" alt="makoenergy"></a>
+                        <a href="https://maphren.neocities.org/" target="_blank"><img src="https://maphren.neocities.org/imgs/buttons/maphren.gif" loading="lazy" alt="Maphren"></a>
+                        <a href="https://daniele63.neocities.org/" target="_blank"><img src="/images/buttons/danieles.jpg" loading="lazy" alt="Daniele's"></a>
+                        <a href="https://cloudcover.neocities.org/" target="_blank"><img src="/images/buttons/cloudcover.png" loading="lazy" alt="Cloud Cover"></a>
+                        <a href="https://warp.zone/" target="_blank"><img src="/images/buttons/warpzone.gif" loading="lazy" alt="Warpzone"></a>
+                        <a href="https://madville.neocities.org/" target="_blank"><img src="/images/buttons/madville.gif" loading="lazy" alt="Madville"></a>
+                    </div>
                 </div>
-                <div class="marquee-container reverse">
-                    <div class="marquee-track" id="marquee-track-reverse"></div>
+                <div class="marquee marquee-hover-pause marquee-reverse m2">
+                    <div class="marquee-content">
+                        <a href="https://districts.nekoweb.org" target="_blank"><img src="/images/buttons/districts.png" loading="lazy" alt="Nekoweb Districts"></a>
+                        <a href="https://caitsith.neocities.org/" target="_blank"><img src="/images/buttons/caitbutton.gif" loading="lazy" alt="Caitsith"></a>
+                        <a href="https://sloan.nekoweb.org/" target="_blank"><img src="/images/buttons/sloan-button.gif" loading="lazy" alt="sloan"></a>
+                        <a href="https://sadgrl.online/" target="_blank"><img src="/images/buttons/sadgrlonline.gif" loading="lazy" alt="sadgrl"></a>
+                        <a href="https://housepen.nekoweb.org/" target="_blank"><img src="/images/buttons/housepen.gif" loading="lazy" alt="housepen"></a>
+                        <a href="https://july.lol/" target="_blank"><img src="/images/buttons/july.gif" loading="lazy" alt="july.lol"></a>
+                        <a href="https://nekoweb.org/" target="_blank"><img src="https://nekoweb.org/assets/buttons/button6.gif" loading="lazy" alt="Nekoweb"></a>
+                        <a href="https://sloan.nekoweb.org/" target="_blank"><img src="https://sloan.nekoweb.org/images/buttons/sIoan.gif" loading="lazy" alt="sloan"></a>
+                    </div>
+                    <div class="marquee-content" aria-hidden="true">
+                        <a href="https://districts.nekoweb.org" target="_blank"><img src="/images/buttons/districts.png" loading="lazy" alt="Nekoweb Districts"></a>
+                        <a href="https://caitsith.neocities.org/" target="_blank"><img src="/images/buttons/caitbutton.gif" loading="lazy" alt="Caitsith"></a>
+                        <a href="https://sloan.nekoweb.org/" target="_blank"><img src="/images/buttons/sloan-button.gif" loading="lazy" alt="sloan"></a>
+                        <a href="https://sadgrl.online/" target="_blank"><img src="/images/buttons/sadgrlonline.gif" loading="lazy" alt="sadgrl"></a>
+                        <a href="https://housepen.nekoweb.org/" target="_blank"><img src="/images/buttons/housepen.gif" loading="lazy" alt="housepen"></a>
+                        <a href="https://july.lol/" target="_blank"><img src="/images/buttons/july.gif" loading="lazy" alt="july.lol"></a>
+                        <a href="https://nekoweb.org/" target="_blank"><img src="https://nekoweb.org/assets/buttons/button6.gif" loading="lazy" alt="Nekoweb"></a>
+                        <a href="https://sloan.nekoweb.org/" target="_blank"><img src="https://sloan.nekoweb.org/images/buttons/sIoan.gif" loading="lazy" alt="sloan"></a>
+                    </div>
                 </div>
                 <div class="container">
                     <div class="container-title">
@@ -213,7 +301,7 @@
                     <div class="container-content">
                         <div class="box">
                             <div class="boxhead" style="display: flex;">
-                                <img src="/images/assets/codecatputer.gif" style="margin: -10px 10px 10px -10px;">
+                                <img src="/assets/icons/codecatputer.gif" style="margin: -10px 10px 10px -10px;">
                                 <h2 style="padding-left: 0;">NEKOWEB STATS</h2>
                             </div>
                             <div class="boxbody stats">
@@ -247,46 +335,6 @@
             </div>
         </div>
     </div>
-<script>
-    const SPEED_PX_PER_SECOND = 30;
-
-    async function waitForImages(container) {
-    const images = container.querySelectorAll('img');
-    const promises = Array.from(images).map(img => {
-        if (img.complete) return Promise.resolve();
-        return new Promise(resolve => {
-        img.onload = img.onerror = resolve;
-        });
-    });
-    return Promise.all(promises);
-    }
-
-    async function loadButtons() {
-    const res = await fetch('/assets/buttons.json');
-    const data = await res.json();
-
-    const trackForward = document.getElementById('marquee-track-forward');
-    const trackReverse = document.getElementById('marquee-track-reverse');
-
-    const makeButtonsHTML = (buttons) =>
-        buttons
-        .map(btn => `<a href="${btn.href}" target="_blank" rel="noopener noreferrer"><img src="${btn.src}" loading="lazy" alt=""></a>`)
-        .join('');
-
-    trackForward.innerHTML = makeButtonsHTML(data.forward) + makeButtonsHTML(data.forward);
-    trackReverse.innerHTML = makeButtonsHTML(data.reverse) + makeButtonsHTML(data.reverse);
-
-    await Promise.all([waitForImages(trackForward), waitForImages(trackReverse)]);
-
-    [trackForward, trackReverse].forEach(track => {
-        const fullWidth = track.scrollWidth / 2;
-        const duration = fullWidth / SPEED_PX_PER_SECOND;
-        track.style.animationDuration = `${duration}s`;
-    });
-    }
-
-    window.addEventListener('DOMContentLoaded', loadButtons);
-</script>
 </body>
 <footer>
     <p style="margin: 0;">PENGUINJAA.COM V5.55 [C] 2022 - 2099</p>
@@ -337,5 +385,18 @@ fetch('/blog/blog.json')
         });
     })
     .catch(err => console.error('Error fetching blog posts:', err));
+</script>
+<script>
+    const getStats = async () => {
+    const request = await fetch(`https://nekoweb.org/api/site/info/penguinjaa.com`);
+    const json = await request.json();
+
+    const updated = new Date(json.updated_at).toLocaleDateString();
+
+    document.getElementById("visitors").innerHTML = `<p>Visits: ${json.views}</p>`;
+    document.getElementById("followers").innerHTML = `<p>Followers: ${json.followers}</p>`;
+    document.getElementById("updated").innerHTML = `<p>Last Updated: ${updated}</p>`;
+};
+getStats();
 </script>
 </html>

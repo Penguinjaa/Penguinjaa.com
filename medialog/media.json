@@ -1,6 +1,22 @@
 {
   "movies": [
     {
+      "title": "Ghost in the Shell 2: Innocence",
+      "year": "2004",
+      "cover": "images/movies/ghost_in_the_shell_2_innocence.jpg",
+      "rating": "32",
+      "review": "What happened man why is this so bad and why is this is high rated??? The beginning and the last 25ish minutes are good but everything in the middle is so terrible oh my god!!!! It actually feels like this was made by a redditor that jammed it with a million quotes to make it seem deep and intellectual.<br><br>To be clear the concept itself is cool but the delivery of that concept is so terribly done and makes this a drag.<br><br>Also the 3d is really ugly they shouldve just stuck to 2d but its 2004 so i can forgive it",
+      "date": "8.3.25"
+    },
+    {
+      "title": "Gangs of New York",
+      "year": "2002",
+      "cover": "images/movies/gangs_of_new_york.jpg",
+      "rating": "58",
+      "review": "i liked it well enough but there was just no reason for this to be 2 and a half hours",
+      "date": "8.1.25"
+    },
+    {
       "title": "Spider-Man: Across the Spider-Verse",
       "year": "2023",
       "cover": "images/movies/spider-man_across_the_spider-verse.jpg",
@@ -116,8 +132,8 @@
       "title": "Moana 2",
       "year": "2024",
       "cover": "images/movies/moana2.jpg",
-      "rating": "42",
-      "review": "the monster designs in this look really bad they look like monsters vs aliens characters!!!! music was worse than first one too. story was okay on it own though but i dont like the confirmation of another movie i dont think this one should have existed in the first place",
+      "rating": "27",
+      "review": "the monster designs in this look really bad they look like monsters vs aliens characters!!!! music was worse than first one too. story was okay on it own but i dont like the confirmation of another movie i dont think this one should have existed in the first place",
       "date": "2.8.25"
     },
     {
@@ -587,6 +603,26 @@
   ],
   "albums": [
     {
+      "title": "Bewitched",
+      "year": "2023",
+      "cover": "images/albums/bewitched_laufey.jpg",
+      "rating": "85",
+      "review": "rec'd by a buddy this is so chill this will immediately be added to my rotation of morning coffee albums while i sit outside",
+      "date": "7.29.25",
+      "artist": "Laufey",
+      "favorite_songs": "Lovesick, Promise, From The Start"
+    },
+    {
+      "title": "Alfredo 2",
+      "year": "2025",
+      "cover": "images/albums/alfredo_2_freddie_gibbs.jpg",
+      "rating": "78",
+      "review": "not feeling this one as much as the first one, but of course its freddie so still top tier rapping and very good.",
+      "date": "7.29.25",
+      "artist": "Freddie Gibbs",
+      "favorite_songs": "I Still Love H.E.R., Gold Feet"
+    },
+    {
       "title": "Alfredo",
       "year": "2020",
       "cover": "images/albums/alfredo_freddie_gibbs.jpg",
@@ -600,11 +636,11 @@
       "title": "Vanisher, Horizon Scraper",
       "year": "2025",
       "cover": "images/albums/vanisher_horizon_scraper_quadeca.jpg",
-      "rating": "97",
-      "review": "at a loss for words rn to be honest i will come back to this later probably and write a real thing",
+      "rating": "100",
+      "review": "I think instrumentally this is the most beautiful album ive ever listened to man its crazy where quadeca has gone. I was listening to him in middle school when he was a white youtube rapper doing ksi diss tracks, and now hes making me cry dude it's insane. His production just keeps getting better, I thought IDMTHY was crazy but this is like actual goat territory. I honestly cannot imagine anything else dropping this year that can top this.<br><br>First off, the theming of this album is just so good and creates an incredibly unique soundscape, it just transports you into the boat with fog covering the ocean. The part on Casper where it sounds like its going in and out of the water is so cool, actually gives me goosebumps every time. I think this just makes for an incredible concept album, I can't think of any other album that feels so thematically tied in the with the sound that doesnt come across as forcing it.<br><br>I'm writing this a week after first listen and I've been obssessed with this all week, I had to of cried like 10 times listening to this all week it just is so well put together and holds so much emotions. The production and the lyrics are just top notch I need to stop talking about it I will be here all day.<br><br>If you havent listened or if you have but havent seen the movie, you NEED to watch the movie it adds so much to the album. standout visual moments for me are THUNDRRR, FORGONE, and CASPER. ",
       "date": "7.25.25",
       "artist": "Quadeca",
-      "favorite_songs": "THUNDRRR, CASPER, THAT'S WHY"
+      "favorite_songs": "MONDAY, THUNDRRR, DANCING WITHOUT MOVING"
     },
     {
       "title": "Let God Sort Em Out",
