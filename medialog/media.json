@@ -1,6 +1,30 @@
 {
   "movies": [
     {
+      "title": "Roujin Z",
+      "year": "1991",
+      "cover": "images/movies/roujin_z.jpg",
+      "rating": "88",
+      "review": "This movie is so silly i love it man!! Got lots of giggle out of me<br><br>My dad walked in right when the old guy pulls his pants down for no reason so thats cool<br><br>One of my favorite parts of akira was when tetsuos metal hand puts wires all over the seat in the stadium and this is full of stuff like that and i quite enjoyed that.",
+      "date": "8.11.25"
+    },
+    {
+      "title": "Tron",
+      "year": "1982",
+      "cover": "images/movies/tron.jpg",
+      "rating": "92",
+      "review": "ive had a poster of this movie in my room for over a year despite never having watched it, which is kinda funny but i knew id like it just didnt get to it until now. but this was actually cooler than i thought idk the vibes are just really good and i love all the graphics its just so awesome.",
+      "date": "8.10.25"
+    },
+    {
+      "title": "There Will Be Blood",
+      "year": "2007",
+      "cover": "images/movies/there_will_be_blood.jpg",
+      "rating": "89",
+      "review": "",
+      "date": "8.6.25"
+    },
+    {
       "title": "Ghost in the Shell 2: Innocence",
       "year": "2004",
       "cover": "images/movies/ghost_in_the_shell_2_innocence.jpg",
@@ -602,6 +626,26 @@
     }
   ],
   "albums": [
+    {
+      "title": "Construção",
+      "year": "1971",
+      "cover": "images/albums/construo_chico_buarque.jpg",
+      "rating": "83",
+      "review": "",
+      "date": "8.9.25",
+      "artist": "Chico Buarque",
+      "favorite_songs": "Olha Maria, Deus Lhe Pague, Construcao"
+    },
+    {
+      "title": "God Does Like Ugly",
+      "year": "2025",
+      "cover": "images/albums/god_does_like_ugly_jid.jpg",
+      "rating": "73",
+      "review": "i knew he couldnt top the forever story, but still kinda sad how mediocre (by jid standards) some of these songs are. maybe will grow on me after a few listens, if it does i will update here.",
+      "date": "8.8.25",
+      "artist": "JID",
+      "favorite_songs": "Of Blue, YouUgly, Gz"
+    },
     {
       "title": "Bewitched",
       "year": "2023",

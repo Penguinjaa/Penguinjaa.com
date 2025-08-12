@@ -19,6 +19,7 @@
 		<link href="/blog/blog.css" rel="stylesheet">
 		<script src="/assets/marquee.js" defer></script>
 		<script src="/assets/themes.js" defer></script>
+		<script src="/blog/posts.js" defer></script>
 		<link rel="stylesheet" href="/assets/lite-yt-embed.css"/>
 		<script src="/assets/lite-yt-embed.js" async></script>
 		<!-- // THEMES // -->
@@ -32,58 +33,69 @@
 	<body>
 		<div class="crt-overlay"></div>
 		<div id="content">
-			<div id="header">
-				<div id="headerimg">
+			<div id="mini-header">
+				<div id="nav-header">
+					<span><img src="/assets/icons/home.png"><h3><a href="/">GO BACK HOME?</a></h3></span>
 					<div id="theme-buttons">
 						<button onclick="setTheme('NEO-TOKYO')" data-theme="neo-tokyo" data-theme-name="NEO-TOKYO"></button>
 						<button onclick="setTheme('MONOCHROME')" data-theme="monochrome" data-theme-name="MONOCHROME"></button>
 						<button onclick="setTheme('UNIVERSE CITY')" data-theme="universe-city" data-theme-name="UNIVERSE CITY"></button>
 						<button onclick="setTheme('DOWNTOWN')" data-theme="downtown" data-theme-name="DOWNTOWN"></button>
-					</div>                
+					</div>
 				</div>
 				<div id="head-marquee">
 					<marquee scrollamount="7" style="height: 50px;">
 						<h3 id="top-marquee">LOADING...</h3>
 					</marquee>
-				</div>                     
+				</div>  
 			</div>
-			<div class="container">
-				<div class="container-title">
-					<h1>MY FAVORITE KANYE ALBUM NEVER CAME OUT</h1>
-				</div>
-				<div class="container-content post">
-					<p class="date">01/02/23</p>
-					<img src="img/kanye.jpg" style="width: 350px; float: left; margin: 10px 15px 0 0;"/>
-					<p>Good Ass Job is an unreleased Kanye West album from 2008-2009. It was originally going to be the 4th entry in the <i title="The College Dropout, Late Registration, Graduation" style="cursor: help;">dropout series of albums</i>. It was being worked on up until the loss of his mother and his breakup, which led to the creation of 808s & Heartbreak. After 808s, Kanye came back to Good Ass Job until he interrupted Taylor Swift's acceptance speech at the 2009 VMAs, causing Good Ass Job not to release.</p>
-					<p> After the VMAs incident, Kanye left America for Rome and Japan. His time spent in japan inspired a lot of Good Ass Job's sound. Because of the inspiration Kanye got from being in Japan and the futuristic vibes inspired by Akira, this is my personal favorite Kanye album. It always gives me vibes of walking around a lit up Shibuya at night and there is no one around.</p>
-					<hr>
-					<img src="img/kanye2.jpg" style="float: right; width: 350px; margin-left: 10px;"/>
-					<h2>KANYE WEST - GOOD ASS JOB (2009)</h2>
-					<img src="img/GAJ.jpg" style="width: 130px; float: left; margin-right: 10px;"/>
-					<p>This album never had an official tracklist (that we've seen) so I made my own. It is 14 tracks, mostly consisting the 808's & Heartbreak esque tracks. Some people like to make a tracklist closer to My Beautiful Dark Twisted Fantasy by using G.O.O.D Fridays songs and leaks from that era but I prefer this vibe.</p>
-					<div id="tracklist">
-						<ol>
-							<li>I'll Be Alright</li>
-							<li>Takin Off</li>
-							<li>Crazy Life</li>
-							<li>Lonely</li>
-							<li>Eyes Closed</li>
-							<li>Only For The Night (Interlude)</li>
-							<li>Mama's Boyfriend</li>
-							<li>Throw Money Everywhere</li>
-							<li>Flashing Lights 2</li>
-							<li>Hard Horn Nightmare</li>
-							<li>Diamonds & Dollars</li>
-							<li>Heartbreaker</li>
-							<li>Shoot Up</li>
-							<li>Downtown</li>
-							<li>See Me Again</li>
-						</ol>
+			<div id="body">
+				<div class="left-column">
+					<div class="container">
+						<div class="container-content posts"></div>
 					</div>
-					<hr>
-					<h2>SONG INFO</h2>
-					<p>The most popular song here (and probably the most popular Kanye leak in general) is <a href="https://youtu.be/JIufo_3kXfI" target="_blank">See Me Again</a> (AKA Never See Me Again). There were rumors this song was Kanye's suicide note, however we now know that is not true. The rumor started because of the general tone of the song, as Kanye is saying you will never see him again and it has a simple piano instrumental. There is also the sample which comes from <a href="https://www.youtube.com/watch?v=N7pUb6ktpzM" target="_blank">Futari Dake No CEREMONY</a> by Yukiko Okada, a japanese musician who jumped out of her hotel window during a similar situation to the one Kanye was in at that time. The end of her suicide note read "I wanted to see him again". Kanye also mentions jumping out of a window on POWER. That is the general history of this rumor. While its not entirely impossible this rumor is true, we now believe that Never See Me Again was just a farewell letter to the fans before Kanye would quit making music due to the backlash following the Taylor Swift VMAs incident.</p>
-					<p>Another notable song is <a href="https://www.youtube.com/watch?v=zlF8AF2wvWQ&pp=ygURZmxhc2hpbmcgbGlnaHRzIDI%3D" target="_blank">Flashing Lights 2</a>. This song has an interesting history as not much is known about it. This song has never had a high quality leak, nor a full length leak. The linked version of the song is an edit by Matsu. It is unknown if there even is a full recorded version of this song as all we have is a <a href="https://www.youtube.com/watch?v=uohsXA0VadU&pp=ygURZmxhc2hpbmcgbGlnaHRzIDI%3D" target="_blank">clip</a> of Kanye singing the chorus in the studio and a <a href="https://youtu.be/yxqIXhFLi4Y" target="_blank">performance</a> he did in Saudi Arabia. This edit also uses Kanye's verse from <a href="https://www.youtube.com/watch?v=tkOlW4OVn7c" target="_blank">Ayy Girl</a> by JYJ, a K-Pop song that Kanye gave the beat for Flashing Lights 2 to. This song is my personal Kanye grail, if it ever leaks i will squeal.</p>
+				</div>
+				<div class="main-column">
+					<div class="container">
+						<div class="container-content post">
+							<div class="post-title">
+								<img src="img/kanye.jpg" style="width: 430px; float: right; margin: 10px 0 0 15px;"/>
+								<h1>MY FAVORITE KANYE ALBUM NEVER CAME OUT</h1>
+								<p class="date">01/02/23<sub>- edited 8/20/25</sub></p>
+								<hr>
+							</div>
+							<p><b>Good Ass Job</b> is an unreleased Kanye West album from 2008-2009. It was originally going to be the 4th entry in the <i title="The College Dropout, Late Registration, Graduation" style="cursor: help;">dropout series of albums</i>. It was being worked on up until the loss of his mother and his breakup, which led to the creation of 808s & Heartbreak. After 808s, Kanye came back to Good Ass Job until he interrupted Taylor Swift's acceptance speech at the 2009 VMAs, causing Good Ass Job not to release.</p>
+							<p> After the VMAs incident, Kanye left America for Rome and Japan. His time spent in japan inspired a lot of Good Ass Job's sound. Because of the inspiration Kanye got from being in Japan and the futuristic vibes inspired by Akira, this is my personal favorite Kanye album. It always gives me vibes of walking around a lit up Shibuya at night and there is no one around.</p>
+							<hr>
+							<h2>KANYE WEST - GOOD ASS JOB (2009)</h2>
+							<img src="img/GAJ.jpg" style="width: 130px; float: left; margin-right: 10px;"/>
+							<p style="min-height: 130px;">This album never had an official tracklist (that we've seen) so I made my own. It is 15 tracks, mostly consisting the 808's & Heartbreak esque tracks.Some people like to make a tracklist closer to My Beautiful Dark Twisted Fantasy by using G.O.O.D Fridays songs and leaks from that era but I prefer this vibe.</p>
+							<div id="tracklist">
+								<ol>
+									<li>I'll Be Alright</li>
+									<li>Takin Off</li>
+									<li>Crazy Life</li>
+									<li>Lonely</li>
+									<li>Eyes Closed</li>
+									<li>Only For The Night (Interlude)</li>
+									<li>Mama's Boyfriend</li>
+									<li>Throw Money Everywhere</li>
+									<li>Flashing Lights 2</li>
+									<li>Hard Horn Nightmare</li>
+									<li>Diamonds & Dollars</li>
+									<li>Heartbreaker</li>
+									<li>Shoot Up</li>
+									<li>Downtown</li>
+									<li>See Me Again</li>
+								</ol>
+							</div>
+							<hr>
+							<h2>SONG INFO</h2>
+							<img src="img/kanye2.jpg" style="float: left; width: 240px; margin: 10px;"/>
+							<p>The most popular song here (and probably the most popular Kanye leak in general) is <a href="https://youtu.be/JIufo_3kXfI" target="_blank">See Me Again</a> (AKA Never See Me Again). There were rumors this song was Kanye's suicide note, however we now know that is not true. The rumor started because of the general tone of the song, as Kanye is saying you will never see him again and it has a simple piano instrumental. There is also the sample which comes from <a href="https://www.youtube.com/watch?v=N7pUb6ktpzM" target="_blank">Futari Dake No CEREMONY</a> by Yukiko Okada, a japanese musician who jumped out of her hotel window during a similar situation to the one Kanye was in at that time. The end of her suicide note read "I wanted to see him again". Kanye also mentions jumping out of a window on POWER. That is the general history of this rumor. While its not entirely impossible this rumor is true, we now believe that Never See Me Again was just a farewell letter to the fans before Kanye would quit making music due to the backlash following the Taylor Swift VMAs incident.</p>
+							<p>Another notable song is <a href="https://www.youtube.com/watch?v=zlF8AF2wvWQ&pp=ygURZmxhc2hpbmcgbGlnaHRzIDI%3D" target="_blank">Flashing Lights 2</a>. This song has an interesting history as not much is known about it. This song has never had a high quality leak, nor a full length leak. The linked version of the song is an edit by Matsu. It is unknown if there even is a full recorded version of this song as all we have is a <a href="https://www.youtube.com/watch?v=uohsXA0VadU&pp=ygURZmxhc2hpbmcgbGlnaHRzIDI%3D" target="_blank">clip</a> of Kanye singing the chorus in the studio and a <a href="https://youtu.be/yxqIXhFLi4Y" target="_blank">performance</a> he did in Saudi Arabia. This edit also uses Kanye's verse from <a href="https://www.youtube.com/watch?v=tkOlW4OVn7c" target="_blank">Ayy Girl</a> by JYJ, a K-Pop song that Kanye gave the beat for Flashing Lights 2 to. This song is my personal Kanye grail, if it ever leaks i will squeal.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -5,7 +5,7 @@ colors{
 }   
 :root {
     /* HEADER */
-    --header-img: no-repeat url("/themes/assets/a2.jpg");
+    --header-img: no-repeat url("/themes/assets/downtown/banner.jpg");
 
     /* COLORS */
     --p-color: #FEEDFD;
@@ -16,6 +16,7 @@ colors{
     --h5-color: #F17315;
     --h6-color: #CE5D3C;
     --i-color: #EFD073;
+    --sub-color: #a7a7a7;
 
     --selection: #ce5e3c62;
 

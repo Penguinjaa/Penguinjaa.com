@@ -12,18 +12,21 @@
         {
             "title": "v5.55 Is Here!",
             "link": "/blog/v5",
+            "thumb": "thumb.jpg",
             "tags": ["update"],
             "date": "12-20-2025"
         },
         {
             "title": "4:3 Raspberry Pi Media Center",
             "link": "/blog/crtpi",
+            "thumb": "thumb.webp",
             "tags": ["tech", "media"],
             "date": "12-20-2025"
         },
         {
             "title": "MY FAVORITE KANYE ALBUM NEVER CAME OUT",
             "link": "/blog/gaj",
+            "thumb": "thumb.jpg",
             "tags": ["music"],
             "date": "1-2-2024"
         }
