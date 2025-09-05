@@ -232,7 +232,7 @@ textarea::-webkit-scrollbar {display: none;}
     margin: 5px 0;
 }
 .updates {
-    max-height: 200px;
+    max-height: 170px;
     overflow-y: scroll;
 }
 .updates div {
@@ -250,8 +250,14 @@ textarea::-webkit-scrollbar {display: none;}
     margin-bottom: 10px;
     text-align: center;
 }
-.currently p {
-    margin: 0;
+#currently {
+    width: 55%;
+    overflow: hidden;
+    object-fit: contain;
+    background-image: url(/images/assets/hollowknight.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* ACTIVITY */

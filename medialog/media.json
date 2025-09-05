@@ -1,11 +1,67 @@
 {
   "movies": [
     {
+      "title": "War of the Worlds",
+      "year": "2025",
+      "cover": "images/movies/war_of_the_worlds.jpg",
+      "rating": "14",
+      "review": "this is the best movie ive ever seen. only rated this highly cause it might just be the most fun bad movie to watch with friends",
+      "date": "8.29.25"
+    },
+    {
+      "title": "In the Mood for Love",
+      "year": "2000",
+      "cover": "images/movies/in_the_mood_for_love.jpg",
+      "rating": "74",
+      "review": "",
+      "date": "8.26.25"
+    },
+    {
+      "title": "(500) Days of Summer",
+      "year": "2009",
+      "cover": "images/movies/500_days_of_summer.jpg",
+      "rating": "85",
+      "review": "",
+      "date": "8.24.25"
+    },
+    {
+      "title": "Superman",
+      "year": "2025",
+      "cover": "images/movies/superman.jpg",
+      "rating": "38",
+      "review": "its a superhero movie",
+      "date": "8.16.25"
+    },
+    {
+      "title": "Ju-on: The Grudge",
+      "year": "2002",
+      "cover": "images/movies/ju-on_the_grudge.jpg",
+      "rating": "41",
+      "review": "Never really got fully pulled into this. It was fun to see toshio hidden in reflections and stuff though.",
+      "date": "8.14.25"
+    },
+    {
+      "title": "2001: A Space Odyssey",
+      "year": "1968",
+      "cover": "images/movies/2001_a_space_odyssey.jpg",
+      "rating": "67",
+      "review": "I dont fully know what everything means here, but atmospherically this is really cool.<br><br>I do understand the use of tools turning on humans or whatever with the bone killing another monkey and the computer turning on them, but i am lost on the ending and the baby.",
+      "date": "8.13.25"
+    },
+    {
+      "title": "Still Walking",
+      "year": "2008",
+      "cover": "images/movies/still_walking.jpg",
+      "rating": "83",
+      "review": "such a bittersweet movie, i love the mom. this made me want to be old for some reason",
+      "date": "8.13.25"
+    },
+    {
       "title": "Roujin Z",
       "year": "1991",
       "cover": "images/movies/roujin_z.jpg",
       "rating": "88",
-      "review": "This movie is so silly i love it man!! Got lots of giggle out of me<br><br>My dad walked in right when the old guy pulls his pants down for no reason so thats cool<br><br>One of my favorite parts of akira was when tetsuos metal hand puts wires all over the seat in the stadium and this is full of stuff like that and i quite enjoyed that.",
+      "review": "This movie is so silly i love it man!! Got lots of giggle out of me<br><br>My dad walked in right when the old guy pulls his pants down for no reason so thats cool<br><br>One of my favorite parts of akira was when tetsuo's metal hand puts wires all over the seat in the stadium and this is full of stuff like that and i quite enjoyed that.",
       "date": "8.11.25"
     },
     {
@@ -13,7 +69,7 @@
       "year": "1982",
       "cover": "images/movies/tron.jpg",
       "rating": "92",
-      "review": "ive had a poster of this movie in my room for over a year despite never having watched it, which is kinda funny but i knew id like it just didnt get to it until now. but this was actually cooler than i thought idk the vibes are just really good and i love all the graphics its just so awesome.",
+      "review": "ive had a poster of this movie in my room for over a year despite never having watched it, which is kinda funny but i knew id like it just didn't get to it until now. but this was actually cooler than i thought idk the vibes are just really good and i love all the graphics its just so awesome.",
       "date": "8.10.25"
     },
     {
@@ -626,6 +682,46 @@
     }
   ],
   "albums": [
+    {
+      "title": "Lonely at the Top",
+      "year": "2025",
+      "cover": "images/albums/lonely_at_the_top_joey_bada.jpg",
+      "rating": "78",
+      "review": "its pretty solid and better than a lot of his recent albums, but was hoping for more after all the buzz he made this year. im hearing this is a smaller project before a more complete album so im not being too harsh on it",
+      "date": "8.29.25",
+      "artist": "Joey Bada$$",
+      "favorite_songs": "SUPAFLEE, BK'S FINEST, UNDERWATER"
+    },
+    {
+      "title": "Star Line",
+      "year": "2025",
+      "cover": "images/albums/star_line_chance_the_rapper.jpg",
+      "rating": "77",
+      "review": "",
+      "date": "8.24.25",
+      "artist": "Chance the Rapper",
+      "favorite_songs": "The Highs & The Lows, Back To The Go, Letters"
+    },
+    {
+      "title": "Live Laugh Love",
+      "year": "2025",
+      "cover": "images/albums/live_laugh_love_earl_sweatshirt.jpg",
+      "rating": "86",
+      "review": "",
+      "date": "8.21.25",
+      "artist": "Earl Sweatshirt",
+      "favorite_songs": "TOURMALINE, exhaust, Static"
+    },
+    {
+      "title": "Getz/Gilberto",
+      "year": "1964",
+      "cover": "images/albums/getzgilberto_stan_getz.jpg",
+      "rating": "78",
+      "review": "",
+      "date": "8.10.25",
+      "artist": "Stan Getz",
+      "favorite_songs": "The Girl from Ipanema, Corcovado"
+    },
     {
       "title": "Construção",
       "year": "1971",
@@ -1758,6 +1854,22 @@
     }
   ],
   "other": [
+    {
+      "title": "Celeste",
+      "year": "2018",
+      "cover": "images/other/celeste.jpg",
+      "rating": "100",
+      "review": "got it on sale hooray!!! this is the best 2d platformer (maybe platformer in general) ive ever played it is so satisfying and is difficult in a managable way. it can be hard but you dont feel in over your head and it doesnt feel like the devs are just trying to make you mad, its hard but not in detriment to the game. it also has a surprisingly cute story i didnt know going into it. the \"boss fights\" are also done very well, it feels like a terraria boss in a platformer.",
+      "date": "8.19.25"
+    },
+    {
+      "title": "Katamari Damacy",
+      "year": "2004",
+      "cover": "images/other/katamari_damacy.jpg",
+      "rating": "100",
+      "review": "ive been a glazer for this game for years at this point despite not playing it, the soundtrack and art style is just incredible. i took so long to play it because i put it on a pedestal in my head so i wanted to be in the right mood to play it, which is a very bad habit i have with lots of games. but now ive played it, and its just so fun and satisfying to play. you can just kinda turn your brain off and listen to lonely rolling star while you destroy a neighborhood and thats all ive ever wanted. its not braindead easy though, you might have to retry stages, especially if you want a bigger katamari. only gripe is it is on ps2, meaning i have to use a ps2 controller, and the sticks feel like butt so the controls can be a bit rough sometimes.",
+      "date": "8.16.25"
+    },
     {
       "title": "Donkey Kong Bananza",
       "year": "2025",
