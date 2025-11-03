@@ -10,11 +10,11 @@
     },
     "blogPosts": [
         {
-            "title": "v5.55 Is Here!",
-            "link": "/blog/v5",
+            "title": "New Year, New Layout",
+            "link": "/blog/2025",
             "thumb": "thumb.jpg",
-            "tags": ["update"],
-            "date": "12-20-2025"
+            "tags": ["update", "year in review"],
+            "date": "1-1-2026"
         },
         {
             "title": "4:3 Raspberry Pi Media Center",

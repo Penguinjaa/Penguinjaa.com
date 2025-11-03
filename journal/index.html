@@ -3,17 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- // THEMES // -->
-    <link id="theme1" rel="stylesheet" href="/themes/neotokyo.css">
-    <link id="theme2" rel="stylesheet" href="/themes/monochrome.css" disabled>
-    <link id="theme3" rel="stylesheet" href="/themes/universecity.css" disabled>
-    <link id="theme4" rel="stylesheet" href="/themes/miku.css" disabled>
-    <!-- // IMPORTS // -->
-    <link href="/style.css" rel="stylesheet">
-    <link href="/assets/blog.css" rel="stylesheet">
-    <link href="/assets/nekowebring.css" rel="stylesheet">
-    <script src="/assets/themes.js" async></script>
-    <script src="/assets/marquee.js" async></script>
+    <link href="journal.css" rel="stylesheet">
     <!-- // INFO // -->
     <link href="/assets/favicon.ico" rel="icon">
     <title>JOURNAL // PENGUINJAA.COM</title>
@@ -23,107 +13,47 @@
     <meta property="og:title" content="JOURNAL // PENGUINJAA"/>
     <meta property="og:description" content="penguinjaa's digital journal"/>
     <meta property="og:url" content="https://penguinjaa.com/journal"/>
-    <style>
-        #journalnav {
-            display: flex;
-            flex-direction: column;
-            width: 20%;
-            padding: 5px 0 0 10px;
-            border-right: var(--blog-border);
-        }
-        .journaltab {
-            font-family: "content", Geneva, Verdana, sans-serif;
-            text-align: left;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-        #entries {
-            padding: 0 15px;
-            height: 58vh;
-            width: 100%;
-            overflow: hidden scroll;
-            scrollbar-width: none;
-            scroll-behavior: smooth;
-        }
-        .entry {
-            margin: 10px 0 20px 0;
-            border: var(--blog-border);
-            padding: 10px;
-        }
-        .logcategory {
-            padding-left: 10px;
-        }
-        .logcategory h3 {
-            text-decoration: underline;
-        }
-        #currently {
-            margin-top: 20px;
-        }
-        #currently h5 {
-            padding-left: 15px;
-        }
-    </style>
 </head>
 <body>
     <div id="content">
-        <div id="header">
-            <div id="headerimg">
-                <div id="theme-buttons">
-                    <button onclick="setTheme('NEO-TOKYO')" data-theme="neo-tokyo" data-theme-name="NEO-TOKYO"></button>
-                    <button onclick="setTheme('MONOCHROME')" data-theme="monochrome" data-theme-name="MONOCHROME"></button>
-                    <button onclick="setTheme('UNIVERSE CITY')" data-theme="universe-city" data-theme-name="UNIVERSE CITY"></button>
-                    <button onclick="setTheme('MIKU')" data-theme="MIKU" data-theme-name="MIKU"></button>
-                </div>                
-            </div>
-            <div id="head-marquee">
-                <marquee scrollamount="7">
-                    <h3 id="top-marquee">loading...</h3>
-                </marquee>
-            </div>                     
+        <div id="journalnav">
+            <a href="/"><p style="margin-bottom: 15px;">GO BACK HOME</p></a>
+            <p><b> // ENTRIES</b></p>
+            <a class="journaltab" href="#entry4"><p>IM GONNA LOVE ME</p></a>
+            <a class="journaltab" href="#entry3"><p>FANCY CLOWN</p></a>
+            <a class="journaltab" href="#entry2"><p>v5.55 PROGRESS REPORT 2</p></a>
+            <a class="journaltab" href="#entry1"><p>v5.55 PROGRESS REPORT</p></a>
         </div>
-        <div class="container"> 
-            <div class="container-content" style="display: flex; padding: 0;">
-                <div id="journalnav" style="width: 30%;">
-                    <a href="/"><h2 style="text-align: center;">GO HOME?</h2></a>
-                    <h2 style="margin: 5px 0;"> // ENTRIES</h2>
-                    <a class="journaltab" href="#entry3"><h3>ZEN AND MONKLIKE</h3></a>
-                    <a class="journaltab" href="#entry2"><h3>v5.55 PROGRESS REPORT 2</h3></a>
-                    <a class="journaltab" href="#entry1"><h3>v5.55 PROGRESS REPORT</h3></a>
-                </div>
-                <div id="entries">
-                    <div id="welcome" class="entry">
-                        <h2>WELCOME</h2>
-                        <p>welcome to my <i>journal</i>. this is a place for me to just yap about stuff on my mind.</p>   
-                    </div>
-                    <div id="entry4" class="entry">
-                        <h2>QUITTING MY JOB // 9.2.25</h2>
-                        <p>Yeahhhh ive only worked 4 days, and I'm already quitting. not a good look especially since its my first job but I just should not have gotten a job with the other stuff going on, and maybe should have looked for a less demanding place/position. I thought having a job would help me feel less hollow about the girl stuff, but it just made it worse, and that situation on its own got worse too. I found out she also hid me from seeing her insta story, which I dont care about insta but she made the effort to do that so idk maybe im cooked. she has still yet to reply, so still no clue whats going on.</p>
-                        <p>Aside from that though, the job is just way more work than its worth. my friends do less and get paid more, and shouldn't be any harder to get a job like theirs. There were a lot of issues with this job that just made me decide it's not the time for me. It was my first job and they had me working 5 days in a row, despite being part time so they just took advantage of the week change to make me work 5 consecutive days and I just was not ready for that. That's the smallest issue but it was demoralizing from the start. Really the big problem was they had me opening by myself on my 2nd, 3rd, and 4th day. Since I was the guy that takes in donations at goodwill, I'm supposed to have 1 or 2 other people helping me sort through stuff cause the bins will fill up really fast. But they just had me doing it alone for a couple hours at the busiest time of day, so I was constantly taking donations in and never having time to sort them. It's very overwhelming and it's just impossible to empty the bins before more people come in. And a lot of people just donate stuff they arent allowed to donate when I tell them they can't, then my coworker comes in and says we cant take that stuff like yeah I know man. If it payed better I would be able to endure this but its minimum wage and I have to deal with old white people and sorting through garbage bags of people donations.</p>
-                        <p>I still come out of this in a better spot though I think. I'm gonna take some time to deal with the girl stuff, and then try to get a car so I don't need to take the bus, then spend more time looking for a job that suits me better. I just applied here since it was where my brother worked, but I should have taken more time and made a more informed decision.</p>
-                    </div>
-                    <div id="entry3" class="entry">
-                        <h2>ZEN AND MONKLIKE // 8.27.25</h2>
-                        <p>Hello again buddies, new layout still isn't done, but I wanna yap for a bit since a lot has been going on. I've been dealing with a great mental turmoil over the past month, and usually when stuff like this happens I go <i>zen and monklike</i> mode. Meaning I pick out all the things I do that I shouldn't and try to fix them. Originally, I first went zen and monklike mode 2 years ago, just after I had been dealing with a lot of stuff over that year and never really handled any of it, so it just crumbled and I stopped talking to everyone and started paying more attention to my physical health. The not talking to anyone thing was definitely unhealthy, and I'm not doing that now, but it was how I dealt with that at the time.</p>
-                        <p>Fast forward to this month, This girl I've been half with for almost a year brought up being unsure about being together, and then she got sick immediately after and can't respond. So I've been in this limbo state where I don't know what's gonna happen, since we haven't gotten to talk about it for about a month. This obviously took a pretty big toll on me in the first place, but now letting that sadness boil for a month its just gotten so much worse. I don't blame her obviously, she didn't choose to get sick, it just really hurts to get such drastic news and then no elaboration for a month, and who knows how much longer it will be. We did talk for a few minutes a couple weeks ago, but it didn't give much solace.</p>
-                        <p>Anyways, my response to this has been overall pretty beneficiary to me, aside from when I'm rotting. I've gone back to full zen and monklike mode, I'm not drinking anything but water, I've been working out again, and eating healthier. But most importantly, I finally got my <i>first job</i>. Immediately after I got that first message, I kinda panicked and decided I needed to get my life together somewhat, cause if she leaves I really have nothing going for me. I don't put relationships on this big pedestal, I actually hate people that do that, but this was the first time it felt different. I would be jobless, carless, and single while living in my parents house. I did not want that so I applied to be a goodwill donation attendant and got the job hooray!!! Obviously, it's not gonna get me enough money to move out or anything but at least its something, and I'll be able to put it on my resume for my next job. My first day is tomorrow, I'm a little nervous, I am not good in social situations, but the only way to fix that is just throw myself in one so we'll see.</p>
-                        <p>I'm still holding on to hope that me and her aren't over, she said some things that make it seem like it might not be, so I'm not gonna completely give up until she's better and responds. Will give updates thank you for reading my #VentPost</p>
-                    </div>
-                    <div id="entry2" class="entry">
-                        <h2>V5.55 PROGRESS REPORT 2 // 7.6.25</h2>
-                        <p>wow i cannot believe that last entry is from <i>7 months ago</i>!!!! i still remember writing it like it was a month ago but i suppose ive been a bit of a busy bee. i was slacking on website updates for a bit i had a big motivation burst at the beginning of the year and then stopped mostly until a month ago and ive been slowly sprinkling updates.</p>
-                        <p>i am currently listening to my <i>website playlist</i>, mostly daft punk and the synthy kanye songs, as well as lupe fiasco's food & liquor, ive been obsessed with that album lately. i mentioned in the last entry that i was really happy with the <i>media log</i>, but i suppose that was a lie cause i completely re-did it again and now i think i am actually happy with it. i still need to figure out where to put some buttons and stuff but its turning out really nice so far. especially a fan of the <i>grid/list</i> view option, i think ive found a good middle ground of being able to write long reviews for stuff but not feeling forced to in order to not make the page look empty.</p>
-                        <p>i also rewrote the <i>vinyl page</i>, i never put it out the way it was but i wrote it in like a fugue state a year ago and it was really poorly made. it looked really good though so i finally came back and rewrote it and now it works on all displays (i think) and looks super cool. its themed after this game called <i>Bomb Rush Cyberfunk</i>, i highly recommend you play it if you havent i promise you will love it.</p>
-                        <p>ive been really really trying to figure out how i want the home page to look, and i think im finally starting to get somewhere, but i change my mind so often we will see. maybe ill be writing here in a year still not decided who knows. but even if i redesign it again, ive implemented some stuff im really happy with. im using <i>lanyard</i> to pull information from my discord account to display on my profile section. which means my little profile picture is pulled from my discord, it shows a little dot with my discord online status, and it even will display the game im playing if i have one open. its actually really cool and ive had my eye on it for a bit but never looked into putting it on my site until now. i dont think ive seen someone do this before at least on nekoweb or neocities, but i would highly recommend you try it!!!</p>
-                        <p>as far as my personal life goes im pretty geeked!!! ive been talking to my buddies a lot and i feel like ive cultivated a more positive social circle for myself, a lot less evil sinister spirits coming to stab and kill me. the <i>nintendo switch 2</i> came out since last writing as well, i know there was a lot of controversy but i didnt care at all i bought it day 1 of course and im really really liking it. <i>mario kart world</i> is super fun the free roam surprised me with how much time im spending in it. i think im at 50 hours or something? 100%ing it is gonna be a challenge but im most of the way there. very VERY excited for <i>donkey kong bananza</i>, that game looks incredible. i also helped my buddy make a <i>portfolio website</i> for her college class, <a href="https://tealtea.art" target="_blank">heres the link</a> if you wanna check it out, i think its epic and she cooked.</p>
-                    </div>
-                    <div id="entry1" class="entry">
-                        <h2>v5.55 PROGRESS REPORT // 11.24.24</h2>
-                        <p>the <i>journal</i> is back!!!! a couple months ago, i got pretty fed up with my current website, so i wanted more <i>blog posts</i> or just personal writing in general on here. but i dont like the idea of muddying up my blog with just life updates, since i wanna use the blog for more project stuff like my crt media center raspberry pi. so i decided to add a journal again which i had on my very ugly <i>v1.11</i> of this website. hopefully now less ugly and more cool.</p>
-                        <p>anyway, i just intend to ramble about life on here, and share <i>amazing vibes!!!</i> right now im listening to that <i>new kendrick album</i> and taking a brief break from javascript. as of right now, the home page is (mostly) done, and the journal and media log are completely done. im pretty happy with how the <i>media log</i> turned out especially, i now have a section to write about the movie or whatever so i can give my thoughts. i did have this before but i wasnt able to find a way to fit reviews and make it look good/be functional. now that im trying to make most pages <i>unique</i> instead of just piecing them together like legos, i was able to make it work.</p>   
-                        <p>also, i moved the <i>theme switcher</i> into button that sit on the <i>bottom right</i> of the header. OH and i havent mentioned the marquee!!! i mentioned earlier that i got fed up a couple months ago with my layout, but i was struggling to make a new one i liked. then i had an idea to make a <i>red lcd marquee</i> like the one from the akira screenshot i use as a banner for the <i>neo-tokyo</i> theme. im really happy with how it turned out, i think its a really cool way to display some information, and its fun to include a randomized splash text.</p>
-                    </div>
-                </div>
+        <div id="entries">
+            <div id="entry4" class="entry">
+                <h2>IM GONNA LOVE ME</h2><p><i> // 10.16.25</i></p>
+                <p>Hey yall, I am back in my groove! Hopefully this will be my final push into finishing this site makeover. It's gone on way too long and its not even that special. I am currently listening to <i>GOOD Fridays by Kanye</i>. Very nostalgic collection of songs, if ur a kanye fan i highly recommend you revisit these. Power remix especially.</p>
+                <p>I've decided to simplify the layout for the journal to just basic html now. I want this page to feel pretty simple, both to fit the journal vibe, and because I feel like a lot of my site strays pretty far from that old web aesthetic that I fell in love with in the first place.</p>
+                <p>All that negative stuff in the last post has passed I think. I sorted out the hacking stuff and I got all the evil out of my system regarding the cheating stuff and now I'm happier than I was during the relationship, thanks to my friends.</p>
+                <p>Recently me and my buddies have been playing <i>Tekkit</i>, which I knew I would be nostalgic for me but didn't expect how much. It's been very cute playing this version of minecraft that I probably have played more than any version and I just havent revisited it since it was the newest version. I'm shocked by how hard it is too, I've become spoiled by newer versions, all of us are dying a lot. This is a call for action to start a Tekkit server of your own!!</p>
+            </div>
+            <div id="entry3" class="entry">
+                <h2>FANCY CLOWN</h2><p><i> // 10.8.25</i></p>
+                <p>Its been a while again, this time with good reason though! Been having a rough few months, we'll get into that but first, I am currently listening to <i>man at the garden by Kendrick Lamar</i> and trying to cope with life stuff. Havent done much since last update.</p>
+                <p>Let's just get into it. I have just had bad thing after bad thing happen to me recently. The biggest thing, I wont get into it too much but I got cheated on. It was a long distance thing though so what can you do. I wont linger on it, I'd rather pay attention to the other stuff around it. I got my first job and had it for 4 days before quitting. Really bad timing on my part, didn't think I would deal with such a rough breakup right before my first day, and couldn't handle both things at once so I quit. At least it broke the ice on getting a job.</p>
+                <p>I also got hacked while this was happening, wonderful timing yet again. I'm pretty good with this stuff and didn't do anything stupid like download a random exe or whatever, so idk how it happened. It must have been some token grabber thing cause my discord has 2FA. My best guess is my firefox account got hacked or an extension I had installed had a token grabber. My firefox account was logged into, whether thats a result of the hack or the cause of it idk. so warning to you all I suppose. keep your browser account secure and be weary of what you let get synced.</p>
+                <p>I also got sued for that car accident I was in a couple years ago. Its my dads insurance so it doesn't directly affect me right now, but when I get another car and need insurance it's gonna be expensive.</p>
+                <p>ENOUGH NEGATIVITY!!!!!! I've had some good things happen too. Firstly, I got a RTX 3080 so now I can play games in 1440p woohoo! I also got a new chair, much comfier and better for my back. And as a result of the breakup, i've reconnected with some old friends and it's really the only thing making me actually happy. I can be an emotional little lesbian sometimes and I actually teared up happy tears cause it felt nice to talk to these people again. Anyways thanks for reading and checking up on me! Heres hoping things get better from this point forward!</p>
+            </div>
+            <div id="entry2" class="entry">
+                <h2>V5.55 PROGRESS REPORT 2</h2><p><i> // 7.6.25</i></p>
+                <p>Wow I cannot believe that last entry is from <i>7 months ago</i>!!!! I still remember writing it like it was a month ago but I suppose ive been a bit of a busy bee. I am currently listening to my <i>website playlist</i>, mostly daft punk and the synthy kanye songs, as well as lupe fiasco's food & liquor, ive been obsessed with that album lately.</p>
+                <p>I mentioned in the last entry that I was really happy with the <i>media log</i>, but I guess that was a lie cause I completely re-did it again and now I think I am actually happy with it. I'm especially a fan of the <i>grid/list</i> view option, I think I've found a good middle ground of being able to write long reviews for stuff but not feeling forced to so the page wont look empty.</p>
+                <p>I also rewrote the <i>vinyl page</i>, I never put it out the way it was but I wrote it in like a fugue state a year ago and it was really poorly made. it looked really good though so I finally came back and rewrote it and now it works on all displays (i think) and looks super cool. its themed after this game called <i>Bomb Rush Cyberfunk</i>, I highly recommend you play it if you havent I promise you will love it.</p>
+                <p>I'm finally starting to get somewhere with the home page, but I often change my mind we will see. Even if I redesign it again, I've implemented some stuff im really happy with. I'm using <i>Lanyard</i> to pull information from my discord account to display on my profile section. Which means my profile picture, status, and activity is pulled from my discord. It's actually really cool and ive had my eye on it for a bit but never looked into putting it on my site until now.</p>
+                <p>The <i>Switch 2</i> came out since last writing as well and I'm really really liking it. <i>Mario Kart World</i> is super fun the free roam surprised me with how much time I'm spending in it. I think I'm at 50 hours or something? Very VERY excited for <i>Donkey Kong Bananza</i>, that game looks incredible.</p>
+                <p>As far as my personal life goes im pretty geeked!!! I've been talking to my buddies a lot and I feel like I've cultivated a more positive social circle for myself, a lot less evil sinister spirits coming to stab and kill me. I also helped my buddy make a <i>portfolio website</i> for her college class, <a href="https://tealtea.art" target="_blank">heres the link</a> if you wanna check it out.</p>
+            </div>
+            <div id="entry1" class="entry">
+                <h2>v5.55 PROGRESS REPORT</h2><p><i> // 11.24.24</i></p>
+                <p>the <i>journal</i> is back!!!! a couple months ago, I got pretty fed up with my current website, so I wanted more <i>blog posts</i> or just personal writing in general on here. but I dont like the idea of muddying up my blog with just life updates, since I wanna use the blog for more project stuff like my crt media center raspberry pi. so I decided to add a journal again which I had on my very ugly <i>v1.11</i> of this website. hopefully now less ugly and more cool.</p>
+                <p>anyway, I just intend to ramble about life on here, and share <i>amazing vibes!!!</i> right now im listening to that <i>new kendrick album</i> and taking a brief break from javascript. as of right now, the home page is (mostly) done, and the journal and media log are completely done. im pretty happy with how the <i>media log</i> turned out especially, I now have a section to write about the movie or whatever so I can give my thoughts. I did have this before but I wasnt able to find a way to fit reviews and make it look good/be functional. now that im trying to make most pages <i>unique</i> instead of just piecing them together like legos, I was able to make it work.</p>   
+                <p>also, I moved the <i>theme switcher</i> into buttons that sit on the bottom right of the header. OH and I havent mentioned the marquee!!! I mentioned earlier that I got fed up a couple months ago with my layout, but I was struggling to make a new one I liked. then I had an idea to make a <i>red lcd marquee</i> like the one from the akira screenshot I use as a banner for the <i>neo-tokyo</i> theme. im really happy with how it turned out, I think its a really cool way to display some information, and its fun to include a randomized splash text.</p>
             </div>
         </div>
     </div>

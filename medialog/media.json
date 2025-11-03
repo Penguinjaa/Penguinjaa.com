@@ -1,6 +1,134 @@
 {
   "movies": [
     {
+      "title": "Maborosi",
+      "year": "1995",
+      "cover": "images/movies/maborosi.jpg",
+      "rating": "83",
+      "review": "Im glad i chose to watch this right now, was very much needed!!! Its been a bit since i cried to a movie. it freaking sucks when someone does something inexplicable and you are left to deal with that on your own, i like how this movie portrayed that feeling",
+      "date": "11.1.25"
+    },
+    {
+      "title": "A Nightmare on Elm Street",
+      "year": "1984",
+      "cover": "images/movies/a_nightmare_on_elm_street.jpg",
+      "rating": "78",
+      "review": "absolutely love the concept and nancy but oh my god why is every single other character in this so stupid. nancys mom should have just believed her after she had the hat it doesnt make any sense. if the other characters were a little less dense this prob wouldve been a 5",
+      "date": "10.28.25"
+    },
+    {
+      "title": "Friday the 13th Part 2",
+      "year": "1981",
+      "cover": "images/movies/friday_the_13th_part_2.jpg",
+      "rating": "70",
+      "review": "i like the people in the first one more but i like the killer in this one more. i love how autistic he is",
+      "date": "10.26.25"
+    },
+    {
+      "title": "Psycho",
+      "year": "1960",
+      "cover": "images/movies/psycho.jpg",
+      "rating": "82",
+      "review": "",
+      "date": "10.25.25"
+    },
+    {
+      "title": "Scream 2",
+      "year": "1997",
+      "cover": "images/movies/scream_2.jpg",
+      "rating": "73",
+      "review": "less silly than the first one and the story felt a little less gripping but great movie regardless",
+      "date": "10.23.25"
+    },
+    {
+      "title": "Scream",
+      "year": "1996",
+      "cover": "images/movies/scream.jpg",
+      "rating": "98",
+      "review": "i think this is my favorite traditional killer horror movie ive seen so far!!! ghostface is such a silly little guy and all of the twists and turns make this such a fun ride",
+      "date": "10.22.25"
+    },
+    {
+      "title": "Weapons",
+      "year": "2025",
+      "cover": "images/movies/weapons.jpg",
+      "rating": "91",
+      "review": "i was not expecting this to be this good wow!!! absolutely hated the main teacher lady though omg. the effects are really good and i love the way it showed everyones perspective before reconvening at the end",
+      "date": "10.21.25"
+    },
+    {
+      "title": "Friday the 13th",
+      "year": "1980",
+      "cover": "images/movies/friday_the_13th.jpg",
+      "rating": "71",
+      "review": "fun movie, was surprised not to see the hockey mask guess i will have to watch the next few",
+      "date": "10.20.25"
+    },
+    {
+      "title": "The Silence of the Lambs",
+      "year": "1991",
+      "cover": "images/movies/the_silence_of_the_lambs.jpg",
+      "rating": "100",
+      "review": "This is one of the best movies ive ever darn seen!!! All the twists and turns had me GRIPPED!!! All of the ideas are just so good wowowowowow<br><br>And the scene with the night vision and hes following her and its in his perspective is so good!!!! AHHHHH!!!!",
+      "date": "10.19.25"
+    },
+    {
+      "title": "Pulse",
+      "year": "2001",
+      "cover": "images/movies/pulse.jpg",
+      "rating": "53",
+      "review": "Didn't love or hate this movie, It was cool but I found myself wanting to watch Ringu instead. Not upset I watched it, but not really dying to watch it again either",
+      "date": "10.15.25"
+    },
+    {
+      "title": "House",
+      "year": "1977",
+      "cover": "images/movies/house.jpg",
+      "rating": "96",
+      "review": "i did not expect this to be like this at all holy cow!!! the editing is so silly and all the music is so good. i actually already want to rewatch it and base my entire personality on it wowowowowow",
+      "date": "10.8.25"
+    },
+    {
+      "title": "Blue Velvet",
+      "year": "1986",
+      "cover": "images/movies/blue_velvet.jpg",
+      "rating": "86",
+      "review": "didnt really understand the deeper meaning of much, but i can tell its there. definitely gonna give this another watch sometime. the core plot was really good and entertaining though. been thinking about it a lot since watching for some reason",
+      "date": "9.30.25"
+    },
+    {
+      "title": "Signs",
+      "year": "2002",
+      "cover": "images/movies/signs.jpg",
+      "rating": "8",
+      "review": "this movie just pissed me off man why would you make an alien movie and show an alien for less than a minute??? horrible cringe terrible christian family movie disguised as an alien movie i hate you all",
+      "date": "9.18.25"
+    },
+    {
+      "title": "A.I. Artificial Intelligence",
+      "year": "2001",
+      "cover": "images/movies/ai_artificial_intelligence.jpg",
+      "rating": "93",
+      "review": "i did not expect this movie to be this cool, i thought it was gonna be like monochrome modern vibes, but it was actually very tasteful, with a cool cyberpunky city sprinkled in",
+      "date": "9.17.25"
+    },
+    {
+      "title": "Videodrome",
+      "year": "1983",
+      "cover": "images/movies/videodrome.jpg",
+      "rating": "78",
+      "review": "love cronenbergs practical effects like always, and touches on very gross stuff. whole time i was watching i was like hmmm i think kanye would like this movie",
+      "date": "9.15.25"
+    },
+    {
+      "title": "The Lobster",
+      "year": "2015",
+      "cover": "images/movies/the_lobster.jpg",
+      "rating": "67",
+      "review": "i want to be an orangutan<br><br>first half was good but fell off in the second half for me",
+      "date": "9.5.25"
+    },
+    {
       "title": "War of the Worlds",
       "year": "2025",
       "cover": "images/movies/war_of_the_worlds.jpg",
@@ -683,6 +811,76 @@
   ],
   "albums": [
     {
+      "title": "Brown Sugar",
+      "year": "1995",
+      "cover": "images/albums/brown_sugar_dangelo.jpg",
+      "rating": "100",
+      "review": "omg what an awesome album oh my godddd!!! listened on my walk and its fall rn so theres leaves all over and im on a trail in a foresty area and it just fit the vibe so much this just brought me so much joy. wow im actually in love with this album idk if its less popular than voodoo but i feel like i hear about that one more than this and idk why",
+      "date": "10.27.25",
+      "artist": "D’Angelo",
+      "favorite_songs": "Brown Sugar, Me and Those Dreamin' Eyes of Mine"
+    },
+    {
+      "title": "HYPERYOUTH",
+      "year": "2025",
+      "cover": "images/albums/hyperyouth_joey_valence__brae.jpg",
+      "rating": "72",
+      "review": "",
+      "date": "10.25.25",
+      "artist": "Joey Valence & Brae",
+      "favorite_songs": "THE PARTY SONG, SEE U DANCE"
+    },
+    {
+      "title": "Better Me Than You",
+      "year": "2024",
+      "cover": "images/albums/better_me_than_you_big_sean.jpg",
+      "rating": "58",
+      "review": "",
+      "date": "10.24.25",
+      "artist": "Big Sean",
+      "favorite_songs": "This N That, Apologize"
+    },
+    {
+      "title": "Voodoo",
+      "year": "2000",
+      "cover": "images/albums/voodoo_dangelo.jpg",
+      "rating": "86",
+      "review": "took a brisk walk this evening while listening to this!",
+      "date": "10.21.25",
+      "artist": "D’Angelo",
+      "favorite_songs": "Feel Like Makin' Love, Send It On"
+    },
+    {
+      "title": "Wolf",
+      "year": "2013",
+      "cover": "images/albums/wolf_tyler_the_creator.jpg",
+      "rating": "66",
+      "review": "these older tyler albums are less interesting to me, but i know this one was long overdue for a relisten. still not crazy on it but its enjoyable.",
+      "date": "10.11.25",
+      "artist": "Tyler, The Creator",
+      "favorite_songs": "Domo23, Rusty, Treehome95"
+    },
+    {
+      "title": "The Rise and Fall of a Midwest Princess",
+      "year": "2023",
+      "cover": "images/albums/the_rise_and_fall_of_a_midwest_princess_chappell_roan.jpg",
+      "rating": "89",
+      "review": "very fun album, this is my classic being way too late to a mega popular pop album, but ive been working on my lesbian playlist and needed hot to go in there.",
+      "date": "9.22.25",
+      "artist": "Chappell Roan",
+      "favorite_songs": "Coffee, HOT TO GO!, After Midnight"
+    },
+    {
+      "title": "The Drive Home",
+      "year": "2024",
+      "cover": "images/albums/the_drive_home_samara_cyn.jpg",
+      "rating": "72",
+      "review": "i like her energy, excited to see a more cohesive project at some point. need more songs like entry#149",
+      "date": "9.16.25",
+      "artist": "Samara Cyn",
+      "favorite_songs": "Entry#149, 100sqft, MFTB"
+    },
+    {
       "title": "Lonely at the Top",
       "year": "2025",
       "cover": "images/albums/lonely_at_the_top_joey_bada.jpg",
@@ -786,7 +984,7 @@
       "title": "Let God Sort Em Out",
       "year": "2025",
       "cover": "images/albums/let_god_sort_em_out_clipse.jpg",
-      "rating": "93",
+      "rating": "100",
       "review": "have yet to listen to the original clipse projects, but ive been a pusha fan for a while now. really glad the so be it sample got cleared, hearing that other beat on first listen was a big letdown, but now we have the good version. malice for sure had the better performances on here generally, but both did great. pharrell also did incredible, the production is insane. this album feels like a perfect blend of what i love about that early 2000s type rap and incorporates some modern sounds to make this easily my favorite album of the year.",
       "date": "7.11.25",
       "artist": "Clipse",
@@ -1854,6 +2052,30 @@
     }
   ],
   "other": [
+    {
+      "title": "Shipwrecked 64",
+      "year": "2024",
+      "cover": "images/other/shipwrecked_64.jpg",
+      "rating": "55",
+      "review": "prefacing this with saying i dont know all the lore, i have not seen a 6 hour video essay by some white guy about this game. but my friend wanted to play it for halloween and its not something id normally play, so i may not like some things that people that like these kinda games do. i think the element of it being part of an arg is cool, but theres some things i think they shouldnt have done that kinda alienated me as an unassuming player. i think the mozart cyphers are too much for a little bo",
+      "date": "10.30.25"
+    },
+    {
+      "title": "Pokémon Legends: Z-A",
+      "year": "2025",
+      "cover": "images/other/pokmon_legends_z-a.jpg",
+      "rating": "37",
+      "review": "decided to play this since ive 100%ed DK and MKW so i needed a new switch 2 game. I'm a hater of new pokemon but this does feel like it does some things better than most recent pokemon games. i like the active battling, but i feel like you should have more control over the positioning of your pokemon. and i wish mega stones didnt take up an item slot, cause most pokemon in this game can mega evolve and i just want all of them to be able to. the story is meh, it feels like its almost something in",
+      "date": "10.29.25"
+    },
+    {
+      "title": "Lily's Lil Video Shop!",
+      "year": "2025",
+      "cover": "images/other/lilys_lil_video_shop.jpg",
+      "rating": "36",
+      "review": "cute lil game! i like the artwork. the gameplay is simple but very repetitive and got boring pretty quick. the scares are not very good and the story isnt interesting. but for a quick cheap lil game i dont hate it",
+      "date": "10.22.25"
+    },
     {
       "title": "Celeste",
       "year": "2018",

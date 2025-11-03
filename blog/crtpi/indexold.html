@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRT PI // PENGUINJAA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <!-- // THEMES // -->
+    <link id="themeOne" rel="stylesheet" href="/themes/themeOne.css">
+    <link id="themeTwo" rel="stylesheet" href="/themes/themeTwo.css" disabled>
+    <link id="themeThree" rel="stylesheet" href="/themes/themeThree.css" disabled>
+    <link id="themeFour" rel="stylesheet" href="/themes/themeFour.css" disabled>
+    <link id="themeFive" rel="stylesheet" href="/themes/themeFive.css" disabled>
+    <link id="themeSix" rel="stylesheet" href="/themes/themeSix.css" disabled>
+    <meta name="description" content="Making an all-in-one CRT center with a Raspberry Pi 3B">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <meta content="#a4749a" data-react-helmet="true" name="theme-color"/>
+    <!-- // EMBEDS // -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CRT PI // PENGUINJAA"/>
+    <meta property="og:description" content="Making an all-in-one CRT center with a Raspberry Pi 3B"/>
+    <meta property="og:url" content="https://penguinjaa.com/blog/crtpi"/>
+    <!-- // SCRIPTS // -->
+    <script src="/assets/themes.js"></script>
+    <!-- // STYLES // -->
+    <style>
+        .boxbody {
+            height: calc(100% - 70px)
+        }
+        .piphotos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .piphotos p {
+            margin-bottom: 25px;
+            max-width: 250px;
+        }
+        .piphotos img {
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="maincontainer">
+        <div id="headercontainer">
+            <div id="header">
+            </div>
+            <div id="navbar">
+                <h3><a href="/">HOME</a></h3>
+                <h3><a href="/blog">BLOG</a></h3>
+                <h3><a href="/media">MEDIA</a></h3>
+                <h3><a href="/links">LINKS</a></h3>
+                <h3><a href="/about">ABOUT</a></h3>
+            </div>
+        </div>
+        <div id="content" style="flex-direction: column;">
+            <div class="splitcontainer">
+                <div class="box" style="width: 30%; margin-right: 15px; height: max-content;">
+                    <div class="boxhead">
+                        <h2 id="intro">WHERE 2?</h2>
+                    </div>
+                    <div class="boxbody">
+                        <a href="#intro"><h4 style="margin: 0 0 10px 0;">INTRO</h4></a>
+                        <a href="#use"><h4 style="margin: 0 0 10px 0;">WHAT IT DOES</h4></a>
+                        <a href="#photos"><h4 style="margin: 0 0 10px 0;">PHOTOS</h4></a>
+                        <a href="#links"><h4 style="margin: 0 0 10px 0;">HELPFUL LINKS</h4></a>
+                        <h5 style="margin-bottom: 5px;">THEME PICKER</h5>
+                        <aside class="sidebar">
+                            <div id="themediv"></div>
+                        </aside>
+                    </div>
+                </div>
+                <div class="box" style="width: 70%;">
+                    <div class="boxhead" id="intro">
+                        <h2>INTRO</h2>
+                    </div>
+                    <div class="boxbody">
+                        <p>I recently got a Raspberry Pi 3B to connect to my CRT. it turns out a pi is actually super cool and can do a lot of stuff. i highly recommend it if you have a crt. the pi 3b has a composite output and with some settings, it looks really good.</p><br>
+                        <p>also this post is kinda a sneak peak into what the "RETRO ZONE" will be, I love CRTs and want to make a shrine-like page about my crt setup</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxhead" id="use">
+                    <h2>WHAT IT DOES</h2>
+                </div>
+                <div class="boxbody">
+                    <p>ive been using retropie along with kodi and moonlight to do pretty much anything i want. Retropie lets me emulate pretty much anything up to the SNES era of consoles. it can do n64 but ive heard it gives mixed results and i have a everdrive anyway.</p><br>
+                    <p>Kodi connects to my Plex server so I can watch all my old movies/anime/tv (AKIRA!!!!) in good quality on my crt. Kodi also has some nice addons that let me watch youtube, twitch, and some other stuff i probably wont use.</p><br>
+                    <p>Moonlight just lets me stream my PC to the pi which will be neat for playing some newer stuff that looks nice on a CRT. i plan on playing bomb rush cyberfunk this way. although im still trying to get it to fit properly on my screen.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxhead">
+                    <h2 id="photos">PHOTOS</h2>
+                </div>
+                <div class="boxbody">
+                    <div class="piphotos">
+                        <div>
+                            <img src="img/joerraria.jpg">
+                            <p>Retropie Main Menu</p>
+                        </div>
+                        <div>
+                            <img src="img/joerraria.jpg">
+                            <p>Kodi Main Menu</p>
+                        </div>
+                        <div>
+                            <img src="img/joerraria.jpg">
+                            <p>Best movie of all time</p>
+                        </div>
+                        <div>
+                            <img src="img/joerraria.jpg">
+                            <p>Mother 3</p>
+                        </div>
+                        <div>
+                            <img src="img/joerraria.jpg">
+                            <p>Youtube</p>
+                        </div>
+                        <div>
+                            <img src="img/joerraria.jpg">
+                            <p>Terraria running on Moonlight (feat. my dog joe)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box" style="width: 990px;">
+                <div class="boxhead" id="links">
+                    <h2>HELPFUL LINKS</h2>
+                </div>
+                <div class="boxbody">
+                    <p>Here are some links that helped me set this up if you are interested in doing this as well!!</p><br>
+                    <p><a href="https://www.blakecarpenter.dev/using-a-raspberry-pi-with-a-crt-television/" target="_blank">Beginners Guide to Using a Raspberry Pi with a CRT Television</a> // Tutorial</p>
+                    <p><a href="https://www.blakecarpenter.dev/240p-crt-gaming-on-a-raspberry-pi/" target="_blank">240p CRT Gaming With a Raspberry Pi</a> // Tutorial Pt. 2</p><br>
+                    <p><a href="https://github.com/YggdrasiI/skin.confluence.480" target="_blank">Kodi Confluence 480 Skin</a> // Kodi Skin for CRTs</p>
+                    <h3>Kodi Addons</h3>
+                    <p>PlexKodiConnect // Watch plex through Kodi</p>
+                    <p>Youtube // Watch Youtube Through Kodi</p>
+                    <p>Twitch // Watch Twitch Through Kodi</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p style="margin: 0;">PENGUINJAA.COM V4.44 [C] 2022 - 2099</p>
+            <p style="font-size: 18px; margin: 0;">
+                <a href="https://discord.com/users/264257846496067586">CONTACT</a> | 
+                <a href="/archive">ARCHIVE</a> |
+                <a href="/sitemap">SITEMAP</a> |
+                POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
+            </p>
+        </div>
+    </div>
