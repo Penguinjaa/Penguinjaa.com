@@ -134,11 +134,9 @@ a:hover{
 button:hover{
     cursor: pointer;
 }
-  
-::selection{
-    color: var(--h1-color);
-    text-shadow: 0 0 6px var(--h1-color);
-    animation: pulse 0.1s infinite;
+
+::selection {
+    background-color: var(--selection);
 }
 
 i {

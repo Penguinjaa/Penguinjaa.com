@@ -15,7 +15,9 @@ const quotes = [
     "ZEN AND MONKLIKE",
     "I DONT WANNA WORK I WANNA BE AN INTERNET PRINCESS FOREVER",
     "BURN EVERYTHING",
-    "RAWR XD"
+    "RAWR XD",
+    "SERVING C WORD SINCE 2004",
+    "LESBIAN IN STEM"
 ];
 
 let showColon = true;

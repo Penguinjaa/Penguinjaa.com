@@ -811,6 +811,26 @@
   ],
   "albums": [
     {
+      "title": "Stardust",
+      "year": "2025",
+      "cover": "images/albums/stardust_danny_brown.jpg",
+      "rating": "96",
+      "review": "ohmygodohmygodohmygoddddd!!!! i actually just love love love this. i enjoy danny brown, but havent fully appreciated him like a lot of people do, but this album really works for me. i love atrocity exhibition of course, but i never liked it as much as most people, i think this sound works much better for danny for me. i initally was mainly looking forward to the quadeca features cause you know a white boy loves quadeca, but i came out in love with this whole album. and ironically, i didnt loooove either of quadeca's features. he was a nice addition but didnt steal the show which i suppose is a good thing.",
+      "date": "11.7.25",
+      "artist": "Danny Brown",
+      "favorite_songs": "Book of Daniel, Copycats, What You See"
+    },
+    {
+      "title": "Gold",
+      "year": "2023",
+      "cover": "images/albums/gold_cleo_sol.jpg",
+      "rating": "77",
+      "review": "listened cause of the interpolation on the chance album, very very good album!",
+      "date": "11.5.25",
+      "artist": "Cleo Sol",
+      "favorite_songs": "Life Will Be, Desire, Only Love Can Wait"
+    },
+    {
       "title": "Brown Sugar",
       "year": "1995",
       "cover": "images/albums/brown_sugar_dangelo.jpg",
@@ -1423,8 +1443,8 @@
     {
       "title": "BRAT",
       "cover": "images/albums/brat.jpg",
-      "rating": "58",
-      "review": "not a big pop guy but had to see the hype, plus ariana grande is gonna be on a remix of one of these songs so i had to check it out. and yeah turns out me not being a big pop guy caused me not really to enjoy this too much but i do like a few tracks. and i see why it got so much hype, even the songs i didnt like i could see why they were popular if that makes sense.",
+      "rating": "87",
+      "review": "revisiting this as ive gotten more into this kinda music and i like it a whole lot more. old rating: 58",
       "date": "10.7.24",
       "favorite_songs": "Sympathy is a knife, So I, I might say something stupid",
       "artist": "Charli xcx",
