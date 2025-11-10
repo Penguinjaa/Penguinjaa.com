@@ -1,0 +1,48 @@
+/* // FANCY THAT // */
+
+colors{
+   color: #2E1F1B,#FEEDFD,#CD4039,#EA7A78,#03F3C6,#00CC95,#CD4039,#EA7A78,#EFD073,#D1A344,#CE5D3C,#A13A3F,#9E977D,#ffffff0f;
+}   
+:root {
+    /* HEADER */
+    --header-img: no-repeat url("https://i.pinimg.com/736x/29/c2/da/29c2da0ae24eb6728291207bd5754d74.jpg");
+
+    /* COLORS */
+    --p-color: #FEEDFD;
+    --h1-color: #fff;
+    --h2-color: #fff;
+    --h3-color: #fff;
+    --h4-color: #fff;
+    --h5-color: #fff;
+    --h6-color: #fff;
+    --i-color: #2E4363;
+    --sub-color: #a7a7a7;
+
+    --selection: #2E4363;
+
+    --marquee-text: #fff;
+    --marquee-shadow: 0px 0px 7px #fff;
+
+    --scroll-color: #2E1F1B;
+    --scroll-thumb-color: #A13A3F;
+
+    /* HEADERS */
+    --stripes: repeating-linear-gradient(-135deg,#ffffff0f,#ffffff0f 2px,#000 2px,#000 4px);
+    --grid: repeating-linear-gradient(-135deg,#ffffff0f,#ffffff0f 2px,#000 2px,#000 4px);
+    --gridsize: 4px 4px,4px 4px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px;
+
+    /* BODY */
+    --background: #BF0707;
+    --box-bg: #BF0707;
+    --box-border: #fff 2px dashed;
+
+    /* BLOG */
+    --blog-border: #CE5D3C dotted 2px;
+    --blog-header: linear-gradient(90deg, #CE5D3C 65%, #000);
+    --blog-title: #F4EF36;
+
+}
+
+body {
+    font-family: Exposure, monospace, serif;
+}

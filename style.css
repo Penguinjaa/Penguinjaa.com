@@ -422,6 +422,7 @@ textarea::-webkit-scrollbar {display: none;}
 #theme-buttons button[data-theme="neo-tokyo"] { --color1: #f46ee7; --color2: #2e1f1a; }
 #theme-buttons button[data-theme="monochrome"] { --color1: #fff; --color2: #000; }
 #theme-buttons button[data-theme="universe-city"] { --color1: #EE135B; --color2: #4BB0DE; }
+#theme-buttons button[data-theme="fancy-that"] { --color1: #BF0707; --color2: #ffffff; }
 #theme-buttons button[data-theme="MIKU"] { --color1: #137a7f; --color2: #e12885; }
 #theme-buttons button[data-theme="2049"] { --color1: #d54aa5; --color2: #181483; }
 #theme-buttons button[data-theme="downtown"] { --color1: #CD4039; --color2: #000; }

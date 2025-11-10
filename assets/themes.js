@@ -2,7 +2,8 @@ const themeMap = {
   "NEO-TOKYO": "theme1",
   "MONOCHROME": "theme2",
   "UNIVERSE CITY": "theme3",
-  "DOWNTOWN": "theme4"
+  "DOWNTOWN": "theme4",
+  "FANCY THAT": "theme5"
 };
 
 window.onload = () => {
