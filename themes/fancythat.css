@@ -1,11 +1,8 @@
 /* // FANCY THAT // */
 
-colors{
-   color: #2E1F1B,#FEEDFD,#CD4039,#EA7A78,#03F3C6,#00CC95,#CD4039,#EA7A78,#EFD073,#D1A344,#CE5D3C,#A13A3F,#9E977D,#ffffff0f;
-}   
 :root {
     /* HEADER */
-    --header-img: no-repeat url("https://i.pinimg.com/736x/29/c2/da/29c2da0ae24eb6728291207bd5754d74.jpg");
+    --header-img: no-repeat url(/themes/assets/fancythat/redbanner.png);
 
     /* COLORS */
     --p-color: #FEEDFD;
@@ -15,10 +12,10 @@ colors{
     --h4-color: #fff;
     --h5-color: #fff;
     --h6-color: #fff;
-    --i-color: #2E4363;
-    --sub-color: #a7a7a7;
+    --i-color: #7699a8;
+    --sub-color: #7fa4b7;
 
-    --selection: #2E4363;
+    --selection: #0a4570;
 
     --marquee-text: #fff;
     --marquee-shadow: 0px 0px 7px #fff;
@@ -27,13 +24,13 @@ colors{
     --scroll-thumb-color: #A13A3F;
 
     /* HEADERS */
-    --stripes: repeating-linear-gradient(-135deg,#ffffff0f,#ffffff0f 2px,#000 2px,#000 4px);
+    --stripes: repeating-linear-gradient(135deg,#ffffff0f,#ffffff0f 3px,#bc090e 3px,#bc090e 6px);
     --grid: repeating-linear-gradient(-135deg,#ffffff0f,#ffffff0f 2px,#000 2px,#000 4px);
     --gridsize: 4px 4px,4px 4px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px;
 
     /* BODY */
-    --background: #BF0707;
-    --box-bg: #BF0707;
+    --background: url(/themes/assets/fancythat/bg-tile-dark.png);
+    --box-bg: repeating-linear-gradient(-135deg,#400000,#400000 3px,#2d0101 3px,#2d0101 6px);
     --box-border: #fff 2px dashed;
 
     /* BLOG */
@@ -44,5 +41,12 @@ colors{
 }
 
 body {
-    font-family: Exposure, monospace, serif;
+    font-family: 'Fraunces', monospace, serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+    background-size: auto;
+}
+a:hover{
+    filter: none;
+    color: #7fa4b7;
 }

@@ -20,6 +20,20 @@
     font-display: swap;
     font-feature-settings: "liga" 0;
 }
+@font-face {
+    font-family: 'Fraunces';
+    src: url('/assets/fonts/Fraunces.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bulletin';
+    src: url('/assets/fonts/Rodin.woff2') format('woff2'),
+        url('/assets/fonts/Rodin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* BODY */
 body {
@@ -128,6 +142,18 @@ h3 a:link, h3 a:visited {
     text-underline-offset: 2px;
     text-decoration-color: var(--h4-color);
 }
+
+.bulletin {
+    font-family: 'Bulletin', monospace;
+    font-size: 16px;
+    color: #270b05;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: never;
+    text-rendering: optimizeSpeed;
+    image-rendering: pixelated;
+}
+
 a:hover{
     filter: invert(100%) hue-rotate(180deg);
 }
