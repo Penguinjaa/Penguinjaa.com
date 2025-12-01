@@ -22,14 +22,12 @@ const getTrack = async () => {
     j.track.artist['#text']
   )}/_/${encodeURIComponent(j.track.name)}`;
 
-  document.getElementById("listeningStatus").innerText = lastfmPlaying
-    ? "NOW LISTENING..."
-    : "LAST SONG...";
   document.getElementById("listening").innerHTML = `
     <img src="${img}">
     <div id="trackInfo">
       <h3 id="trackName"><a href="${link}" target="_blank" style="text-decoration:none;">${name}</a></h3>
       <h5 id="artistName">${j.track.artist['#text']}</h5>
+      <div id="lastlistened"></div>
     </div>
   `;
 
