@@ -1,6 +1,30 @@
 {
   "movies": [
     {
+      "title": "Poetic Justice",
+      "year": "1993",
+      "cover": "images/movies/poetic_justice.jpg",
+      "rating": "88",
+      "review": "this movie is so sweet i really liked it!!! ending was very cute. someone needs to check on chicago though i think he is dead why was he just never heard from again",
+      "date": "11.23.25"
+    },
+    {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "cover": "images/movies/the_dark_knight.jpg",
+      "rating": "82",
+      "review": "not a superhero guy im a hater actually but i see why this is so well regarded. joker acting really good believe it or not",
+      "date": "11.16.25"
+    },
+    {
+      "title": "Coraline",
+      "year": "2009",
+      "cover": "images/movies/coraline.jpg",
+      "rating": "88",
+      "review": "its obvious, but this movie is soooo cozy i love it!! cant believe this is my first time watching this i think its gonna become a staple of november for me now",
+      "date": "11.7.25"
+    },
+    {
       "title": "Maborosi",
       "year": "1995",
       "cover": "images/movies/maborosi.jpg",
@@ -810,6 +834,36 @@
     }
   ],
   "albums": [
+    {
+      "title": "EUSEXUA Afterglow",
+      "year": "2025",
+      "cover": "images/albums/eusexua_afterglow_fka_twigs.jpg",
+      "rating": "86",
+      "review": "yes im listening to this before i listen to eusexua it has pinkpantheress on it okay leave me alone!!! its so so so so good tho i didnt know she made music like this, excited to check out eusexua maybe tonight even.",
+      "date": "11.17.25",
+      "artist": "FKA twigs",
+      "favorite_songs": "Sushi, Wild And Alone, Predictable Girl"
+    },
+    {
+      "title": "Revengeseekerz",
+      "year": "2025",
+      "cover": "images/albums/revengeseekerz_jane_remover.jpg",
+      "rating": "91",
+      "review": "checking out all the features from the danny brown album part 2: this ones been on my to do list for a while. very very good, as expected!!! glad im doing it now instead of when it came out cause i feel i appreciate it more now than i would back then",
+      "date": "11.12.25",
+      "artist": "Jane Remover",
+      "favorite_songs": "Professional Vengeance, Psychoboost, angels in camo"
+    },
+    {
+      "title": "Wallsocket",
+      "year": "2023",
+      "cover": "images/albums/wallsocket_underscores.jpg",
+      "rating": "69",
+      "review": "checking out all the features from the danny brown album part 1!!! i really like the vibe of underscores, might need to relisten or come back to this after checking out other albums cause i had higher expectations. but is a good listen and i liked every song",
+      "date": "11.11.25",
+      "artist": "underscores",
+      "favorite_songs": "Locals (Girls like us), Old money bitch"
+    },
     {
       "title": "Stardust",
       "year": "2025",
@@ -2073,11 +2127,19 @@
   ],
   "other": [
     {
+      "title": "Half-Life",
+      "year": "1998",
+      "cover": "images/other/halflife.jpg",
+      "rating": "100",
+      "review": "first time playing this shockingly! obviously just one of the most important games of all time, even if u ignore the game itself, everything that sparked from this is just incredible. but the game itself is also very very good, especially as a fan of old games i had a very cozy time playing it. i love playing games like these in november its just really really nice. excited to play half-life 2, i might start that today even. for a game from 98, i never really got stuck or confused, it never felt too easy or too hard, and aesthetically its just super cool especially xen. i see why this is a game people replay a lot, i actually really really loved it.",
+      "date": "11.24.25"
+    },
+    {
       "title": "Shipwrecked 64",
       "year": "2024",
       "cover": "images/other/shipwrecked_64.jpg",
       "rating": "55",
-      "review": "prefacing this with saying i dont know all the lore, i have not seen a 6 hour video essay by some white guy about this game. but my friend wanted to play it for halloween and its not something id normally play, so i may not like some things that people that like these kinda games do. i think the element of it being part of an arg is cool, but theres some things i think they shouldnt have done that kinda alienated me as an unassuming player. i think the mozart cyphers are too much for a little bo",
+      "review": "prefacing this with saying i dont know all the lore, i have not seen a 6 hour video essay by some white guy about this game. but my friend wanted to play it for halloween and its not something id normally play, so i may not like some things that people that like these kinda games do. i think the element of it being part of an arg is cool, but theres some things i think they shouldnt have done that kinda alienated me as an unassuming player. i think the mozart cyphers are too much for a little boy like me.",
       "date": "10.30.25"
     },
     {

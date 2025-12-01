@@ -1,0 +1,44 @@
+/* // EMO LESBIAN // */
+
+colors{
+   color: #2E1F1B,#FEEDFD,#CD4039,#EA7A78,#03F3C6,#00CC95,#CD4039,#EA7A78,#EFD073,#D1A344,#CE5D3C,#A13A3F,#9E977D,#ffffff0f;
+}   
+:root {
+    /* HEADER */
+    --header-img: no-repeat url("/themes/assets/emolesbian/banner.png");
+
+    /* COLORS */
+    --p-color: #FEEDFD;
+    --h1-color: #8ec3d1;
+    --h2-color: #8ec3d1;
+    --h3-color: #8ec3d1;
+    --h4-color: #b7dee5;
+    --h5-color: #b7dee5;
+    --h6-color: #b7dee5;
+    --i-color: #EFD073;
+    --sub-color: #a7a7a7;
+
+    --selection: #ce5e3c62;
+
+    --marquee-text: #8ec3d1;
+    --marquee-shadow: 0px 0px 7px #8ec3d1;
+
+    --scroll-color: #2E1F1B;
+    --scroll-thumb-color: #b7dee5;
+
+    /* HEADERS */
+    --stripes: repeating-linear-gradient(180deg,#ffffff0f,#ffffff0f 3px,#000 3px,#000 6px);
+    --grid: linear-gradient(-90deg, #ffffff0f 1px, transparent 1px),linear-gradient(#ffffff0f 1px, transparent 1px),#000;
+    --gridsize: 4px 4px,4px 4px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px;
+
+    /* BODY */
+    --background: url(/themes/assets/monochrome/crater.jpg) no-repeat fixed center;
+    --box-bg: #000 url(/images/blackstripe.png);
+    --box-border: #C0C0C0 4px ridge;
+
+    /* BLOG */
+    --blog-border: #b7dee5 dotted 2px;
+    --blog-header: linear-gradient(90deg, #b7dee5 65%, #000);
+    --blog-title: #F4EF36;
+
+}

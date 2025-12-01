@@ -24,13 +24,13 @@
     --scroll-thumb-color: #A13A3F;
 
     /* HEADERS */
-    --stripes: repeating-linear-gradient(135deg,#ffffff0f,#ffffff0f 3px,#bc090e 3px,#bc090e 6px);
+    --stripes: repeating-linear-gradient(135deg,#ffffff0f,#ffffff0f 3px,#580c0c 3px,#580c0c 6px);
     --grid: repeating-linear-gradient(-135deg,#ffffff0f,#ffffff0f 2px,#000 2px,#000 4px);
     --gridsize: 4px 4px,4px 4px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px,80px 80px;
 
     /* BODY */
     --background: url(/themes/assets/fancythat/bg-tile-dark.png);
-    --box-bg: repeating-linear-gradient(-135deg,#400000,#400000 3px,#2d0101 3px,#2d0101 6px);
+    --box-bg: #0e0a06;
     --box-border: #fff 2px dashed;
 
     /* BLOG */
@@ -41,10 +41,12 @@
 }
 
 body {
+    background-size: auto;
+}
+body p {
     font-family: 'Fraunces', monospace, serif;
     font-weight: 200;
     font-size: 0.8rem;
-    background-size: auto;
 }
 a:hover{
     filter: none;
