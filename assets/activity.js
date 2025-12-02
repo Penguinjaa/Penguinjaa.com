@@ -26,7 +26,7 @@ const getTrack = async () => {
     <img src="${img}">
     <div id="trackInfo">
       <h3 id="trackName"><a href="${link}" target="_blank" style="text-decoration:none;">${name}</a></h3>
-      <h5 id="artistName">${j.track.artist['#text']}</h5>
+      <h3 id="artistName">${j.track.artist['#text']}</h3>
       <div id="lastlistened"></div>
     </div>
   `;

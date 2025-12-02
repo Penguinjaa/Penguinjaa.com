@@ -1,13 +1,14 @@
 const themeMap = {
   "NEO-TOKYO": "theme1",
-  "MONOCHROME": "theme2",
-  "UNIVERSE CITY": "theme3",
-  "DOWNTOWN": "theme4",
-  "FANCY THAT": "theme5"
+  "UNIVERSE CITY": "theme2",
+  "EMOLESBIAN": "theme3",
+  "FANCY THAT": "theme4",
+  "DOWNTOWN": "theme5",
+  "MONOCHROME": "theme6"
 };
 
 window.onload = () => {
-  const savedTheme = localStorage.getItem("currentTheme") || "NEO-TOKYO";
+  const savedTheme = localStorage.getItem("currentTheme") || "EMOLESBIAN!";
   setTheme(savedTheme);
 };
 

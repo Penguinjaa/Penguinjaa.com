@@ -26,14 +26,6 @@
     font-weight: bold;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Bulletin';
-    src: url('/assets/fonts/Rodin.woff2') format('woff2'),
-        url('/assets/fonts/Rodin.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 /* BODY */
 body {
@@ -141,17 +133,6 @@ h3 a:link, h3 a:visited {
     text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-color: var(--h4-color);
-}
-
-.bulletin {
-    font-family: 'Bulletin', monospace;
-    font-size: 16px;
-    color: #270b05;
-    -webkit-font-smoothing: none;
-    -moz-osx-font-smoothing: grayscale;
-    font-smooth: never;
-    text-rendering: optimizeSpeed;
-    image-rendering: pixelated;
 }
 
 a:hover{
@@ -275,15 +256,6 @@ textarea::-webkit-scrollbar {display: none;}
     margin-bottom: 10px;
     text-align: center;
 }
-#currently {
-    width: 55%;
-    overflow: hidden;
-    object-fit: contain;
-    background-image: url(/images/assets/hollowknight.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
 /* ACTIVITY */
 #recentSong{
@@ -304,7 +276,7 @@ textarea::-webkit-scrollbar {display: none;}
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50px;
+    height: 58px;
 }
 .listening {
     text-transform: uppercase;
@@ -319,13 +291,13 @@ textarea::-webkit-scrollbar {display: none;}
     text-decoration: none !important;
 }
 #listening img {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     margin-right: 10px;
 }
-#listening h3 {margin: 0; padding: 0;}
-#listening h5 {margin: 0; padding: 0;}
-#lastlistened {color: var(--p-color);font-size: 0.4em;}
+#listening h3 {margin: 0; padding: 0;font-size: 1em;}
+#artistName {color: var(--h2-color);font-size: 0.9em !important;}
+#lastlistened {color: var(--p-color);font-size: 0.8em;}
 .statusdot {
   width: 15px;
   height: 15px;
@@ -472,12 +444,11 @@ body:after {
     opacity: 1;
 }
 #theme-buttons button[data-theme="neo-tokyo"] { --color1: #f46ee7; --color2: #2e1f1a; }
-#theme-buttons button[data-theme="monochrome"] { --color1: #fff; --color2: #000; }
 #theme-buttons button[data-theme="universe-city"] { --color1: #EE135B; --color2: #4BB0DE; }
+#theme-buttons button[data-theme="emo-lesbian"] { --color1: #8ec3d1; --color2: #000; }
 #theme-buttons button[data-theme="fancy-that"] { --color1: #BF0707; --color2: #ffffff; }
-#theme-buttons button[data-theme="MIKU"] { --color1: #137a7f; --color2: #e12885; }
-#theme-buttons button[data-theme="2049"] { --color1: #d54aa5; --color2: #181483; }
 #theme-buttons button[data-theme="downtown"] { --color1: #CD4039; --color2: #000; }
+#theme-buttons button[data-theme="monochrome"] { --color1: #fff; --color2: #000; }
 #theme-buttons button[data-theme="v3.33"] { --color1: #24171C; --color2: #D6D1BC; }
 #theme-buttons button[data-theme="v2.22"] { --color1: #AD81A4; --color2: #513971; }
 #theme-buttons button[data-theme="v1.11"] { --color1: #9FB0FB; --color2: #F8E6FF; }
