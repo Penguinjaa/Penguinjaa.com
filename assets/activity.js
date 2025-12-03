@@ -51,7 +51,8 @@ const getDiscordStatus = async () => {
   const d = j.data;
   const u = d.discord_user;
 
-  document.getElementById("discordAvatar").src = `https://cdn.discordapp.com/avatars/${u.id}/${u.avatar}.png`;
+const avatarExt = u.avatar.startsWith("a_") ? "gif" : "png";
+document.getElementById("discordAvatar").src = `https://cdn.discordapp.com/avatars/${u.id}/${u.avatar}.${avatarExt}`;
 
   const custom = d.activities.find((a) => a.type === 4);
   const emoji = custom?.emoji?.id
