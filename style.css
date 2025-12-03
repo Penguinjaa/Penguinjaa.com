@@ -307,6 +307,12 @@ textarea::-webkit-scrollbar {display: none;}
   bottom: -4px;
   right: -4px;
 }
+#statusBar {
+    position: absolute;
+    width: 75px;
+    height: 2px;
+    bottom: -2px;
+}
 
 /* MARQUEE */
 .marquee {
