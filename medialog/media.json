@@ -1,6 +1,86 @@
 {
   "movies": [
     {
+      "title": "Tokyo Godfathers",
+      "year": "2003",
+      "cover": "images/movies/tokyo_godfathers.jpg",
+      "rating": "72",
+      "review": "love all this guys movies, this ones prob the weakest but still very good. funny and sweet and love his artstyle",
+      "date": "12.24.25"
+    },
+    {
+      "title": "Tetsuo: The Iron Man",
+      "year": "1989",
+      "cover": "images/movies/tetsuo_the_iron_man.jpg",
+      "rating": "92",
+      "review": "just one of the coolest movies ive ever seen visually.",
+      "date": "12.18.25"
+    },
+    {
+      "title": "Rudolph the Red-Nosed Reindeer",
+      "year": "1964",
+      "cover": "images/movies/rudolph_the_red-nosed_reindeer.jpg",
+      "rating": "87",
+      "review": "",
+      "date": "12.17.25"
+    },
+    {
+      "title": "How the Grinch Stole Christmas",
+      "year": "2000",
+      "cover": "images/movies/how_the_grinch_stole_christmas.jpg",
+      "rating": "70",
+      "review": "",
+      "date": "12.15.25"
+    },
+    {
+      "title": "National Lampoon's Christmas Vacation",
+      "year": "1989",
+      "cover": "images/movies/national_lampoons_christmas_vacation.jpg",
+      "rating": "74",
+      "review": "wish there were more good christmas movies, its the only thing holding it back from being better than halloween. this ones pretty good tho",
+      "date": "12.10.25"
+    },
+    {
+      "title": "The Grand Budapest Hotel",
+      "year": "2014",
+      "cover": "images/movies/the_grand_budapest_hotel.jpg",
+      "rating": "75",
+      "review": "",
+      "date": "12.9.25"
+    },
+    {
+      "title": "Kill Bill: The Whole Bloody Affair",
+      "year": "2011",
+      "cover": "images/movies/kill_bill_the_whole_bloody_affair.jpg",
+      "rating": "100",
+      "review": "re-released in theaters! 2nd fav movie ever wow",
+      "date": "12.7.25"
+    },
+    {
+      "title": "Five Nights at Freddy's 2",
+      "year": "2025",
+      "cover": "images/movies/five_nights_at_freddys_2.jpg",
+      "rating": "17",
+      "review": "",
+      "date": "12.4.25"
+    },
+    {
+      "title": "Dìdi (弟弟)",
+      "year": "2024",
+      "cover": "images/movies/ddi_.jpg",
+      "rating": "77",
+      "review": "",
+      "date": "12.3.25"
+    },
+    {
+      "title": "Fantastic Mr. Fox",
+      "year": "2009",
+      "cover": "images/movies/fantastic_mr_fox.jpg",
+      "rating": "91",
+      "review": "very cute very cozy very orange",
+      "date": "11.27.25"
+    },
+    {
       "title": "Poetic Justice",
       "year": "1993",
       "cover": "images/movies/poetic_justice.jpg",
@@ -834,6 +914,16 @@
     }
   ],
   "albums": [
+    {
+      "title": "sankofa",
+      "year": "2025",
+      "cover": "images/albums/sankofa_redveil.jpg",
+      "rating": "86",
+      "review": "good",
+      "date": "12.23.25",
+      "artist": "redveil",
+      "favorite_songs": "idk yet come back leyter"
+    },
     {
       "title": "EUSEXUA Afterglow",
       "year": "2025",
