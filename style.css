@@ -211,6 +211,41 @@ html {
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
+.music-tag {
+    border: 1px solid #C0C0C0;
+    background: linear-gradient(30deg, #000000 0%, #1d1f1c 100%);
+    color: #dbdae2;
+}
+.tech-tag {
+    border: 1px solid #41464D;
+    background: linear-gradient(30deg, #2D2C30 0%, #494B52 100%);
+    color: #EBEBEB;
+}
+.media-tag {
+    border: 1px solid #4E4E4D;
+    background: linear-gradient(30deg, #000 0%, #373E33 100%);
+    color: #E4021B;
+}
+.review-tag {
+    border: 1px solid #000;
+    background: linear-gradient(30deg, #fff 0%, #fff 100%);
+    color: #000;
+}
+.rant-tag {
+    border: 1px solid #820300;
+    background: linear-gradient(30deg, #820300 0%, #B80000 100%);
+    color: #FF9800;
+}
+.update-tag {
+    border: 1px solid #C0C0C0;
+    background: linear-gradient(30deg, #2e1f1a 0%, #000 100%);
+    color: #ff7ada;
+}
+.yir-tag {
+    border: 1px solid #292D42;
+    background: linear-gradient(30deg, #4B1800 0%, #6B340D 100%);
+    color: #FFB30B;
+}
 .blog-summary {
     font-size: 1em;
     margin-top: 8px;
