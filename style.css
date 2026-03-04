@@ -624,17 +624,20 @@ body:after {
         background-color: #000;
     }
     body {
-        max-width: 98vw;
+        max-width: 97vw;
         padding: 0 1.7vw;
     }
     #content {
-        max-width: 98vw;
+        max-width: 97vw;
         overflow-x: hidden;
         padding-top: 10px;
         min-width: 0;
     }
-    #header, #body {
-        width: 94.7vw;
+    #header {
+        width: 94.6vw;
+    }
+    #body {
+        width: 97vw;
     }
     #headerimg {
         background-position-x: 50%;
@@ -646,7 +649,7 @@ body:after {
         order: -1;
     }
     .main-column, .right-column, .left-column {
-        width: fit-content;
+        width: 97vw;
         margin: 0;
     }
     .container-row {
