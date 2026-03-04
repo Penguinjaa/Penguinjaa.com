@@ -17,7 +17,8 @@ const quotes = [
     "BURN EVERYTHING",
     "RAWR XD",
     "SERVING C WORD SINCE 2004",
-    "LESBIAN IN STEM"
+    "LESBIAN IN STEM",
+    "SEEYUHH"
 ];
 
 let showColon = true;

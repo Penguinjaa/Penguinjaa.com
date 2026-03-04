@@ -309,7 +309,7 @@ textarea::-webkit-scrollbar {display: none;}
     font-size: 1.2em;
 }
 .featured-vid {
-    width: 60%;
+    width: 70%;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -539,6 +539,7 @@ body:before {
     animation-iteration-count: infinite;
     animation-timing-function: steps(4);
     box-shadow: inset 0px 0px 10em rgb(0 0 0 / 40%);
+    will-change: transform;
 }
 body:after {
     content: "";
@@ -557,6 +558,7 @@ body:after {
     animation-duration: 0.8s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(4);
+    will-change: transform;
 }
 @keyframes scanlines {
     0% {background-position: 0px 0px;}

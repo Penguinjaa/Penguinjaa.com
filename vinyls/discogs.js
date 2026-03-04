@@ -49,7 +49,6 @@ function updatePagination(totalPages) {
         if (currentPage > 1) {
             currentPage--;
             displayPage();
-            updatePagination(totalPages);
         }
     });
     paginationDiv.appendChild(prevBtn);
@@ -62,7 +61,6 @@ function updatePagination(totalPages) {
             if (i !== currentPage) {
                 currentPage = i;
                 displayPage();
-                updatePagination(totalPages);
             }
         });
         paginationDiv.appendChild(btn);
@@ -75,18 +73,16 @@ function updatePagination(totalPages) {
         if (currentPage < totalPages) {
             currentPage++;
             displayPage();
-            updatePagination(totalPages);
         }
     });
     paginationDiv.appendChild(nextBtn);
 }
 
-async function fetchAllPages(endpoint, key) {
+async function fetchAllPages(endpoint, key, firstPageData = null) {
     let page = 1;
-    let allItems = [];
-    let data = await fetchDiscogsPage(endpoint, page, 100);
-    if (!data) return allItems;
-    allItems = data[key];
+    let data = firstPageData || await fetchDiscogsPage(endpoint, page, 100);
+    if (!data) return [];
+    let allItems = data[key];
 
     while (page < data.pagination.pages) {
         page++;
@@ -102,16 +98,13 @@ async function loadInitialCollection() {
     if (data) {
         allCollection = data.releases;
         displayPage();
-        updatePagination(Math.ceil(allCollection.length / itemsPerPage));
+        allCollection = await fetchAllPages('collection/folders/0/releases', 'releases', data);
     }
-}
-
-async function loadAllCollection() {
-    allCollection = await fetchAllPages('collection/folders/0/releases', 'releases');
 }
 
 async function loadAllWants() {
     allWants = await fetchAllPages('wants', 'wants');
+    if (currentTab === 'wantlist') displayPage();
 }
 
 function displayPage() {
@@ -138,7 +131,6 @@ function toggleTab(tab) {
 
 document.addEventListener('DOMContentLoaded', async () => {
     await loadInitialCollection();
-    loadAllCollection();
     loadAllWants();
     toggleTab(currentTab);
 

@@ -1,4 +1,5 @@
 const DISCORD_ID = "264257846496067586";
+let discordTimer = null;
 
 const getDiscordStatus = async () => {
   const r = await fetch(`https://api.lanyard.rest/v1/users/${DISCORD_ID}`);
@@ -49,7 +50,9 @@ const getDiscordStatus = async () => {
     } else if (activity.assets?.large_image) {
       largeImage = activity.assets.large_image.startsWith("mp:")
         ? activity.assets.large_image.replace("mp:", "https://media.discordapp.net/")
-        : `https://cdn.discordapp.com/app-assets/${activity.application_id}/${activity.assets.large_image}.png`;
+        : activity.application_id
+          ? `https://cdn.discordapp.com/app-assets/${activity.application_id}/${activity.assets.large_image}.png`
+          : largeImage;
     }
 
     img.src = largeImage;
@@ -79,12 +82,12 @@ const getDiscordStatus = async () => {
 
     if (showPlayTime) {
       updatePlayTime();
-      clearInterval(window._discordTimer);
-      window._discordTimer = setInterval(updatePlayTime, 1000);
+      clearInterval(discordTimer);
+      discordTimer = setInterval(updatePlayTime, 1000);
     } else {
       subtitle.innerText = activity.details || "";
       playTimeEl.innerText = "";
-      clearInterval(window._discordTimer);
+      clearInterval(discordTimer);
     }
 
     block.style.display = "block";
