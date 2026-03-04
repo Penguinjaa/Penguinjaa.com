@@ -39,3 +39,7 @@
     --blog-title: #4e6068;
 
 }
+#home-character {
+    background-image: url('/images/assets/emomiku.png');
+    height: 100px;
+}

@@ -1,172 +1,151 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- // THEMES // -->
-    <link id="theme1" rel="stylesheet" href="/themes/neotokyo.css">
-    <link id="theme2" rel="stylesheet" href="/themes/monochrome.css" disabled>
-    <link id="theme3" rel="stylesheet" href="/themes/universecity.css" disabled>
-    <link id="theme4" rel="stylesheet" href="/themes/miku.css" disabled>
-    <!-- // IMPORTS // -->
-    <link href="/style.css" rel="stylesheet">
-    <script src="/assets/themes.js" async></script>
-    <script src="/assets/marquee.js" defer></script>
-    <script src="log.js" async></script>
-    <!-- // INFO // -->
-    <link href="/assets/favicon.ico" rel="icon">
-    <title>MEDIA LOG // PENGUINJAA.COM</title>
-    <meta name="description" content="penguinjaa's digital media log">
-    <meta content="#a4749a" data-react-helmet="true" name="theme-color"/>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="MEDIA LOG // PENGUINJAA"/>
-    <meta property="og:description" content="penguinjaa's digital media log"/>
-    <meta property="og:url" content="https://penguinjaa.com/medialog"/>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- // THEMES // -->
+<link href="/themes/neotokyo.css" id="theme1" rel="stylesheet"/>
+<link disabled="" href="/themes/monochrome.css" id="theme2" rel="stylesheet"/>
+<link disabled="" href="/themes/universecity.css" id="theme3" rel="stylesheet"/>
+<link disabled="" href="/themes/miku.css" id="theme4" rel="stylesheet"/>
+<!-- // IMPORTS // -->
+<link href="/style.css" rel="stylesheet"/>
+<script async="" src="/assets/themes.js"></script>
+<script defer="" src="/assets/marquee.js"></script>
+<script defer="" src="log.js"></script>
+<!-- // INFO // -->
+<link href="/assets/favicon.ico" rel="icon"/>
+<title>MEDIA LOG // PENGUINJAA.COM</title>
+<meta content="penguinjaa's digital media log" name="description"/>
+<meta content="#a4749a" data-react-helmet="true" name="theme-color">
+<meta content="website" property="og:type"/>
+<meta content="MEDIA LOG // PENGUINJAA" property="og:title">
+<meta content="penguinjaa's digital media log" property="og:description">
+<meta content="https://penguinjaa.com/medialog" property="og:url">
+<style>
         #entries {
             width: 100%;
             scrollbar-width: none;
             scroll-behavior: smooth;
         }
-        #movie, #album, #others {
-            background: var(--blog-header);
-            margin: 10px 0 0 -25px !important;
-            padding: 0 0 5px 25px;
-        }
-        #movies, #music, #other {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 15px;
-        }
-        .movie-container, .album-container, .other-container {
-            width: 130px;
-            text-align: center;
-            position: relative;
-            padding: 0 0 10px 0;
-        }
-        .movie-container img, .other-container img {
-            height: 200px;
-            width: auto;
-            max-width: 100%;
-            object-fit: contain;
-        }
-        .album-container img {
-            width: 150px;
-            max-width: 100%;
-            object-fit: contain;
-        }
-        .movie-container h2, .album-container h2, .other-container h2 {
-            font-size: 1.2em;
-            color: var(--h2-color);
-        }
-        .movie-container h3, .album-container h3, .other-container h3 {
-            font-size: 1em;
-        }
-        .movie-container p {
-            display: none;
-        }
-        .cover {float: left; margin-right: 15px;}
-        .ratedate {display: flex; width: 100%; justify-content: space-evenly; color: var(--p-color); padding: 3px 0;}
-        .rating {color: var(--i-color);}
-        .date {color: var(--h3-color); font-size: 1em;}
         #tab-content {
             padding-top: 10px;
             overflow-y: scroll;
             max-height: 55vh;
         }
-        .tab-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .tab-hidden {
-            display: none !important;
-        }
-        #media-header {
-            width: 100%;
-        }
-        #media-info {
-            padding: 5px;
-        }
+        /* --- TAB NAV --- */
         #media-tabs {
             display: flex;
             justify-content: center;
             gap: 25px;
+            position: relative;
         }
-        #media-tabs button {
+        #media-tabs a {
+            position: absolute;
+            left: 0;
+        }
+        .media-tab {
             font-family: content;
             background: none;
             border: none;
-            margin: 0;
+            cursor: pointer;
+            opacity: 0.4;
+            transition: opacity 0.15s;
         }
-        .media-tab button h1 {
-            margin: 0;
-            padding: 0 !important;
-        }
-        .focused-entry {
-            width: 100%;
+        .media-tab h1 { margin: 0; padding: 0 !important; }
+        .tab-section {
             display: flex;
-            height: auto;
-            min-height: 210px;
-            padding-bottom: 3px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+            padding: 10px 0;
         }
-        .focused-entry img {
-            max-width: 150px;
-            object-position: top;
+        .entry {
+            width: 130px;
+            text-align: center;
+            padding-bottom: 10px;
         }
-        .focused-entry h2 {
-            background: var(--blog-header);
-            padding: 0 0 7px 15px;
-            text-align: left;
-        }
-        .focused-entry p {
-            display: block;
-            text-align: left;
-        }
-        .focused-entry h5 {
-            text-align: left;
-        }
-        .focused-entry .ratedate {
-            justify-content: space-between;
+        .entry img {
+            height: 200px;
             width: auto;
+            max-width: 100%;
+            object-fit: contain;
         }
-        .focused-entry .movie-container img, .focused-entry .other-container img {
-            height: auto !important;
+        .entry.album img {
+            width: 150px;
+            height: auto;
         }
-        .entry.focused-entry, .focused-entry .entry-info {
-            width: 100%;
-            padding-top: 10px;
+        .entry h2 {
+            font-size: 1.2em;
+            color: var(--h2-color);
+            margin: 4px 0 2px;
         }
-        #movies:has(.focused-entry), #music:has(.focused-entry), #other:has(.focused-entry) {
-            gap: 0;
+        .entry h5 {
+            margin: 0 0 2px;
+            color: var(--p-color);
         }
-        .review-button {
+        .ratedate {
+            display: flex;
+            justify-content: space-evenly;
+            color: var(--p-color);
+            padding: 3px 0;
+            font-size: 0.9em;
+        }
+        .rating { color: var(--i-color); }
+        .date   { color: var(--h3-color); }
+        /* --- REVIEW via <details> --- */
+        details { text-align: center; margin-top: 4px; }
+        details summary {
             font-family: "content";
             font-weight: 900;
             font-size: 1.1em;
             color: var(--h3-color);
-            background: none;
-            border: none;
             cursor: pointer;
+            list-style: none;
         }
-        #view-toggle-buttons button {
-            background: none;
-            border: none;
-            margin-right: 10px;
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: " [REVIEW]"; }
+        details[open] summary::after { content: " [CLOSE]"; }
+        details[open] { text-align: left; display: flex; flex-direction: column; }
+        details[open] summary { order: 999; margin-top: 8px; text-align: left; }
+        details p {
+            margin: 6px 0 0;
+            font-size: 0.95em;
         }
-        .svg-fill {
-            fill: var(--h2-color);
-        }
-        .no-review {
-            color: #aaaaaa;
+        /* --- FAVORITE TRACKS (albums) --- */
+        .fav-tracks {
             font-style: italic;
+            font-size: 0.9em;
+            color: var(--p-color);
+            margin-top: 4px;
+        }
+        /* --- EXPANDED ENTRY --- */
+        .tab-section:has(details[open]) .entry:has(details[open]) {
+            flex-basis: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .tab-section:has(details[open]) .entry:has(details[open]) img {
+            width: 120px;
+            height: auto;
+            flex-shrink: 0;
+        }
+        .tab-section:has(details[open]) .entry:has(details[open]) .entry-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            text-align: left;
+        }
+        .tab-section:has(details[open]) .entry:has(details[open]) .ratedate {
+            justify-content: flex-start;
+            gap: 15px;
         }
         @media screen and (max-width:1000px){
-            #media-tabs {
-                flex-direction: column;
-                gap: 0;
-            }
+            #media-tabs { flex-direction: column; gap: 0; }
         }
     </style>
 </head>
@@ -175,75 +154,1687 @@
         <div id="header">
             <div id="headerimg">
                 <div id="theme-buttons">
-                    <button onclick="setTheme('NEO-TOKYO')" data-theme="neo-tokyo" data-theme-name="NEO-TOKYO"></button>
-                    <button onclick="setTheme('UNIVERSE CITY')" data-theme="universe-city" data-theme-name="UNIVERSE CITY"></button>
-                    <button onclick="setTheme('EMOLESBIAN')" data-theme="emo-lesbian" data-theme-name="EMOLESBIAN!"></button>
-                    <button onclick="setTheme('FANCY THAT')" data-theme="fancy-that" data-theme-name="FANCY THAT"></button>
-                    <button onclick="setTheme('DOWNTOWN')" data-theme="downtown" data-theme-name="DOWNTOWN"></button>
-                    <button onclick="setTheme('MONOCHROME')" data-theme="monochrome" data-theme-name="MONOCHROME"></button>
-                </div>                
+                    <button data-theme="neo-tokyo" data-theme-name="NEO-TOKYO" onclick="setTheme('NEO-TOKYO')"></button>
+                    <button data-theme="universe-city" data-theme-name="UNIVERSE CITY" onclick="setTheme('UNIVERSE CITY')"></button>
+                    <button data-theme="emo-lesbian" data-theme-name="EMOLESBIAN!" onclick="setTheme('EMOLESBIAN')"></button>
+                    <button data-theme="fancy-that" data-theme-name="FANCY THAT" onclick="setTheme('FANCY THAT')"></button>
+                    <button data-theme="downtown" data-theme-name="DOWNTOWN" onclick="setTheme('DOWNTOWN')"></button>
+                    <button data-theme="monochrome" data-theme-name="MONOCHROME" onclick="setTheme('MONOCHROME')"></button>
+                </div>
             </div>
             <div id="head-marquee">
                 <marquee scrollamount="7">
                     <h3 id="top-marquee">loading...</h3>
                 </marquee>
-            </div>                     
+            </div>
         </div>
         <div id="body">
-            <div class="left-column">
-                <div class="container" style="margin-bottom: 0; overflow-y: hidden">
-                    <div class="container-title">
-                        <h1>LINKS</h1>
-                    </div>
-                    <div class="container-content" style="height: 60vh; padding: 0 10px;">
-                        <span><img src="/assets/icons/home.png"><h3><a href="/">HOME</a></h3></span>
-                        <span><img src="/assets/icons/vinyls.png"><h3><a href="/vinyls">VINYLS</a></h3></span>
-                        <span><img src="/assets/icons/journal2.png"><h3><a href="/journal">JOURNAL</a></h3></span>
-                        <span><img src="/assets/icons/blog.png"><h3><a href="/blog">BLOG</a></h3></span>
-                        <span><img src="/assets/icons/scrapbook2.png"><h3><a href="/scrapbook">SCRAPBOOK</a></h3></span>
-                    </div>
-                </div>
-            </div>
             <div class="main-column" style="width: 100%; margin: 0;">
-                <div class="container"> 
+                <div class="container">
                     <div class="container-title" style="display: flex; justify-content: space-between; max-height: 40px;">
                         <h1>MEDIA LOG</h1>
-                        <div id="view-toggle-buttons" style="display: flex; justify-content: center;">
-                            <button id="btn-list-view" class="view-toggle" aria-label="List view">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="3" y="4" width="18" height="3" class="svg-fill"/>
-                                <rect x="3" y="11" width="18" height="3" class="svg-fill"/>
-                                <rect x="3" y="18" width="18" height="3" class="svg-fill"/>
-                            </svg>
-                            </button>
-                            <button id="btn-grid-view" class="view-toggle" aria-label="Grid view">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="3" y="3" width="7" height="7" class="svg-fill"/>
-                                <rect x="14" y="3" width="7" height="7" class="svg-fill"/>
-                                <rect x="3" y="14" width="7" height="7" class="svg-fill"/>
-                                <rect x="14" y="14" width="7" height="7" class="svg-fill"/>
-                            </svg>
-                            </button>
-                        </div>
                     </div>
                     <div class="container-content" style="padding: 0 10px;">
                         <div id="entries">
                             <div id="media-header">
-                                <div id="media-info" style="position: relative;">
+                                <div style="position: relative;">
                                     <div id="media-tabs">
-                                        <a href="/" style="position: absolute; left: 0;"><button class="media-tab"><h1>< HOME</h1></button></a>
-                                        <button class="media-tab" onclick="showTab('movies')" data-tab="movies"><h1>[MOVIES]</h1></button>
-                                        <button class="media-tab" onclick="showTab('music')" data-tab="music"><h1>[MUSIC]</h1></button>
-                                        <button class="media-tab" onclick="showTab('other')" data-tab="other"><h1>[OTHER]</h1></button>
+                                        <a href="/"><button class="media-tab"><h1>&lt; HOME</h1></button></a>
+                                        <button class="media-tab" data-tab="movies" onclick="showTab('movies')"><h1>[MOVIES]</h1></button>
+                                        <button class="media-tab" data-tab="music" onclick="showTab('music')"><h1>[MUSIC]</h1></button>
+                                        <button class="media-tab" data-tab="games" onclick="showTab('games')"><h1>[GAMES]</h1></button>
+                                        <button class="media-tab" data-tab="shows" onclick="showTab('shows')"><h1>[SHOWS]</h1></button>
+                                        <button class="media-tab" data-tab="manga" onclick="showTab('manga')"><h1>[MANGA]</h1></button>
                                     </div>
                                 </div>
-                                <hr style="margin: 0;">
+                                <hr style="margin: 0;"/>
                             </div>
                             <div id="tab-content">
-                                <p>Welcome to the <i>Media Log</i>. Browse movies, albums, and other entries I've reviewed. and by review i mean jot down my initial thoughts that may or may not be interesting whatsoever. this serves more as a personal log than a review or recommendation page, but i encourage you to check anything i rate highly out!!</p>
-                                <div id="movies" class="tab-section"></div>
-                                <div id="music" class="tab-section"></div>
-                                <div id="other" class="tab-section"></div>
+                                <p>personal media log. not every movie or album, just stuff i actually wanna yap about. for everything else check my <a href="https://letterboxd.com" target="_blank">letterboxd</a>.</p>
+                                <!-- ==================== MOVIES ==================== -->
+                                <div class="tab-section" id="movies">
+                                    <div class="entry">
+                                        <img src="images/movies/tetsuo_the_iron_man.jpg" alt="Tetsuo: The Iron Man">
+                                        <div class="entry-info">
+                                            <h2>Tetsuo: The Iron Man (1989)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">12.18.25</span>
+                                                <span class="rating">92/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>just one of the coolest movies ive ever seen visually.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/kill_bill_the_whole_bloody_affair.jpg" alt="Kill Bill: The Whole Bloody Affair">
+                                        <div class="entry-info">
+                                            <h2>Kill Bill: The Whole Bloody Affair (2011)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">12.7.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>re-released in theaters! 2nd fav movie ever wow</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/poetic_justice.jpg" alt="Poetic Justice">
+                                        <div class="entry-info">
+                                            <h2>Poetic Justice (1993)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">11.23.25</span>
+                                                <span class="rating">88/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this movie is so sweet i really liked it!!! ending was very cute. someone needs to check on chicago though i think he is dead why was he just never heard from again</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/maborosi.jpg" alt="Maborosi">
+                                        <div class="entry-info">
+                                            <h2>Maborosi (1995)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">11.1.25</span>
+                                                <span class="rating">83/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>Im glad i chose to watch this right now, was very much needed!!! Its been a bit since i cried to a movie. it freaking sucks when someone does something inexplicable and you are left to deal with that on your own, i like how this movie portrayed that feeling</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/a_nightmare_on_elm_street.jpg" alt="A Nightmare on Elm Street">
+                                        <div class="entry-info">
+                                            <h2>A Nightmare on Elm Street (1984)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.28.25</span>
+                                                <span class="rating">78/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>absolutely love the concept and nancy but oh my god why is every single other character in this so stupid. nancys mom should have just believed her after she had the hat it doesnt make any sense. if the other characters were a little less dense this prob wouldve been a 5</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/scream.jpg" alt="Scream">
+                                        <div class="entry-info">
+                                            <h2>Scream (1996)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.22.25</span>
+                                                <span class="rating">98/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i think this is my favorite traditional killer horror movie ive seen so far!!! ghostface is such a silly little guy and all of the twists and turns make this such a fun ride</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/weapons.jpg" alt="Weapons">
+                                        <div class="entry-info">
+                                            <h2>Weapons (2025)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.21.25</span>
+                                                <span class="rating">91/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i was not expecting this to be this good wow!!! absolutely hated the main teacher lady though omg. the effects are really good and i love the way it showed everyones perspective before reconvening at the end</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/the_silence_of_the_lambs.jpg" alt="The Silence of the Lambs">
+                                        <div class="entry-info">
+                                            <h2>The Silence of the Lambs (1991)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.19.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>This is one of the best movies ive ever darn seen!!! All the twists and turns had me GRIPPED!!! All of the ideas are just so good wowowowowow<br><br>And the scene with the night vision and hes following her and its in his perspective is so good!!!! AHHHHH!!!!</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/house.jpg" alt="House">
+                                        <div class="entry-info">
+                                            <h2>House (1977)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.8.25</span>
+                                                <span class="rating">96/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i did not expect this to be like this at all holy cow!!! the editing is so silly and all the music is so good. i actually already want to rewatch it and base my entire personality on it wowowowowow</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/blue_velvet.jpg" alt="Blue Velvet">
+                                        <div class="entry-info">
+                                            <h2>Blue Velvet (1986)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">9.30.25</span>
+                                                <span class="rating">86/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>didnt really understand the deeper meaning of much, but i can tell its there. definitely gonna give this another watch sometime. the core plot was really good and entertaining though. been thinking about it a lot since watching for some reason</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/signs.jpg" alt="Signs">
+                                        <div class="entry-info">
+                                            <h2>Signs (2002)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">9.18.25</span>
+                                                <span class="rating">8/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this movie just pissed me off man why would you make an alien movie and show an alien for less than a minute??? horrible cringe terrible christian family movie disguised as an alien movie i hate you all</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/videodrome.jpg" alt="Videodrome">
+                                        <div class="entry-info">
+                                            <h2>Videodrome (1983)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">9.15.25</span>
+                                                <span class="rating">78/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>love cronenbergs practical effects like always, and touches on very gross stuff. whole time i was watching i was like hmmm i think kanye would like this movie</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/war_of_the_worlds.jpg" alt="War of the Worlds">
+                                        <div class="entry-info">
+                                            <h2>War of the Worlds (2025)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.29.25</span>
+                                                <span class="rating">14/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this is the best movie ive ever seen. only rated this highly cause it might just be the most fun bad movie to watch with friends</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/2001_a_space_odyssey.jpg" alt="2001: A Space Odyssey">
+                                        <div class="entry-info">
+                                            <h2>2001: A Space Odyssey (1968)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.13.25</span>
+                                                <span class="rating">67/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>I dont fully know what everything means here, but atmospherically this is really cool.<br><br>I do understand the use of tools turning on humans or whatever with the bone killing another monkey and the computer turning on them, but i am lost on the ending and the baby.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/still_walking.jpg" alt="Still Walking">
+                                        <div class="entry-info">
+                                            <h2>Still Walking (2008)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.13.25</span>
+                                                <span class="rating">83/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>such a bittersweet movie, i love the mom. this made me want to be old for some reason</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/roujin_z.jpg" alt="Roujin Z">
+                                        <div class="entry-info">
+                                            <h2>Roujin Z (1991)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.11.25</span>
+                                                <span class="rating">88/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>This movie is so silly i love it man!! Got lots of giggle out of me<br><br>My dad walked in right when the old guy pulls his pants down for no reason so thats cool<br><br>One of my favorite parts of akira was when tetsuo's metal hand puts wires all over the seat in the stadium and this is full of stuff like that and i quite enjoyed that.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/tron.jpg" alt="Tron">
+                                        <div class="entry-info">
+                                            <h2>Tron (1982)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.10.25</span>
+                                                <span class="rating">92/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>ive had a poster of this movie in my room for over a year despite never having watched it, which is kinda funny but i knew id like it just didn't get to it until now. but this was actually cooler than i thought idk the vibes are just really good and i love all the graphics its just so awesome.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/ghost_in_the_shell_2_innocence.jpg" alt="Ghost in the Shell 2: Innocence">
+                                        <div class="entry-info">
+                                            <h2>Ghost in the Shell 2: Innocence (2004)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.3.25</span>
+                                                <span class="rating">32/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>What happened man why is this so bad and why is this is high rated??? The beginning and the last 25ish minutes are good but everything in the middle is so terrible oh my god!!!! It actually feels like this was made by a redditor that jammed it with a million quotes to make it seem deep and intellectual.<br><br>To be clear the concept itself is cool but the delivery of that concept is so terribly done and makes this a drag.<br><br>Also the 3d is really ugly they shouldve just stuck to 2d but its 2004 so i can forgive it</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/pulp_fiction.jpg" alt="Pulp Fiction">
+                                        <div class="entry-info">
+                                            <h2>Pulp Fiction (1994)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">6.1.25</span>
+                                                <span class="rating">89/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i love jules so much he was aura farming the whole time. the way the segments are out of chronological order is really cool and its really fun cause you feel a little confused for a bit at the beginning then as you notice little things your like oh wait this is like before that part happened and it slowly reveals how all these completely separate characters are connected</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/killbill2.jpg" alt="Kill Bill Vol. 2">
+                                        <div class="entry-info">
+                                            <h2>Kill Bill Vol. 2 (2004)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">3.22.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>both of these are very very good movies it is funny hearing those sound effects with how iconic they are now</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/killbill1.jpg" alt="Kill Bill Vol. 1">
+                                        <div class="entry-info">
+                                            <h2>Kill Bill Vol. 1 (2003)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">3.22.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>her ripping that guys eye out then the movie going black and white for a while is one of the coolest things ive ever seen</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/anora.jpg" alt="Anora">
+                                        <div class="entry-info">
+                                            <h2>Anora (2024)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">3.10.25</span>
+                                                <span class="rating">63/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>was i supposed to like igor at the end cause he still sucks i dont get it!!!! pretty good movie just confused on why people are happy with the ending and like ivan hes kinda horrible?? also had a thought during the first 30ish mins if ivan was replaced with mclovin i would love that okay</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/graveofthefireflies.jpg" alt="Grave of the Fireflies">
+                                        <div class="entry-info">
+                                            <h2>Grave of the Fireflies (1988)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">3.7.25</span>
+                                                <span class="rating">98/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this completely surprised me!! i feel like i dont hear about it as much compared to most ghibli movies but this is one of my favorites. maybe the most upset a movie has made me wowowow</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/americanzombieland.jpg" alt="American Zombieland">
+                                        <div class="entry-info">
+                                            <h2>American Zombieland (2020)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">3.6.25</span>
+                                                <span class="rating">9/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>absolutely terrible movie with no redeeming qualities whatsoever other than it being fun to laugh at. found this cause it was recorded in my friends hometown so we watched it together and yeah it sucks. main character has the least charisma of any person ever maybe</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/past-lives.jpg" alt="Past Lives">
+                                        <div class="entry-info">
+                                            <h2>Past Lives (2023)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">2.7.25</span>
+                                                <span class="rating">61/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>idk if im stupid i did not really understand the point of all this??? like i think the point is she did what was right despite liking the korean guy more but idk it didnt really move me how i saw it did for other people. i will say the korean subtitles when shes talking to korean guy and english when talking to american guy is really cool!!!!</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/babydriver.jpg" alt="Baby Driver">
+                                        <div class="entry-info">
+                                            <h2>Baby Driver (2017)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">1.4.25</span>
+                                                <span class="rating">77/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>why on earth did she choose to do all this for baby when she knew him for two days anyone know ?! really really loved the pink ipod scene where he says now i am is really funny</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/bladerunner2049.jpg" alt="Blade Runner 2049">
+                                        <div class="entry-info">
+                                            <h2>Blade Runner 2049 (2017)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">1.10.25</span>
+                                                <span class="rating">97/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this was incredible holy wowie!! i think this is just the most visually stunning movie ive seen imo it feels like every five minutes i was geeking about how good a shot looked. the part with the hologram girlfriend phasing in and out of the real girl was super cool, the room that had the water ripple shadows in it was awesome, and the city itself looked great. they did a great job with the whole aesthetic, a lot of times these futuristic aesthetics go overboard but this was a good amount.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/bladerunner.jpg" alt="Blade Runner">
+                                        <div class="entry-info">
+                                            <h2>Blade Runner (1982)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">1.4.25</span>
+                                                <span class="rating">82/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>expected to like this more than i did but still enjoyed!! what stuck out most to me was the audio i really liked the audio. its super quiet most of the time with lower key music and just is super atmospheric. the visuals are also really cool i always love retrofuturistic stuff of course</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/paprika.jpg" alt="Paprika">
+                                        <div class="entry-info">
+                                            <h2>Paprika (2006)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">12.6.24</span>
+                                                <span class="rating">97/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>holy wowowowow i went into this movie blind i didnt even know it was made by the same people that did <i>perfect blue</i> and i really really loved perfect blue. this movie does a lot of the stuff i also loved about perfect blue, <i>creative editing</i>, <i>cool transitions</i>, and <span class='spoiler'>makes you question what you really know about the characters.</span> there were a lot of moments where they did something cool and i just smiled while watching, and honestly this might be my favorite movie in terms of <i>creative choices</i> there were so many moments that blew me away.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/eternal-sunshine-spotless-mind.jpg" alt="Eternal Sunshine of the Spotless Mind">
+                                        <div class="entry-info">
+                                            <h2>Eternal Sunshine of the Spotless Mind (2004)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">11.22.24</span>
+                                                <span class="rating">93/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>rewatch for goofin movie night!! super good i love the editing and transitions. love the details like <span class='spoiler'>the dent in the car being from clementine drunk driving</span> and the color leaving the books in the library. jim carrey also just the goat w rizz fr</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/thefly.jpg" alt="The Fly">
+                                        <div class="entry-info">
+                                            <h2>The Fly (1986)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.25.24</span>
+                                                <span class="rating">94/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this might be my favorite movie i watched this october, its so cool. surprised i dont hear more about it</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/theshining.jpg" alt="The Shining">
+                                        <div class="entry-info">
+                                            <h2>The Shining (1980)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.25.24</span>
+                                                <span class="rating">87/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i liked when he flashed his paws at her and said nyah!</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/thething.jpg" alt="The Thing">
+                                        <div class="entry-info">
+                                            <h2>The Thing (1986)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.18.24</span>
+                                                <span class="rating">91/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>practical effects are top tier of course. i love the part where his chest opens up that was awesome. also just the first reveal of the thing was really gross and i love that</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/ring.jpg" alt="Ring">
+                                        <div class="entry-info">
+                                            <h2>Ring (1998)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.15.24</span>
+                                                <span class="rating">87/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i really enjoyed this, pretty spooky and her fingernails are gross so even spookier. the part at the bottom of the well rules so hard</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/fnaf.jpg" alt="Five Nights At Freddys">
+                                        <div class="entry-info">
+                                            <h2>Five Nights At Freddys (2023)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.11.24</span>
+                                                <span class="rating">28/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>why is springtrap a redditor. i was disappointed with this movie and i went into it expecting it to be bad. i cant believe they had 2 chances for a spooky moment, first one being bonnie leaving the closet and second one being foxy running down the hall, but instead they made them happen out of frame. unfortunate truly</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/perfect-blue.jpg" alt="Perfect Blue">
+                                        <div class="entry-info">
+                                            <h2>Perfect Blue (1997)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.3.24</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>perfect blue is a perfect 100! xD!! seriously though what an incredible movie i think this was made for me in particular. it has really cool <i>editing</i> and a plot that makes you think about what you know and if <span class='spoiler'>any of it was real</span>. the transitions also were really cool wowowowowow i love this movie!!!</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/trumanshow.jpg" alt="The Truman Show">
+                                        <div class="entry-info">
+                                            <h2>The Truman Show (1998)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">9.27.24</span>
+                                                <span class="rating">95/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>in case i dont see ya. i love movies like this where you start to pick up on little things as it goes on and you learn more and more by the environment. also went into this not expecting the show element of it being revealed so soon, but i guess its in the title so maybe im stupid</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/castleinthesky.jpg" alt="Castle In The Sky">
+                                        <div class="entry-info">
+                                            <h2>Castle In The Sky (1986)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">9.13.24</span>
+                                                <span class="rating">88/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i loved this movie but i loved the robots more than anything in this world wow they are awesome. just these like <i>earthbound esque</i> robots and they are all covered in moss wow its beautiful</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/fightclub.jpg" alt="Fight Club">
+                                        <div class="entry-info">
+                                            <h2>Fight Club (1999)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">9.7.24</span>
+                                                <span class="rating">98/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>another movie with great editing and just everything i love in the world. i love all the <span class='spoiler'>hints to them being the same person scattered all over</span>. this is a pretty iconic movie but luckily i had never heard about what actually happens in it so i had a great first watch experience. definitely need to watch it again!!</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/animalcrossing.jpg" alt="Animal Crossing: The Movie">
+                                        <div class="entry-info">
+                                            <h2>Animal Crossing: The Movie (2006)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.30.24</span>
+                                                <span class="rating">67/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>im the biggest animal crossing fan in the world and this movie is just so cute!! my main pfp is from it of course i love <i>sable</i>!!! but this really is not a good movie, but its really silly and fun. so if you like animal crossing you should watch it theres a lot of cute and funny moments. <span class='spoiler'>the part where Ai is crying about sally leaving then bianca laughs at her is funny, and the part where Yu fell down from the fossil and rosie ran away then he dies is also really funny</span></p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/twisters.jpg" alt="Twisters">
+                                        <div class="entry-info">
+                                            <h2>Twisters (2024)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.24.24</span>
+                                                <span class="rating">18/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i forgot movies could be this bad. dont have anything else to say</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/ex-machina.jpg" alt="Ex Machina">
+                                        <div class="entry-info">
+                                            <h2>Ex Machina (2015)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">6.28.24</span>
+                                                <span class="rating">90/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i liek robots. this movie rules so hard it exposes scifi nerds to women and not being turds to them wow i love it</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/civilwar.jpg" alt="Civil War">
+                                        <div class="entry-info">
+                                            <h2>Civil War (2024)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">6.1.24</span>
+                                                <span class="rating">16/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>the characters suck and developed weirdly. also they just threw random feel good moments in it and it kinda killed the vibes most of the time. some cool shots i enjoyed but other than that nothing redeems this to me</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/princess-mononoke.jpg" alt="Princess Mononoke">
+                                        <div class="entry-info">
+                                            <h2>Princess Mononoke (1997)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">3.15.24</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this might be my favorite ghibli movie its everything i love about ghibli and a pretty unique aesthetic compared to their other movies i think</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/eternal-sunshine-spotless-mind.jpg" alt="Eternal Sunshine of the Spotless Mind">
+                                        <div class="entry-info">
+                                            <h2>Eternal Sunshine of the Spotless Mind (2004)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">3.3.24</span>
+                                                <span class="rating">88/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>I'm watching this movie cause ariana grandes new album coming out tonight is named after it so i thought it would be fun to watch it before the album comes out. I didnt really expect to feel crazy about this movie but i really liked it. the shots and editing are really cool im a big fan of good or unique editing. also just the entire plot of the movie is really interesting i never felt bored! W movie tbh i quite liked it!</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/american-psycho.jpg" alt="American Psycho">
+                                        <div class="entry-info">
+                                            <h2>American Psycho (2000)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">3.1.24</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>one of my favorite movies, dont let the incel edits deter you its a great movie</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/eva3.jpg" alt="Evangelion: 3.0 You Can (Not) Redo">
+                                        <div class="entry-info">
+                                            <h2>Evangelion: 3.0 You Can (Not) Redo (2012)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">1.24.24</span>
+                                                <span class="rating">8/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p><i>PENGUINJAA EVANGELION RANT INCOMING!! BEWARE!!!</i> i honestly didnt really like this movie sorry sports fans. it gave me the same feeling you get from reboots of classic tv shows that completely miss the mark idk!! also the animation in this one is different and looks really weird i cant quite put my finger on it but the characters looks weird. they also use cgi too much and it looks goofy. there were some tropy lines as well like yelling <i>activate</i> when starting the ship or the eva was silly more of a nitpick but didnt like it regardless. there are still elements i like but overall not a massive fan.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/eva2.jpg" alt="Evangelion: 2.0 You Can (Not) Advance">
+                                        <div class="entry-info">
+                                            <h2>Evangelion: 2.0 You Can (Not) Advance (2009)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">1.18.24</span>
+                                                <span class="rating">73/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>changes it up a lot more from the anime, and is really epic!!! i liked the dynamic between shinji and rei more in this than the anime which is nice cause they are my 2 favorite characters. they introduced a new character that im not sure was necessary maybe she will do more in the next movie or maybe its just another girl for them to put in the marketing and get white people to watch it idk</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/eva1.jpg" alt="Evangelion: 1.0 You Are (Not) Alone">
+                                        <div class="entry-info">
+                                            <h2>Evangelion: 1.0 You Are (Not) Alone (2007)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">1.12.24</span>
+                                                <span class="rating">29/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>doesnt differ much from the anime and seems unnecessary, will have to watch the others but nothing special about this one in particular</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/movies/Ghostintheshellposter.jpg" alt="Ghost In The Shell">
+                                        <div class="entry-info">
+                                            <h2>Ghost In The Shell (1995)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">1.6.24</span>
+                                                <span class="rating">95/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>The aesthetics of this movie are so cool!!!! the city looks super cool its like a dark version of neo tokyo from akira and i love that!!</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ==================== MUSIC ==================== -->
+                                <div class="tab-section" id="music">
+                                    <div class="entry album">
+                                        <img src="images/albums/eusexua_afterglow_fka_twigs.jpg" alt="EUSEXUA Afterglow">
+                                        <div class="entry-info">
+                                            <h2>EUSEXUA Afterglow</h2>
+                                            <h5>FKA twigs</h5>
+                                            <div class="ratedate">
+                                                <span class="date">11.17.25</span>
+                                                <span class="rating">86/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>yes im listening to this before i listen to eusexua it has pinkpantheress on it okay leave me alone!!! its so so so so good tho i didnt know she made music like this, excited to check out eusexua maybe tonight even.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Sushi, Wild And Alone, Predictable Girl</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/revengeseekerz_jane_remover.jpg" alt="Revengeseekerz">
+                                        <div class="entry-info">
+                                            <h2>Revengeseekerz</h2>
+                                            <h5>Jane Remover</h5>
+                                            <div class="ratedate">
+                                                <span class="date">11.12.25</span>
+                                                <span class="rating">91/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>checking out all the features from the danny brown album part 2: this ones been on my to do list for a while. very very good, as expected!!! glad im doing it now instead of when it came out cause i feel i appreciate it more now than i would back then</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Professional Vengeance, Psychoboost, angels in camo</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/wallsocket_underscores.jpg" alt="Wallsocket">
+                                        <div class="entry-info">
+                                            <h2>Wallsocket</h2>
+                                            <h5>underscores</h5>
+                                            <div class="ratedate">
+                                                <span class="date">11.11.25</span>
+                                                <span class="rating">69/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>checking out all the features from the danny brown album part 1!!! i really like the vibe of underscores, might need to relisten or come back to this after checking out other albums cause i had higher expectations. but is a good listen and i liked every song</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Locals (Girls like us), Old money bitch</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/stardust_danny_brown.jpg" alt="Stardust">
+                                        <div class="entry-info">
+                                            <h2>Stardust</h2>
+                                            <h5>Danny Brown</h5>
+                                            <div class="ratedate">
+                                                <span class="date">11.7.25</span>
+                                                <span class="rating">96/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>ohmygodohmygodohmygoddddd!!!! i actually just love love love this. i enjoy danny brown, but havent fully appreciated him like a lot of people do, but this album really works for me. i love atrocity exhibition of course, but i never liked it as much as most people, i think this sound works much better for danny for me.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Book of Daniel, Copycats, What You See</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/brown_sugar_dangelo.jpg" alt="Brown Sugar">
+                                        <div class="entry-info">
+                                            <h2>Brown Sugar</h2>
+                                            <h5>D'Angelo</h5>
+                                            <div class="ratedate">
+                                                <span class="date">10.27.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>omg what an awesome album oh my godddd!!! listened on my walk and its fall rn so theres leaves all over and im on a trail in a foresty area and it just fit the vibe so much this just brought me so much joy. wow im actually in love with this album idk if its less popular than voodoo but i feel like i hear about that one more than this and idk why</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Brown Sugar, Me and Those Dreamin' Eyes of Mine</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/the_rise_and_fall_of_a_midwest_princess_chappell_roan.jpg" alt="The Rise and Fall of a Midwest Princess">
+                                        <div class="entry-info">
+                                            <h2>The Rise and Fall of a Midwest Princess</h2>
+                                            <h5>Chappell Roan</h5>
+                                            <div class="ratedate">
+                                                <span class="date">9.22.25</span>
+                                                <span class="rating">89/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>very fun album, this is my classic being way too late to a mega popular pop album, but ive been working on my lesbian playlist and needed hot to go in there.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Coffee, HOT TO GO!, After Midnight</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/lonely_at_the_top_joey_bada.jpg" alt="Lonely at the Top">
+                                        <div class="entry-info">
+                                            <h2>Lonely at the Top</h2>
+                                            <h5>Joey Bada$$</h5>
+                                            <div class="ratedate">
+                                                <span class="date">8.29.25</span>
+                                                <span class="rating">78/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>its pretty solid and better than a lot of his recent albums, but was hoping for more after all the buzz he made this year. im hearing this is a smaller project before a more complete album so im not being too harsh on it</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: SUPAFLEE, BK'S FINEST, UNDERWATER</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/god_does_like_ugly_jid.jpg" alt="God Does Like Ugly">
+                                        <div class="entry-info">
+                                            <h2>God Does Like Ugly</h2>
+                                            <h5>JID</h5>
+                                            <div class="ratedate">
+                                                <span class="date">8.8.25</span>
+                                                <span class="rating">73/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i knew he couldnt top the forever story, but still kinda sad how mediocre (by jid standards) some of these songs are. maybe will grow on me after a few listens, if it does i will update here.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Of Blue, YouUgly, Gz</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/vanisher_horizon_scraper_quadeca.jpg" alt="Vanisher, Horizon Scraper">
+                                        <div class="entry-info">
+                                            <h2>Vanisher, Horizon Scraper</h2>
+                                            <h5>Quadeca</h5>
+                                            <div class="ratedate">
+                                                <span class="date">7.25.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>I think instrumentally this is the most beautiful album ive ever listened to man its crazy where quadeca has gone. I was listening to him in middle school when he was a white youtube rapper doing ksi diss tracks, and now hes making me cry dude it's insane. His production just keeps getting better, I thought IDMTHY was crazy but this is like actual goat territory.<br><br>First off, the theming of this album is just so good and creates an incredibly unique soundscape, it just transports you into the boat with fog covering the ocean. The part on Casper where it sounds like its going in and out of the water is so cool, actually gives me goosebumps every time.<br><br>If you havent listened or if you have but havent seen the movie, you NEED to watch the movie it adds so much to the album.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: MONDAY, THUNDRRR, DANCING WITHOUT MOVING</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/dont_tap_the_glass_tyler_the_creator.jpg" alt="DON'T TAP THE GLASS">
+                                        <div class="entry-info">
+                                            <h2>DON'T TAP THE GLASS</h2>
+                                            <h5>Tyler, The Creator</h5>
+                                            <div class="ratedate">
+                                                <span class="date">7.21.25</span>
+                                                <span class="rating">93/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>Tyler's GNX and I love it for that!!!! realized i never reviewed it on here, so this is not my initial thoughts. replayed this so much since it came out i absolutely adore it</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Ring Ring Ring, Don't Tap That Glass/Tweakin'</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/let_god_sort_em_out_clipse.jpg" alt="Let God Sort Em Out">
+                                        <div class="entry-info">
+                                            <h2>Let God Sort Em Out</h2>
+                                            <h5>Clipse</h5>
+                                            <div class="ratedate">
+                                                <span class="date">7.11.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>have yet to listen to the original clipse projects, but ive been a pusha fan for a while now. really glad the so be it sample got cleared. malice for sure had the better performances on here generally, but both did great. pharrell also did incredible, the production is insane. this album feels like a perfect blend of what i love about that early 2000s type rap and incorporates some modern sounds to make this easily my favorite album of the year.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: The Birds Don't Sing, So Be It, Chains & Whips</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/goyard_ibn_said_ghais_guevara.jpg" alt="Goyard Ibn Said">
+                                        <div class="entry-info">
+                                            <h2>Goyard Ibn Said</h2>
+                                            <h5>Ghais Guevara</h5>
+                                            <div class="ratedate">
+                                                <span class="date">6.29.25</span>
+                                                <span class="rating">89/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>"The Old Guard Is Dead" was played at the intro of Kendrick's superbowl performance and ive been especially autistic about Kendrick lately!!! This album is actually incredible and is probably top 3 of the year for me. ive never heard of Ghais Guevara before, but im really liking the style. Gives me vibes of Lupe or Earl and i loooooove them so i think im gonna love this guy as i dive more into his discog.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: 4L, The Old Guard Is Dead, 3400</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/blush_kevin_abstract.jpg" alt="Blush">
+                                        <div class="entry-info">
+                                            <h2>Blush</h2>
+                                            <h5>Kevin Abstract</h5>
+                                            <div class="ratedate">
+                                                <span class="date">6.27.25</span>
+                                                <span class="rating">86/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>have yet to dive into kevins discog but the moment i saw quadecas involvement you know a white boy had to check it out. very very good i love that this album doesnt really have a massive presence from kevin himself, it feels like a bunch of people coming together just to make a great album.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Abandon Me, NOLA</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/tha_carter_vi_lil_wayne.jpg" alt="Tha Carter VI">
+                                        <div class="entry-info">
+                                            <h2>Tha Carter VI</h2>
+                                            <h5>Lil Wayne</h5>
+                                            <div class="ratedate">
+                                                <span class="date">6.7.25</span>
+                                                <span class="rating">18/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>really sad wayne put this out especially as a carter album its really really bad. peanuts 2 n elephant gets the most talk but i dont even think thats the worst one. also why is jelly roll on here, ruined what couldve been the best song on here</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Bells, Hip-Hop</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/alleyezonme2pac.jpg" alt="All Eyez on Me">
+                                        <div class="entry-info">
+                                            <h2>All Eyez on Me</h2>
+                                            <h5>2Pac</h5>
+                                            <div class="ratedate">
+                                                <span class="date">5.20.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>been saving this album for last since it is the most ubiquitous 2pac album and im glad i did, it is so so good. its crazy really no one was doing it like 2pac and still no one really has. this is a double album and both sides are better than most albums its insane.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: 2 of Amerikaz Most Wanted, Life Goes On</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/fancy_that_pinkpantheress.jpg" alt="Fancy That">
+                                        <div class="entry-info">
+                                            <h2>Fancy That</h2>
+                                            <h5>PinkPantheress</h5>
+                                            <div class="ratedate">
+                                                <span class="date">5.9.25</span>
+                                                <span class="rating">88/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>new pinkpantheress!!!!! she keeps evolving her sound pretty drastically across projects its really cool to see. i love all of the aesthetics surrounding this project like the plaid and the music videos its super cool despite her being br*tish.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Nice To Know You, Stateside, Girl Like Me</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/saddesttruth.jpg" alt="SADDEST TRUTH">
+                                        <div class="entry-info">
+                                            <h2>SADDEST TRUTH</h2>
+                                            <h5>KayCyy & sign crushes motorist</h5>
+                                            <div class="ratedate">
+                                                <span class="date">4.11.25</span>
+                                                <span class="rating">89/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>its been so long since kaycyy has dropped a project im so so so happy!!! i know hes been having issues with his label and thats why but its crazy ive been waiting for his album for like 4 years now and this isnt even the same album, so idk if that other one will ever come out. regardless, i love this album its so good and really atmospheric. kaycyy and scm really compliment eachother on here and ive been listening all week.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Make Sure You're Loved, My Heart Is, BRUISED</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/music.jpg" alt="MUSIC">
+                                        <div class="entry-info">
+                                            <h2>MUSIC</h2>
+                                            <h5>Playboi Carti</h5>
+                                            <div class="ratedate">
+                                                <span class="date">3.14.25</span>
+                                                <span class="rating">78/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>crazy that this actually came out but i think carti is the only case where im glad he released this as a bloated 25 track album. its been so long and hes not known for making the most thematic albums so im just happy to have a bunch of new music to listen to. and i didnt dislike any of the songs here so i love it.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: LIKE WHEEZY, GOOD CREDIT, CHARGE DEM HOES A FEE</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/mamasgun.jpg" alt="Mama's Gun">
+                                        <div class="entry-info">
+                                            <h2>Mama's Gun</h2>
+                                            <h5>Erykah Badu</h5>
+                                            <div class="ratedate">
+                                                <span class="date">2.16.25</span>
+                                                <span class="rating">93/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>in my rnb/soul era!!! this album is incredible ive been listening on repeat all week wow</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: A.D. 2000, Orange Moon, Kiss Me On My Neck</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/imaginaldisk.jpg" alt="Imaginal Disk">
+                                        <div class="entry-info">
+                                            <h2>Imaginal Disk</h2>
+                                            <h5>Magdalena Bay</h5>
+                                            <div class="ratedate">
+                                                <span class="date">12.20.24</span>
+                                                <span class="rating">96/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this album has gotten a lot of talk this year, and i wish i listened when everyone was saying to listen to it!! man this is such a good album i could cry. an interesting tidbit is the <i>Love Is Everywhere</i> instrumental is a more developed version of <i>running out of time</i> from Lil Yachtys album last year, i guess they produced or had a hand in producing that song which is really cool.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Cry For Me, Death & Romance, Love Is Everywhere</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/alligatorbites.jpg" alt="Alligator Bites Never Heal">
+                                        <div class="entry-info">
+                                            <h2>Alligator Bites Never Heal</h2>
+                                            <h5>Doechii</h5>
+                                            <div class="ratedate">
+                                                <span class="date">12.6.24</span>
+                                                <span class="rating">86/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this album made a lot of noise when it came out but just with how much music i listened to this year, wasnt able to get to it. had to fit it in before the end of the year though, and its so good!! <i>DENIAL IS A RIVER</i> is maybe one of my fav tracks this year, feels like something youd hear as a feature on a <i>DOOM</i> song but as a whole song and its perfect!!</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: DENIAL IS A RVIER, BOILED PEANUTS, BEVERLY HILLS</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/gnx.jpg" alt="GNX">
+                                        <div class="entry-info">
+                                            <h2>GNX</h2>
+                                            <h5>Kendrick Lamar</h5>
+                                            <div class="ratedate">
+                                                <span class="date">11.22.24</span>
+                                                <span class="rating">96/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>wow i cant believe he actually dropped. this year has been so legendary!!! he comes in so hot with <i>wacced out murals</i> and <i>squabble up</i> back to back thats crazy.. also really funny that the <span class='spoiler'>snippet from the NLU video was not the song called reincarnated</span> i got gobsmacked when squabble up came on. i also love all the goofier stuff kendrick does on here like screaming mustard on <i>tv off</i>.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: reincarnated, wacced out murals, squabble up</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/chromakopia.jpg" alt="CHROMAKOPIA">
+                                        <div class="entry-info">
+                                            <h2>CHROMAKOPIA</h2>
+                                            <h5>Tyler, The Creator</h5>
+                                            <div class="ratedate">
+                                                <span class="date">10.28.24</span>
+                                                <span class="rating">94/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this album was rolled out so perfectly i know a couple people that could take some notes.... i love tylers energy on this, and its awesome that hes being more vulnerable on some of these songs. a couple really heavy verses. for sure an aoty contender</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Darling I, Hey Jane, Take Your Mask Off</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/brat.jpg" alt="BRAT">
+                                        <div class="entry-info">
+                                            <h2>BRAT</h2>
+                                            <h5>Charli xcx</h5>
+                                            <div class="ratedate">
+                                                <span class="date">10.7.24</span>
+                                                <span class="rating">87/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>revisiting this as ive gotten more into this kinda music and i like it a whole lot more. old rating: 58</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Sympathy is a knife, So I, I might say something stupid</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/7dt.jpg" alt="The Don Killuminati: The 7 Day Theory">
+                                        <div class="entry-info">
+                                            <h2>The Don Killuminati: The 7 Day Theory</h2>
+                                            <h5>Makaveli (2Pac)</h5>
+                                            <div class="ratedate">
+                                                <span class="date">9.17.24</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>listening to this for the first time cause kendrick has been referencing bomb first and just this album in general a lot. out of the tupac albums ive listened to so far, i think this is my favorite. been coming back to this a lot.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Toss It Up, To Live And Die In L.A.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/vaudeville.jpg" alt="Vaudeville Villain">
+                                        <div class="entry-info">
+                                            <h2>Vaudeville Villain</h2>
+                                            <h5>Viktor Vaughn</h5>
+                                            <div class="ratedate">
+                                                <span class="date">8.21.24</span>
+                                                <span class="rating">98/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i think a lot of people dont really like the viktor vaughn albums? maybe its just the second one idk but i absolutely LOVE this album. its not my favorite doom album by any means but almost definitely my most listened to this year.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Let Me Watch, G.M.C., Vaudeville Villain</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/ildmlfy.jpg" alt="I LAY DOWN MY LIFE FOR YOU">
+                                        <div class="entry-info">
+                                            <h2>I LAY DOWN MY LIFE FOR YOU</h2>
+                                            <h5>JPEGMAFIA</h5>
+                                            <div class="ratedate">
+                                                <span class="date">8.1.24</span>
+                                                <span class="rating">98/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>oh my goddd the sample on either on or off the drugs is crazy!!!! this is 100% cracking top 3 of the year for me. production is top notch as always.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: it's dark and hell is hot, either on or off the drugs, JPEGULTRA!</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/kotms2.jpg" alt="King Of The Mischievous South Vol. 2">
+                                        <div class="entry-info">
+                                            <h2>King Of The Mischievous South Vol. 2</h2>
+                                            <h5>Denzel Curry</h5>
+                                            <div class="ratedate">
+                                                <span class="date">7.18.24</span>
+                                                <span class="rating">78/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>we need more albums like this. just a bunch of rappers rapping to rap. i like that its also platforming some smaller artists like mike dimes i love mike dimes. i will say im a little disappointed with project pat on sked, i prefer the single version that just has kenny mason.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: G'Z UP, SKED</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/badcameo.jpg" alt="Bad Cameo">
+                                        <div class="entry-info">
+                                            <h2>Bad Cameo</h2>
+                                            <h5>James Blake & Lil Yachty</h5>
+                                            <div class="ratedate">
+                                                <span class="date">6.28.24</span>
+                                                <span class="rating">80/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i loved lets start here a lot and im glad yachty is still doing that kinda stuff i think it works really well. never been a big james blake head but i liked him on here. great album to listen to late at night</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: In Grey, Transport Me, Midnight</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/hardstone.jpg" alt="HARDSTONE PSYCHO">
+                                        <div class="entry-info">
+                                            <h2>HARDSTONE PSYCHO</h2>
+                                            <h5>Don Toliver</h5>
+                                            <div class="ratedate">
+                                                <span class="date">6.13.24</span>
+                                                <span class="rating">92/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this is the don toliver album ive been waiting for!!!! hes really come into his own on this one. im so happy that people are liking this a lot too. life of a don might still be my favorite but this is what i would call THE don toliver album he really uses his talent in a refreshing way on here.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: HARDSTONE NATIONAL ANTHEM, GLOCK, BACKSTREETS</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/4yeo.jpg" alt="4 Your Eyez Only">
+                                        <div class="entry-info">
+                                            <h2>4 Your Eyez Only</h2>
+                                            <h5>J. Cole</h5>
+                                            <div class="ratedate">
+                                                <span class="date">6.7.24</span>
+                                                <span class="rating">93/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>im a little bit of a cole hater generally, but this is a near perfect album. its clear and concise its a really powerful and well put together project.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: 4 Your Eyez Only, For Whom The Bell Tolls</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/we-dont-trust-you.jpg" alt="WE DON'T TRUST YOU">
+                                        <div class="entry-info">
+                                            <h2>WE DON'T TRUST YOU</h2>
+                                            <h5>Future & Metro Boomin</h5>
+                                            <div class="ratedate">
+                                                <span class="date">3.22.24</span>
+                                                <span class="rating">94/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>dont even need to get into like that, kicked off the most memorable rap moment we will see in a long long time. aside from that, this is just a really great album. i havent listened to all of futures discography yet, but this is my fav album from him as of right now.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Like That, Type Sh*t, WTFYM</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/motm1.jpg" alt="Man On The Moon: The End Of Day">
+                                        <div class="entry-info">
+                                            <h2>Man On The Moon: The End Of Day</h2>
+                                            <h5>Kid Cudi</h5>
+                                            <div class="ratedate">
+                                                <span class="date">3.14.24</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>had an itch to give this a relisted, and glad i did. i appreciated all the tracks that i never came back to this time around. sometimes i forget kid cudi was incredible back in the day before he became what he is now.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Make Her Say, Up Up & Away</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/eternal-sunshine.jpg" alt="eternal sunshine">
+                                        <div class="entry-info">
+                                            <h2>eternal sunshine</h2>
+                                            <h5>Ariana Grande</h5>
+                                            <div class="ratedate">
+                                                <span class="date">3.7.24</span>
+                                                <span class="rating">98/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>omg she did it!!! this is her best album imo its writing is a step up from her other albums and production is top notch. its short and sweet, doesnt overstay its welcome. im so geeked</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Supernatural, Bye</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/blue-lips.jpg" alt="BLUE LIPS">
+                                        <div class="entry-info">
+                                            <h2>BLUE LIPS</h2>
+                                            <h5>ScHoolboy Q</h5>
+                                            <div class="ratedate">
+                                                <span class="date">3.2.24</span>
+                                                <span class="rating">98/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>serious album of the year conteder here. almost as good as oxymoron, schoolboy q is still at the top of his game its crazy. blue slides and thank god 4 me are just perfect songs</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Blue Slides, THank god 4 me</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/scrapyard.jpg" alt="Scrapyard">
+                                        <div class="entry-info">
+                                            <h2>Scrapyard</h2>
+                                            <h5>Quadeca</h5>
+                                            <div class="ratedate">
+                                                <span class="date">2.16.24</span>
+                                                <span class="rating">99/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>quadecas artistic development is kinda insane. i remember him dissing ksi on youtube now hes making albums of his throwaways that are perfect. ive listened to this album too many times to count i really really like it.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: TEXAS BLUE, EASIER, GUIDE DOG</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/Heaven-Knows.jpg" alt="Heaven Knows">
+                                        <div class="entry-info">
+                                            <h2>Heaven Knows</h2>
+                                            <h5>PinkPantheress</h5>
+                                            <div class="ratedate">
+                                                <span class="date">1.27.24</span>
+                                                <span class="rating">82/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>this does something for me i really like this album!! mosquito is such a good song. super excited to hear more from her</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: Mosquito, The aisle</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry album">
+                                        <img src="images/albums/michael.jpg" alt="MICHAEL">
+                                        <div class="entry-info">
+                                            <h2>MICHAEL</h2>
+                                            <h5>Killer Mike</h5>
+                                            <div class="ratedate">
+                                                <span class="date">2.6.24</span>
+                                                <span class="rating">89/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>ive been listening to scientists and engineers since i came out cause i love andre, but didnt get around to this album. after it won the grammy i was like ok ill listen to it. its a real shame its getting hated on just cause he beat travis cause this is a really great album and he deserved the grammy more than travis.</p>
+                                                <p class="fav-tracks">FAVORITE TRACKS: SCIENTISTS & ENGINEERS, SLUMMER</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ==================== GAMES ==================== -->
+                                <div class="tab-section" id="games" style="display:none;">
+                                    <div class="entry">
+                                        <img src="images/other/halflife.jpg" alt="Half-Life">
+                                        <div class="entry-info">
+                                            <h2>Half-Life (1998)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">11.24.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>first time playing this shockingly! obviously just one of the most important games of all time, even if u ignore the game itself, everything that sparked from this is just incredible. but the game itself is also very very good, especially as a fan of old games i had a very cozy time playing it. i love playing games like these in november its just really really nice. excited to play half-life 2, i might start that today even. for a game from 98, i never really got stuck or confused, it never felt too easy or too hard, and aesthetically its just super cool especially xen. i see why this is a game people replay a lot, i actually really really loved it.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/shipwrecked_64.jpg" alt="Shipwrecked 64">
+                                        <div class="entry-info">
+                                            <h2>Shipwrecked 64 (2024)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.30.25</span>
+                                                <span class="rating">55/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>prefacing this with saying i dont know all the lore, i have not seen a 6 hour video essay by some white guy about this game. but my friend wanted to play it for halloween and its not something id normally play, so i may not like some things that people that like these kinda games do. i think the element of it being part of an arg is cool, but theres some things i think they shouldnt have done that kinda alienated me as an unassuming player.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/pokmon_legends_z-a.jpg" alt="Pokémon Legends: Z-A">
+                                        <div class="entry-info">
+                                            <h2>Pokémon Legends: Z-A (2025)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.29.25</span>
+                                                <span class="rating">37/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>decided to play this since ive 100%ed DK and MKW so i needed a new switch 2 game. I'm a hater of new pokemon but this does feel like it does some things better than most recent pokemon games. i like the active battling, but i feel like you should have more control over the positioning of your pokemon.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/lilys_lil_video_shop.jpg" alt="Lily's Lil Video Shop!">
+                                        <div class="entry-info">
+                                            <h2>Lily's Lil Video Shop! (2025)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.22.25</span>
+                                                <span class="rating">36/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>cute lil game! i like the artwork. the gameplay is simple but very repetitive and got boring pretty quick. the scares are not very good and the story isnt interesting. but for a quick cheap lil game i dont hate it</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/celeste.jpg" alt="Celeste">
+                                        <div class="entry-info">
+                                            <h2>Celeste (2018)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.19.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>got it on sale hooray!!! this is the best 2d platformer (maybe platformer in general) ive ever played it is so satisfying and is difficult in a managable way. it can be hard but you dont feel in over your head and it doesnt feel like the devs are just trying to make you mad, its hard but not in detriment to the game. it also has a surprisingly cute story i didnt know going into it. the "boss fights" are also done very well, it feels like a terraria boss in a platformer.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/katamari_damacy.jpg" alt="Katamari Damacy">
+                                        <div class="entry-info">
+                                            <h2>Katamari Damacy (2004)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.16.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>ive been a glazer for this game for years at this point despite not playing it, the soundtrack and art style is just incredible. i took so long to play it because i put it on a pedestal in my head so i wanted to be in the right mood to play it, which is a very bad habit i have with lots of games. but now ive played it, and its just so fun and satisfying to play. you can just kinda turn your brain off and listen to lonely rolling star while you destroy a neighborhood and thats all ive ever wanted.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/donkey_kong_bananza.jpg" alt="Donkey Kong Bananza">
+                                        <div class="entry-info">
+                                            <h2>Donkey Kong Bananza (2025)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">7.24.25</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>Nintendo freaking did it dude this game is incredible!!!! This is easily top 10 nintendo ALL TIME it is their best platformer (even better than sm64) and most important of all it is SO CHARMING!!!! Oh my god i love this game it has that same specialness to it that gamecube era games have, I havent had this much childlike wonder in so long.<br><br>I was a little worried that the more disney esque elements would be cringe and weigh down the game, but I actually really liked it, it works and is cute. Obviously the destruction is really satisfying, you can tell they put a lot of time into perfecting the feel of it.<br><br><i>REAL SPOILERS AHEAD!!! FINAL WARNING!!!</i> The last parts of the game are super super cool I was soyfacing and pointing at the screen when K. Rool showed up.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/metroid_zero_mission.jpg" alt="Metroid: Zero Mission">
+                                        <div class="entry-info">
+                                            <h2>Metroid: Zero Mission (2004)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">4.23.25</span>
+                                                <span class="rating">89/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>first metroid game! played this on my 3ds and i really liked it. definitely had to look stuff up sometimes cause it can be easy to miss breakable blocks or whatever.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/majorasmask.jpg" alt="The Legend Of Zelda Majora's Mask">
+                                        <div class="entry-info">
+                                            <h2>The Legend Of Zelda Majora's Mask (2000)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">11.19.24</span>
+                                                <span class="rating">78/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>really cool atmosphere and when its good, its great. but it also has a lot weighing it down. theres a lot of tedious sections and lacks the polish and intuitiveness a lot of ocarina of time had. still really enjoyed it but had to look at a walkthrough a lot unfortunately. final boss was lots of fun and his second stage was really silly i laughed out loud</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/oot.jpg" alt="The Legend Of Zelda Ocarina of Time">
+                                        <div class="entry-info">
+                                            <h2>The Legend Of Zelda Ocarina of Time (1998)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">9.13.24</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>one of the best games ever made i dont think you need to hear that from me. 10/10 gameplay 10/10 soundtrack 10/10 atmosphere. and now especially with ship of harkinian you can do some other really cool stuff i love this game</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/bbt.jpg" alt="Battleblock Theater">
+                                        <div class="entry-info">
+                                            <h2>Battleblock Theater (2013)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.29.24</span>
+                                                <span class="rating">85/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>one of my favorite co-op games ever it has everything a good co-op game should. you can kill your friend or just lock in and finish levels as fast as possible its great</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/brc.jpg" alt="Bomb Rush Cyberfunk">
+                                        <div class="entry-info">
+                                            <h2>Bomb Rush Cyberfunk (2023)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.11.24</span>
+                                                <span class="rating">96/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>oh my GOD!!!!! if you havent heard of this game or havent played it please just buy it and play it. its so much fun and really well made. a lot of games that try to emulate the feeling you get from old games fail, but this hits the mark perfectly. and after you finish the game, theres some score achievements that are fun and most important of all this game has an incredible modding community.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/ttyd.jpg" alt="Paper Mario: The Thousand-Year Door">
+                                        <div class="entry-info">
+                                            <h2>Paper Mario: The Thousand-Year Door (2004)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">5.25.24</span>
+                                                <span class="rating">93/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>the best paper mario game by far and is a classic of my childhood. there arent really any sections i dislike aside from the pikmin type thing in the tree, but thats just cause of bad ai. glitzville and the train levels are some of the best things nintendo has ever produced.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/stardew.jpg" alt="Stardew Valley">
+                                        <div class="entry-info">
+                                            <h2>Stardew Valley (2016)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">4.12.24</span>
+                                                <span class="rating">100/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>just one of the best games of all time no contest. all made by one guy too is crazy. i dont think theres any other game that i can play with my friends and just have this fun of a time both in the gameplay and laughing with friends.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/leafgreen.jpg" alt="Pokémon LeafGreen">
+                                        <div class="entry-info">
+                                            <h2>Pokémon LeafGreen (2004)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">6.6.24</span>
+                                                <span class="rating">85/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>its a pokemon game you know whats good and bad about it. my finishing team was blastoise, nidoqueen, raichu, ninetales, primape, and parasect.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ==================== SHOWS ==================== -->
+                                <div id="shows" class="tab-section" style="display:none;">
+                                    <div class="entry">
+                                        <img src="images/other/dandadans1.jpg" alt="DAN DA DAN Season 1">
+                                        <div class="entry-info">
+                                            <h2>DAN DA DAN Season 1 (2024)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">12.21.24</span>
+                                                <span class="rating">74/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>This actually has a lot of neat concepts and is very well put together!!! It does get watered down for me by some of the <i>sillier stuff</i> that someone more tapped in with anime probably doesnt care about. But the elements i do like, i really like!! The <i>demon and alien</i> stuff is cool, and all of the creatures designs are great. Some standouts are <i>Episode 7</i> with <i>Acrobat Silky</i>, that episode was great!!!</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/cyberpunk.jpg" alt="Cyberpunk: Edgerunners">
+                                        <div class="entry-info">
+                                            <h2>Cyberpunk: Edgerunners (2022)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">11.20.24</span>
+                                                <span class="rating">67/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>i hate david sorry hes just such an unlikable protaganist. you never really have a moment that makes you want to like him. aside from that though, i didnt mind this show. i think lucy was a much better character than david and wish they either made her the main character or just made david a bit better.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/atla.jpg" alt="Avatar: The Last Airbender">
+                                        <div class="entry-info">
+                                            <h2>Avatar: The Last Airbender (2005)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">10.28.24</span>
+                                                <span class="rating">93/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>rewatch with my buddies!!! all time classic show zukos character development in particular is masterful wow i love it. iroh is my favorite character btw hes so zen and monklike and the prison part where he works out is awesome</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/beserk.jpg" alt="Berserk">
+                                        <div class="entry-info">
+                                            <h2>Berserk (1997)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">9.19.24</span>
+                                                <span class="rating">89/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>my buddy twin recommended this to me and i guess this is kinda my first time watching an anime to watch an anime instead of it falling into one of my interests. i really liked this!! the animation is really good and the characters are all great. i do wish i couldve gotten more from guts' story, so i might read the manga cause i hear its epic.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/genv.jpg" alt="Gen V">
+                                        <div class="entry-info">
+                                            <h2>Gen V (2024)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">8.6.24</span>
+                                                <span class="rating">64/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>the boys if it was worse</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/cowboybebop.jpg" alt="Cowboy Bebop">
+                                        <div class="entry-info">
+                                            <h2>Cowboy Bebop (1998)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">6.6.24</span>
+                                                <span class="rating">96/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>best soundtrack ever wowowoww and the show rules. watching stuff on my crt makes it a million times better too. although i would like to rewatch soon cause the app on my xbox i was using to watch it on my crt broke halfway through it and i had to take a break.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="entry">
+                                        <img src="images/other/jeenyuhs.jpg" alt="jeen-yuhs">
+                                        <div class="entry-info">
+                                            <h2>jeen-yuhs (2022)</h2>
+                                            <div class="ratedate">
+                                                <span class="date">5.30.24</span>
+                                                <span class="rating">72/100</span>
+                                            </div>
+                                            <details>
+                                                <summary></summary>
+                                                <p>first 2 episodes are awesome highly recommend even if you hate kanye. its truly inspirational. thrid episode needed something else to it, it lingered too much on the coodies personal life and the parts that did have kanye lacked substance.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ==================== MANGA ==================== -->
+                                <div class="tab-section" id="manga" style="display:none;">
+                                    <div class="entry">
+                                        <img src="images/manga/FILENAME.jpg" alt="TITLE">
+                                        <h2>TITLE</h2>
+                                        <div class="ratedate">
+                                            <span class="date">MM.DD.YY</span>
+                                            <span class="rating">RATING/100</span>
+                                        </div>
+                                        <details>
+                                            <summary></summary>
+                                            <p>REVIEW TEXT</p>
+                                        </details>
+                                    </div>
+                                    <p style="color: var(--p-color); font-style: italic;">entries coming soon...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -253,12 +1844,12 @@
     </div>
 </body>
 <footer style="text-align: center;">
-    <p style="margin: 0;">PENGUINJAA.COM V5.55 [C] 2022 - 2099</p>
-    <p style="margin: 0;">
-        <a href="https://discord.com/users/264257846496067586">CONTACT</a> | 
+<p style="margin: 0;">PENGUINJAA.COM V5.55 [C] 2022 - 2099</p>
+<p style="margin: 0;">
+<a href="https://discord.com/users/264257846496067586">CONTACT</a> | 
         <a href="/archive">ARCHIVE</a> |
         <a href="/sitemap">SITEMAP</a> |
         POWERED BY <a href="https://nekoweb.org/" target="_blank">NEKOWEB</a>
-    </p>
+</p>
 </footer>
 </html>

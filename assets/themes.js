@@ -8,7 +8,7 @@ const themeMap = {
 };
 
 window.onload = () => {
-  const savedTheme = localStorage.getItem("currentTheme") || "EMOLESBIAN!";
+  const savedTheme = localStorage.getItem("currentTheme") || "NEO-TOKYO";
   setTheme(savedTheme);
 };
 

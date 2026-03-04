@@ -22,7 +22,9 @@
     <link href="/assets/nekowebring.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/lite-yt-embed.css"/>
     <script src="/assets/lite-yt-embed.js" async></script>
-    <script src="/assets/activity.js" defer></script>
+    <script src="/assets/lastfm.js" defer></script>
+    <script src="/assets/bsky.js" defer></script>
+    <script src="/assets/discord.js" defer></script>
     <!-- // THEMES // -->
     <link id="theme1" rel="stylesheet" href="/themes/neotokyo.css">
     <link id="theme2" rel="stylesheet" href="/themes/universecity.css" disabled>
@@ -40,7 +42,6 @@
                     <button onclick="setTheme('UNIVERSE CITY')" data-theme="universe-city" data-theme-name="UNIVERSE CITY"></button>
                     <button onclick="setTheme('EMOLESBIAN')" data-theme="emo-lesbian" data-theme-name="EMOLESBIAN!"></button>
                     <button onclick="setTheme('FANCY THAT')" data-theme="fancy-that" data-theme-name="FANCY THAT"></button>
-                    <button onclick="setTheme('DOWNTOWN')" data-theme="downtown" data-theme-name="DOWNTOWN"></button>
                     <button onclick="setTheme('MONOCHROME')" data-theme="monochrome" data-theme-name="MONOCHROME"></button>
                 </div>                
             </div>
@@ -60,11 +61,7 @@
                         <span><img src="/assets/icons/home.png"><h3><a href="/">HOME</a></h3></span>
                         <span><img src="/assets/icons/blog.png"><h3><a href="/blog">BLOG</a></h3></span>
                         <span><img src="/assets/icons/journal.png"><h3><a href="/journal">JOURNAL</a></h3></span>
-                        <!--<span><img src="/assets/icons/media.png"><h3><a href="/medialog">MEDIA LOG</a></h3></span>-->
-                        <span><img src="/assets/icons/music.png"><h3><a href="/music">MUSIC LOG</a></h3></span>
-                        <span><img src="/assets/icons/movies.png"><h3><a href="/movies">MOVIE LOG</a></h3></span>
-                        <span><img src="/assets/icons/games.png"><h3><a href="/games">GAME LOG</a></h3></span>
-                        <span><img src="/assets/icons/manga.png"><h3><a href="/manga">MANGA LOG</a></h3></span>
+                        <span><img src="/assets/icons/media.png"><h3><a href="/medialog">MEDIA LOG</a></h3></span>
                         <span><img src="/assets/icons/vinyls.png"><h3><a href="/vinyls">VINYLS</a></h3></span>
                         <span><img src="/assets/icons/scrapbook.png"><h3><a href="/scrapbook">SCRAPBOOK</a></h3></span>
                         <span><img src="/assets/icons/resources.png"><h3><a href="/resources">RESOURCES</a></h3></span>
@@ -84,7 +81,6 @@
                     </div>
                 </div>
                 <div id="navlinks">
-                    <iframe width="180" height="180" style="border:none" src="https://rubybulbs.net/neko.html"></iframe>
                     <iframe width="180" height="180" style="border:none; margin-bottom: 7px;" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
                 </div>
                 <div class="marquee marquee-hover-pause m1">
@@ -149,9 +145,9 @@
                     <div class="container-title">
                         <h1>HOME</h1>
                     </div>
-                    <div class="container-content">
-                        <p>Hi twin!! Welcome to my <i>digital home</i>! This is my website to yap about my interests, inspired by the personal websites of the 90s/2000s. It was created on 10.22.22</p>
-                        <p>I really like Akira, CRTs, retro consoles, & retrofuturism. I collect pretty much anything that connects to a CRT. My favorite games are <i>Animal Crossing</i>, Pikmin 2, & Elden Ring. Some of my favorite albums are <i>Discovery - Daft Punk</i> & Graduation - Kanye West.</p>
+                    <div class="container-content" style="position: relative; padding-bottom: 60px;">
+                        <p>Hey twin!! Welcome to my <i>digital home</i>! Inspired by Akira and the personal websites of the 90s/2000s. I'm really into music, movies, and most importantly, <i>YURI!!!!!</i> =D Feel free to look around, i hope u enjoy ur stay</p>
+                        <div id="home-character"></div>
                     </div>
                 </div>
                 <div class="container">
@@ -170,7 +166,7 @@
                                     <p class="blog-date">TBD</p>
                                 </div>
                                 <div class="title-tags-container"><h3>></h3>
-                                    <h3><a href="/blog/crtpi">New Year, New Layout</a></h3>
+                                    <h3><a href="/blog/crtpi">Raspberry Pi CRT Media Center</a></h3>
                                     <div class="blog-tags">
                                         <span class="blog-tag tech-tag">tech</span>
                                         <span class="blog-tag media-tag">media</span>
@@ -189,45 +185,82 @@
                     </div>
                 </div>
                 <div class="container-row">
-                    <div class="container featured-vid">
-                        <lite-youtube videoid="gMYTTp6s98o" params="loop=1"></lite-youtube>
-                    </div>
-                    <div class="container" style="width: 39%;">
+                    <div class="container" style="width: 50%;">
                         <div class="container-title">
                             <h1>CURRENTLY...</h1>
                         </div>
-                        <div class="container-content currently" style="overflow-y: scroll; max-height: 155px;">
-                            <h3>Playing</h3>
-                            <p>Hollow Knight</p>
-                            <p>We Love Katamari</p>
-                            <h3>Watching</h3>
-                            <p>Breaking Bad</p>
-                            <p>Serial Experiments Lain</p>
+                        <div class="container-content" id="currently">
+                            <div class="currently-row">
+                                <span class="currently-label">playing</span>
+                                <div class="currently-items">
+                                    <span>→ Dark Souls 2</span>
+                                    <span>→ Half-Life 2</span>
+                                </div>
+                            </div>
+                            <div class="currently-row">
+                                <span class="currently-label">watching</span>
+                                <div class="currently-items">
+                                    <span>→ Madoka Magica</span>
+                                    <span>→ Breaking Bad</span>
+                                </div>
+                            </div>
+                            <div class="currently-row">
+                                <span class="currently-label">reading</span>
+                                <div class="currently-items">
+                                    <span>→ A Love Yet To Bloom</span>
+                                    <span>→ The Smoking Maid</span>
+                                    <span>→ Whispering You A Love Song</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" style="width: 50%;">
+                        <div class="container-title">
+                            <h1>FAVORITE...</h1>
+                        </div>
+                        <div class="container-content" id="currently">
+                            <div class="currently-row">
+                                <span class="currently-label">albums</span>
+                                <div class="currently-items">
+                                    <span>→ Discovery - Daft Punk</span>
+                                    <span>→ Graduation - Kanye West</span>
+                                </div>
+                            </div>
+                            <div class="currently-row">
+                                <span class="currently-label">games</span>
+                                <div class="currently-items">
+                                    <span>→ Animal Crossing New Leaf</span>
+                                    <span>→ Elden Ring</span>
+                                </div>
+                            </div>
+                            <div class="currently-row">
+                                <span class="currently-label">movies</span>
+                                <div class="currently-items">
+                                    <span>→ Akira</span>
+                                    <span>→ Kill Bill</span>
+                                </div>
+                            </div>
+                            <div class="currently-row">
+                                <span class="currently-label">manga</span>
+                                <div class="currently-items">
+                                    <span>→ Can't Defy The Lonely Girl</span>
+                                    <span>→ A Love Yet To Bloom</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="container-title">
-                        <h1>todo</h1>
-                    </div>
-                    <div class="container-content">
-                        <p>replace media log with separate music log, manga log, gamelog, movie log, etc. maybe just offload some to their respective websites, but i do like having it all on site</p>
-                        <p>homepage</p>
-                        <p>bsky integration</p>
-                        <p>rss feeds</p>
-                        <p>use less js</p>
-                        <p>figure out font situation</p>
-                        <p>blog,scrapbook,resources</p>
-                    </div>
-                </div>
                 <div class="container-row">
-                </div>
-                <div class="container-row">
-                    <div class="container" style="width: 65%; position: relative;">
-                        <div class="container-title"><h1>NOTICE BOARD</h1><img src="/images/assets/notice.png" style="position: absolute; right: -15px; top: -15px;"></div>
-                        <div class="container-content bulletin">
-                            <p>hi maybe make this box not a box and just look like the message board from gamecube and a font that looks similar. would add needed diversity to the home page and can put updates or announcements</p>
+                    <div class="container" style="width: 60%;">
+                        <div class="container-title">
+                            <h1>WEEKLY TOP 5</h1>
                         </div>
+                        <div class="container-content">
+                           <div id="topWeekly"></div> 
+                        </div>
+                    </div>
+                    <div class="container poster-panel" style="width: 40%;">
+                        <img src="https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ycyrajrhzmiak5d6wogtruqk/bafkreiam2lzmepqqnkejcd2ujdqwsqwopg2g5eey4zfr44p54dmor2oyuy@jpeg">
                     </div>
                 </div>
             </div>
@@ -258,16 +291,19 @@
                             </div>
                             <h4 id="discordPlayTime" style="margin: 5px 0 0 0;"></h4>
                         </div>
-                        <div id="listening"></div>
-                        <div id="currentlylistening"></div>
-                        <!--<h2>SOCIALS</h2>--><hr>
+                        <div id="listening">
+                            <img src="/images/assets/cover.png">
+                            <div id="trackInfo">
+                                <h3>loading...</h3>
+                            </div>
+                        </div>
+                        <hr>
                         <div id="socials">
+                            <a href="https://letterboxd.com/Penguinjaa/" target="_blank"><img src="/images/assets/letterboxd.jpg" style="width: 35px; border-radius: 5px;"></a>
+                            <a href="https://www.last.fm/user/Penguinjaa" target="_blank"><img src="/images/assets/lastfm.jpg" style="width: 35px; border-radius: 5px;"></a>
                             <a href="https://www.youtube.com/@Penguinjaa" target="_blank"><img src="/images/assets/Youtube.png" style="width: 35px;"></a>
                             <a href="https://www.twitch.tv/penguinjaa" target="_blank"><img src="/images/assets/twitch.png" style="height: 35px;"></a>
-                            <a href="https://www.last.fm/user/Penguinjaa" target="_blank"><img src="/images/assets/lastfm.jpg" style="width: 35px; border-radius: 5px;"></a>
-                            <a href="https://letterboxd.com/Penguinjaa/" target="_blank"><img src="/images/assets/letterboxd.jpg" style="width: 35px; border-radius: 5px;"></a>
                         </div>
-                        <!--<h2>MY BUTTONS</h2>-->
                         <div style="display: flex; justify-content: space-evenly; text-align: center; image-rendering: pixelated; margin-top: 15px;">
                             <div>
                                 <img src="/images/buttons/neopenguinjaa.gif">
@@ -278,6 +314,14 @@
                                 <textarea rows="2" readonly style="width: 82px;"><a href="https://penguinjaa.com/" target="_blank"><img src="https://penguinjaa.com/images/buttons/penguinjaa.gif"></a></textarea>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container-title">
+                        <h1>STATUS</h1>
+                    </div>
+                    <div class="container-content">
+                        <div id="bskyStatus"></div>
                     </div>
                 </div>
                 <div class="marquee marquee-hover-pause m1">
@@ -345,14 +389,13 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="container-title">
+                    <div class="container-title" style="display: flex; padding-left: 0;">
+                        <img src="/assets/icons/codecatputer.gif">
                         <h1>SITE STATS</h1>
                     </div>
                     <div class="container-content stats">
-                        <p id="visitors">Loading..</p>
-                        <p id="followers">Loading..</p> 
-                        <p id="updated">Loading..</p>
-                        <p>Date Created:10/22/2022</p>
+                        <div class="stat-line"><span id="visitors" class="stat-num">...</span> visits &nbsp;•&nbsp; <span id="followers" class="stat-num">...</span> followers</div>
+                        <div class="stat-line">10/22/2022 &nbsp;•&nbsp; <span id="updated" style="display: inline !important;">...</span></div>
                         <a href="https://nekoweb.org/follow/penguinjaa" target="_blank"><h3>follow on nekoweb</h3></a>
                     </div>
                 </div>
@@ -376,9 +419,9 @@
 
     const updated = new Date(json.updated_at).toLocaleDateString();
 
-    document.getElementById("visitors").innerHTML = `<p>Visits: ${json.views}</p>`;
-    document.getElementById("followers").innerHTML = `<p>Followers: ${json.followers}</p>`;
-    document.getElementById("updated").innerHTML = `<p>Last Updated: ${updated}</p>`;
+    document.getElementById("visitors").innerHTML = json.views;
+    document.getElementById("followers").innerHTML = json.followers;
+    document.getElementById("updated").innerHTML = `updated ${updated}`;
 };
 getStats();
 </script>

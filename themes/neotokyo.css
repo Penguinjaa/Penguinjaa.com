@@ -40,3 +40,8 @@
     --blog-header: linear-gradient(90deg, #421c2e 65%, #00000000);
     --blog-title: #F89CF6;
  }
+#home-character {
+    background-image: url('/images/assets/tetsuo.png');
+    bottom: -60px;
+    right: 15px;
+}

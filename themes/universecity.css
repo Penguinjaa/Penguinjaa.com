@@ -1,8 +1,6 @@
 /* // KANYE UNIVERSE CITY // */
 
 :root {
-     /* HEADER */
-    --header-img: no-repeat url("/themes/assets/a2.jpg");
  
      /* COLORS */
     --p-color: #ffffff;
@@ -50,4 +48,8 @@
 }
 p, li {
     font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+#home-character {
+   background-image: url('/images/assets/graduation.png');
+   height: 100px;
 }

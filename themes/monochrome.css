@@ -39,6 +39,10 @@
     --blog-header: linear-gradient(90deg, #C0C0C0 65%, #00000000);
     --blog-title: #000;
  }
- .entry-info h2 {
+.entry-info h2 {
     color: #000000 !important;
- }
+}
+#home-character {
+   background-image: url('/images/assets/sora.png');
+   height: 100px;
+}
