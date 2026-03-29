@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'content';
-    src: url('/assets/fonts/pixeloperator.ttf') format('truetype');
+    src: url('/assets/fonts/PixelOperator.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -14,7 +14,7 @@
 }
 @font-face {
     font-family: 'head';
-    src: url('/assets/fonts/pixeloperator-bold.ttf') format('truetype');
+    src: url('/assets/fonts/PixelOperator-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
